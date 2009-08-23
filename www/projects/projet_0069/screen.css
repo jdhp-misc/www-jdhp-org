@@ -1,0 +1,323 @@
+body {
+	/*background-color : #eeeeee;*/
+	background-image : url(background.png);
+	margin           : 0px;
+	padding          : 0px;
+}
+
+h1 {
+	color           : #666666;
+	font-family     : verdana, sans-serif;
+	margin-top      : 0px;
+	text-align      : center;
+}
+
+h2 {
+	color            : #666666;
+	font-weight      : bold;
+	font-family      : verdana, sans-serif;
+	font-size        : 16px;
+	margin-top       : 12px;
+	margin-bottom    : 0px;
+	text-align       : center;
+}
+
+
+h3 {
+	color            : #666666;
+	font-family      : verdana, sans-serif;
+	font-size        : 13px;
+	margin-top       : 11px;
+	margin-bottom    : 0px;
+}
+
+div#footer {
+	color           : #666666;
+	font-family     : verdana, sans-serif;
+	font-size       : 11px;
+	margin-left     : 12px;
+	margin-right    : 15px;
+	text-align      : right;
+}
+
+div#footer div#getfirefox {
+	float           : left;
+}
+
+div#footer div#getfirefox img {
+	border-width    : 0px;
+}
+
+div#footer div#copyright {
+	float           : right;
+}
+
+/* ************************************************************************* */
+/*                                 Level 1                                   */
+/* ************************************************************************* */
+
+div#container {
+	background-color : white;
+	border           : 1px solid #dddddd;
+	margin-top       : 2em;
+	margin-bottom    : 2em;
+	margin-left      : 10%;
+	margin-right     : 10%;
+	padding          : 2em;
+}
+
+/* ************************************************************************* */
+/*                                 Level 2                                   */
+/* ************************************************************************* */
+
+div#error {
+	border           : 1px solid #ff7777;
+	background-color : #ff9999;
+	margin-top       : 2em;
+	margin-bottom    : 1em;
+	margin-left      : 10%;
+	margin-right     : 10%;
+	padding          : 1em;
+}
+
+div#form {
+	border           : 0px dashed #dddddd;
+	background-color : white;
+	margin-top       : 4em;
+	margin-bottom    : 1em;
+	padding-top      : 0px;
+	padding-bottom   : 0px;
+}
+
+div#memo {
+	border           : 1px solid #dddddd;
+	background-color : #eeeeee;
+	margin-top       : 4em;
+	margin-bottom    : 1em;
+	padding-top      : 0px;
+	padding-bottom   : 0px;
+}
+
+div#tables {
+	border           : 0px solid #6699cc;
+	background-color : white;
+	margin-top       : 0px;
+	margin-bottom    : 0px;
+	padding          : 0px;
+	text-align       : center;
+}
+
+/* ************************************************************************* */
+/*                                 Level 3                                   */
+/* ************************************************************************* */
+
+/* ***** */
+/* Error */
+/* ***** */
+
+div#error p {
+	color            : white;
+	font-family      : verdana, sans-serif;
+	font-size        : 16px;
+	font-weight      : bold;
+	text-align       : center;
+	margin-top       : 2px;
+	margin-bottom    : 2px;
+}
+
+/* **** */
+/* Form */
+/* **** */
+
+/* Div */
+
+div#form>div {
+	margin-left   : 2em;
+	margin-right  : 2em;
+}
+
+div#form_nb_units {
+	margin-top    : 0px;
+	margin-bottom : 8px;
+	margin-left   : 2em;
+	margin-right  : 2em;
+}
+
+div#form_n {
+	margin-top    : 0px;
+	margin-bottom : 8px;
+	margin-left   : 2em;
+	margin-right  : 2em;
+}
+
+div#form_w {
+	margin-top    : 0px;
+	margin-bottom : 8px;
+	margin-left   : 2em;
+	margin-right  : 2em;
+	text-align    : center;
+}
+
+div#form_si {
+	margin-top    : 0px;
+	margin-bottom : 8px;
+	margin-left   : 2em;
+	margin-right  : 2em;
+	text-align    : center;
+}
+
+div#form_submit {
+	margin-top    : 12px;
+	margin-bottom : 8px;
+	margin-left   : 2em;
+	margin-right  : 2em;
+	text-align    : center;
+}
+
+/* Span */
+
+div#form_w span {
+	margin-right : 20px;
+}
+
+div#form_si span {
+	margin-right : 20px;
+}
+
+/* Label */
+
+div#form label {
+	color            : #666666;
+	font-family      : verdana, sans-serif;
+	font-size        : 13px;
+	margin-top       : 3px;
+	margin-bottom    : 0px;
+}
+
+/* Input */
+
+div#form_nb_units input, div#form_n input, div#form_w input, div#form_si input {
+	border           : 1px solid #dddddd;
+	color            : #666666;
+	font-family      : verdana, sans-serif;
+	font-size        : 13px;
+	margin-top       : 3px;
+	margin-bottom    : 0px;
+	text-align       : center;
+}
+
+div#form_submit input {
+	border           : 1px solid #dddddd;
+	background-color : #eeeeee;
+	color            : #555555;
+	font-family      : verdana, sans-serif;
+	font-size        : 13px;
+}
+
+/* **** */
+/* Memo */
+/* **** */
+
+div#memo div {
+	border           : none;
+	color            : #777777;
+	margin-top       : 0px;
+	margin-bottom     : 0px;
+	margin-left      : 2em;
+	margin-right     : 2em;
+	margin-bottom    : 16px;
+	padding          : 0px;
+}
+
+div#memo div p {
+	color            : #666666;
+	font-family      : verdana, sans-serif;
+	font-size        : 13px;
+	margin-top       : 2px;
+	margin-bottom    : 0px;
+	margin-left      : 2em;
+	margin-right     : 2em;
+}
+
+/* ****** */
+/* Tables */
+/* ****** */
+
+/* Séparateur de tableaux */
+div#tables hr {
+	margin-top       : 2em;
+	margin-bottom    : 2em;
+	visibility       : hidden;
+}
+
+div#tables table {
+	background-color : white;
+	border           : 2px solid #bbbbbb;
+	border-collapse  : collapse;
+	margin-top       : 0px;
+	margin-bottom    : 0px;
+	margin-left      : auto;
+	margin-right     : auto;
+	padding          : 0px;
+}
+
+div#tables table caption {
+	color           : #666666;
+	font-weight     : bold;
+	font-family     : verdana, sans-serif;
+	font-size       : 16px;
+	margin-bottom   : 1em;
+	margin-left     : auto;
+	margin-right    : auto;
+}
+
+div#tables table tr {
+	background-color : white;
+	border           : 0px;
+	height           : 1em;
+	margin           : 0px;
+	padding          : 0px;
+}
+
+div#tables table tr th {
+	background-color : #eeeeee;
+	border-top       : 1px solid #cccccc;
+	border-bottom    : 2px solid #bbbbbb;
+	border-left      : 1px solid #cccccc;
+	border-right     : 1px solid #cccccc;
+	color            : #666666;
+	font-family      : verdana, sans-serif;
+	font-size        : 13px;
+	font-weight      : bold;
+	margin-top       : 0px;
+	margin-bottom    : 0px;
+	padding-left     : 1em;
+	padding-right    : 1em;
+	text-align       : center;
+}
+
+div#tables table tr td.normal {
+	background-color : white;
+	border           : 1px solid #cccccc;
+	color            : #666666;
+	font-family      : verdana, sans-serif;
+	font-size        : 13px;
+	margin-top       : 0px;
+	margin-bottom    : 0px;
+	padding-left     : 1em;
+	padding-right    : 1em;
+	text-align       : center;
+}
+
+div#tables table tr td.highlighted {
+	background-color : #ff8080;
+	border           : 1px solid #cccccc;
+	color            : #666666;
+	font-family      : verdana, sans-serif;
+	font-size        : 13px;
+	margin-top       : 0px;
+	margin-bottom    : 0px;
+	padding-left     : 1em;
+	padding-right    : 1em;
+	text-align       : center;
+}
