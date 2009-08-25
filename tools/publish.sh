@@ -4,7 +4,7 @@
 # Publie sur le web la dernière version enregistrée sur le référentiel SVN #
 ############################################################################
 
-JDHP_LOCAL_PATH=/home/gremy/jdhp.org
+JDHP_LOCAL_PATH=/tmp/jdhp.org
 BASE_DEFAULT="<base href\=\"http:\/\/127\.0\.0\.1\/jdhp\.org\/\" \/>"
 BASE_ONLINE="<base href\=\"http:\/\/www\.jdhp\.org\/\" \/>"
 
@@ -12,9 +12,9 @@ BASE_ONLINE="<base href\=\"http:\/\/www\.jdhp\.org\/\" \/>"
 echo "Vide le répertoire cible de l'export"
 rm -rf $JDHP_LOCAL_PATH
 
-# Exporte le site depuis SVN
-echo "Exporte le site depuis SVN"
-svn export file:///media/data/gremy/developpement_logiciel/repositories/svn/projet_0068_jdhp/trunk/ $JDHP_LOCAL_PATH
+# Exporte le site depuis Git
+echo "Exporte le site depuis Git"
+git clone git://git.tuxfamily.org/gitroot/jdhp/jdhp.git $JDHP_LOCAL_PATH
 
 # Définition de la balise <base /> source et de la balise <base /> destination
 echo "Modification des balises HTML <base>"
