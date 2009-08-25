@@ -1,0 +1,4 @@
+Changer le build system :
+- remplacer les scripts "tools" par un wscript Waf (supprimer aussi le makefile qui sert à rien)
+- ne pas mettre les sources/binaires des projet, articles, ... dans www mais écrire des task waf pour récupérer ces données depuis le référentiel de chaque projet.
+
