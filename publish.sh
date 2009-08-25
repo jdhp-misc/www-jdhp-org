@@ -14,7 +14,7 @@ rm -rf $JDHP_LOCAL_PATH
 
 # Exporte le site depuis Git
 echo "Exporte le site depuis Git"
-git clone git://git.tuxfamily.org/gitroot/jdhp/jdhp.git $JDHP_LOCAL_PATH
+git clone . $JDHP_LOCAL_PATH
 
 # Définition de la balise <base /> source et de la balise <base /> destination
 echo "Modification des balises HTML <base>"
