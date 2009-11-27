@@ -1,4 +1,4 @@
-/* Copyright (c) 2006,2008 Jérémie DECOCK (jdhp.org)                      */
+/* Copyright (c) 2006,2008,2009 Jérémie DECOCK (jdhp.org)                 */
 
 /* TODO :                                                                 *
  *  - Mettre le "text-align : left;" dans le selecteur universel et le    *
@@ -22,10 +22,8 @@
 }
 
 body {
-	background-color  : #d9d9d9;
-	background-image  : url(../images/metal_background.png);
-	background-repeat : repeat-x;
-	text-align        : center; /* cf ... */
+	background-color : #f4f4f4;
+	text-align       : center; /* cf ... */
 }
 
 li {
@@ -124,21 +122,6 @@ div#content_bloc {
 	text-align       : left; /* cf ... */
 }
 
-/*** breadcrumb ***/
-
-p#breadcrumb {
-	font-size        : 10px;
-
-	margin-left      : 26px;
-	margin-right     : 26px;
-
-	text-align       : left;
-}
-
-p#breadcrumb a {
-	font-size        : 10px;
-}
-
 /*** intro ***/
 
 .intro {
@@ -157,6 +140,8 @@ h2 {
 	border-top       : 1px solid #dddddd;
 	border-bottom    : 1px solid #dddddd;
 
+	font-size        : 16px;
+    font-variant     : small-caps;
 	font-weight      : bold;
 
 	padding-top      : 2px;
@@ -174,7 +159,7 @@ h2 {
 h3 {
 	font-weight      : bold;
 
-	margin-top       : 1.5em;
+	margin-top       : 2em;
 	margin-bottom    : 0.5em;
 	margin-left      : 26px;
 	margin-right     : 26px;
@@ -190,56 +175,6 @@ h3 {
 	margin-right     : 26px;
 
 	text-align       : justify;
-}
-
-/*** slideshow ***/
-
-div.slideshow {
-	margin-top       : 1em;
-	margin-left      : 26px;
-	margin-right     : 26px;
-
-	width            : 745px;
-	height           : 117px;
-
-	text-align       : left;
-}
-
-div.slideshow a {
-	background-image : url(../images/slideshow_background.png);
-
-	display          : block;
-	float            : left;
-
-	height           : 117px;
-	width            : 149px;
-}
-
-div.slideshow a img {
-	margin-left      : 10px;
-	margin-top       : 10px;
-
-	height           : 96px;
-	width            : 128px;
-}
-
-/*** image ***/
-
-div.image {
-	background-image : url(../images/slideshow_background.png);
-
-	margin-top       : 26px;
-	margin-left      : 26px;
-	margin-right     : 26px;
-
-	width            : 745px;
-	/*height           : 117px;*/
-
-	text-align       : left;
-}
-
-div.image img {
-	width            : 745px;
 }
 
 /* ************************************************************************* */
@@ -280,6 +215,90 @@ div#contact > p#resume {
 }
 
 /* ************************************************************************* */
+/*                                Projects                                   */
+/* ************************************************************************* */
+
+/*** description ***/
+
+.desc {
+	margin-bottom    : 0.5em;
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	text-align       : justify;
+}
+
+/*** download ***/
+
+.download {
+	font-size        : 11px;
+
+	margin-bottom    : 0.5em;
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	text-align       : justify;
+}
+
+.download strong {
+	font-weight      : normal;
+	font-size        : 11px;
+}
+
+.download a {
+	font-size        : 11px;
+}
+
+/*** repositories ***/
+
+.repositories {
+	font-size        : 11px;
+
+	margin-bottom    : 0.5em;
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	text-align       : justify;
+}
+
+.repositories strong {
+	font-weight      : normal;
+	font-size        : 11px;
+	font-style       : oblique;
+}
+
+.repositories a {
+	font-size        : 11px;
+}
+
+/*** screenshots ***/
+
+.screenshots {
+	margin-top       : 0.5em;
+	margin-bottom    : 0.5em;
+	margin-left      : 56px;
+	margin-right     : 56px;
+
+	text-align       : center;
+}
+
+.screenshots img {
+	margin-left      : 10px;
+	margin-top       : 10px;
+}
+
+
+/* ************************************************************************* */
+/*                                Articles                                   */
+/* ************************************************************************* */
+
+
+/* ************************************************************************* */
+/*                                Tutorials                                  */
+/* ************************************************************************* */
+
+
+/* ************************************************************************* */
 /*                                 Footer                                    */
 /* ************************************************************************* */
 
@@ -309,4 +328,5 @@ div#footer a img {
 	margin-left      : 2px;
 	margin-right     : 0px;
 }
+
 

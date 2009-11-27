@@ -1,0 +1,75 @@
+#!/bin/sh
+
+# Shell script to turn a LaTeX file into PNG
+#
+# Copyright (c) 2008 Jérémie DECOCK
+# Based on David Hausheer's latex2png.phps
+#
+# This script is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+# 
+# This script is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this script; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA 
+
+PRGM=`basename "$0"`
+
+# Check args ##################################################################
+if [ -z "$1" -o ! -z "$2" ]
+then
+	cat >&2 <<EOFwrongarg
+Error, too few or too many arguments.
+	
+Usage : $PRGM file.tex
+EOFwrongarg
+	exit 1
+fi
+
+INPATH="$1"
+INFILE=`basename "$INPATH"`
+
+
+# Check given file ############################################################
+if [ ! -f "$INPATH" -o ! -r "$INPATH" ]
+then
+	cat >&2 <<EOFwrongfile
+Error, "$INPATH" is not a file or is not readable.
+	
+Usage : $PRGM file.tex
+EOFwrongfile
+	exit 2
+fi
+
+
+# Check extension and prepare file names ######################################
+if echo "$INFILE" | egrep -q '\.tex$'
+then
+	# Set tmp files
+	DVIFILE=`echo "$INFILE" | sed -r "s/\.tex$/\.dvi/"`
+	AUXFILE=`echo "$INFILE" | sed -r "s/\.tex$/\.aux/"`
+	LOGFILE=`echo "$INFILE" | sed -r "s/\.tex$/\.log/"`
+	PNGFILE=`echo "$INFILE" | sed -r "s/\.tex$/\.png/"`
+else
+	cat >&2 <<EOFwrongext
+Error, wrong file extension.
+	
+Usage : $PRGM file.tex
+EOFwrongext
+	exit 3
+fi
+
+
+# TODO : print latex errors except if '-q' is set #############################
+latex -interaction=nonstopmode "$INPATH" 1> /dev/null 2>&1
+dvipng -q -T tight -D 300 "$DVIFILE" -o "$PNGFILE" 1> /dev/null 2>&1
+
+rm "$AUXFILE"
+rm "$LOGFILE"
+rm "$DVIFILE"

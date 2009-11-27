@@ -37,10 +37,10 @@ import pygtk
 pygtk.require('2.0')
 import gtk
 
-program_name = 'binview'
+program_name = 'binviewer'
 
 def usage():
-    print '''Usage : ./binview.py -f filename
+    print '''Usage : ./binviewer.py -f filename
     
     Create a graphical representation of a binary file.
 
