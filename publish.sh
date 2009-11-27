@@ -20,6 +20,11 @@ git clone . $JDHP_LOCAL_PATH
 echo "Modification des balises HTML <base>"
 find $JDHP_LOCAL_PATH/www/ -type f -name "*.html" -exec sed -i "s/$BASE_DEFAULT/$BASE_ONLINE/g" "{}" \;
 
+# Génère les thumbnails (image magick)
+echo "Génère les thumbnails"
+mkdir $JDHP_LOCAL_PATH/www/projects/thumbnails/
+mogrify -format png -path $JDHP_LOCAL_PATH/www/projects/thumbnails/ -thumbnail 80x80 $JDHP_LOCAL_PATH/www/projects/screenshots/*.png
+
 # Compile les fichiers tex
 echo "Compile les fichiers tex"
 find $JDHP_LOCAL_PATH/www/articles -name "Makefile" -execdir make \;
