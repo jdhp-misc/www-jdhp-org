@@ -215,7 +215,7 @@ div#contact > p#resume {
 }
 
 /* ************************************************************************* */
-/*                                Projects                                   */
+/*                    Projects, Articles & Tutorials                         */
 /* ************************************************************************* */
 
 /*** description ***/
@@ -226,6 +226,12 @@ div#contact > p#resume {
 	margin-right     : 26px;
 
 	text-align       : justify;
+}
+
+/*** files ***/
+
+div.files {
+	margin-top       : 1.25em;
 }
 
 /*** download ***/
@@ -243,6 +249,7 @@ div#contact > p#resume {
 .download strong {
 	font-weight      : normal;
 	font-size        : 11px;
+	font-style       : oblique;
 }
 
 .download a {
@@ -287,16 +294,17 @@ div#contact > p#resume {
 	margin-top       : 10px;
 }
 
+/*** link ***/
 
-/* ************************************************************************* */
-/*                                Articles                                   */
-/* ************************************************************************* */
+.link {
+	margin-bottom    : 0.5em;
+	margin-left      : 26px;
+	margin-right     : 26px;
+}
 
-
-/* ************************************************************************* */
-/*                                Tutorials                                  */
-/* ************************************************************************* */
-
+.link a {
+	font-size        : 11px;
+}
 
 /* ************************************************************************* */
 /*                                 Footer                                    */
