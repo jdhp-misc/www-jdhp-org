@@ -7,6 +7,7 @@
 JDHP_LOCAL_PATH=/tmp/jdhp.org
 BASE_DEFAULT="<base href\=\"http:\/\/127\.0\.0\.1\/jdhp\.org\/\" \/>"
 BASE_ONLINE="<base href\=\"http:\/\/www\.jdhp\.org\/\" \/>"
+DEFAULT_LANG=fr
 
 # Vide le répertoire cible de l'export
 echo "Vide le répertoire cible de l'export"
@@ -15,6 +16,9 @@ rm -rf $JDHP_LOCAL_PATH
 # Exporte le site depuis Git
 echo "Exporte le site depuis Git"
 git clone . $JDHP_LOCAL_PATH
+
+# Crée le fichier index (suivant la langue par défaut)
+cp $JDHP_LOCAL_PATH/www/index_$DEFAULT_LANG.html $JDHP_LOCAL_PATH/www/index.html
 
 # Définition de la balise <base /> source et de la balise <base /> destination
 echo "Modification des balises HTML <base>"
