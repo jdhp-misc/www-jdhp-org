@@ -122,6 +122,15 @@ div#content_bloc {
 	text-align       : left; /* cf ... */
 }
 
+/*** flag ***/
+
+div#flag {
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	text-align       : right;
+}
+
 /*** intro ***/
 
 .intro {
