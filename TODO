@@ -3,3 +3,4 @@ Changer le build system :
 - ne pas mettre les sources/binaires des projet, articles, ... dans www mais écrire des task waf pour récupérer ces données depuis le référentiel de chaque projet.
 - sitmaps : http://en.wikipedia.org/wiki/Sitemaps
 - meta : description
+- remplacer "gitweb" par "browse source code"
