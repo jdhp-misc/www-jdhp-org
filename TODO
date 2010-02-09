@@ -1,7 +1,7 @@
 Changer le build system :
 - remplacer les scripts "tools" par un wscript Waf (supprimer aussi le makefile qui sert à rien)
 - ne pas mettre les sources/binaires des projet, articles, ... dans www mais écrire des task waf pour récupérer ces données depuis le référentiel de chaque projet.
-- sitmaps : http://en.wikipedia.org/wiki/Sitemaps
+- sitmaps : http://en.wikipedia.org/wiki/Sitemaps -> générer automatiquement le fichier sitemap via le script "crawler.sh" (liste les liens html + les dates de dernières modifications)
 - meta : description
 - remplacer "gitweb" par "browse source code"
 - créer une branche expérimentale permanente "english_translation"
