@@ -141,6 +141,19 @@ div#flag {
 	text-align       : justify;
 }
 
+/*** toc ***/
+
+.toc {
+    list-style       : square;
+    /*list-style-image : url(../images/li.png);*/
+
+	margin-top       : 1em;
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	text-align       : justify;
+}
+
 /*** h2 ***/
 
 h2 {
@@ -237,53 +250,47 @@ div#contact > p#resume {
 	text-align       : justify;
 }
 
+/*** link ***/
+
+.link {
+	margin-bottom    : 0.5em;
+	margin-left      : 26px;
+	margin-right     : 26px;
+}
+
+.link a {
+	font-size        : 11px;
+}
+
 /*** files ***/
 
 div.files {
+    border-left      : 5px solid #eeeeee;
+    /*border-left      : 5px solid #a2c2e1;*/
+
 	margin-top       : 1.25em;
-}
-
-/*** download ***/
-
-.download {
-	font-size        : 11px;
-
-	margin-bottom    : 0.5em;
 	margin-left      : 26px;
 	margin-right     : 26px;
 
-	text-align       : justify;
+    padding-left     : 1em;
+    padding-right    : 1em;
 }
 
-.download strong {
+/*** download, repositories and license ***/
+
+div.files * {
+	font-size        : 11px;
+
+	margin-bottom    : 0.5em;
+}
+
+div.files * strong {
 	font-weight      : normal;
 	font-size        : 11px;
 	font-style       : oblique;
 }
 
-.download a {
-	font-size        : 11px;
-}
-
-/*** repositories ***/
-
-.repositories {
-	font-size        : 11px;
-
-	margin-bottom    : 0.5em;
-	margin-left      : 26px;
-	margin-right     : 26px;
-
-	text-align       : justify;
-}
-
-.repositories strong {
-	font-weight      : normal;
-	font-size        : 11px;
-	font-style       : oblique;
-}
-
-.repositories a {
+div.files * a {
 	font-size        : 11px;
 }
 
@@ -301,18 +308,6 @@ div.files {
 .screenshots img {
 	margin-left      : 10px;
 	margin-top       : 10px;
-}
-
-/*** link ***/
-
-.link {
-	margin-bottom    : 0.5em;
-	margin-left      : 26px;
-	margin-right     : 26px;
-}
-
-.link a {
-	font-size        : 11px;
 }
 
 /* ************************************************************************* */
