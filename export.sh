@@ -26,10 +26,19 @@ cp $JDHP_LOCAL_PATH/www/index_$DEFAULT_LANG.html $JDHP_LOCAL_PATH/www/index.html
 echo "Modification des balises HTML <base>"
 find $JDHP_LOCAL_PATH/www/ -type f -name "*.html" -execdir sed -i "s/$BASE_DEFAULT/$BASE_FILE/g" "{}" \;
 
-# Génère les thumbnails (image magick)
-echo "Génère les thumbnails"
+# Génère les thumbnails (imagemagick et ffmpeg)
+echo "Génère les thumbnails (screenshot)"
 mkdir -p $JDHP_LOCAL_PATH/www/medias/thumbnails/screenshots/
 mogrify -format png -path $JDHP_LOCAL_PATH/www/medias/thumbnails/screenshots/ -thumbnail 80x80 $JDHP_LOCAL_PATH/www/medias/screenshots/*.png
+
+echo "Génère les thumbnails (videos)"
+mkdir -p $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/
+for VIDEO_PATH in $JDHP_LOCAL_PATH/www/medias/videos/*.ogv
+do
+    VIDEO_FILE=$(basename $VIDEO_PATH  | sed -r "s/(.+)\.ogv/\1/g")
+    ffmpeg -y -i $VIDEO_PATH -f mjpeg -ss 1 -vframes 1 -s 80x80 -an $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.jpeg
+    convert $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.jpeg $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.png
+done
 
 # Compile les fichiers tex
 echo "Compile les fichiers tex"
