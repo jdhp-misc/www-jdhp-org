@@ -221,7 +221,7 @@ div.slideshow {
 }
 
 div.slideshow a {
-	background-image : url(../images/slideshow_background.png);
+	background-image : url(../medias/images/slideshow_background.png);
 
 	display          : block;
 	float            : left;
@@ -253,7 +253,7 @@ div.slideshow + div.slideshow {
 /*** image ***/
 
 div.image {
-	background-image : url(../images/slideshow_background.png);
+	background-image : url(../medias/images/slideshow_background.png);
 
 	margin-top       : 26px;
 	margin-left      : 26px;
@@ -300,7 +300,7 @@ div.download {
 
 div.warning {
 	background-color    : #fffca2;
-	background-image    : url(../images/icons/warning.png);
+	background-image    : url(../medias/images/icons/warning.png);
 	background-repeat   : no-repeat;
 	background-position : 1.25em 1em;
 	border              : 1px dotted #e9c654;
@@ -415,7 +415,7 @@ div#title {
 }
 
 div#contact {
-	background-image    : url(../images/jd.png);
+	background-image    : url(../medias/images/jd.png);
 	background-repeat   : no-repeat;
 
 	margin-left      : 26px;

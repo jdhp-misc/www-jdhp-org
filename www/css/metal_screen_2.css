@@ -204,7 +204,7 @@ div.slideshow {
 }
 
 div.slideshow a {
-	background-image : url(../images/slideshow_background.png);
+	background-image : url(../medias/images/slideshow_background.png);
 
 	display          : block;
 	float            : left;
@@ -224,7 +224,7 @@ div.slideshow a img {
 /*** image ***/
 
 div.image {
-	background-image : url(../images/slideshow_background.png);
+	background-image : url(../medias/images/slideshow_background.png);
 
 	margin-top       : 26px;
 	margin-left      : 26px;
@@ -254,7 +254,7 @@ div#title {
 }
 
 div#contact {
-	background-image    : url(../images/jd.png);
+	background-image    : url(../medias/images/jd.png);
 	background-repeat   : no-repeat;
 
 	margin-left      : 26px;

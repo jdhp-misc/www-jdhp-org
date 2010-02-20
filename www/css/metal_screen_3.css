@@ -145,7 +145,7 @@ div#flag {
 
 .toc {
     list-style       : square;
-    /*list-style-image : url(../images/li.png);*/
+    /*list-style-image : url(../medias/images/li.png);*/
 
 	margin-top       : 1em;
 	margin-left      : 26px;
@@ -213,7 +213,7 @@ div#title {
 }
 
 div#contact {
-	background-image    : url(../images/jd.png);
+	background-image    : url(../medias/images/jd.png);
 	background-repeat   : no-repeat;
 
 	margin-left      : 26px;
