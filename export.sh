@@ -37,7 +37,7 @@ for VIDEO_PATH in $JDHP_LOCAL_PATH/www/medias/videos/*.ogv
 do
     VIDEO_FILE=$(basename $VIDEO_PATH  | sed -r "s/(.+)\.ogv/\1/g")
     ffmpeg -y -i $VIDEO_PATH -f mjpeg -ss 1 -vframes 1 -s 80x80 -an $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.jpeg
-    convert $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.jpeg $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.png
+    composite -gravity center $JDHP_LOCAL_PATH/www/medias/images/video.png $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.jpeg $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.png
 done
 
 # Compile les fichiers tex
