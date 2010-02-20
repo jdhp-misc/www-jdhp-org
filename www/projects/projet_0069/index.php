@@ -15,7 +15,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-	define('WEB_ROOT','http://www.jdhp.org/travaux/projet_0069/');
+	define('WEB_ROOT','http://www.jdhp.org/projects/projet_0069/');
 	define('FS_ROOT','./');
 	require(FS_ROOT.'language/fr.php');
 	
