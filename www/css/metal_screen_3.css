@@ -250,15 +250,27 @@ div#contact > p#resume {
 	text-align       : justify;
 }
 
-/*** link ***/
+/*** hevea ***/
 
-.link {
+.hevea {
 	margin-bottom    : 0.5em;
 	margin-left      : 26px;
 	margin-right     : 26px;
 }
 
-.link a {
+.hevea a {
+	font-size        : 11px;
+}
+
+/*** website ***/
+
+.website {
+	margin-bottom    : 0.5em;
+	margin-left      : 26px;
+	margin-right     : 26px;
+}
+
+.website a {
 	font-size        : 11px;
 }
 
