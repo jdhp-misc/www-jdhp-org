@@ -33,7 +33,7 @@ mogrify -format png -path $JDHP_LOCAL_PATH/www/medias/thumbnails/screenshots/ -t
 
 echo "Génère les thumbnails (videos)"
 mkdir -p $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/
-for VIDEO_PATH in $JDHP_LOCAL_PATH/www/medias/videos/*.ogv
+for VIDEO_PATH in $JDHP_LOCAL_PATH/files/medias/videos/*.ogv
 do
     VIDEO_FILE=$(basename $VIDEO_PATH  | sed -r "s/(.+)\.ogv/\1/g")
     ffmpeg -y -i $VIDEO_PATH -f mjpeg -ss 1 -vframes 1 -s 80x80 -an $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.jpeg

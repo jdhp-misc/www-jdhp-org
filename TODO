@@ -1,7 +1,21 @@
-Changer le build system :
-- remplacer les scripts "tools" par un wscript Waf (supprimer aussi le makefile qui sert à rien)
-- ne pas mettre les sources/binaires des projet, articles, ... dans www mais écrire des task waf pour récupérer ces données depuis le référentiel de chaque projet.
-- sitmaps : http://en.wikipedia.org/wiki/Sitemaps -> générer automatiquement le fichier sitemap via le script "crawler.sh" (liste les liens html + les dates de dernières modifications)
+- Écrire le contenu des pages au format XML :
+    - créer un schema (xml schema) -> un schema pour la page principale, un 
+      schema pour la page projet, un schema pour la page articles, etc.
+    - créer un fichier xslt pour traduire le schema en xhtml
+    But :
+    - simplifier la traduction en anglais (plusieurs langues dans un seul
+      fichier)
+    - mieux séparer le contenu de la forme
+    - meilleur gestion des tâches automatisées (création de pages pour les
+      vidéos, etc.)
+- Améliorer l'efficacité de la compilation : Makefile (ou Waf) pour ne pas
+  recompiler ce qui n'a pas besoin de l'être
+- Améliorer le graphisme (un peu de couleurs...)
+
+Divers :
+- sitmaps : http://en.wikipedia.org/wiki/Sitemaps -> générer automatiquement
+  le fichier sitemap via le script "crawler.sh"
+  (liste les liens html + les dates de dernières modifications)
 - meta : description
 - remplacer "gitweb" par "browse source code"
-- créer une branche expérimentale permanente "english_translation"
+
