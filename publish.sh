@@ -65,7 +65,7 @@ echo -n "Les fichiers sont sur le point d'être chargés sur le serveur web dist
 read upload
 if [ "$upload" = "oui" ]
 then
-	rsync -a -v -e ssh $JDHP_LOCAL_PATH/www/ gremy@ssh.tuxfamily.org:/home/jdhp/jdhp.org-web/htdocs/
+	rsync -a -v -e ssh --delete $JDHP_LOCAL_PATH/www/ gremy@ssh.tuxfamily.org:/home/jdhp/jdhp.org-web/htdocs/
 fi
 
 # Rétabli les permissions pour la suppression des fichiers
