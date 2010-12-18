@@ -4,6 +4,7 @@
 # Publie sur le web la dernière version enregistrée sur le référentiel SVN #
 ############################################################################
 
+JDHP_SRC_PATH=.
 JDHP_LOCAL_PATH=/tmp/jdhp.org
 BASE_DEFAULT="<base href\=\"http:\/\/127\.0\.0\.1\/jdhp\.org\/\" \/>"
 BASE_ONLINE="<base href\=\"http:\/\/www\.jdhp\.org\/\" \/>"
@@ -16,6 +17,7 @@ rm -rf $JDHP_LOCAL_PATH
 # Exporte le site depuis Git
 echo "Exporte le site depuis Git"
 git clone . $JDHP_LOCAL_PATH
+cp -r $JDHP_SRC_PATH/files $JDHP_LOCAL_PATH
 
 # Crée le fichier index (suivant la langue par défaut)
 cp $JDHP_LOCAL_PATH/www/index_$DEFAULT_LANG.html $JDHP_LOCAL_PATH/www/index.html
