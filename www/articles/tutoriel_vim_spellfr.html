@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+            "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>tutoriel_vim_spellfr</TITLE>
+
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META name="GENERATOR" content="hevea 1.10">
+<STYLE type="text/css">
+.li-itemize{margin:1ex 0ex;}
+.li-enumerate{margin:1ex 0ex;}
+.dd-description{margin:0ex 0ex 1ex 4ex;}
+.dt-description{margin:0ex;}
+.toc{list-style:none;}
+.thefootnotes{text-align:left;margin:0ex;}
+.dt-thefootnotes{margin:0em;}
+.dd-thefootnotes{margin:0em 0em 0em 2em;}
+.footnoterule{margin:1em auto 1em 0px;width:50%;}
+.caption{padding-left:2ex; padding-right:2ex; margin-left:auto; margin-right:auto}
+.title{margin:2ex auto;text-align:center}
+.center{text-align:center;margin-left:auto;margin-right:auto;}
+.flushleft{text-align:left;margin-left:0ex;margin-right:auto;}
+.flushright{text-align:right;margin-left:auto;margin-right:0ex;}
+DIV TABLE{margin-left:inherit;margin-right:inherit;}
+PRE{text-align:left;margin-left:0ex;margin-right:auto;}
+BLOCKQUOTE{margin-left:4ex;margin-right:4ex;text-align:left;}
+TD P{margin:0px;}
+.boxed{border:1px solid black}
+.textboxed{border:1px solid black}
+.vbar{border:none;width:2px;background-color:black;}
+.hbar{border:none;height:2px;width:100%;background-color:black;}
+.hfill{border:none;height:1px;width:200%;background-color:black;}
+.vdisplay{border-collapse:separate;border-spacing:2px;width:auto; empty-cells:show; border:2px solid red;}
+.vdcell{white-space:nowrap;padding:0px;width:auto; border:2px solid green;}
+.display{border-collapse:separate;border-spacing:2px;width:auto; border:none;}
+.dcell{white-space:nowrap;padding:0px;width:auto; border:none;}
+.dcenter{margin:0ex auto;}
+.vdcenter{border:solid #FF8000 2px; margin:0ex auto;}
+.minipage{text-align:left; margin-left:0em; margin-right:auto;}
+.marginpar{border:solid thin black; width:20%; text-align:left;}
+.marginparleft{float:left; margin-left:0ex; margin-right:1ex;}
+.marginparright{float:right; margin-left:1ex; margin-right:0ex;}
+.theorem{text-align:left;margin:1ex auto 1ex 0ex;}
+.part{margin:2ex auto;text-align:center}
+</STYLE>
+</HEAD>
+<BODY >
+<!--HEVEA command line is: /usr/bin/hevea tutoriel_vim_spellfr.tex -->
+<!--CUT DEF section 1 --><TABLE CLASS="title"><TR><TD><H1 CLASS="titlemain">Introduction à la correction orthographique avec Vim</H1><H3 CLASS="titlerest">Jérémie Decock</H3><H3 CLASS="titlerest">10 février 2008</H3></TD></TR>
+</TABLE><!--TOC section Préambule-->
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc1">1</A>  Préambule</H2><!--SEC END --><P>
+Ce document explique comment installer et utiliser la correction orthographique pour la langue française dans l’éditeur Vim. Il a été écrit pour fonctionner sur n’importe quel système GNU/Linux et devrait fonctionner à l’identique sur les systèmes BSD (non testé).</P><P>À partir de maintenant, nous supposons que Vim est correctement installé et configuré.<BR>
+
+La documentation de référence peut être consultée depuis Vim en tapant «:help» ou sur le web à l’adresse suivante : <A HREF="http://vimdoc.sourceforge.net/htmldoc/spell.html"><TT>http://vimdoc.sourceforge.net/htmldoc/spell.html</TT></A>.</P><!--TOC section Installer les fichiers dictionnaires-->
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc2">2</A>  Installer les fichiers dictionnaires</H2><!--SEC END --><P>
+Pour installer le dictionnaire français sur un système GNU/Linux récent, il faut copier les fichiers suivants dans le répertoire ~/.vim/spell/ :
+</P><UL CLASS="itemize"><LI CLASS="li-itemize">
+	<A HREF="http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl"><TT>http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl</TT></A>
+	</LI><LI CLASS="li-itemize"><A HREF="http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug"><TT>http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug</TT></A>
+</LI></UL><P>
+ <BR>
+Sur les anciens systèmes GNU/Linux, il est possible que le codage par défaut ne soit pas l’UTF-8 mais l’ISO 8859-1 ou l’ISO 8859-15. Dans ce cas, il faut télécharger les fichiers correspondant sur la page <A HREF="http://ftp.vim.org/vim/runtime/spell/"><TT>http://ftp.vim.org/vim/runtime/spell/</TT></A>.</P><!--TOC section Activer la correction orthographique-->
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc3">3</A>  Activer la correction orthographique</H2><!--SEC END --><P>
+Maintenant que les dictionnaires sont installés, on peut les utiliser dans Vim en tapant la commande suivante :</P><PRE CLASS="verbatim">:setlocal spell spelllang=fr
+</PRE><P>Les fautes d’orthographe apparaissent alors en rouge. Pour éviter de devoir retaper cette commande à chaque lancement de Vim, il vaut mieux l’inscrire dans le fichier ~/.vimrc.</P><!--TOC section Utiliser le correcteur orthographique-->
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc4">4</A>  Utiliser le correcteur orthographique</H2><!--SEC END --><P>
+Voici les principales commandes à connaître :
+</P><UL CLASS="itemize"><LI CLASS="li-itemize">
+	Pour corriger un mot, il faut placer le curseur dessus et taper «z=». Une liste de propositions apparaît alors.
+	</LI><LI CLASS="li-itemize">Pour corriger toutes les occurrences de ce mot dans le document édité, on utilise la commande «:spellr».
+	</LI><LI CLASS="li-itemize">Pour atteindre la prochaine faute, on tape «]s». Pour effectuer la même recherche vers le haut, on utilise «[s ».
+	</LI><LI CLASS="li-itemize">Pour désactiver et réactiver la correction orthographique, il faut utiliser les commandes «:set spell» et «:set nospell».
+</LI></UL><!--TOC section Personnaliser le dictionnaire-->
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc5">5</A>  Personnaliser le dictionnaire</H2><!--SEC END --><P>
+Un dictionnaire personnalisé permet d’enrichir le correcteur en lui indiquant les mots qu’il ne doit pas considérer comme des fautes (les noms et les prénoms par exemple).</P><P>On peut ajouter un mot en plaçant le curseur dessus et en tapant «zg». Pour annuler cette opération, on utilise «zug».</P><!--TOC section Pour conclure-->
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc6">6</A>  Pour conclure</H2><!--SEC END --><P>
+La correction orthographique est très efficace dans Vim. Elle a entre autre l’avantage de tenir compte des spécificités du type de fichier édité<SUP><A NAME="text1" HREF="#note1">1</A></SUP>. Par exemple, quand on active la correction orthographique sur un fichier .c ou .java, Vim ne va corriger que les déclarations de chaînes de caractères entre guillemets et les commentaires. De même, lorsque l’on travaille avec un fichier .tex, il ne va pas tenir compte du balisage et des formules.</P><P>Malheureusement et comme souvent avec les éditeurs libres la grammaire n’est pas prise en compte.</P><P> <BR>
+
+</P><DIV CLASS="center">
+<A HREF="http://creativecommons.org/licenses/by-sa/2.0/fr/"><IMG SRC="tutoriel_vim_spellfr001.png"></A><BR>
+	Creative Commons BY-SA
+</DIV><!--BEGIN NOTES document-->
+<HR CLASS="footnoterule"><DL CLASS="thefootnotes"><DT CLASS="dt-thefootnotes">
+<A NAME="note1" HREF="#text1">1</A></DT><DD CLASS="dd-thefootnotes">Sous condition d’avoir activé la reconnaissance syntaxique avec la commande «:syntax on»
+</DD></DL>
+<!--END NOTES-->
+<!--CUT END -->
+<!--HTMLFOOT-->
+<!--ENDHTML-->
+<!--FOOTER-->
+<HR SIZE=2><BLOCKQUOTE CLASS="quote"><EM>Ce document a été traduit de L<sup>A</sup>T<sub>E</sub>X par </EM><A HREF="http://hevea.inria.fr"><EM>H</EM><EM><FONT SIZE=2><sup>E</sup></FONT></EM><EM>V</EM><EM><FONT SIZE=2><sup>E</sup></FONT></EM><EM>A</EM></A></BLOCKQUOTE></BODY>
+</HTML>

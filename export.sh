@@ -40,17 +40,4 @@ do
     composite -gravity center $JDHP_LOCAL_PATH/www/medias/images/video.png $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.jpeg $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.png
 done
 
-# Compile les fichiers Tex et les programmes
-echo "Compile les fichiers Tex et les programmes"
-find $JDHP_LOCAL_PATH/www/articles  -name "Makefile" -execdir make \;
-find $JDHP_LOCAL_PATH/www/tutorials -name "Makefile" -execdir make \;
-
-# Supprime les fichiers intermédiaires utilisés lors de la compilation des fichiers Tex et des programmes
-echo "Supprime les fichiers intermédiaires utilisés lors de la compilation des fichiers Tex et des programmes"
-find $JDHP_LOCAL_PATH/www/articles  -name "Makefile" -execdir make clean \;
-find $JDHP_LOCAL_PATH/www/tutorials -name "Makefile" -execdir make clean \;
-
-find $JDHP_LOCAL_PATH/www/articles  -name "Makefile" -execdir rm {} \;
-find $JDHP_LOCAL_PATH/www/tutorials -name "Makefile" -execdir rm {} \;
-
 firefox $JDHP_LOCAL_PATH/www/index.html &
