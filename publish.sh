@@ -29,7 +29,7 @@ find $JDHP_LOCAL_PATH/www/ -type f -name "*.html" -exec sed -i "s/$BASE_DEFAULT/
 # Génère les thumbnails (imagemagick et ffmpeg)
 echo "Génère les thumbnails (screenshot)"
 mkdir -p $JDHP_LOCAL_PATH/www/medias/thumbnails/screenshots/
-mogrify -format png -path $JDHP_LOCAL_PATH/www/medias/thumbnails/screenshots/ -thumbnail 80x80 $JDHP_LOCAL_PATH/www/medias/screenshots/*.png
+mogrify -format png -path $JDHP_LOCAL_PATH/www/medias/thumbnails/screenshots/ -thumbnail 80x80 $JDHP_LOCAL_PATH/files/medias/images/screenshots/*.png
 
 echo "Génère les thumbnails (videos)"
 mkdir -p $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/
@@ -44,17 +44,14 @@ done
 echo "Compile les fichiers Tex et les programmes"
 find $JDHP_LOCAL_PATH/www/articles  -name "Makefile" -execdir make \;
 find $JDHP_LOCAL_PATH/www/tutorials -name "Makefile" -execdir make \;
-find $JDHP_LOCAL_PATH/www/projects  -name "Makefile" -execdir make \;
 
 # Supprime les fichiers intermédiaires utilisés lors de la compilation des fichiers Tex et des programmes
 echo "Supprime les fichiers intermédiaires utilisés lors de la compilation des fichiers Tex et des programmes"
 find $JDHP_LOCAL_PATH/www/articles  -name "Makefile" -execdir make clean \;
 find $JDHP_LOCAL_PATH/www/tutorials -name "Makefile" -execdir make clean \;
-find $JDHP_LOCAL_PATH/www/projects  -name "Makefile" -execdir make clean \;
 
 find $JDHP_LOCAL_PATH/www/articles  -name "Makefile" -execdir rm {} \;
 find $JDHP_LOCAL_PATH/www/tutorials -name "Makefile" -execdir rm {} \;
-find $JDHP_LOCAL_PATH/www/projects  -name "Makefile" -execdir rm {} \;
 
 # Corrige les permissions si besoin
 echo "Corrige les permissions"
