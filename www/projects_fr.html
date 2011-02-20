@@ -40,6 +40,32 @@
                 <li><a href="./projects_fr.html#misc">Divers</a></li>
             </ul>
 
+            <div id="debian-instructions">
+                <!--<p>
+                    Les URL Git (<em>git://...</em>) peuvent être utilisées pour obtenir les sources de chaque programme :
+                    <strong>$ git clone git://...</strong>
+                </p>-->
+                <p>
+                    Si vous utilisez un système <em>Gnu/Linux Debian</em> (ou un dérivé tel qu'<em>Ubuntu</em>), 
+                    la procédure suivante permet de simplifier l'installation des logiciels répertoriés sur cette page.<br />
+                </p>
+                <ul>
+                    <li>
+                        Ajoutez la ligne suivante au fichier <em>/etc/apt/sources.list</em> :
+                        <strong>deb <a href="http://download.tuxfamily.org/jdhp/debian">http://download.tuxfamily.org/jdhp/debian</a> ./</strong>
+                    <li>
+                        Mettez à jour la liste des paquets :
+                        <strong># apt-get update</strong>
+                    <li>
+                        Les paquets sont prêts à être installés :
+                        <strong># apt-get install NOM_DU_PAQUET</strong>
+                </ul>
+                <p>
+                    Un manuel est fourni avec chaque paquet. Une fois le paquet installé, sa <em>manpage</em> peut être consultée :
+                    <strong>$ man NOM_DU_PAQUET</strong>
+                </p>
+            </div>
+
             <h2 id="aiam">Intelligence Artificielle et Mathématiques Appliquées</h2>
                 <!--
                 <h3 id="pypr">Python Pattern Recognition Library</h3>
@@ -139,13 +165,13 @@
                         <a href="http://code.google.com/p/pyarm/">Google Code</a>
                     </p>
                     <div class="files">
-                        <p class="documentation">
+                        <!--<p class="documentation">
                             <strong>Documentation</strong> : <a href="http://download.tuxfamily.org/jdhp/doc/pyarm.1.pdf">Manpage (pdf)</a>
-                        </p>
+                        </p>-->
                         <p class="download">
-                            <strong>Télécharger</strong> : 
-                                                           <a href="http://download.tuxfamily.org/jdhp/dists/pyarm_0.1.3-1_all.deb">paquet Debian (all)</a> &#149;
-                                                           <a href="http://code.google.com/p/pyarm/downloads/list">Google Code</a>
+                            <strong>Télécharger</strong> : <a href="http://code.google.com/p/pyarm/downloads/list">Sources</a> &#149;
+                                                           <a href="http://download.tuxfamily.org/jdhp/dists/pyarm_0.1.3-1_all.deb">Paquet Debian (all)</a> &#149;
+                                                           <a href="http://code.google.com/p/pyarm/downloads/list">Paquet RPM (all)</a>
                         </p>
                         <p class="repositories">
                             <strong>Sources</strong> : <a href="http://code.google.com/p/pyarm/source/checkout">SVN</a>
@@ -245,7 +271,7 @@
                     <div class="files">
                         <p class="download">
                             <strong>Télécharger</strong> : <a href="http://download.tuxfamily.org/jdhp/dists/clonefinder-1.0.tar.gz">Sources</a> &#149;
-                                                           <a href="http://download.tuxfamily.org/jdhp/dists/clonefinder_1.0-1_all.deb">paquet Debian (all)</a>
+                                                           <a href="http://download.tuxfamily.org/jdhp/dists/clonefinder_1.0-1_all.deb">Paquet Debian (all)</a>
                         </p>
                         <p class="repositories">
                             <strong>Sources</strong> : <a href="git://git.tuxfamily.org/gitroot/systools/clonefinder.git">Git</a>
@@ -260,7 +286,7 @@
                     <div class="files">
                         <p class="download">
                             <strong>Télécharger</strong> : <a href="http://download.tuxfamily.org/jdhp/dists/binviewer-0.2.tar.gz">Sources</a> &#149;
-                                                           <a href="http://download.tuxfamily.org/jdhp/dists/binviewer_0.2-1_all.deb">paquet Debian (all)</a>
+                                                           <a href="http://download.tuxfamily.org/jdhp/dists/binviewer_0.2-1_all.deb">Paquet Debian (all)</a>
                         </p>
                         <p class="repositories">
                             <strong>Sources</strong> : <a href="git://git.tuxfamily.org/gitroot/systools/binviewer.git">Git</a>
@@ -280,7 +306,7 @@
                     <div class="files">
                         <p class="download">
                             <strong>Télécharger</strong> : <a href="http://download.tuxfamily.org/jdhp/dists/latex2png-1.0.tar.gz">Sources</a> &#149;
-                                                           <a href="http://download.tuxfamily.org/jdhp/dists/latex2png_1.0-1_all.deb">paquet Debian (all)</a>
+                                                           <a href="http://download.tuxfamily.org/jdhp/dists/latex2png_1.0-1_all.deb">Paquet Debian (all)</a>
                         </p>
                         <p class="repositories">
                             <strong>Sources</strong> : <a href="git://git.tuxfamily.org/gitroot/jdhp/scripts.git">Git</a>
