@@ -1,0 +1,470 @@
+/* jdhp.org - Jérémie DECOCK (2006)                                       */
+
+/* TODO :                                                                 *
+ *  - Mettre le "text-align : left;" dans le selecteur universel et le    *
+ *    retirer des autres ?                                                */
+
+/* Sélécteur universel :                                                  *
+ * Initialise tous les margin et les padding à 0 pour uniformiser la      *
+ * mise en page sur les différents navigateurs (ils n'utilisent pas les   *
+ * mêmes valeures initiales).                                             *
+ * Fixe également d'autres paramètres par défaut (comme la police).       */
+* {
+	border-width     : 0px;
+
+	color            : #666666;
+	font-family      : verdana, sans-serif;
+	font-size        : 13px;
+	font-weight      : normal;
+
+	margin           : 0px;
+	padding          : 0px;
+}
+
+body {
+	background-color : #f4f4f4;
+	text-align       : center; /* cf ... */
+}
+
+li {
+	list-style-position : inside;
+}
+
+/* ************************************************************************* */
+/*                                 Header                                    */
+/* ************************************************************************* */
+
+h1 {
+	background-color : white;
+
+	border-top       : 1px solid #dddddd;
+	border-bottom    : 0px solid #dddddd;
+	border-left      : 1px solid #dddddd;
+	border-right     : 1px solid #dddddd;
+
+	font-weight      : bold;
+	font-size        : 32px;
+
+	margin-top       : 20px;
+	margin-left      : auto; /* cf ... */
+	margin-right     : auto; /* cf ... */
+
+	/*
+	padding-top      : 25px;
+	padding-bottom   : 25px;
+	*/
+
+	height           : 90px; /* !!! */
+
+	/* text-align       : left; /* cf ... */
+	text-align       : center;
+	width            : 799px; /* cf ... */
+}
+
+/* ************************************************************************* */
+/*                                  Menu                                     */
+/* ************************************************************************* */
+
+ul#menu {
+	background-color : white;
+	border-right     : 1px solid #dddddd; /* !!! */
+	height           : 22px; /* !!! */
+	list-style-type  : none;
+
+	margin-left      : auto; /* cf ... */
+	margin-right     : auto; /* cf ... */
+
+	text-align       : left; /* cf ... */
+	width            : 800px; /* cf ... */
+}
+
+ul#menu li {
+	float            : left;
+	text-align       : center;
+	width            : 200px;
+}
+
+ul#menu li.normal a {
+	background-color : #eeeeee;
+
+	border-top       : 1px solid #dddddd;
+	border-bottom    : 1px solid #dddddd;
+	border-left      : 1px solid #dddddd;
+
+	display          : block;
+	font-weight      : bold;
+	line-height      : 22px; /* pour centrer le texte verticalement */
+	text-decoration  : none;
+}
+
+ul#menu li.normal a:hover {
+	background-color : #dddddd;
+}
+
+ul#menu li.selected a {
+	background-color : white;
+
+	border-top       : 1px solid #dddddd;
+	border-bottom    : 1px solid white;
+	border-left      : 1px solid #dddddd;
+
+	display          : block;
+	font-weight      : bold;
+	line-height      : 22px; /* pour centrer le texte verticalement */
+	text-decoration  : none;
+}
+
+/* ************************************************************************* */
+/*                                 Content                                   */
+/* ************************************************************************* */
+
+div#content_bloc {
+	background-color : white;
+
+	border-left      : 1px solid #dddddd;
+	border-right     : 1px solid #dddddd;
+
+	padding-top      : 2em; /* il y a un bug d'affichage si on l'enleve */
+	padding-bottom   : 2.5em;
+
+	margin-left      : auto; /* cf ... */
+	margin-right     : auto; /* cf ... */
+	width            : 799px; /* cf ... */
+	text-align       : left; /* cf ... */
+}
+
+p#breadcrumb {
+	font-size        : 10px;
+
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	text-align       : left;
+}
+
+p#breadcrumb a {
+	font-size        : 10px;
+}
+
+/*** intro ***/
+
+.intro {
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	text-align       : justify;
+}
+
+p#breadcrumb + .intro {
+	margin-top      : 2em;
+}
+
+h2 + .intro {
+	margin-top      : 1.25em;
+}
+
+h3 + .intro {
+	margin-top      : 0.5em;
+}
+
+.content + .intro { /* sans intérêt ? */
+	margin-top      : 0.5em;
+}
+
+.intro + .intro {
+	margin-top      : 0.5em;
+}
+
+/*** content ***/
+
+.content {
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	text-align       : justify;
+}
+
+p#breadcrumb + .content {
+	margin-top      : 2em;
+}
+
+.intro + .content {
+	margin-top      : 1.5em;
+}
+
+h2 + .content {
+	margin-top      : 1.25em;
+}
+
+h3 + .content {
+	margin-top      : 0.5em;
+}
+
+.content + .content {
+	margin-top      : 0.5em;
+}
+
+div.slideshow + .content {
+	margin-top      : 0.5em;
+}
+
+/*** slideshow ***/
+
+div.slideshow {
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	width            : 745px;
+	height           : 117px;
+
+	text-align       : left;
+}
+
+div.slideshow a {
+	background-image : url(../medias/images/slideshow_background.png);
+
+	display          : block;
+	float            : left;
+
+	height           : 117px;
+	width            : 149px;
+}
+
+div.slideshow a img {
+	margin-left      : 10px;
+	margin-top       : 10px;
+
+	height           : 96px;
+	width            : 128px;
+}
+
+h3 + div.slideshow {
+	margin-top      : 1em;
+}
+
+.content + div.slideshow {
+	margin-top      : 1em;
+}
+
+div.slideshow + div.slideshow {
+	margin-top      : 1em;
+}
+
+/*** image ***/
+
+div.image {
+	background-image : url(../medias/images/slideshow_background.png);
+
+	margin-top       : 26px;
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	width            : 745px;
+	/*height           : 117px;*/
+
+	text-align       : left;
+}
+
+div.image img {
+	width            : 745px;
+}
+
+/*** image_legal ***/
+
+p.image_legal {
+	margin-top       : 26px;
+	margin-bottom    : 26px;
+
+	font-size        : 10px;
+
+	text-align       : center;
+}
+
+/*** image_download ***/
+
+div.download {
+	background-color : #f7f7f7;
+	border           : 1px dotted #dddddd;
+
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	padding          : 0.5em;
+
+	text-align       : justify;
+
+	width            : 20em;
+}
+
+/*** warning ***/
+
+div.warning {
+	background-color    : #fffca2;
+	background-image    : url(../medias/images/icons/warning.png);
+	background-repeat   : no-repeat;
+	background-position : 1.25em 1em;
+	border              : 1px dotted #e9c654;
+
+	margin-left      : 52px;
+	margin-right     : 52px;
+	margin-top       : 20px;
+	margin-bottom    : 30px;
+
+	padding-top      : 0.75em;
+	padding-bottom   : 0.75em;
+	padding-left     : 4em;
+	padding-right    : 2em;
+
+	text-align       : justify;
+}
+
+/*** h2 ***/
+
+h2 {
+	background-color : #f7f7f7;
+
+	border-top       : 1px solid #dddddd;
+	border-bottom    : 1px solid #dddddd;
+
+	font-weight      : bold;
+
+	padding-top      : 2px;
+	padding-bottom   : 2px;
+	padding-left     : 13px;
+	padding-right    : 13px;
+
+	text-align       : left;
+}
+
+p#breadcrumb + h2 {
+	margin-top      : 2em;
+}
+
+.intro + h2 {
+	margin-top      : 2.5em;
+}
+
+.content + h2 {
+	margin-top      : 2.5em;
+}
+
+div.slideshow + h2 {
+	margin-top      : 2.5em;
+}
+
+/*** image_titre ***/
+
+h2.image_titre {
+	background-color : white;
+
+	border           : 0px solid #dddddd;
+
+	font-size        : 16px;
+	font-weight      : bold;
+
+	margin-top       : 26px;
+	margin-bottom    : 26px;
+
+	padding          : 0px;
+
+	text-align       : center;
+}
+
+/*** h3 ***/
+
+h3 {
+	font-weight      : bold;
+
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	text-align       : left;
+}
+
+p#breadcrumb + h3 {
+	margin-top      : 2em;
+}
+
+.intro + h3 {
+	margin-top      : 1.5em;
+}
+
+h2 + h3 {
+	margin-top      : 1.25em;
+}
+
+.content + h3 {
+	margin-top      : 1.75em;
+}
+
+div.slideshow + h3 {
+	margin-top      : 1.75em;
+}
+
+/* ************************************************************************* */
+/*                                Main page                                  */
+/* ************************************************************************* */
+
+div#title {
+	font-weight     : bold;
+
+	margin-left     : 26px;
+	margin-right    : 26px;
+	margin-top      : 2em;
+	margin-bottom   : 2em;
+}
+
+div#contact {
+	background-image    : url(../medias/images/jd.png);
+	background-repeat   : no-repeat;
+
+	margin-left      : 26px;
+	margin-right     : 26px;
+	margin-top       : 2em;
+	margin-bottom    : 2em;
+
+	min-height       : 140px;
+
+	padding-left     : 120px;
+
+	text-align       : justify;
+}
+
+div#contact > p#school {
+	margin-top       : 1.75em;
+}
+
+div#contact > p#resume {
+	margin-top       : 1.75em;
+}
+
+/* ************************************************************************* */
+/*                                 Footer                                    */
+/* ************************************************************************* */
+
+div#footer {
+	background-color : #eeeeee;
+
+	border-top       : 1px solid #dddddd;
+	border-bottom    : 1px solid #dddddd;
+	border-left      : 1px solid #dddddd;
+	border-right     : 1px solid #dddddd;
+
+	height           : 19px;
+
+	margin-bottom    : 1em;
+	margin-left      : auto; /* cf ... */
+	margin-right     : auto; /* cf ... */
+
+	/* text-align       : left; /* cf ... */
+	text-align       : center;
+
+	width            : 799px; /* cf ... */
+}
+
+div#footer a img {
+	margin-top       : 2px;
+	margin-bottom    : 2px;
+	margin-left      : 2px;
+	margin-right     : 0px;
+}

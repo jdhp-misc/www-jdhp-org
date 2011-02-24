@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Semantic JDHP
+    Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
+-->
+<page>
+    <desc lang="fr">
+        <div id="title">
+            Jérémie DECOCK Home Page
+        </div>
+        <div id="contact">
+            <p id="name">Jérémie DECOCK</p>
+            <p id="email">Email : gremy -CHEZ- tuxfamily -POINT- org</p>
+
+            <p id="school">Étudiant en informatique à l'<a href="http://www.upmc.fr">Université Pierre et Marie Curie</a></p>
+            <p id="master">Master <a href="http://www-master.ufr-info-p6.jussieu.fr/specialite/iad/">Intelligence Artificielle et Décision</a></p>
+        </div>
+
+        <h3>Bref CV</h3>
+            <ul class="content">
+                <li>2009 : <em>Maîtrise <a href="http://www-master.ufr-info-p6.jussieu.fr/specialite/iad/">Intelligence Artificielle et Décision</a></em> à l'<a href="http://www.upmc.fr">Université Pierre et Marie Curie</a></li>
+                <li>2008 : <em>Master <a href="http://miage.math-info.univ-paris5.fr/">MIAGE</a></em> à l'<a href="http://www.univ-paris5.fr/">Université Paris Descartes</a></li>
+                <li>2006 : <em>Licence <a href="http://miage.math-info.univ-paris5.fr/">MIAGE</a></em> à l'<a href="http://www.univ-paris5.fr/">Université Paris Descartes</a></li>
+            </ul>
+
+        <h3>À propos...</h3>
+            <p class="content">
+                Ce site sert à regrouper et à partager une partie de mes travaux (articles et programmes).
+            </p>
+
+        <h3>Liens</h3>
+            <p class="content">
+                <a href="http://www.fsf.org"><img src="./medias/images/fsf_member.png" title="FSF member #6116" alt="FSF member #6116" /></a>
+                <a href="http://www.april.org"><img src="http://www.april.org/association/documents/bannieres/boutons/april_soutien3_88x31.png" title="APRIL member" alt="APRIL member - Promouvoir et soutenir le logiciel libre"/></a>
+            </p>
+    </desc>
+
+    <desc lang="en">
+        <div id="title">
+            Jérémie DECOCK Home Page
+        </div>
+        <div id="contact">
+            <p id="name">Jérémie DECOCK</p>
+            <p id="email">Email : gremy -AT- tuxfamily -DOT- org</p>
+
+            <p id="school">Computer science student at <a href="http://www.upmc.fr">UPMC</a></p>
+            <p id="master">Master <a href="http://www-master.ufr-info-p6.jussieu.fr/specialite/iad/">IAD</a> (artificial intelligence and decision)</p>
+        </div>
+
+        <h3>Resume</h3>
+            <ul class="content">
+                <li>2008 : <em>Master in <a href="http://miage.math-info.univ-paris5.fr/">Business Informatics</a> (Information Technology and Management)</em> at <a href="http://www.univ-paris5.fr/">Université Paris Descartes</a></li>
+                <li>2006 : <em>Bachelor's degree in <a href="http://miage.math-info.univ-paris5.fr/">Business Informatics</a> (Information Technology and Management)</em> at <a href="http://www.univ-paris5.fr/">Université Paris Descartes</a></li>
+            </ul>
+
+        <h3>About this website...</h3>
+            <p class="content">
+                I made this website to share my work (articles and programs).
+            </p>
+
+        <h3>Links</h3>
+            <p class="content">
+                <a href="http://www.fsf.org"><img src="./medias/images/fsf_member.png" title="FSF member #6116" alt="FSF member #6116" /></a>
+                <a href="http://www.april.org"><img src="http://www.april.org/association/documents/bannieres/boutons/april_soutien3_88x31.png" title="APRIL member" alt="APRIL member - Promouvoir et soutenir le logiciel libre"/></a>
+            </p>
+    </desc>
+
+</page>
