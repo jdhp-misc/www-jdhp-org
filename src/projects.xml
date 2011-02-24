@@ -4,6 +4,9 @@
     Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 -->
 <page>
+    <name lang="fr">Travaux</name>
+    <name lang="en">Projects</name>
+
     <desc lang="fr">
         Projets et travaux en informatique.
     </desc>

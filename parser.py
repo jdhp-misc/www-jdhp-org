@@ -13,6 +13,7 @@ import shutil
 SRC_DIR  = 'src'      # xml files location
 DEST_DIR = 'test'     # (x)html files location
 LANG_LIST = ('en', 'fr')
+DEFAULT_LANG = 'fr'
 
 INCLUDE_FILES = (os.path.join('misc', 'favicon.ico'),
                  os.path.join('misc', 'robots.txt'))
@@ -40,7 +41,7 @@ Options:
 Examples:
     parser -b "file:///tmp/jdhp.org/www/"
 
-    parser -b "$(pwd)/src/"
+    parser -b "$(pwd)/www/"
 
 Report bugs to <gremy@tuxfamily.org>.
 '''
@@ -81,10 +82,13 @@ def main():
             assert False, "unhandled option"
 
     # Parse XML files #########################################################
+    init()
     parse('home', base_href)
     parse('articles', base_href)
     parse('projects', base_href)
     parse('tutorials', base_href)
+    shutil.copy2(os.path.join(DEST_DIR, 'home_' + DEFAULT_LANG + '.html'),
+                 os.path.join(DEST_DIR, 'index.html'))
 
 
 def init():
@@ -92,22 +96,27 @@ def init():
 
     shutil.rmtree(DEST_DIR)
     os.mkdir(DEST_DIR)
+    print "init", DEST_DIR
 
     for src in INCLUDE_FILES:
+        print "copy", os.path.join(SRC_DIR, src), "to", DEST_DIR
         shutil.copy2(os.path.join(SRC_DIR, src), DEST_DIR)
 
     for src in INCLUDE_DIRS:
-        shutil.copytree(os.path.join(SRC_DIR, src), DEST_DIR)
+        print "copy", os.path.join(SRC_DIR, src),
+        print "to", os.path.join(DEST_DIR, src)
+        shutil.copytree(os.path.join(SRC_DIR, src), os.path.join(DEST_DIR, src))
 
 
-def parse(filename, base_href):
+def parse(page, base_href):
     """Parse an XML file."""
 
-    print "Parse ", filename
-    dom = minidom.parse(os.path.join(SRC_DIR, filename + '.xml'))
+    print "Parse", os.path.join(SRC_DIR, page + '.xml')
+    dom = minidom.parse(os.path.join(SRC_DIR, page + '.xml'))
 
     for lang in LANG_LIST:
-        fd = open(os.path.join(DEST_DIR, filename + '_' + lang + '.html'), 'w')
+        print "Write", os.path.join(DEST_DIR, page + '_' + lang + '.html')
+        fd = open(os.path.join(DEST_DIR, page + '_' + lang + '.html'), 'w')
 
         # HEADER
         substitute = {'page_title': 'TEST_TITLE',
@@ -118,13 +127,13 @@ def parse(filename, base_href):
         # MENU
         substitute = {
             'lang': lang,
-            'home_class': 'selected' if filename == 'home' else 'normal',
+            'home_class': 'selected' if page == 'home' else 'normal',
             'home_label': templates.home_label[lang],
-            'project_class': 'selected' if filename == 'projects' else 'normal',
+            'project_class': 'selected' if page == 'projects' else 'normal',
             'project_label': templates.projects_label[lang],
-            'article_class': 'selected' if filename == 'articles' else 'normal',
+            'article_class': 'selected' if page == 'articles' else 'normal',
             'article_label': templates.articles_label[lang],
-            'tutorial_class': 'selected' if filename == 'tutorials' else 'normal',
+            'tutorial_class': 'selected' if page == 'tutorials' else 'normal',
             'tutorial_label': templates.tutorials_label[lang]}
         menu = templates.MENU % substitute
 
@@ -137,11 +146,14 @@ def parse(filename, base_href):
         # BODY
         substitute = {'menu': menu,
                       'flag': templates.flag_html[lang],
+                      #'flag': templates.flag_html[lang] % page,
+                      #'flag': templates.flag_html[lang].format(page),
                       'footer': footer}
         body = templates.BODY % substitute
 
         # WRITE THE FULL DOCUMENT
-        substitute = {'header': header,
+        substitute = {'lang': lang,
+                      'header': header,
                       'body': body}
         fd.write(templates.HTML % substitute)
 

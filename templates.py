@@ -29,14 +29,14 @@ tutorials_label = {'en': 'Tutorials',
 
 flag_html = {'en' : '''
             <div id="flag">
-                <a href="./tutorials_fr.html"><img src="./medias/images/flag_fr.png" title="Version française" alt="Version française" /></a>
+                <a href="./home_fr.html"><img src="./medias/images/flag_fr.png" title="Version française" alt="Version française" /></a>
                 <img src="./medias/images/flag_grey_en.png" title="English version" alt="English version" />
             </div>''',
 
              'fr' : '''
             <div id="flag">
                 <img src="./medias/images/flag_grey_fr.png" title="Version française" alt="Version française" />
-                <a href="./tutorials_en.html"><img src="./medias/images/flag_en.png" title="English version" alt="English version" /></a>
+                <a href="./home_en.html"><img src="./medias/images/flag_en.png" title="English version" alt="English version" /></a>
             </div>'''}
 
 
@@ -44,7 +44,7 @@ flag_html = {'en' : '''
 
 HTML = '''
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="%(lang)s" lang="%(lang)s">
 %(header)s
 %(body)s
 </html>
@@ -82,7 +82,7 @@ BODY = '''
 
 MENU = '''
         <ul id="menu">
-            <li class="%(home_class)s">    <a href="./index_%(lang)s.html">%(home_label)s</a>        </li>
+            <li class="%(home_class)s">    <a href="./home_%(lang)s.html">%(home_label)s</a>        </li>
             <li class="%(project_class)s"> <a href="./projects_%(lang)s.html">%(project_label)s</a>  </li>
             <li class="%(article_class)s"> <a href="./articles_%(lang)s.html">%(article_label)s</a>  </li>
             <li class="%(tutorial_class)s"><a href="./tutorials_%(lang)s.html">%(tutorial_label)s</a></li>

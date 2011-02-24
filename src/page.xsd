@@ -77,58 +77,58 @@
 	<xs:element name="page">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="desc"  minOccurs="1" maxOccurs="unbounded" />
-				<xs:element ref="note"  minOccurs="0" maxOccurs="1" />
+				<xs:element ref="name"  minOccurs="2" maxOccurs="2" />       <!-- TODO : exactement 1 obligatoire pour chaque langue -->
+				<xs:element ref="keywords"  minOccurs="0" maxOccurs="2" />   <!-- TODO : maximum 1 pour chaque langue -->
+				<xs:element ref="desc"  minOccurs="0" maxOccurs="2" />       <!-- TODO : maximum 1 pour chaque langue -->
+				<xs:element ref="note"  minOccurs="0" maxOccurs="2" />       <!-- TODO : maximum 1 pour chaque langue -->
 				<xs:element ref="group" minOccurs="0" maxOccurs="unbounded" />
 			</xs:sequence>
 		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="desc"> <!-- TODO -->
-		<xs:complexType mixed="true">
-            <xs:sequence>
-                <!-- <xs:any namespace="http://www.w3.org/1999/xhtml" minOccurs="1" maxOccurs="unbounded" processContents="skip"/> -->
-                <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
-            </xs:sequence>
-			<xs:attribute name="lang" type="langType" use="required" />
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="note"> <!-- TODO -->
-		<xs:complexType mixed="true">
-            <xs:sequence>
-                <!-- <xs:any namespace="http://www.w3.org/1999/xhtml" minOccurs="1" maxOccurs="unbounded" processContents="skip"/> -->
-                <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
-            </xs:sequence>
-			<xs:attribute name="lang" type="langType" use="required" />
-		</xs:complexType>
+        <xs:key name="group-id-key">
+            <xs:selector xpath="group" />
+            <xs:field xpath="group/@id" />
+        </xs:key>
+        <xs:unique name="page-name-uniqueness">
+            <xs:selector xpath="name" />
+            <xs:field xpath="name/@lang" />
+        </xs:unique>
+        <xs:unique name="page-keywords-uniqueness">
+            <xs:selector xpath="keywords" />
+            <xs:field xpath="keywords/@lang" />
+        </xs:unique>
+        <xs:unique name="page-desc-uniqueness">
+            <xs:selector xpath="desc" />
+            <xs:field xpath="desc/@lang" />
+        </xs:unique>
+        <xs:unique name="page-note-uniqueness">
+            <xs:selector xpath="note" />
+            <xs:field xpath="note/@lang" />
+        </xs:unique>
 	</xs:element>
 
 	<xs:element name="group">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="label" minOccurs="1" maxOccurs="1" />
-				<xs:element ref="item"  minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="label" minOccurs="0" maxOccurs="2" />        <!-- TODO : maximum 1 pour chaque langue -->
+				<xs:element ref="item" minOccurs="0" maxOccurs="unbounded" />
 			</xs:sequence>
 			<xs:attribute name="id" type="xs:string" use="required" />
 		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="label">
-		<xs:complexType>
-            <xs:simpleContent>
-                <xs:extension base="xs:string">
-                    <xs:attribute name="lang" type="langType" use="required" />
-                </xs:extension>
-            </xs:simpleContent>
-		</xs:complexType>
+        <xs:key name="item-id-key">
+            <xs:selector xpath="item" />
+            <xs:field xpath="item/@id" />
+        </xs:key>
+        <xs:unique name="group-name-uniqueness">
+            <xs:selector xpath="name" />
+            <xs:field xpath="name/@lang" />
+        </xs:unique>
 	</xs:element>
 
 	<xs:element name="item">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="label" minOccurs="1" maxOccurs="1" />
-				<xs:element ref="desc"  minOccurs="1" maxOccurs="1" />
+				<xs:element ref="label" minOccurs="0" maxOccurs="2" />        <!-- TODO : maximum 1 pour chaque langue -->
+				<xs:element ref="desc" minOccurs="0" maxOccurs="2" />         <!-- TODO : maximum 1 pour chaque langue -->
 
 				<xs:element ref="debian_package" minOccurs="0" maxOccurs="unbounded" />
 				<xs:element ref="rpm_package"    minOccurs="0" maxOccurs="unbounded" />
@@ -147,6 +147,64 @@
 			</xs:sequence>
 			<xs:attribute name="id" type="xs:string" use="required" />
 			<xs:attribute name="license" type="licenseType" use="required" />
+		</xs:complexType>
+        <xs:unique name="item-name-uniqueness">
+            <xs:selector xpath="name" />
+            <xs:field xpath="name/@lang" />
+        </xs:unique>
+        <xs:unique name="item-desc-uniqueness">
+            <xs:selector xpath="desc" />
+            <xs:field xpath="desc/@lang" />
+        </xs:unique>
+	</xs:element>
+
+	<xs:element name="name"> <!-- TODO : exactement 1 obligatoire pour chaque langue -->
+		<xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="lang" type="langType" use="required" />
+                </xs:extension>
+            </xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="keywords"> <!-- TODO : maximum 1 pour chaque langue -->
+		<xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="lang" type="langType" use="required" />
+                </xs:extension>
+            </xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="desc"> <!-- TODO : maximum 1 pour chaque langue -->
+		<xs:complexType mixed="true">
+            <xs:sequence>
+                <!-- <xs:any namespace="http://www.w3.org/1999/xhtml" minOccurs="1" maxOccurs="unbounded" processContents="skip"/> -->
+                <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
+            </xs:sequence>
+			<xs:attribute name="lang" type="langType" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="note"> <!-- TODO : maximum 1 pour chaque langue -->
+		<xs:complexType mixed="true">
+            <xs:sequence>
+                <!-- <xs:any namespace="http://www.w3.org/1999/xhtml" minOccurs="1" maxOccurs="unbounded" processContents="skip"/> -->
+                <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
+            </xs:sequence>
+			<xs:attribute name="lang" type="langType" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="label">
+		<xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="lang" type="langType" use="required" />
+                </xs:extension>
+            </xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
 

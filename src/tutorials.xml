@@ -4,6 +4,9 @@
     Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 -->
 <page>
+    <name lang="fr">Tutoriels</name>
+    <name lang="en">Tutorials</name>
+
     <desc lang="fr">
         Tutoriels informatiques.
     </desc>
