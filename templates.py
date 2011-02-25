@@ -153,9 +153,23 @@ FILES_REPOSITORIES = '''
                         </p>
 ''' # TODO : lang
 
-DEBIAN_TAG = '''<a href="%(filename)s">Paquet Debian (%(arch)s)</a>''' # TODO : lang
+DEBIAN_TAG = '''
+                                <a href="%(filename)s">Paquet Debian (%(arch)s)</a>''' # TODO : lang
 
-RPM_TAG = '''<a href="%(filename)s">Paquet RPM (%(arch)s)</a>''' # TODO : lang
+RPM_TAG = '''
+                                <a href="%(filename)s">Paquet RPM (%(arch)s)</a>''' # TODO : lang
 
-TGZ_TAG = '''<a href="%(filename)s">%(label)s</a>''' # TODO : lang
+TGZ_TAG = '''
+                                <a href="%(filename)s">%(label)s</a>''' # TODO : lang
+
+PDF_TAG = '''
+                                <a href="%(filename)s">%(label)s</a>''' # TODO : lang
+
+GIT_TAG = '''
+                                <a href="%(url)s">Git</a>
+                                (<a href="%(weburl)s">Gitweb</a>)'''
+
+SVN_TAG = '''
+                                <a href="%(url)s">SVN</a>
+                                (<a href="%(weburl)s">WebSVN</a>)'''
 

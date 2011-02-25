@@ -212,14 +212,14 @@ def parse(page, base_href):
                     file_content = u''
                     download_list = []
                     for deb_elem in item.findall('debian_package'):
-                        substitute = {'filename': deb_elem.attrib['filename'],  # TODO : build the true url
+                        substitute = {'filename': deb_elem.attrib['filename'],          # TODO : build the true url
                                       'arch': deb_elem.attrib['arch']}
-                        download_list.append(templates.DEBIAN_TAG % substitute)       # TODO : lang...
+                        download_list.append(templates.DEBIAN_TAG % substitute)         # TODO : lang...
 
                     for rpm_elem in item.findall('rpm_package'):
-                        substitute = {'filename': rpm_elem.attrib['filename'],  # TODO : build the true url
+                        substitute = {'filename': rpm_elem.attrib['filename'],          # TODO : build the true url
                                       'arch': rpm_elem.attrib['arch']}
-                        download_list.append(templates.RPM_TAG % substitute)          # TODO : lang...
+                        download_list.append(templates.RPM_TAG % substitute)            # TODO : lang...
 
                     for tgz_elem in item.findall('tarball'):
                         for label_elem in tgz_elem.findall('label'):
@@ -228,17 +228,41 @@ def parse(page, base_href):
                                               'label': el2text(label_elem)}
                                 download_list.append(templates.TGZ_TAG % substitute)
 
+                    for pdf_elem in item.findall('pdf'):
+                        for label_elem in pdf_elem.findall('label'):
+                            if label_elem.attrib['lang'] == lang:
+                                substitute = {'filename': pdf_elem.attrib['filename'],  # TODO : build the true url
+                                              'label': el2text(label_elem)}
+                                download_list.append(templates.PDF_TAG % substitute)
+
                     if len(download_list) > 0:
                         substitute = {'content': string.join(download_list, ' &#149; ')}
                         file_content += templates.FILES_DOWNLOAD % substitute
 
                     # WRITE THE ITEM SOURCE REPOSITORIES
 
+                    vcs_list = []
+                    for git_elem in item.findall('git_repository'):
+                        substitute = {'url': git_elem.attrib['url'],
+                                      'weburl': git_elem.attrib['weburl']}
+                        vcs_list.append(templates.GIT_TAG % substitute)
+
+                    for svn_elem in item.findall('svn_repository'):
+                        substitute = {'url': svn_elem.attrib['url'],
+                                      'weburl': svn_elem.attrib['weburl']}
+                        vcs_list.append(templates.SVN_TAG % substitute)
+
+                    if len(vcs_list) > 0:
+                        substitute = {'content': string.join(vcs_list, ' &#149; ')}
+                        file_content += templates.FILES_REPOSITORIES % substitute
+
                     if not file_content == '':
                         substitute = {'content': file_content}
                         content += templates.ITEM_FILES % substitute
 
                     # WRITE THE ITEM MEDIAS
+
+                    # ...
 
         print content
 
