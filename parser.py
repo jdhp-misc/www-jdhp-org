@@ -3,12 +3,15 @@
 
 # Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 
-from xml.dom import minidom
+import xml
+import xml.etree.ElementTree as ET
 import os
 import sys
 import templates
 import getopt
 import shutil
+import string
+import re
 
 SRC_DIR  = 'src'      # xml files location
 DEST_DIR = 'test'     # (x)html files location
@@ -19,7 +22,7 @@ INCLUDE_FILES = (os.path.join('misc', 'favicon.ico'),
                  os.path.join('misc', 'robots.txt'))
 INCLUDE_DIRS = ('css', 'medias')
 
-VERSION = '1.0'
+VERSION = '2.0'
 
 def usage():
     """Print help message"""
@@ -111,17 +114,29 @@ def init():
 def parse(page, base_href):
     """Parse an XML file."""
 
+    tree = ET.ElementTree()
+
     print "Parse", os.path.join(SRC_DIR, page + '.xml')
-    dom = minidom.parse(os.path.join(SRC_DIR, page + '.xml'))
+    tree.parse(os.path.join(SRC_DIR, page + '.xml'))
 
     for lang in LANG_LIST:
         print "Write", os.path.join(DEST_DIR, page + '_' + lang + '.html')
         fd = open(os.path.join(DEST_DIR, page + '_' + lang + '.html'), 'w')
 
         # HEADER
-        substitute = {'page_title': 'TEST_TITLE',
-                      'base_href': base_href,
-                      'page_keywords': 'TEST_KEYWORDS'}
+        page_title = ''
+        for elem in tree.findall('name'):
+            if elem.attrib['lang'] == lang:
+                page_title = el2text(elem)
+
+        page_keywords = ''
+        for elem in tree.findall('keywords'):
+            if elem.attrib['lang'] == lang:
+                page_keywords = el2text(elem)
+            
+        substitute = {'base_href': base_href,
+                      'page_title': page_title,
+                      'page_keywords': page_keywords}
         header = templates.HEADER % substitute
 
         # MENU
@@ -144,10 +159,96 @@ def parse(page, base_href):
         footer = templates.FOOTER % substitute
 
         # BODY
+        page_desc = ''
+        for elem in tree.findall('desc'):
+            if elem.attrib['lang'] == lang:
+                page_desc = templates.PAGE_DESC % {'text': el2html(elem)}
+
+        page_note = ''
+        for elem in tree.findall('note'):
+            if elem.attrib['lang'] == lang:
+                page_note = templates.PAGE_NOTE % {'text': el2html(elem)}
+
+        groups = []
+        for group_elem in tree.findall('group'):
+            for name_elem in group_elem.findall('label'):
+                if name_elem.attrib['lang'] == lang:
+                    groups.append((group_elem, name_elem))
+
+        content = u''
+        for group, gname in groups:
+            items = []
+            for item_elem in group.findall('item'):
+                for name_elem in item_elem.findall('label'):
+                    if name_elem.attrib['lang'] == lang:
+                        items.append((item_elem, name_elem))
+            if(len(items) > 0):
+                # WRITE THE GROUP TAG
+                substitute = {'id': group.attrib['id'],
+                              'label': el2text(gname)}
+                content += templates.GROUP_TAG % substitute
+
+                for item, iname in items:
+                    # WRITE THE ITEM TAG
+                    substitute = {'id': item.attrib['id'],
+                                  'label': el2text(iname)}
+                    content += templates.ITEM_TAG % substitute
+
+                    # WRITE THE ITEM DESC
+                    for desc_elem in item.findall('desc'):
+                        if desc_elem.attrib['lang'] == lang:
+                            substitute = {'desc': el2html(desc_elem)}
+                            content += templates.ITEM_DESC % substitute
+
+                    # WRITE THE ITEM LINK
+                    for link_elem in item.findall('link'):
+                        for label_elem in link_elem.findall('label'):
+                            if label_elem.attrib['lang'] == lang:
+                                substitute = {'url': link_elem.attrib['url'],
+                                              'label': el2text(label_elem)}
+                                content += templates.ITEM_LINK % substitute
+                
+                    # WRITE THE ITEM FILES AND PACKAGES
+                    file_content = u''
+                    download_content = u''
+                    for deb_elem in item.findall('debian_package'):
+                        substitute = {'filename': deb_elem.attrib['filename'],  # TODO : build the true url
+                                      'arch': deb_elem.attrib['arch']}
+                        download_content += templates.DEBIAN_TAG % substitute       # TODO : lang...
+
+                    for rpm_elem in item.findall('rpm_package'):
+                        substitute = {'filename': rpm_elem.attrib['filename'],  # TODO : build the true url
+                                      'arch': rpm_elem.attrib['arch']}
+                        download_content += templates.RPM_TAG % substitute          # TODO : lang...
+
+                    for tgz_elem in item.findall('tarball'):
+                        for label_elem in tgz_elem.findall('label'):
+                            if label_elem.attrib['lang'] == lang:
+                                substitute = {'filename': tgz_elem.attrib['filename'],  # TODO : build the true url
+                                              'label': el2text(label_elem)}
+                                download_content += templates.TGZ_TAG % substitute
+
+                    if not download_content == '':
+                        substitute = {'content': download_content.encode("utf-8")}
+                        file_content += templates.FILES_DOWNLOAD % substitute
+
+                    # WRITE THE ITEM SOURCE REPOSITORIES
+
+                    if not file_content == '':
+                        substitute = {'content': file_content}
+                        content += templates.ITEM_FILES % substitute
+
+                    # WRITE THE ITEM MEDIAS
+
+        print content
+
         substitute = {'menu': menu,
                       'flag': templates.flag_html[lang],
                       #'flag': templates.flag_html[lang] % page,
                       #'flag': templates.flag_html[lang].format(page),
+                      'page_desc': page_desc,
+                      'page_note': page_note,
+                      'page_content': content.encode("utf-8"),
                       'footer': footer}
         body = templates.BODY % substitute
 
@@ -158,6 +259,33 @@ def parse(page, base_href):
         fd.write(templates.HTML % substitute)
 
         fd.close()
+
+def childs(element, tag, lang):
+    child_list = []
+    for child in element.findall(tag):
+        if child.attrib['lang'] == lang:
+            child_list.append(child)
+    return child_list
+
+def el2text(element):
+    # Get the text of the element
+    str = element.text
+    # We need to remove all '\n' to process the string with re
+    str = string.replace(str, '\n', '')
+    # Remove useless spaces
+    str = string.join(string.split(str))
+    return str
+
+def el2html(element):
+    # Get the xml 'raw' code of the element
+    str = ET.tostring(element)
+    # We need to remove all '\n' to process the string with re
+    str = string.replace(str, '\n', '')
+    # Remove useless spaces
+    str = string.join(string.split(str))
+    # Remove the first and last tags
+    str = re.match('[^<]*<[^>]+>(.+)<[^>]+>[^>]*', str).group(1)
+    return str
 
 if __name__ == '__main__':
     main()

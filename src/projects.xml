@@ -7,6 +7,9 @@
     <name lang="fr">Travaux</name>
     <name lang="en">Projects</name>
 
+    <keywords lang="fr">jdhp, robotique, programmation, logiciel, python, java, debian</keywords>
+    <keywords lang="en">jdhp, software</keywords>
+
     <desc lang="fr">
         Projets et travaux en informatique.
     </desc>

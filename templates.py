@@ -74,9 +74,15 @@ BODY = '''
         <div id="content_bloc">
             %(flag)s
 
+            %(page_desc)s
+
+            %(page_note)s
+
+            %(page_content)s
         </div>
 
         %(footer)s
+
     </body>
 '''
 
@@ -96,4 +102,60 @@ FOOTER = '''
             <a href="http://jigsaw.w3.org/css-validator/"><img src="./medias/images/css.png" title="%(css_text)s" alt="%(css_text)s" /></a>
         </div>
 '''
+
+PAGE_DESC = '''
+            <div id="page-desc">
+                %(text)s
+            </div>
+'''
+
+PAGE_NOTE = '''
+            <div id="page-note">
+                %(text)s
+            </div>
+'''
+
+GROUP_TAG = '''
+            <h2 id="%(id)s">%(label)s</h2>
+'''
+
+ITEM_TAG = '''
+                <h3 id="%(id)s">%(label)s</h3>
+'''
+
+ITEM_DESC = '''
+                    <div class="desc">%(desc)s</div>
+'''
+
+ITEM_LINK = '''
+                    <div class="link">
+                        <a href="%(url)s">%(label)s</a>
+                    </div>
+'''
+
+ITEM_FILES = '''
+                    <div class="files">
+                        %(content)s
+                    </div>
+'''
+
+FILES_DOWNLOAD = u'''
+                        <p class="download">
+                            <strong>Télécharger</strong> :
+                                %(content)s
+                        </p>
+''' # TODO : lang
+
+FILES_REPOSITORIES = '''
+                        <p class="repositories">
+                            <strong>Sources</strong> :
+                                %(content)s
+                        </p>
+''' # TODO : lang
+
+DEBIAN_TAG = '''<a href="%(filename)s">Paquet Debian (%(arch)s)</a>''' # TODO : lang
+
+RPM_TAG = '''<a href="%(filename)s">Paquet RPM (%(arch)s)</a>''' # TODO : lang
+
+TGZ_TAG = '''<a href="%(filename)s">%(label)s</a>''' # TODO : lang
 

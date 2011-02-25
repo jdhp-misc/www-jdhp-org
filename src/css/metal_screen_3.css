@@ -131,9 +131,9 @@ div#flag {
 	text-align       : right;
 }
 
-/*** intro ***/
+/*** page-desc ***/
 
-.intro {
+div#page-desc {
 	margin-top       : 2em;
 	margin-left      : 26px;
 	margin-right     : 26px;
@@ -141,9 +141,9 @@ div#flag {
 	text-align       : justify;
 }
 
-/*** debian-instructions ***/
+/*** note ***/
 
-div#debian-instructions {
+div#page-note {
     /*border-left      : 5px solid #eeeeee;*/
 	background-color : #f7f7f7;
     border           : 1px solid #eeeeee;
@@ -159,18 +159,18 @@ div#debian-instructions {
 	text-align       : justify;
 }
 
-div#debian-instructions * {
+div#page-note * {
 	font-size        : 10px;
 
 	margin-bottom    : 0.5em;
 }
 
-div#debian-instructions strong {
+div#page-note strong {
 	font-family      : monospace;
 	font-weight      : bold;
 }
 
-div#debian-instructions strong a {
+div#page-note strong a {
 	font-family      : monospace;
 	font-weight      : bold;
 
@@ -286,15 +286,15 @@ div#contact > p#resume {
 	text-align       : justify;
 }
 
-/*** hevea ***/
+/*** link ***/
 
-.hevea {
+.link {
 	margin-bottom    : 0.5em;
 	margin-left      : 26px;
 	margin-right     : 26px;
 }
 
-.hevea a {
+.link a {
 	font-size        : 11px;
 }
 

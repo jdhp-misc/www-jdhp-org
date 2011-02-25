@@ -7,6 +7,9 @@
     <name lang="fr">Tutoriels</name>
     <name lang="en">Tutorials</name>
 
+    <keywords lang="fr">jdhp, tutoriel, vim, orthographe</keywords>
+    <keywords lang="en">jdhp, tutorial</keywords>
+
     <desc lang="fr">
         Tutoriels informatiques.
     </desc>
