@@ -210,26 +210,26 @@ def parse(page, base_href):
                 
                     # WRITE THE ITEM FILES AND PACKAGES
                     file_content = u''
-                    download_content = u''
+                    download_list = []
                     for deb_elem in item.findall('debian_package'):
                         substitute = {'filename': deb_elem.attrib['filename'],  # TODO : build the true url
                                       'arch': deb_elem.attrib['arch']}
-                        download_content += templates.DEBIAN_TAG % substitute       # TODO : lang...
+                        download_list.append(templates.DEBIAN_TAG % substitute)       # TODO : lang...
 
                     for rpm_elem in item.findall('rpm_package'):
                         substitute = {'filename': rpm_elem.attrib['filename'],  # TODO : build the true url
                                       'arch': rpm_elem.attrib['arch']}
-                        download_content += templates.RPM_TAG % substitute          # TODO : lang...
+                        download_list.append(templates.RPM_TAG % substitute)          # TODO : lang...
 
                     for tgz_elem in item.findall('tarball'):
                         for label_elem in tgz_elem.findall('label'):
                             if label_elem.attrib['lang'] == lang:
                                 substitute = {'filename': tgz_elem.attrib['filename'],  # TODO : build the true url
                                               'label': el2text(label_elem)}
-                                download_content += templates.TGZ_TAG % substitute
+                                download_list.append(templates.TGZ_TAG % substitute)
 
-                    if not download_content == '':
-                        substitute = {'content': download_content.encode("utf-8")}
+                    if len(download_list) > 0:
+                        substitute = {'content': string.join(download_list, ' &#149; ')}
                         file_content += templates.FILES_DOWNLOAD % substitute
 
                     # WRITE THE ITEM SOURCE REPOSITORIES
