@@ -261,7 +261,7 @@ def parse(page, base_href):
 
                     if not file_content == '':
                         substitute = {'content': file_content}
-                        content += templates.ITEM_FILES % substitute
+                        content += templates.ITEM_METADATAS % substitute
 
                     # WRITE THE ITEM PICTURES
 

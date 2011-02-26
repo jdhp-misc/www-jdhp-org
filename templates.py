@@ -59,8 +59,8 @@ HEADER = '''
         <meta name="copyright" content="copyright (c) 2006,2007,2008,2009,2010,2011 Jérémie DECOCK" />
         <meta name="keywords" content="%(page_keywords)s" />
         <link rel="shortcut icon" type="image/png" href="./medias/images/favicon.png" />
-        <link rel="stylesheet" type="text/css" href="./css/metal_screen_3.css" media="screen" title="Normal" />
-        <link rel="alternate stylesheet" type="text/css" href="./css/metal_screen.css" media="screen" title="Firefox" />
+        <link rel="stylesheet" type="text/css" href="./css/gray.css" media="screen" title="Normal" />
+        <link rel="alternate stylesheet" type="text/css" href="./css/blue.css" media="screen" title="Blue" />
     </head>
 '''
 
@@ -71,7 +71,7 @@ BODY = '''
 
         %(menu)s
 
-        <div id="content_bloc">
+        <div id="page">
             %(flag)s
 
             %(page_desc)s
@@ -104,13 +104,13 @@ FOOTER = '''
 '''
 
 PAGE_DESC = '''
-            <div id="page-desc">
+            <div id="page_desc">
                 %(text)s
             </div>
 '''
 
 PAGE_NOTE = '''
-            <div id="page-note">
+            <div id="page_note">
                 %(text)s
             </div>
 '''
@@ -124,31 +124,31 @@ ITEM_TAG = '''
 '''
 
 ITEM_DESC = '''
-                    <div class="desc">%(desc)s</div>
+                    <div class="item_desc">%(desc)s</div>
 '''
 
 ITEM_LINK = '''
-                    <div class="link">
+                    <div class="item_link">
                         <a href="%(url)s">%(label)s</a>
                     </div>
 '''
 
-ITEM_FILES = '''
-                    <div class="files">
+ITEM_METADATAS = '''
+                    <div class="item_metadatas">
                         %(content)s
                     </div>
 '''
 
 FILES_DOWNLOAD = u'''
-                        <p class="download">
+                        <div class="item_download">
                             <strong>Télécharger</strong> :%(content)s
-                        </p>
+                        </div>
 ''' # TODO : lang
 
 FILES_REPOSITORIES = '''
-                        <p class="repositories">
+                        <div class="item_repositories">
                             <strong>Sources</strong> :%(content)s
-                        </p>
+                        </div>
 ''' # TODO : lang
 
 DEBIAN_TAG = '''
@@ -172,7 +172,7 @@ SVN_TAG = '''
                                 (<a href="%(weburl)s">WebSVN</a>)'''
 
 ITEM_PICTURES = '''
-                    <div class="screenshots">%(content)s
+                    <div class="item_thumbnails">%(content)s
                     </div>
 '''
 
@@ -180,7 +180,7 @@ PICTURE_TAG = '''
                         <a href="%(url)s"><img src="%(thumbnail_url)s" title="picture" alt="picture" /></a>'''
 
 ITEM_VIDEOS = '''
-                    <div class="screenshots">%(content)s
+                    <div class="item_thumbnails">%(content)s
                     </div>
 '''
 

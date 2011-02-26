@@ -1,4 +1,4 @@
-/* jdhp.org - Jérémie DECOCK (2006)                                       */
+/* Copyright (c) 2006,2008,2009 Jérémie DECOCK (jdhp.org)                 */
 
 /* TODO :                                                                 *
  *  - Mettre le "text-align : left;" dans le selecteur universel et le    *
@@ -31,7 +31,7 @@ li {
 }
 
 /* ************************************************************************* */
-/*                                 Header                                    */
+/*                                 HEADER                                    */
 /* ************************************************************************* */
 
 h1 {
@@ -42,40 +42,29 @@ h1 {
 	border-left      : 1px solid #dddddd;
 	border-right     : 1px solid #dddddd;
 
-	font-weight      : bold;
-	font-size        : 32px;
-
 	margin-top       : 20px;
 	margin-left      : auto; /* cf ... */
 	margin-right     : auto; /* cf ... */
 
-	/*
-	padding-top      : 25px;
-	padding-bottom   : 25px;
-	*/
-
 	height           : 90px; /* !!! */
-
-	/* text-align       : left; /* cf ... */
-	text-align       : center;
 	width            : 799px; /* cf ... */
 }
 
 /* ************************************************************************* */
-/*                                  Menu                                     */
+/*                                  MENU                                     */
 /* ************************************************************************* */
 
 ul#menu {
 	background-color : white;
 	border-right     : 1px solid #dddddd; /* !!! */
-	height           : 22px; /* !!! */
+	height           : 22px;              /* !!! */
 	list-style-type  : none;
 
-	margin-left      : auto; /* cf ... */
-	margin-right     : auto; /* cf ... */
+	margin-left      : auto;              /* cf ... */
+	margin-right     : auto;              /* cf ... */
 
-	text-align       : left; /* cf ... */
-	width            : 800px; /* cf ... */
+	text-align       : left;              /* cf ... */
+	width            : 800px;             /* cf ... */
 }
 
 ul#menu li {
@@ -93,7 +82,7 @@ ul#menu li.normal a {
 
 	display          : block;
 	font-weight      : bold;
-	line-height      : 22px; /* pour centrer le texte verticalement */
+	line-height      : 22px;          /* pour centrer le texte verticalement */
 	text-decoration  : none;
 }
 
@@ -110,215 +99,96 @@ ul#menu li.selected a {
 
 	display          : block;
 	font-weight      : bold;
-	line-height      : 22px; /* pour centrer le texte verticalement */
+	line-height      : 22px;          /* pour centrer le texte verticalement */
 	text-decoration  : none;
 }
 
 /* ************************************************************************* */
-/*                                 Content                                   */
+/*                                   PAGE                                    */
 /* ************************************************************************* */
 
-div#content_bloc {
+div#page {
 	background-color : white;
 
 	border-left      : 1px solid #dddddd;
 	border-right     : 1px solid #dddddd;
 
-	padding-top      : 2em; /* il y a un bug d'affichage si on l'enleve */
+	padding-top      : 2em;      /* il y a un bug d'affichage si on l'enleve */
 	padding-bottom   : 2.5em;
 
-	margin-left      : auto; /* cf ... */
-	margin-right     : auto; /* cf ... */
-	width            : 799px; /* cf ... */
-	text-align       : left; /* cf ... */
+	margin-left      : auto;     /* cf ... */
+	margin-right     : auto;     /* cf ... */
+	width            : 799px;    /* cf ... */
+	text-align       : left;     /* cf ... */
 }
 
-p#breadcrumb {
-	font-size        : 10px;
+/*** flag ***/
 
+div#flag {
 	margin-left      : 26px;
 	margin-right     : 26px;
 
-	text-align       : left;
+	text-align       : right;
 }
 
-p#breadcrumb a {
-	font-size        : 10px;
-}
+/*** table of content ***/
 
-/*** intro ***/
+ul#toc {
+    list-style       : square;
 
-.intro {
-	margin-left      : 26px;
-	margin-right     : 26px;
-
-	text-align       : justify;
-}
-
-p#breadcrumb + .intro {
-	margin-top      : 2em;
-}
-
-h2 + .intro {
-	margin-top      : 1.25em;
-}
-
-h3 + .intro {
-	margin-top      : 0.5em;
-}
-
-.content + .intro { /* sans intérêt ? */
-	margin-top      : 0.5em;
-}
-
-.intro + .intro {
-	margin-top      : 0.5em;
-}
-
-/*** content ***/
-
-.content {
+	margin-top       : 1em;
 	margin-left      : 26px;
 	margin-right     : 26px;
 
 	text-align       : justify;
 }
 
-p#breadcrumb + .content {
-	margin-top      : 2em;
-}
+/*** page desc ***/
 
-.intro + .content {
-	margin-top      : 1.5em;
-}
-
-h2 + .content {
-	margin-top      : 1.25em;
-}
-
-h3 + .content {
-	margin-top      : 0.5em;
-}
-
-.content + .content {
-	margin-top      : 0.5em;
-}
-
-div.slideshow + .content {
-	margin-top      : 0.5em;
-}
-
-/*** slideshow ***/
-
-div.slideshow {
+div#page_desc {
+	margin-top       : 2em;
 	margin-left      : 26px;
 	margin-right     : 26px;
 
-	width            : 745px;
-	height           : 117px;
-
-	text-align       : left;
+	text-align       : justify;
 }
 
-div.slideshow a {
-	background-image : url(../medias/images/slideshow_background.png);
+/*** page note ***/
 
-	display          : block;
-	float            : left;
-
-	height           : 117px;
-	width            : 149px;
-}
-
-div.slideshow a img {
-	margin-left      : 10px;
-	margin-top       : 10px;
-
-	height           : 96px;
-	width            : 128px;
-}
-
-h3 + div.slideshow {
-	margin-top      : 1em;
-}
-
-.content + div.slideshow {
-	margin-top      : 1em;
-}
-
-div.slideshow + div.slideshow {
-	margin-top      : 1em;
-}
-
-/*** image ***/
-
-div.image {
-	background-image : url(../medias/images/slideshow_background.png);
-
-	margin-top       : 26px;
-	margin-left      : 26px;
-	margin-right     : 26px;
-
-	width            : 745px;
-	/*height           : 117px;*/
-
-	text-align       : left;
-}
-
-div.image img {
-	width            : 745px;
-}
-
-/*** image_legal ***/
-
-p.image_legal {
-	margin-top       : 26px;
-	margin-bottom    : 26px;
-
-	font-size        : 10px;
-
-	text-align       : center;
-}
-
-/*** image_download ***/
-
-div.download {
+div#page_note {
 	background-color : #f7f7f7;
-	border           : 1px dotted #dddddd;
+    border           : 1px solid #eeeeee;
 
-	margin-left      : 26px;
-	margin-right     : 26px;
+	font-size        : 10px;
 
-	padding          : 0.5em;
+	margin-top       : 3em;
+	margin-left      : 60px;
+	margin-right     : 60px;
 
-	text-align       : justify;
-
-	width            : 20em;
-}
-
-/*** warning ***/
-
-div.warning {
-	background-color    : #fffca2;
-	background-image    : url(../medias/images/icons/warning.png);
-	background-repeat   : no-repeat;
-	background-position : 1.25em 1em;
-	border              : 1px dotted #e9c654;
-
-	margin-left      : 52px;
-	margin-right     : 52px;
-	margin-top       : 20px;
-	margin-bottom    : 30px;
-
-	padding-top      : 0.75em;
-	padding-bottom   : 0.75em;
-	padding-left     : 4em;
-	padding-right    : 2em;
+    padding          : 1em;
 
 	text-align       : justify;
 }
 
-/*** h2 ***/
+div#page_note * {
+	font-size        : 10px;
+
+	margin-bottom    : 0.5em;
+}
+
+div#page_note strong {
+	font-family      : monospace;
+	font-weight      : bold;
+}
+
+div#page_note strong a {
+	font-family      : monospace;
+	font-weight      : bold;
+
+	text-decoration  : none;
+}
+
+/*** groups ***/
 
 h2 {
 	background-color : #f7f7f7;
@@ -326,6 +196,8 @@ h2 {
 	border-top       : 1px solid #dddddd;
 	border-bottom    : 1px solid #dddddd;
 
+	font-size        : 16px;
+    font-variant     : small-caps;
 	font-weight      : bold;
 
 	padding-top      : 2px;
@@ -333,76 +205,26 @@ h2 {
 	padding-left     : 13px;
 	padding-right    : 13px;
 
+	margin-top       : 2.5em;
+
 	text-align       : left;
 }
 
-p#breadcrumb + h2 {
-	margin-top      : 2em;
-}
-
-.intro + h2 {
-	margin-top      : 2.5em;
-}
-
-.content + h2 {
-	margin-top      : 2.5em;
-}
-
-div.slideshow + h2 {
-	margin-top      : 2.5em;
-}
-
-/*** image_titre ***/
-
-h2.image_titre {
-	background-color : white;
-
-	border           : 0px solid #dddddd;
-
-	font-size        : 16px;
-	font-weight      : bold;
-
-	margin-top       : 26px;
-	margin-bottom    : 26px;
-
-	padding          : 0px;
-
-	text-align       : center;
-}
-
-/*** h3 ***/
+/*** items ***/
 
 h3 {
 	font-weight      : bold;
 
+	margin-top       : 2em;
+	margin-bottom    : 0.5em;
 	margin-left      : 26px;
 	margin-right     : 26px;
 
 	text-align       : left;
 }
 
-p#breadcrumb + h3 {
-	margin-top      : 2em;
-}
-
-.intro + h3 {
-	margin-top      : 1.5em;
-}
-
-h2 + h3 {
-	margin-top      : 1.25em;
-}
-
-.content + h3 {
-	margin-top      : 1.75em;
-}
-
-div.slideshow + h3 {
-	margin-top      : 1.75em;
-}
-
 /* ************************************************************************* */
-/*                                Main page                                  */
+/*                                HOME PAGE                                  */
 /* ************************************************************************* */
 
 div#title {
@@ -439,7 +261,78 @@ div#contact > p#resume {
 }
 
 /* ************************************************************************* */
-/*                                 Footer                                    */
+/*                                 ITEMS                                     */
+/* ************************************************************************* */
+
+/*** item description ***/
+
+div.item_desc {
+	margin-bottom    : 0.5em;
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	text-align       : justify;
+}
+
+/*** item link ***/
+
+div.item_link {
+	margin-bottom    : 0.5em;
+	margin-left      : 26px;
+	margin-right     : 26px;
+}
+
+div.item_link a {
+	font-size        : 11px;
+}
+
+/*** item metadatas (download, repositories and license) ***/
+
+div.item_metadatas {
+    border-left      : 5px solid #eeeeee;
+
+	margin-top       : 1.25em;
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+    padding-left     : 1em;
+    padding-right    : 1em;
+}
+
+div.item_metadatas * {
+	font-size        : 11px;
+
+	margin-bottom    : 0.5em;
+}
+
+div.item_metadatas * strong {
+	font-weight      : normal;
+	font-size        : 11px;
+	font-style       : oblique;
+}
+
+div.item_metadatas * a {
+	font-size        : 11px;
+}
+
+/*** item thumbnails ***/
+
+div.item_thumbnails {
+	margin-top       : 0.5em;
+	margin-bottom    : 0.5em;
+	margin-left      : 56px;
+	margin-right     : 56px;
+
+	text-align       : center;
+}
+
+div.item_thumbnails img {
+	margin-left      : 10px;
+	margin-top       : 10px;
+}
+
+/* ************************************************************************* */
+/*                                 FOOTER                                    */
 /* ************************************************************************* */
 
 div#footer {
@@ -468,3 +361,5 @@ div#footer a img {
 	margin-left      : 2px;
 	margin-right     : 0px;
 }
+
+

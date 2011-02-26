@@ -31,7 +31,7 @@ li {
 }
 
 /* ************************************************************************* */
-/*                                 Header                                    */
+/*                                 HEADER                                    */
 /* ************************************************************************* */
 
 h1 {
@@ -51,20 +51,20 @@ h1 {
 }
 
 /* ************************************************************************* */
-/*                                  Menu                                     */
+/*                                  MENU                                     */
 /* ************************************************************************* */
 
 ul#menu {
 	background-color : white;
 	border-right     : 1px solid #dddddd; /* !!! */
-	height           : 22px; /* !!! */
+	height           : 22px;              /* !!! */
 	list-style-type  : none;
 
-	margin-left      : auto; /* cf ... */
-	margin-right     : auto; /* cf ... */
+	margin-left      : auto;              /* cf ... */
+	margin-right     : auto;              /* cf ... */
 
-	text-align       : left; /* cf ... */
-	width            : 800px; /* cf ... */
+	text-align       : left;              /* cf ... */
+	width            : 800px;             /* cf ... */
 }
 
 ul#menu li {
@@ -82,7 +82,7 @@ ul#menu li.normal a {
 
 	display          : block;
 	font-weight      : bold;
-	line-height      : 22px; /* pour centrer le texte verticalement */
+	line-height      : 22px;          /* pour centrer le texte verticalement */
 	text-decoration  : none;
 }
 
@@ -99,27 +99,27 @@ ul#menu li.selected a {
 
 	display          : block;
 	font-weight      : bold;
-	line-height      : 22px; /* pour centrer le texte verticalement */
+	line-height      : 22px;          /* pour centrer le texte verticalement */
 	text-decoration  : none;
 }
 
 /* ************************************************************************* */
-/*                                 Content                                   */
+/*                                   PAGE                                    */
 /* ************************************************************************* */
 
-div#content_bloc {
+div#page {
 	background-color : white;
 
 	border-left      : 1px solid #dddddd;
 	border-right     : 1px solid #dddddd;
 
-	padding-top      : 2em; /* il y a un bug d'affichage si on l'enleve */
+	padding-top      : 2em;      /* il y a un bug d'affichage si on l'enleve */
 	padding-bottom   : 2.5em;
 
-	margin-left      : auto; /* cf ... */
-	margin-right     : auto; /* cf ... */
-	width            : 799px; /* cf ... */
-	text-align       : left; /* cf ... */
+	margin-left      : auto;     /* cf ... */
+	margin-right     : auto;     /* cf ... */
+	width            : 799px;    /* cf ... */
+	text-align       : left;     /* cf ... */
 }
 
 /*** flag ***/
@@ -131,9 +131,21 @@ div#flag {
 	text-align       : right;
 }
 
-/*** page-desc ***/
+/*** table of content ***/
 
-div#page-desc {
+ul#toc {
+    list-style       : square;
+
+	margin-top       : 1em;
+	margin-left      : 26px;
+	margin-right     : 26px;
+
+	text-align       : justify;
+}
+
+/*** page desc ***/
+
+div#page_desc {
 	margin-top       : 2em;
 	margin-left      : 26px;
 	margin-right     : 26px;
@@ -141,10 +153,9 @@ div#page-desc {
 	text-align       : justify;
 }
 
-/*** note ***/
+/*** page note ***/
 
-div#page-note {
-    /*border-left      : 5px solid #eeeeee;*/
+div#page_note {
 	background-color : #f7f7f7;
     border           : 1px solid #eeeeee;
 
@@ -159,38 +170,25 @@ div#page-note {
 	text-align       : justify;
 }
 
-div#page-note * {
+div#page_note * {
 	font-size        : 10px;
 
 	margin-bottom    : 0.5em;
 }
 
-div#page-note strong {
+div#page_note strong {
 	font-family      : monospace;
 	font-weight      : bold;
 }
 
-div#page-note strong a {
+div#page_note strong a {
 	font-family      : monospace;
 	font-weight      : bold;
 
 	text-decoration  : none;
 }
 
-/*** toc ***/
-
-.toc {
-    list-style       : square;
-    /*list-style-image : url(../medias/images/li.png);*/
-
-	margin-top       : 1em;
-	margin-left      : 26px;
-	margin-right     : 26px;
-
-	text-align       : justify;
-}
-
-/*** h2 ***/
+/*** groups ***/
 
 h2 {
 	background-color : #f7f7f7;
@@ -212,7 +210,7 @@ h2 {
 	text-align       : left;
 }
 
-/*** h3 ***/
+/*** items ***/
 
 h3 {
 	font-weight      : bold;
@@ -225,18 +223,8 @@ h3 {
 	text-align       : left;
 }
 
-/*** content ***/
-
-.content {
-	margin-bottom    : 0.5em;
-	margin-left      : 26px;
-	margin-right     : 26px;
-
-	text-align       : justify;
-}
-
 /* ************************************************************************* */
-/*                                Main page                                  */
+/*                                HOME PAGE                                  */
 /* ************************************************************************* */
 
 div#title {
@@ -273,12 +261,12 @@ div#contact > p#resume {
 }
 
 /* ************************************************************************* */
-/*                    Projects, Articles & Tutorials                         */
+/*                                 ITEMS                                     */
 /* ************************************************************************* */
 
-/*** description ***/
+/*** item description ***/
 
-.desc {
+div.item_desc {
 	margin-bottom    : 0.5em;
 	margin-left      : 26px;
 	margin-right     : 26px;
@@ -286,35 +274,22 @@ div#contact > p#resume {
 	text-align       : justify;
 }
 
-/*** link ***/
+/*** item link ***/
 
-.link {
+div.item_link {
 	margin-bottom    : 0.5em;
 	margin-left      : 26px;
 	margin-right     : 26px;
 }
 
-.link a {
+div.item_link a {
 	font-size        : 11px;
 }
 
-/*** website ***/
+/*** item metadatas (download, repositories and license) ***/
 
-.website {
-	margin-bottom    : 0.5em;
-	margin-left      : 26px;
-	margin-right     : 26px;
-}
-
-.website a {
-	font-size        : 11px;
-}
-
-/*** files ***/
-
-div.files {
+div.item_metadatas {
     border-left      : 5px solid #eeeeee;
-    /*border-left      : 5px solid #a2c2e1;*/
 
 	margin-top       : 1.25em;
 	margin-left      : 26px;
@@ -324,27 +299,25 @@ div.files {
     padding-right    : 1em;
 }
 
-/*** download, repositories and license ***/
-
-div.files * {
+div.item_metadatas * {
 	font-size        : 11px;
 
 	margin-bottom    : 0.5em;
 }
 
-div.files * strong {
+div.item_metadatas * strong {
 	font-weight      : normal;
 	font-size        : 11px;
 	font-style       : oblique;
 }
 
-div.files * a {
+div.item_metadatas * a {
 	font-size        : 11px;
 }
 
-/*** screenshots ***/
+/*** item thumbnails ***/
 
-.screenshots {
+div.item_thumbnails {
 	margin-top       : 0.5em;
 	margin-bottom    : 0.5em;
 	margin-left      : 56px;
@@ -353,13 +326,13 @@ div.files * a {
 	text-align       : center;
 }
 
-.screenshots img {
+div.item_thumbnails img {
 	margin-left      : 10px;
 	margin-top       : 10px;
 }
 
 /* ************************************************************************* */
-/*                                 Footer                                    */
+/*                                 FOOTER                                    */
 /* ************************************************************************* */
 
 div#footer {
