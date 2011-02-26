@@ -141,15 +141,13 @@ ITEM_FILES = '''
 
 FILES_DOWNLOAD = u'''
                         <p class="download">
-                            <strong>Télécharger</strong> :
-                                %(content)s
+                            <strong>Télécharger</strong> :%(content)s
                         </p>
 ''' # TODO : lang
 
 FILES_REPOSITORIES = '''
                         <p class="repositories">
-                            <strong>Sources</strong> :
-                                %(content)s
+                            <strong>Sources</strong> :%(content)s
                         </p>
 ''' # TODO : lang
 
@@ -173,3 +171,18 @@ SVN_TAG = '''
                                 <a href="%(url)s">SVN</a>
                                 (<a href="%(weburl)s">WebSVN</a>)'''
 
+ITEM_PICTURES = '''
+                    <div class="screenshots">%(content)s
+                    </div>
+'''
+
+PICTURE_TAG = '''
+                        <a href="%(url)s"><img src="%(thumbnail_url)s" title="picture" alt="picture" /></a>'''
+
+ITEM_VIDEOS = '''
+                    <div class="screenshots">%(content)s
+                    </div>
+'''
+
+VIDEO_TAG = '''
+                        <a href="%(url)s"><img src="%(thumbnail_url)s" title="video" alt="video" /></a>'''

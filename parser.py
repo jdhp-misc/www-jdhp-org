@@ -97,7 +97,10 @@ def main():
 def init():
     """Initialize output directory."""
 
-    shutil.rmtree(DEST_DIR)
+    try:
+        shutil.rmtree(DEST_DIR)
+    except OSError:
+        pass
     os.mkdir(DEST_DIR)
     print "init", DEST_DIR
 
@@ -260,9 +263,29 @@ def parse(page, base_href):
                         substitute = {'content': file_content}
                         content += templates.ITEM_FILES % substitute
 
-                    # WRITE THE ITEM MEDIAS
+                    # WRITE THE ITEM PICTURES
 
-                    # ...
+                    img_list = []
+                    for img_elem in item.findall('picture'):
+                        substitute = {'url': img_elem.attrib['filename'], # TODO
+                                      'thumbnail_url': img_elem.attrib['filename']} # TODO
+                        img_list.append(templates.PICTURE_TAG % substitute)
+
+                    if len(img_list) > 0:
+                        substitute = {'content': string.join(img_list, ' ')}
+                        content += templates.ITEM_PICTURES % substitute
+
+                    # WRITE THE ITEM VIDEO
+
+                    mov_list = []
+                    for img_elem in item.findall('video'):
+                        substitute = {'url': img_elem.attrib['filename'], # TODO
+                                      'thumbnail_url': img_elem.attrib['filename']} # TODO
+                        mov_list.append(templates.VIDEO_TAG % substitute)
+
+                    if len(mov_list) > 0:
+                        substitute = {'content': string.join(mov_list, ' ')}
+                        content += templates.ITEM_VIDEOS % substitute
 
         print content
 
