@@ -76,6 +76,8 @@ BODY = '''
 
             %(page_desc)s
 
+            %(page_toc)s
+
             %(page_note)s
 
             %(page_content)s
@@ -108,6 +110,14 @@ PAGE_DESC = '''
                 %(text)s
             </div>
 '''
+
+PAGE_TOC = '''
+            <ul id="page_toc">%(content)s
+            </ul>
+'''
+
+TOC_TAG = '''
+                <li><a href="#%(id)s">%(label)s</a></li>'''
 
 PAGE_NOTE = '''
             <div id="page_note">
