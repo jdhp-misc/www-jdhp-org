@@ -29,14 +29,14 @@ tutorials_label = {'en': 'Tutorials',
 
 flag_html = {'en' : '''
             <div id="flag">
-                <a href="./home_fr.html"><img src="./medias/images/flag_fr.png" title="Version française" alt="Version française" /></a>
+                <a href="./{href}_fr.html"><img src="./medias/images/flag_fr.png" title="Version française" alt="Version française" /></a>
                 <img src="./medias/images/flag_grey_en.png" title="English version" alt="English version" />
             </div>''',
 
              'fr' : '''
             <div id="flag">
                 <img src="./medias/images/flag_grey_fr.png" title="Version française" alt="Version française" />
-                <a href="./home_en.html"><img src="./medias/images/flag_en.png" title="English version" alt="English version" /></a>
+                <a href="./{href}_en.html"><img src="./medias/images/flag_en.png" title="English version" alt="English version" /></a>
             </div>'''}
 
 

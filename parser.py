@@ -46,7 +46,7 @@ Examples:
 
     parser -b "$(pwd)/www/"
 
-Report bugs to <gremy@tuxfamily.org>.
+Report bugs to <jd.jdhp@gmail.com>.
 '''
 
 
@@ -305,9 +305,7 @@ def parse(page, base_href):
                         content += templates.ITEM_VIDEOS % substitute
 
         substitute = {'menu': menu,
-                      'flag': templates.flag_html[lang],
-                      #'flag': templates.flag_html[lang] % page,
-                      #'flag': templates.flag_html[lang].format(page),
+                      'flag': templates.flag_html[lang].format(href=page),
                       'page_desc': page_desc,
                       'page_toc': page_toc.encode("utf-8"),
                       'page_note': page_note,
