@@ -47,26 +47,18 @@
     </note>
     <note lang="en">
         <p>
-            A repository is available for <em>Debian</em> and <em>Ubuntu</em> users.<br />
+            A repository is available for <em>Debian</em> and <em>Ubuntu</em> users. To use it,<br />
         </p>
         <ul>
             <li>
-                Add this line in <em>/etc/apt/sources.list</em>:
+                add this line in <em>/etc/apt/sources.list</em>:
                 <strong>deb <a href="http://download.tuxfamily.org/jdhp/debian">http://download.tuxfamily.org/jdhp/debian</a> ./</strong>
             </li>
             <li>
-                Then update the list of available packages from the apt sources:
+                then update the list of available packages from the apt sources:
                 <strong># apt-get update</strong>
             </li>
         </ul>
-        <p>
-            Packages are ready for installation now:
-            <strong># apt-get install PACKAGE_NAME</strong><br />
-        </p>
-        <p>
-            A manpage is included in packages:
-            <strong>$ man PACKAGE_NAME</strong>
-        </p>
     </note>
     
     <!-- ############################################################ -->
@@ -92,7 +84,7 @@
                 quoi il passe en mode exploitation.
 			</desc>
 			<desc lang="en">
-                JWumpus uses the <em>Jade</em> platform and <em>Q-learning</em>
+                JWumpus uses the <em>Jade</em> platform and a <em>Q-learning</em>
                 algorithm to solve the <em>Wumpus</em> problem (see
                 <em>"Artificial Intelligence"</em>, Russell and Norvig).
 			</desc>
@@ -424,7 +416,7 @@
                 modules <a href="http://www.pygame.org/">PyGame</a>.
 			</desc>
 			<desc lang="en">
-                An implementation of the famous game 'Pong'.
+                An implementation of the famous game <em>Pong</em>.
 			</desc>
 			<git_repository url="git://git.tuxfamily.org/gitroot/pygames/pypong.git"
                             weburl="http://git.tuxfamily.org/pygames/pypong/" />
