@@ -1,3 +1,15 @@
+<foo lang="en">...</foo>
+<foo lang="fr">...</foo>
+
+VS
+
+<foo>
+    <en>...</en>
+    <fr>...</fr>
+</foo>
+
+
+
 - Écrire le contenu des pages au format XML :
     - créer un schema (xml schema) -> un schema pour la page principale, un 
       schema pour la page projet, un schema pour la page articles, etc.

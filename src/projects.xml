@@ -212,7 +212,7 @@
 			<git_repository url="git://git.tuxfamily.org/gitroot/botsim/botsim.git"
                             weburl="http://git.tuxfamily.org/botsim/botsim/" />
 			<svn_repository url="svn://svn.tuxfamily.org/svnroot/botsim/isir"
-                            weburl="http://svnweb.tuxfamily.org/listing.php?repname=botsim%2Fisir&amp;path=%2F&amp;" />
+                            weburl="http://svnweb.tuxfamily.org/listing.php?repname=botsim%2Fisir&amp;amp;path=%2F&amp;amp;" />
 			<picture filename="botsim_1.png" />
 			<picture filename="botsim_2.png" />
 			<picture filename="botsim_3.png" />
