@@ -30,7 +30,7 @@ THUMB_DIR = "http://www.jdhp.org/medias/thumbnails/"
 
 INCLUDE_FILES = (os.path.join('misc', 'favicon.ico'),
                  os.path.join('misc', 'robots.txt'))
-INCLUDE_DIRS = ('css', 'medias')
+INCLUDE_DIRS = ('articles', 'css', 'medias')
 
 VERSION = '2.0'
 
