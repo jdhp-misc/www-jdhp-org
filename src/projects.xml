@@ -86,7 +86,7 @@
 			<desc lang="en">
                 JWumpus uses the <em>Jade</em> platform and a <em>Q-learning</em>
                 algorithm to solve the <em>Wumpus</em> problem (see
-                <em>"Artificial Intelligence"</em>, Russell and Norvig).
+                <em>"Artificial Intelligence"</em> by Stuart Russell and Peter Norvig).
 			</desc>
 			<debian_package filename="jwumpus_1.0-1_all.deb" arch="all" />
 			<git_repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
