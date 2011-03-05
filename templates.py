@@ -6,38 +6,26 @@
 
 # TRANSLATIONS ##################################
 
-tf_text = {'en': 'Hosted by TuxFamily',
+TF_TEXT = {'en': 'Hosted by TuxFamily',
            'fr': 'Ce site est hébergé chez TuxFamily'}
 
-xhtml_text = {'en': 'XHTML 1.0 Strict compliant',
+XHTML_TEXT = {'en': 'XHTML 1.0 Strict compliant',
               'fr': 'Cette page respecte le standard XHTML 1.0 Strict'}
 
-css_text = {'en': 'CSS 2.0 compliant',
+CSS_TEXT = {'en': 'CSS 2.0 compliant',
             'fr': 'Cette page respecte le standard CSS 2.0'}
 
-home_label = {'en': 'Home',
+HOME_LABEL = {'en': 'Home',
               'fr': 'Accueil'}
 
-projects_label = {'en': 'Projects',
+PROJECTS_LABEL = {'en': 'Projects',
                   'fr': 'Travaux'}
 
-articles_label = {'en': 'Articles',
+ARTICLES_LABEL = {'en': 'Articles',
                   'fr': 'Articles'}
 
-tutorials_label = {'en': 'Tutorials',
+TUTORIALS_LABEL = {'en': 'Tutorials',
                    'fr': 'Tutoriels'}
-
-flag_html = {'en' : '''
-            <div id="flag">
-                <a href="./{href}_fr.html"><img src="./medias/images/flag_fr.png" title="Version française" alt="Version française" /></a>
-                <img src="./medias/images/flag_grey_en.png" title="English version" alt="English version" />
-            </div>''',
-
-             'fr' : '''
-            <div id="flag">
-                <img src="./medias/images/flag_grey_fr.png" title="Version française" alt="Version française" />
-                <a href="./{href}_en.html"><img src="./medias/images/flag_en.png" title="English version" alt="English version" /></a>
-            </div>'''}
 
 
 # TEMPLATES #####################################
@@ -87,6 +75,18 @@ BODY = '''
 
     </body>
 '''
+
+FLAG_TAG = {'en' : '''
+            <div id="flag">
+                <a href="./{href}_fr.html"><img src="./medias/images/flag_fr.png" title="Version française" alt="Version française" /></a>
+                <img src="./medias/images/flag_grey_en.png" title="English version" alt="English version" />
+            </div>''',
+
+             'fr' : '''
+            <div id="flag">
+                <img src="./medias/images/flag_grey_fr.png" title="Version française" alt="Version française" />
+                <a href="./{href}_en.html"><img src="./medias/images/flag_en.png" title="English version" alt="English version" /></a>
+            </div>'''}
 
 MENU = '''
         <ul id="menu">
@@ -149,29 +149,40 @@ ITEM_METADATAS = '''
                     </div>
 '''
 
-FILES_DOWNLOAD = u'''
+DOWNLOAD_FILES = {'en': u'''
                         <div class="item_download">
-                            <strong>Télécharger</strong> :%(content)s
-                        </div>
-''' # TODO : lang
+                            <strong>Download</strong> :{content}
+                        </div>''',
+                  'fr': u'''
+                        <div class="item_download">
+                            <strong>Télécharger</strong> :{content}
+                        </div>'''}
 
-FILES_REPOSITORIES = '''
+VCS_REPOSITORIES = {'en': '''
                         <div class="item_repositories">
-                            <strong>Sources</strong> :%(content)s
-                        </div>
-''' # TODO : lang
+                            <strong>Source code</strong> :{content}
+                        </div>''',
+                      'fr': '''
+                        <div class="item_repositories">
+                            <strong>Fichiers sources</strong> :{content}
+                        </div>'''}
 
-DEBIAN_TAG = '''
-                                <a href="%(filename)s">Paquet Debian (%(arch)s)</a>''' # TODO : lang
+DEBIAN_TAG = {'en': '''
+                                <a href="{filename}">Debian Package ({arch})</a>''',
+              'fr': '''
+                                <a href="{filename}">Paquet Debian ({arch})</a>'''}
 
-RPM_TAG = '''
-                                <a href="%(filename)s">Paquet RPM (%(arch)s)</a>''' # TODO : lang
+
+RPM_TAG = {'en': '''
+                                <a href="{filename}">RPM Package ({arch})</a>''',
+           'fr': '''
+                                <a href="{filename}">Paquet RPM ({arch})</a>'''}
 
 TGZ_TAG = '''
-                                <a href="%(filename)s">%(label)s</a>''' # TODO : lang
+                                <a href="%(filename)s">%(label)s</a>'''
 
 PDF_TAG = '''
-                                <a href="%(filename)s">%(label)s</a>''' # TODO : lang
+                                <a href="%(filename)s">%(label)s</a>'''
 
 GIT_TAG = '''
                                 <a href="%(url)s">Git</a>
@@ -186,8 +197,10 @@ ITEM_PICTURES = '''
                     </div>
 '''
 
-PICTURE_TAG = '''
-                        <a href="%(url)s"><img src="%(thumbnail_url)s" title="picture" alt="picture" /></a>'''
+PICTURE_TAG = {'en': '''
+                        <a href="{url}"><img src="{thumbnail_url}" title="picture" alt="picture" /></a>''',
+               'fr': '''
+                        <a href="{url}"><img src="{thumbnail_url}" title="image" alt="image" /></a>'''}
 
 ITEM_VIDEOS = '''
                     <div class="item_thumbnails">%(content)s

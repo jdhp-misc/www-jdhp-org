@@ -3,7 +3,6 @@
 
 # Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 
-import xml
 import xml.etree.ElementTree as ET
 import os
 import sys
@@ -146,19 +145,19 @@ def parse(page, base_href):
         substitute = {
             'lang': lang,
             'home_class': 'selected' if page == 'home' else 'normal',
-            'home_label': templates.home_label[lang],
+            'home_label': templates.HOME_LABEL[lang],
             'project_class': 'selected' if page == 'projects' else 'normal',
-            'project_label': templates.projects_label[lang],
+            'project_label': templates.PROJECTS_LABEL[lang],
             'article_class': 'selected' if page == 'articles' else 'normal',
-            'article_label': templates.articles_label[lang],
+            'article_label': templates.ARTICLES_LABEL[lang],
             'tutorial_class': 'selected' if page == 'tutorials' else 'normal',
-            'tutorial_label': templates.tutorials_label[lang]}
+            'tutorial_label': templates.TUTORIALS_LABEL[lang]}
         menu = templates.MENU % substitute
 
         # FOOTER
-        substitute = {'tf_text': templates.tf_text[lang],
-                      'xhtml_text': templates.xhtml_text[lang],
-                      'css_text': templates.css_text[lang]}
+        substitute = {'tf_text': templates.TF_TEXT[lang],
+                      'xhtml_text': templates.XHTML_TEXT[lang],
+                      'css_text': templates.CSS_TEXT[lang]}
         footer = templates.FOOTER % substitute
 
         # BODY
@@ -232,14 +231,14 @@ def parse(page, base_href):
                     file_content = u''
                     download_list = []
                     for deb_elem in item.findall('debian_package'):
-                        substitute = {'filename': deb_elem.attrib['filename'],          # TODO : build the true url
-                                      'arch': deb_elem.attrib['arch']}
-                        download_list.append(templates.DEBIAN_TAG % substitute)         # TODO : lang...
+                        args = {'filename': deb_elem.attrib['filename'],          # TODO : build the true url
+                                'arch': deb_elem.attrib['arch']}
+                        download_list.append(templates.DEBIAN_TAG[lang].format(**args))
 
                     for rpm_elem in item.findall('rpm_package'):
-                        substitute = {'filename': rpm_elem.attrib['filename'],          # TODO : build the true url
-                                      'arch': rpm_elem.attrib['arch']}
-                        download_list.append(templates.RPM_TAG % substitute)            # TODO : lang...
+                        args = {'filename': rpm_elem.attrib['filename'],          # TODO : build the true url
+                                'arch': rpm_elem.attrib['arch']}
+                        download_list.append(templates.RPM_TAG[lang].format(**args))
 
                     for tgz_elem in item.findall('tarball'):
                         for label_elem in tgz_elem.findall('label'):
@@ -256,8 +255,8 @@ def parse(page, base_href):
                                 download_list.append(templates.PDF_TAG % substitute)
 
                     if len(download_list) > 0:
-                        substitute = {'content': string.join(download_list, ' &#149; ')}
-                        file_content += templates.FILES_DOWNLOAD % substitute
+                        args = {'content': string.join(download_list, ' &#149; ')}
+                        file_content += templates.DOWNLOAD_FILES[lang].format(**args)
 
                     # WRITE THE ITEM SOURCE REPOSITORIES
 
@@ -273,8 +272,8 @@ def parse(page, base_href):
                         vcs_list.append(templates.SVN_TAG % substitute)
 
                     if len(vcs_list) > 0:
-                        substitute = {'content': string.join(vcs_list, ' &#149; ')}
-                        file_content += templates.FILES_REPOSITORIES % substitute
+                        args = {'content': string.join(vcs_list, ' &#149; ')}
+                        file_content += templates.VCS_REPOSITORIES[lang].format(**args)
 
                     if not file_content == '':
                         substitute = {'content': file_content}
@@ -284,9 +283,9 @@ def parse(page, base_href):
 
                     img_list = []
                     for img_elem in item.findall('picture'):
-                        substitute = {'url': img_elem.attrib['filename'], # TODO
+                        args = {'url': img_elem.attrib['filename'], # TODO
                                       'thumbnail_url': img_elem.attrib['filename']} # TODO
-                        img_list.append(templates.PICTURE_TAG % substitute)
+                        img_list.append(templates.PICTURE_TAG[lang].format(**args))
 
                     if len(img_list) > 0:
                         substitute = {'content': string.join(img_list, ' ')}
@@ -305,7 +304,7 @@ def parse(page, base_href):
                         content += templates.ITEM_VIDEOS % substitute
 
         substitute = {'menu': menu,
-                      'flag': templates.flag_html[lang].format(href=page),
+                      'flag': templates.FLAG_TAG[lang].format(href=page),
                       'page_desc': page_desc,
                       'page_toc': page_toc.encode("utf-8"),
                       'page_note': page_note,
@@ -332,23 +331,23 @@ def childs(element, tag, lang):
 
 def el2text(element):
     # Get the text of the element
-    str = element.text
+    text = element.text
     # We need to remove all '\n' to process the string with re
-    str = string.replace(str, '\n', '')
+    text = string.replace(text, '\n', '')
     # Remove useless spaces
-    str = string.join(string.split(str))
-    return str
+    text = string.join(string.split(text))
+    return text
 
 def el2html(element):
     # Get the xml 'raw' code of the element
-    str = ET.tostring(element)
+    text = ET.tostring(element)
     # We need to remove all '\n' to process the string with re
-    str = string.replace(str, '\n', '')
+    text = string.replace(text, '\n', '')
     # Remove useless spaces
-    str = string.join(string.split(str))
+    text = string.join(string.split(text))
     # Remove the first and last tags
-    str = re.match('[^<]*<[^>]+>(.+)<[^>]+>[^>]*', str).group(1)
-    return str
+    text = re.match('[^<]*<[^>]+>(.+)<[^>]+>[^>]*', text).group(1)
+    return text
 
 if __name__ == '__main__':
     main()

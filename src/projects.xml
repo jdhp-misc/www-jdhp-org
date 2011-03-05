@@ -13,6 +13,9 @@
     <desc lang="fr">
         Projets et travaux en informatique.
     </desc>
+    <desc lang="en">
+        Some projects (computer science).
+    </desc>
 
     <note lang="fr">
         <!--<p>
@@ -42,6 +45,29 @@
             <strong>$ man NOM_DU_PAQUET</strong>
         </p>
     </note>
+    <note lang="en">
+        <p>
+            A repository is available for <em>Debian</em> and <em>Ubuntu</em> users.<br />
+        </p>
+        <ul>
+            <li>
+                Add this line in <em>/etc/apt/sources.list</em>:
+                <strong>deb <a href="http://download.tuxfamily.org/jdhp/debian">http://download.tuxfamily.org/jdhp/debian</a> ./</strong>
+            </li>
+            <li>
+                Then update the list of available packages from the apt sources:
+                <strong># apt-get update</strong>
+            </li>
+        </ul>
+        <p>
+            Packages are ready for installation now:
+            <strong># apt-get install PACKAGE_NAME</strong><br />
+        </p>
+        <p>
+            A manpage is included packages:
+            <strong>$ man PACKAGE_NAME</strong>
+        </p>
+    </note>
     
     <!-- ############################################################ -->
 
@@ -49,17 +75,26 @@
         <label lang="fr">
             Intelligence Artificielle et Mathématiques Appliquées
         </label>
+        <label lang="en">
+            Artificial Intelligence and Mathematics
+        </label>
 
         <item id="jwumpus" license="MIT">
             <label lang="fr">JWumpus</label>
+            <label lang="en">JWumpus</label>
 			<desc lang="fr">
                 JWumpus est un exemple d'utilisation de la plate-forme <a
                 href="http://jade.tilab.com">Jade</a> et de l'algorithme de
                 Q-Learning (apprentissage par renforcement) pour résoudre le
                 problème du Wumpus (tel que présenté dans le livre "Intelligence
                 Artificielle" de Russell et Norvig).  L'algorithme explore
-                l'espace des états jusqu'à la 2000e itération, après quoi il
-                passe en mode exploitation.
+                l'espace des états-actions jusqu'à la 2000e itération, après
+                quoi il passe en mode exploitation.
+			</desc>
+			<desc lang="en">
+                JWumpus uses the <em>Jade</em> platform and <em>Q-learning</em>
+                algorithm to solve the <em>Wumpus</em> problem (see
+                <em>"Artificial Intelligence"</em>, Russell and Norvig).
 			</desc>
 			<debian_package filename="jwumpus_1.0-1_all.deb" arch="all" />
 			<git_repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
@@ -71,11 +106,19 @@
 
         <item id="chef" license="MIT">
             <label lang="fr">Chef</label>
+            <label lang="en">Chef</label>
 			<desc lang="fr">
                 Chef est un exemple de projet multi-agents utilisant l'architecture
                 <a href="http://en.wikipedia.org/wiki/Belief-Desire-Intention_software_model">BDI</a>
                 (Belief Desire and Intention) et l'interprète
                 <a href="http://jason.sourceforge.net/JasonWebSite/Description.html">Jason</a>.
+			</desc>
+			<desc lang="en">
+                A multi-agent project using 
+                <a href="http://en.wikipedia.org/wiki/Belief-Desire-Intention_software_model">BDI</a>
+                (Belief Desire and Intention) software model and 
+                <a href="http://jason.sourceforge.net/JasonWebSite/Description.html">Jason</a>
+                platform.
 			</desc>
 			<git_repository url="git://git.tuxfamily.org/gitroot/chef/chef.git"
                             weburl="http://git.tuxfamily.org/chef/chef/" />
@@ -83,11 +126,17 @@
 
         <item id="projet_0069" license="MIT">
             <label lang="fr">Perceptron simple</label>
+            <label lang="en">Perceptron</label>
 			<desc lang="fr">
                 Ce script PHP sert uniquement à mieux comprendre les étapes de
                 calcul conduisant à l'équilibre d'un réseau de neurones
                 fonctionnant suivant le modèle du Perceptron. Il n'a pas d'autre
                 intérêt que de servir de support pédagogique.
+			</desc>
+			<desc lang="en">
+                A PHP script to show the calculation steps leading to the
+                equilibrium of a small neural network (Perceptron). It's
+                nothing more that an educational support.
 			</desc>
 			<tarball filename="perceptron_simple.zip">
                 <label lang="fr">Sources</label>
@@ -101,13 +150,21 @@
         <label lang="fr">
             Robotique et Électronique Numérique
         </label>
+        <label lang="en">
+            Robotics and Electronics
+        </label>
         
         <item id="pyarm" license="MIT">
             <label lang="fr">PyArm</label>
+            <label lang="en">PyArm</label>
 			<desc lang="fr">
                 Un simulateur utilisé dans le cadre d'expériences sur
                 l'apprentissage du contrôle moteur humain avec un modèle de bras
                 anthropomorphique.
+			</desc>
+			<desc lang="en">
+                Pyarm is a simulator used for experiments on human motor
+                control with an anthropomorphic arm model.
 			</desc>
 			<debian_package filename="pyarm_0.1.3-1_all.deb" arch="all" />
             <!-- TODO
@@ -139,10 +196,15 @@
 
         <item id="botsim" license="MIT">
             <label lang="fr">Botsim</label>
+            <label lang="en">Botsim</label>
 			<desc lang="fr">
                 Botsim est un simulateur de robots utilisé dans le cadre de
                 travaux sur les algorithmes génétiques. La physique est simulée
                 via la librairie opensource Bullet.
+			</desc>
+			<desc lang="en">
+                A robots simulator mainly used to test some evolutionary
+                algorithms.
 			</desc>
 			<tarball filename="botsim-0.1.tar.gz">
                 <label lang="fr">Sources</label>
@@ -158,6 +220,7 @@
 
         <item id="libdynamixel" license="MIT">
             <label lang="fr">LibDynamixel</label>
+            <label lang="en">LibDynamixel</label>
 			<desc lang="fr">
                 LibDynamixel est une librairie qui permet de contrôler des
                 servomoteurs <a
@@ -171,6 +234,13 @@
                 href="http://www.robotis.com">Robotis</a>.  LibDynamixel est
                 écrit en C et fonctionne sur les systèmes Gnu/Linux.
 			</desc>
+			<desc lang="en">
+                Use libdynamixel to control <a
+                href="http://www.robotis.com/zbxe/dynamixel_en">Dynamixel
+                AX-12</a> actuators directly from a computer (using a <a
+                href="http://www.robotis.com/zbxe/controller_en">USB2Dynamixel</a>
+                adapter).
+			</desc>
 			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/libdynamixel.git"
                             weburl="http://git.tuxfamily.org/robotics/libdynamixel/" />
 			<picture filename="dynamixel_1.png" />
@@ -178,9 +248,13 @@
 
         <item id="pydynamixel" license="MIT">
             <label lang="fr">PyDynamixel</label>
+            <label lang="en">PyDynamixel</label>
 			<desc lang="fr">
                 PyDynamixel est une implémentation écrite en Python (pur) de la
                 libdynamixel.
+			</desc>
+			<desc lang="en">
+                A Python implementation of libdynamixel.
 			</desc>
 			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/pydynamixel.git"
                             weburl="http://git.tuxfamily.org/robotics/pydynamixel/" />
@@ -188,10 +262,16 @@
 
         <item id="dtools" license="MIT">
             <label lang="fr">Dtools</label>
+            <label lang="en">Dtools</label>
 			<desc lang="fr">
                 Un ensemble d'outils pour faciliter le contrôle des servomoteurs
-                <a href="http://www.robotis.com/zbxe/dynamixel_en">Dynamixel
+                <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel
                 AX-12</a>.
+			</desc>
+			<desc lang="en">
+                A toolset to control
+                <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel
+                AX-12</a> actuators.
 			</desc>
 			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/dtools.git"
                             weburl="http://git.tuxfamily.org/robotics/dtools/" />
@@ -200,10 +280,15 @@
 
         <item id="bioloid" license="MIT">
             <label lang="fr">Bioloid</label>
+            <label lang="en">Bioloid</label>
 			<desc lang="fr">
                 Quelques exemples d'utilisation de la libdynamixel pour
                 contrôler un <a
-                href="http://www.robotis.com/zbxe/bioloid_en">bioloid</a>.
+                href="http://www.robotis.com/xe/bioloid_en">bioloid</a>.
+			</desc>
+			<desc lang="en">
+                This demo uses libdynamixel to control a <a
+                href="http://www.robotis.com/xe/bioloid_en">bioloid</a>.
 			</desc>
 			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/bioloid.git"
                             weburl="http://git.tuxfamily.org/robotics/bioloid/" />
@@ -234,12 +319,19 @@
         <label lang="fr">
             Utilitaires
         </label>
+        <label lang="en">
+            Utilities
+        </label>
 
         <item id="clonefinder" license="MIT">
             <label lang="fr">Clonefinder</label>
+            <label lang="en">Clonefinder</label>
 			<desc lang="fr">
                 Recherche les fichiers et les répertoires dupliqués dans une
                 arborescence.
+			</desc>
+			<desc lang="en">
+                Finds duplicated files and directories.
 			</desc>
 			<debian_package filename="clonefinder_1.0-1_all.deb" arch="all" />
 			<tarball filename="clonefinder-1.0.tar.gz">
@@ -251,12 +343,16 @@
 
         <item id="binviewer" license="MIT">
             <label lang="fr">Binviewer</label>
+            <label lang="en">Binviewer</label>
 			<desc lang="fr">
                 Donne une représentation graphique d'un fichier binaire
                 (disque, partition, image ISO, exécutable, ...). Ce
                 programme sert notamment à l'analyse de partitions chiffrées.
                 Il permet également de voir la structure d'un système de
                 fichier.
+			</desc>
+			<desc lang="en">
+                Creates a graphical representation of a binary file.
 			</desc>
 			<debian_package filename="binviewer_0.2-1_all.deb" arch="all" />
 			<tarball filename="binviewer-0.2.tar.gz">
@@ -270,9 +366,14 @@
 
         <item id="latex2png" license="MIT">
             <label lang="fr">Latex2png</label>
+            <label lang="en">Latex2png</label>
 			<desc lang="fr">
                 Convertit des fichiers latex en images PNG (permet par
                 exemple d'exporter une formule mathématique isolée en image).
+			</desc>
+			<desc lang="en">
+                Converts LaTeX files to PNG graphics (useful to create
+                mathematical formulas as images).
 			</desc>
 			<debian_package filename="latex2png_1.0-1_all.deb" arch="all" />
 			<tarball filename="latex2png-1.0.tar.gz">
@@ -289,15 +390,22 @@
         <label lang="fr">
             Divers
         </label>
+        <label lang="en">
+            Miscellaneous
+        </label>
 
         <item id="demos" license="MIT">
             <label lang="fr">Démos</label>
+            <label lang="en">Demos</label>
 			<desc lang="fr">
                 Un ensemble de démos sous license BSD/MIT.
                 Ces démos ont soit un but artistique (animations graphiques),
                 soit un but pédagogique (pour donner des exemples
                 d'utilisation des librairies Bullet, OpenSceneGraph, SFML,
                 SDL, ...).
+			</desc>
+			<desc lang="en">
+                Some demos (artistic or educational purpose).
 			</desc>
 			<tarball filename="demos.tar.gz">
                 <label lang="fr">Sources</label>
@@ -309,10 +417,14 @@
 
         <item id="pypong" license="MIT">
             <label lang="fr">PyPong</label>
+            <label lang="en">PyPong</label>
 			<desc lang="fr">
                 PyPong est un clone du célèbre Pong. Ce jeu est écrit en
                 <a href="http://www.python.org/">Python</a> et utilise les
                 modules <a href="http://www.pygame.org/">PyGame</a>.
+			</desc>
+			<desc lang="en">
+                An implementation of the famous game 'Pong'.
 			</desc>
 			<git_repository url="git://git.tuxfamily.org/gitroot/pygames/pypong.git"
                             weburl="http://git.tuxfamily.org/pygames/pypong/" />
@@ -321,8 +433,12 @@
 
         <item id="jdhp" license="cc-by-sa">
             <label lang="fr">JDHP</label>
+            <label lang="en">JDHP</label>
 			<desc lang="fr">
                 Le code source et les scripts de compilation du site jdhp.org.
+			</desc>
+			<desc lang="en">
+                The source code of this web site.
 			</desc>
 			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/jdhp.git"
                             weburl="http://git.tuxfamily.org/jdhp/jdhp/" />
