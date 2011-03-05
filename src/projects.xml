@@ -64,7 +64,7 @@
             <strong># apt-get install PACKAGE_NAME</strong><br />
         </p>
         <p>
-            A manpage is included packages:
+            A manpage is included in packages:
             <strong>$ man PACKAGE_NAME</strong>
         </p>
     </note>
