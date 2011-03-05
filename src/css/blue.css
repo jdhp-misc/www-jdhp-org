@@ -21,6 +21,12 @@
     padding          : 0px;
 }
 
+a {
+    /*color            : #0088cc;*/
+    color            : #197cc1;
+    text-decoration  : none;
+}
+
 body {
     background-color : #f4f4f4;
     text-align       : center; /* cf ... */
@@ -80,6 +86,8 @@ ul#menu li.normal a {
     border-bottom    : 1px solid #dddddd;
     border-left      : 1px solid #dddddd;
 
+    color            : #666666;
+
     display          : block;
     font-weight      : bold;
     line-height      : 22px;          /* pour centrer le texte verticalement */
@@ -88,6 +96,7 @@ ul#menu li.normal a {
 
 ul#menu li.normal a:hover {
     background-color : #dddddd;
+    color            : #666666;
 }
 
 ul#menu li.selected a {
@@ -96,6 +105,8 @@ ul#menu li.selected a {
     border-top       : 1px solid #dddddd;
     border-bottom    : 1px solid white;
     border-left      : 1px solid #dddddd;
+
+    color            : #666666;
 
     display          : block;
     font-weight      : bold;
@@ -125,8 +136,8 @@ div#page {
 /*** flag ***/
 
 div#flag {
-    margin-left      : 26px;
-    margin-right     : 26px;
+    margin-left      : 3em;
+    margin-right     : 3em;
 
     text-align       : right;
 }
@@ -137,8 +148,8 @@ ul#page_toc {
     list-style       : square;
 
     margin-top       : 1em;
-    margin-left      : 26px;
-    margin-right     : 26px;
+    margin-left      : 3em;
+    margin-right     : 3em;
 
     text-align       : justify;
 }
@@ -147,8 +158,8 @@ ul#page_toc {
 
 div#page_desc {
     margin-top       : 2em;
-    margin-left      : 26px;
-    margin-right     : 26px;
+    margin-left      : 3em;
+    margin-right     : 3em;
 
     text-align       : justify;
 }
@@ -162,8 +173,8 @@ div#page_note {
     font-size        : 10px;
 
     margin-top       : 3em;
-    margin-left      : 60px;
-    margin-right     : 60px;
+    margin-left      : 6em;
+    margin-right     : 6em;
 
     padding          : 1em;
 
@@ -182,6 +193,8 @@ div#page_note strong {
 }
 
 div#page_note strong a {
+    color            : #666666;
+
     font-family      : monospace;
     font-weight      : bold;
 
@@ -191,21 +204,26 @@ div#page_note strong a {
 /*** groups ***/
 
 h2 {
-    background-color : #f7f7f7;
+    /*background-color : #f7f7f7;*/
 
+/*
     border-top       : 1px solid #dddddd;
+*/
     border-bottom    : 1px solid #dddddd;
 
-    font-size        : 16px;
+    font-family      : "Lucida Grande",Verdana,Helvetica,Arial,sans-serif;
+    font-size        : 1.4em;
     font-variant     : small-caps;
     font-weight      : bold;
 
     padding-top      : 2px;
     padding-bottom   : 2px;
-    padding-left     : 13px;
-    padding-right    : 13px;
+    padding-left     : 0.25em;
+    padding-right    : 0.25em;
 
     margin-top       : 2.5em;
+    margin-left      : 1.5em;
+    margin-right     : 1.5em;
 
     text-align       : left;
 }
@@ -213,12 +231,14 @@ h2 {
 /*** items ***/
 
 h3 {
+    font-family      : "Lucida Grande",Verdana,Helvetica,Arial,sans-serif;
+    font-size        : 1.2em;
     font-weight      : bold;
 
     margin-top       : 2em;
     margin-bottom    : 0.5em;
-    margin-left      : 26px;
-    margin-right     : 26px;
+    margin-left      : 3em;
+    margin-right     : 3em;
 
     text-align       : left;
 }
@@ -227,21 +247,21 @@ h3 {
 /*                                HOME PAGE                                  */
 /* ************************************************************************* */
 
-div#title {
+div#home_title {
     font-weight     : bold;
 
-    margin-left     : 26px;
-    margin-right    : 26px;
+    margin-left     : 3em;
+    margin-right    : 3em;
     margin-top      : 2em;
     margin-bottom   : 2em;
 }
 
-div#contact {
+div#home_contact {
     background-image    : url(../medias/images/jd.png);
     background-repeat   : no-repeat;
 
-    margin-left      : 26px;
-    margin-right     : 26px;
+    margin-left      : 3em;
+    margin-right     : 3em;
     margin-top       : 2em;
     margin-bottom    : 2em;
 
@@ -252,12 +272,27 @@ div#contact {
     text-align       : justify;
 }
 
-div#contact > p#school {
+div#home_contact > p#school {
     margin-top       : 1.75em;
 }
 
-div#contact > p#resume {
+div#home_contact > p#resume {
     margin-top       : 1.75em;
+}
+
+#home_cv {
+    margin-left      : 6em;
+    margin-right     : 6em;
+}
+
+#home_about {
+    margin-left      : 6em;
+    margin-right     : 6em;
+}
+
+#home_links {
+    margin-left      : 6em;
+    margin-right     : 6em;
 }
 
 /* ************************************************************************* */
@@ -268,8 +303,8 @@ div#contact > p#resume {
 
 div.item_desc {
     margin-bottom    : 0.5em;
-    margin-left      : 26px;
-    margin-right     : 26px;
+    margin-left      : 6em;
+    margin-right     : 6em;
 
     text-align       : justify;
 }
@@ -278,8 +313,8 @@ div.item_desc {
 
 div.item_link {
     margin-bottom    : 0.5em;
-    margin-left      : 26px;
-    margin-right     : 26px;
+    margin-left      : 6em;
+    margin-right     : 6em;
 }
 
 div.item_link a {
@@ -292,8 +327,8 @@ div.item_metadatas {
     border-left      : 5px solid #eeeeee;
 
     margin-top       : 1.25em;
-    margin-left      : 26px;
-    margin-right     : 26px;
+    margin-left      : 6em;
+    margin-right     : 6em;
 
     padding-left     : 1em;
     padding-right    : 1em;

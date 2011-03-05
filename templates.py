@@ -47,8 +47,8 @@ HEADER = '''
         <meta name="copyright" content="copyright (c) 2006,2007,2008,2009,2010,2011 Jérémie DECOCK" />
         <meta name="keywords" content="%(page_keywords)s" />
         <link rel="shortcut icon" type="image/png" href="./medias/images/favicon.png" />
-        <link rel="stylesheet" type="text/css" href="./css/gray.css" media="screen" title="Normal" />
-        <link rel="alternate stylesheet" type="text/css" href="./css/blue.css" media="screen" title="Blue" />
+        <link rel="stylesheet" type="text/css" href="./css/blue.css" media="screen" title="Normal" />
+        <link rel="alternate stylesheet" type="text/css" href="./css/gray.css" media="screen" title="Gray" />
     </head>
 '''
 

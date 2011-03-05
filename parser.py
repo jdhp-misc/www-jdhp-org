@@ -180,19 +180,19 @@ def parse(page, base_href):
                 page_desc = templates.PAGE_DESC % {'text': el2html(elem)}
 
         # table of content
-        group_labels = []
-        for group_elem in tree.findall('group'):
-            for name_elem in group_elem.findall('label'):
-                if name_elem.attrib['lang'] == lang:
-                    substitute = {'id': group_elem.attrib['id'],
-                                  'page': page + "_" + lang + ".html",
-                                  'label': el2text(name_elem)}
-                    tag = templates.TOC_TAG % substitute
-                    group_labels.append(tag)
+#        group_labels = []
+#        for group_elem in tree.findall('group'):
+#            for name_elem in group_elem.findall('label'):
+#                if name_elem.attrib['lang'] == lang:
+#                    substitute = {'id': group_elem.attrib['id'],
+#                                  'page': page + "_" + lang + ".html",
+#                                  'label': el2text(name_elem)}
+#                    tag = templates.TOC_TAG % substitute
+#                    group_labels.append(tag)
         page_toc = u''
-        if(len(group_labels) > 0):
-            substitute = {'content': string.join(group_labels)}
-            page_toc = templates.PAGE_TOC % substitute
+#        if(len(group_labels) > 0):
+#            substitute = {'content': string.join(group_labels)}
+#            page_toc = templates.PAGE_TOC % substitute
 
         # page note
         page_note = ''
