@@ -40,7 +40,7 @@
 			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                             weburl="http://git.tuxfamily.org/jdhp/articles/" />
 
-			<link url="http://download.tuxfamily.org/jdhp/articles/html/tutoriel_vim_spellfr.html">
+			<link url="http://www.jdhp.org/articles/tutoriel_vim_spellfr.html">
                 <label lang="fr">Lire la suite</label>
 			</link>
         </item>

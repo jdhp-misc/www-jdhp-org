@@ -398,7 +398,7 @@
             <label lang="fr">Démos</label>
             <label lang="en">Demos</label>
 			<desc lang="fr">
-                Un ensemble de démos sous license BSD/MIT.
+                Un ensemble de démos sous licence BSD/MIT.
                 Ces démos ont soit un but artistique (animations graphiques),
                 soit un but pédagogique (pour donner des exemples
                 d'utilisation des librairies Bullet, OpenSceneGraph, SFML,

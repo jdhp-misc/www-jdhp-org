@@ -128,7 +128,7 @@
 			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                             weburl="http://git.tuxfamily.org/jdhp/articles/" />
 
-			<link url="http://download.tuxfamily.org/jdhp/articles/html/les_wikis_en_entreprise.html">
+			<link url="http://www.jdhp.org/articles/les_wikis_en_entreprise.html">
                 <label lang="fr">Lire la suite</label>
 			</link>
         </item>
@@ -220,7 +220,7 @@
 			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                             weburl="http://git.tuxfamily.org/jdhp/articles/" />
 
-			<link url="http://download.tuxfamily.org/jdhp/articles/html/droits_auteurs.html">
+			<link url="http://www.jdhp.org/articles/droits_auteurs.html">
                 <label lang="fr">Lire la suite</label>
 			</link>
         </item>

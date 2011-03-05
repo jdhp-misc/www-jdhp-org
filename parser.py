@@ -16,7 +16,7 @@ LANG_LIST = ('en', 'fr')
 DEFAULT_LANG = 'fr'
 
 SRC_DIR  = 'src'      # xml files location
-DEST_DIR = 'test'     # (x)html files location
+DEST_DIR = 'www'      # (x)html files location
 
 FILES = "http://download.tuxfamily.org/jdhp/"
 DEB_DIR = "debian/"
@@ -64,7 +64,7 @@ def main():
     """The main function."""
     
     # Parse options ###########################################################
-    base_href = 'http://127.0.0.1/jdhp.org/'
+    base_href = 'http://www.jdhp.org/'
 
     try:
         opts, args = getopt.getopt(sys.argv[1:],
@@ -295,7 +295,7 @@ def parse(page, base_href):
                     img_list = []
                     for img_elem in item.findall('picture'):
                         args = {'url': FILES + IMG_DIR + img_elem.attrib['filename'],
-                                'thumbnail_url': FILES + THUMB_DIR + img_elem.attrib['filename']}
+                                'thumbnail_url': THUMB_DIR + img_elem.attrib['filename']}
                         img_list.append(templates.PICTURE_TAG[lang].format(**args))
 
                     if len(img_list) > 0:
@@ -306,8 +306,10 @@ def parse(page, base_href):
 
                     mov_list = []
                     for img_elem in item.findall('video'):
-                        substitute = {'url': FILES + VIDEO_DIR + img_elem.attrib['filename'],
-                                      'thumbnail_url': FILES + THUMB_DIR + img_elem.attrib['filename']}
+                        filename = img_elem.attrib['filename']
+                        thumbnail_file = string.replace(filename, '.ogv', '.png')
+                        substitute = {'url': FILES + VIDEO_DIR + filename,
+                                      'thumbnail_url': THUMB_DIR + thumbnail_file}
                         mov_list.append(templates.VIDEO_TAG % substitute)
 
                     if len(mov_list) > 0:
