@@ -17,7 +17,7 @@ git clone . $JDHP_LOCAL_PATH
 cp -r $JDHP_SRC_PATH/files $JDHP_LOCAL_PATH
 
 # COMPILE...
-CUR_DIR = `pwd`
+CUR_DIR=`pwd`
 cd $JDHP_LOCAL_PATH
 ./parser.py -b "http://www.jdhp.org/"
 cd $CUR_DIR
