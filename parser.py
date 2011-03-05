@@ -12,10 +12,21 @@ import shutil
 import string
 import re
 
-SRC_DIR  = 'src'      # xml files location
-DEST_DIR = 'test'     # (x)html files location
 LANG_LIST = ('en', 'fr')
 DEFAULT_LANG = 'fr'
+
+SRC_DIR  = 'src'      # xml files location
+DEST_DIR = 'test'     # (x)html files location
+
+FILES = "http://download.tuxfamily.org/jdhp/"
+DEB_DIR = "debian/"
+RPM_DIR = "rpm/"
+TGZ_DIR = "tarball/"
+PDF_DIR = "pdf/"
+MAN_DIR = "man/"
+IMG_DIR = "image/"
+VIDEO_DIR = "video/"
+THUMB_DIR = "http://www.jdhp.org/medias/thumbnails/"
 
 INCLUDE_FILES = (os.path.join('misc', 'favicon.ico'),
                  os.path.join('misc', 'robots.txt'))
@@ -231,26 +242,26 @@ def parse(page, base_href):
                     file_content = u''
                     download_list = []
                     for deb_elem in item.findall('debian_package'):
-                        args = {'filename': deb_elem.attrib['filename'],          # TODO : build the true url
+                        args = {'filename': FILES + DEB_DIR + deb_elem.attrib['filename'],
                                 'arch': deb_elem.attrib['arch']}
                         download_list.append(templates.DEBIAN_TAG[lang].format(**args))
 
                     for rpm_elem in item.findall('rpm_package'):
-                        args = {'filename': rpm_elem.attrib['filename'],          # TODO : build the true url
+                        args = {'filename': FILES + RPM_DIR + rpm_elem.attrib['filename'],
                                 'arch': rpm_elem.attrib['arch']}
                         download_list.append(templates.RPM_TAG[lang].format(**args))
 
                     for tgz_elem in item.findall('tarball'):
                         for label_elem in tgz_elem.findall('label'):
                             if label_elem.attrib['lang'] == lang:
-                                substitute = {'filename': tgz_elem.attrib['filename'],  # TODO : build the true url
+                                substitute = {'filename': FILES + TGZ_DIR + tgz_elem.attrib['filename'],
                                               'label': el2text(label_elem)}
                                 download_list.append(templates.TGZ_TAG % substitute)
 
                     for pdf_elem in item.findall('pdf'):
                         for label_elem in pdf_elem.findall('label'):
                             if label_elem.attrib['lang'] == lang:
-                                substitute = {'filename': pdf_elem.attrib['filename'],  # TODO : build the true url
+                                substitute = {'filename': FILES + PDF_DIR + pdf_elem.attrib['filename'],
                                               'label': el2text(label_elem)}
                                 download_list.append(templates.PDF_TAG % substitute)
 
@@ -283,8 +294,8 @@ def parse(page, base_href):
 
                     img_list = []
                     for img_elem in item.findall('picture'):
-                        args = {'url': img_elem.attrib['filename'], # TODO
-                                      'thumbnail_url': img_elem.attrib['filename']} # TODO
+                        args = {'url': FILES + IMG_DIR + img_elem.attrib['filename'],
+                                'thumbnail_url': FILES + THUMB_DIR + img_elem.attrib['filename']}
                         img_list.append(templates.PICTURE_TAG[lang].format(**args))
 
                     if len(img_list) > 0:
@@ -295,8 +306,8 @@ def parse(page, base_href):
 
                     mov_list = []
                     for img_elem in item.findall('video'):
-                        substitute = {'url': img_elem.attrib['filename'], # TODO
-                                      'thumbnail_url': img_elem.attrib['filename']} # TODO
+                        substitute = {'url': FILES + VIDEO_DIR + img_elem.attrib['filename'],
+                                      'thumbnail_url': FILES + THUMB_DIR + img_elem.attrib['filename']}
                         mov_list.append(templates.VIDEO_TAG % substitute)
 
                     if len(mov_list) > 0:

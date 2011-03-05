@@ -27,17 +27,17 @@ echo "Modification des balises HTML <base>"
 find $JDHP_LOCAL_PATH/www/ -type f -name "*.html" -exec sed -i "s/$BASE_DEFAULT/$BASE_ONLINE/g" "{}" \;
 
 # Génère les thumbnails (imagemagick et ffmpeg)
+mkdir -p $JDHP_LOCAL_PATH/www/medias/thumbnails/
+
 echo "Génère les thumbnails (screenshot)"
-mkdir -p $JDHP_LOCAL_PATH/www/medias/thumbnails/screenshots/
-mogrify -format png -path $JDHP_LOCAL_PATH/www/medias/thumbnails/screenshots/ -thumbnail 80x80 $JDHP_LOCAL_PATH/files/medias/images/screenshots/*.png
+mogrify -format png -path $JDHP_LOCAL_PATH/www/medias/thumbnails/ -thumbnail 80x80 $JDHP_LOCAL_PATH/files/image/*.png
 
 echo "Génère les thumbnails (videos)"
-mkdir -p $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/
-for VIDEO_PATH in $JDHP_LOCAL_PATH/files/medias/videos/*.ogv
+for VIDEO_PATH in $JDHP_LOCAL_PATH/files/video/*.ogv
 do
     VIDEO_FILE=$(basename $VIDEO_PATH  | sed -r "s/(.+)\.ogv/\1/g")
-    ffmpeg -y -i $VIDEO_PATH -f mjpeg -ss 1 -vframes 1 -s 80x80 -an $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.jpeg
-    composite -gravity center $JDHP_LOCAL_PATH/www/medias/images/video.png $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.jpeg $JDHP_LOCAL_PATH/www/medias/thumbnails/videos/$VIDEO_FILE.png
+    ffmpeg -y -i $VIDEO_PATH -f mjpeg -ss 1 -vframes 1 -s 80x80 -an $JDHP_LOCAL_PATH/www/medias/thumbnails/$VIDEO_FILE.jpeg
+    composite -gravity center $JDHP_LOCAL_PATH/www/medias/images/video.png $JDHP_LOCAL_PATH/www/medias/thumbnails/$VIDEO_FILE.jpeg $JDHP_LOCAL_PATH/www/medias/thumbnails/$VIDEO_FILE.png
 done
 
 # Corrige les permissions si besoin
