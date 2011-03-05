@@ -51,7 +51,7 @@
         </p>
         <ul>
             <li>
-                add this line in <em>/etc/apt/sources.list</em>:
+                add the following line in your <em>/etc/apt/sources.list</em> file:
                 <strong>deb <a href="http://download.tuxfamily.org/jdhp/debian">http://download.tuxfamily.org/jdhp/debian</a> ./</strong>
             </li>
             <li>
