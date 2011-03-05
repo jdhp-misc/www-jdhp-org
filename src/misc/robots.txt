@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /css/
-Disallow: /images/
-# Crawl-delay: 10
+Allow: /

@@ -185,6 +185,7 @@ def parse(page, base_href):
             for name_elem in group_elem.findall('label'):
                 if name_elem.attrib['lang'] == lang:
                     substitute = {'id': group_elem.attrib['id'],
+                                  'page': page,
                                   'label': el2text(name_elem)}
                     tag = templates.TOC_TAG % substitute
                     group_labels.append(tag)

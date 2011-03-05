@@ -117,7 +117,7 @@ PAGE_TOC = '''
 '''
 
 TOC_TAG = '''
-                <li><a href="#%(id)s">%(label)s</a></li>'''
+                <li><a href="%(page)s#%(id)s">%(label)s</a></li>'''
 
 PAGE_NOTE = '''
             <div id="page_note">
