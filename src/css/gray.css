@@ -68,7 +68,7 @@ ul#menu {
 }
 
 ul#menu li {
-    float            : left;
+    float            : left;              /* http://www.siteduzero.com/tutoriel-3-13566-mise-en-boite-partie-2-2.html#ss_part_2 */
     text-align       : center;
     width            : 200px;
 }
@@ -196,7 +196,7 @@ h2 {
     border-top       : 1px solid #dddddd;
     border-bottom    : 1px solid #dddddd;
 
-    clear            : both;
+    clear            : both;              /* http://www.siteduzero.com/tutoriel-3-13566-mise-en-boite-partie-2-2.html#ss_part_2 */
 
     font-size        : 16px;
     font-variant     : small-caps;
@@ -337,7 +337,7 @@ div.item_metadatas * a {
 /*** item thumbnails ***/
 
 div.item_thumbnails {
-    float            : right;
+    float            : right;              /* http://www.siteduzero.com/tutoriel-3-13566-mise-en-boite-partie-2-2.html#ss_part_2 */
 
     margin-top       : 0.5em;
     margin-bottom    : 0.5em;
