@@ -1,6 +1,7 @@
 - Générer une page html pour chaque items (projets) pour y mettre plus
   d'informations sans alourdir la page "projet_xx.html" (instructions pour Git,
   licence, plusieurs screenshots, plusieurs vidéos, ...). 
+  Ajouter un fil d'Ariane (police des liens de couleur bordeaux)
 - Découper parser.py en plusieurs fonctions
 - Passer parser.py à Python 3 (chaînes -> utf-8)
 - Améliorer le schema XML :
