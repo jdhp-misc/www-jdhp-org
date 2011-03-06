@@ -29,6 +29,7 @@ VIDEO_DIR = "video/"
 THUMB_DIR = "http://www.jdhp.org/medias/thumbnails/"
 
 INCLUDE_FILES = (os.path.join('misc', 'favicon.ico'),
+                 os.path.join('misc', 'videos.html'), # TODO : remove it
                  os.path.join('misc', 'robots.txt'))
 INCLUDE_DIRS = ('articles', 'css', 'medias')
 
