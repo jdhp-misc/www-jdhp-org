@@ -196,6 +196,8 @@ h2 {
     border-top       : 1px solid #dddddd;
     border-bottom    : 1px solid #dddddd;
 
+    clear            : both;
+
     font-size        : 16px;
     font-variant     : small-caps;
     font-weight      : bold;
@@ -213,6 +215,8 @@ h2 {
 /*** items ***/
 
 h3 {
+    clear            : both;
+
     font-weight      : bold;
 
     margin-top       : 2em;
@@ -333,10 +337,12 @@ div.item_metadatas * a {
 /*** item thumbnails ***/
 
 div.item_thumbnails {
+    float            : right;
+
     margin-top       : 0.5em;
     margin-bottom    : 0.5em;
-    margin-left      : 56px;
-    margin-right     : 56px;
+    margin-left      : 2em;
+    margin-right     : 6em;
 
     text-align       : center;
 }
