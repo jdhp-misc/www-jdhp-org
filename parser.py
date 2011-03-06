@@ -225,6 +225,32 @@ def parse(page, base_href):
                                   'label': el2text(iname)}
                     content += templates.ITEM_TAG % substitute
 
+                    # WRITE THE ITEM PICTURES
+                    img_list = []
+                    for img_elem in item.findall('picture'):
+                        args = {'url': FILES + IMG_DIR + img_elem.attrib['filename'],
+                                'thumbnail_url': THUMB_DIR + img_elem.attrib['filename']}
+                        img_list.append(templates.PICTURE_TAG[lang].format(**args))
+
+                    if len(img_list) > 0:
+                        #substitute = {'content': string.join(img_list, ' ')}  # Display all pictures
+                        substitute = {'content': img_list[0]}                  # Display only the first picture
+                        content += templates.ITEM_PICTURES % substitute
+
+                    # WRITE THE ITEM VIDEO
+                    mov_list = []
+                    for img_elem in item.findall('video'):
+                        filename = img_elem.attrib['filename']
+                        thumbnail_file = string.replace(filename, '.ogv', '.png')
+                        substitute = {'url': FILES + VIDEO_DIR + filename,
+                                      'thumbnail_url': THUMB_DIR + thumbnail_file}
+                        mov_list.append(templates.VIDEO_TAG % substitute)
+
+                    if len(mov_list) > 0:
+                        #substitute = {'content': string.join(mov_list, ' ')}  # Display all videos
+                        substitute = {'content': mov_list[0]}                  # Display only the first picture
+                        content += templates.ITEM_VIDEOS % substitute
+
                     # WRITE THE ITEM DESC
                     for desc_elem in item.findall('desc'):
                         if desc_elem.attrib['lang'] == lang:
@@ -271,7 +297,6 @@ def parse(page, base_href):
                         file_content += templates.DOWNLOAD_FILES[lang].format(**args)
 
                     # WRITE THE ITEM SOURCE REPOSITORIES
-
                     vcs_list = []
                     for git_elem in item.findall('git_repository'):
                         substitute = {'url': git_elem.attrib['url'],
@@ -291,31 +316,8 @@ def parse(page, base_href):
                         substitute = {'content': file_content}
                         content += templates.ITEM_METADATAS % substitute
 
-                    # WRITE THE ITEM PICTURES
+                    # WRITE THE ITEM LICENSE
 
-                    img_list = []
-                    for img_elem in item.findall('picture'):
-                        args = {'url': FILES + IMG_DIR + img_elem.attrib['filename'],
-                                'thumbnail_url': THUMB_DIR + img_elem.attrib['filename']}
-                        img_list.append(templates.PICTURE_TAG[lang].format(**args))
-
-                    if len(img_list) > 0:
-                        substitute = {'content': string.join(img_list, ' ')}
-                        content += templates.ITEM_PICTURES % substitute
-
-                    # WRITE THE ITEM VIDEO
-
-                    mov_list = []
-                    for img_elem in item.findall('video'):
-                        filename = img_elem.attrib['filename']
-                        thumbnail_file = string.replace(filename, '.ogv', '.png')
-                        substitute = {'url': FILES + VIDEO_DIR + filename,
-                                      'thumbnail_url': THUMB_DIR + thumbnail_file}
-                        mov_list.append(templates.VIDEO_TAG % substitute)
-
-                    if len(mov_list) > 0:
-                        substitute = {'content': string.join(mov_list, ' ')}
-                        content += templates.ITEM_VIDEOS % substitute
 
         substitute = {'menu': menu,
                       'flag': templates.FLAG_TAG[lang].format(href=page),

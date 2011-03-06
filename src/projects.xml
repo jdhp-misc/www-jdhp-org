@@ -23,20 +23,20 @@
             <strong>$ git clone git://...</strong>
         </p>-->
         <p>
-            Si vous utilisez un système <em>Gnu/Linux Debian</em> (ou un dérivé tel qu'<em>Ubuntu</em>), 
-            la procédure suivante permet de simplifier l'installation des logiciels répertoriés sur cette page.<br />
+            Un référentiel est disponible pour les utilisateurs de <em>Gnu/Linux Debian</em> et d'<em>Ubuntu</em>. 
+            Il permet de simplifier l'installation des logiciels présentés sur cette page. Pour l'utiliser :
         </p>
         <ul>
             <li>
-                Ajoutez la ligne suivante au fichier <em>/etc/apt/sources.list</em> :
+                ajoutez la ligne suivante au fichier <em>/etc/apt/sources.list</em> :
                 <strong>deb <a href="http://download.tuxfamily.org/jdhp/debian">http://download.tuxfamily.org/jdhp/debian</a> ./</strong>
             </li>
             <li>
-                Mettez à jour la liste des paquets :
+                puis mettez à jour la liste des paquets :
                 <strong># apt-get update</strong>
             </li>
             <li>
-                Les paquets sont prêts à être installés :
+                et installez le(s) paquet(s) souhaité(s) :
                 <strong># apt-get install NOM_DU_PAQUET</strong>
             </li>
         </ul>
@@ -235,7 +235,7 @@
 			</desc>
 			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/libdynamixel.git"
                             weburl="http://git.tuxfamily.org/robotics/libdynamixel/" />
-			<picture filename="dynamixel_1.png" />
+			<!--<picture filename="dynamixel_1.png" />-->
         </item>
 
         <item id="pydynamixel" license="MIT">
@@ -267,7 +267,7 @@
 			</desc>
 			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/dtools.git"
                             weburl="http://git.tuxfamily.org/robotics/dtools/" />
-			<picture filename="dtools_gtkui_1.png" />
+			<!--<picture filename="dtools_gtkui_1.png" />-->
         </item>
 
         <item id="bioloid" license="MIT">
