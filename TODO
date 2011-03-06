@@ -1,12 +1,22 @@
-<foo lang="en">...</foo>
-<foo lang="fr">...</foo>
+- Générer une page html pour chaque items (projets) pour y mettre plus
+  d'informations sans alourdir la page "projet_xx.html" (instructions pour Git,
+  licence, plusieurs screenshots, plusieurs vidéos, ...). 
+- Découper parser.py en plusieurs fonctions
+- Passer parser.py à Python 3 (chaînes -> utf-8)
+- Améliorer le schema XML :
+    <foo lang="en">...</foo>
+    <foo lang="fr">...</foo>
 
-VS
+    VS
 
-<foo>
-    <en>...</en>
-    <fr>...</fr>
-</foo>
+    <foo>
+        <en>...</en>
+        <fr>...</fr>
+    </foo>
+- Un seul arbre (document) XML regroupant toutes les pages (peut faire un
+  include avec XML pour découper l'arbre en plusieurs fichiers ?). Racine =
+  <site>...</site>. => permet d'ajouter des informations globales pour tout le
+  site.
 
 
 
