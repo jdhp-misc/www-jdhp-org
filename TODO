@@ -18,6 +18,8 @@
   include avec XML pour découper l'arbre en plusieurs fichiers ?). Racine =
   <site>...</site>. => permet d'ajouter des informations globales pour tout le
   site.
+- Ajouter l'emprunte de ma clé GPG dans la page "home_**.html" et l'utiliser
+  pour signer les paquets et le dépôt Debian.
 
 
 
