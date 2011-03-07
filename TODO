@@ -1,3 +1,7 @@
+- Ajouter le commentaire suivant : "D'autres articles sont disponibles en
+  langue anglaise. Pour y accéder, cliquez <a>ici</a>." / "To access additional
+  french articles clic <a>here</a>" dans le tag "desc" des pages "articles_xx"
+  et "tutoriels_xx".
 - Générer une page html pour chaque items (projets) pour y mettre plus
   d'informations sans alourdir la page "projet_xx.html" (instructions pour Git,
   licence, plusieurs screenshots, plusieurs vidéos, ...). 
