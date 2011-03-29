@@ -127,8 +127,8 @@
 			</desc>
 			<desc lang="en">
                 A PHP script to show the calculation steps leading to the
-                equilibrium of a small neural network (Perceptron). It's
-                nothing more that an educational support.
+                equilibrium of a small neural network (Perceptron). It is
+                nothing more than an educational support.
 			</desc>
 			<tarball filename="perceptron_simple.zip">
                 <label lang="fr">Sources</label>
@@ -397,7 +397,7 @@
                 SDL, ...).
 			</desc>
 			<desc lang="en">
-                Some demos (artistic or educational purpose).
+                Some demos (for artistic or educational purpose).
 			</desc>
 			<tarball filename="demos.tar.gz">
                 <label lang="fr">Sources</label>
