@@ -14,7 +14,7 @@
         Documents d'études.
     </desc>
     <desc lang="en">
-        There are no articles available in English at the moment.
+        Some articles.
     </desc>
 
     <!-- ############################################################ -->
@@ -23,6 +23,38 @@
         <label lang="fr">
             Intelligence Artificielle et Mathématiques Appliquées
         </label>
+        <label lang="en">
+            Artificial Intelligence and Applied Maths 
+        </label>
+
+        <item id="XCSF" license="">
+            <label lang="fr">
+                Apprentissage de politiques efficaces avec XCSF et CEPS
+            </label>
+            <label lang="en">
+                Learning Cost-Efficient Control Policies with XCSF
+            </label>
+            
+			<desc lang="fr">
+                Apprentissage de politiques efficaces avec XCSF et CEPS.
+                Sixièmes journées francophones MFI/JFPDA, B. Zanuttini,
+                editors, GREYC Caen, publisher. Pages 298-310.
+			</desc>
+			<desc lang="en">
+                Learning Cost-Efficient Control Policies with XCSF:
+                Generalization Capabilities and Further Improvement.
+                Proceedings of the 13th annual conference on Genetic and
+                evolutionary computation (GECCO'11), ACM Press, publisher.
+                Pages 1235--1242.
+			</desc>
+	
+			<link url="http://www.isir.upmc.fr/files/2011ACTN1978.pdf">
+                <label lang="fr">Article (PDF)</label>
+			</link>
+			<link url="http://www.isir.upmc.fr/files/2011ACTI1945.pdf">
+                <label lang="en">Article (PDF)</label>
+			</link>
+        </item>
 
         <item id="rankboost" license="cc-by-sa">
             <label lang="fr">Rankboost</label>
