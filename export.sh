@@ -6,27 +6,23 @@
 
 JDHP_SRC_PATH=.
 JDHP_LOCAL_PATH=/tmp/jdhp.org
-BASE_DEFAULT="<base href\=\"http:\/\/127\.0\.0\.1\/jdhp\.org\/\" \/>"
-BASE_FILE="<base href\=\"file:\/\/\/tmp\/jdhp\.org\/www\/\" \/>"
-DEFAULT_LANG=fr
 
-# Vide le répertoire cible de l'export
+# VIDE LE RÉPERTOIRE CIBLE DE L'EXPORT
 echo "Vide le répertoire cible de l'export"
 rm -rf $JDHP_LOCAL_PATH
 
-# Exporte le site
+# EXPORTE LE SITE
 echo "Exporte le site depuis l'espace de travail courant"
 mkdir $JDHP_LOCAL_PATH
 cp -r $JDHP_SRC_PATH/ $JDHP_LOCAL_PATH
 
-# Crée le fichier index (suivant la langue par défaut)
-cp $JDHP_LOCAL_PATH/www/index_$DEFAULT_LANG.html $JDHP_LOCAL_PATH/www/index.html
+# COMPILE...
+CUR_DIR=`pwd`
+cd $JDHP_LOCAL_PATH
+./parser.py -b "$JDHP_LOCAL_PATH"
+cd $CUR_DIR
 
-# Définition de la balise <base /> source et de la balise <base /> destination
-echo "Modification des balises HTML <base>"
-find $JDHP_LOCAL_PATH/www/ -type f -name "*.html" -execdir sed -i "s/$BASE_DEFAULT/$BASE_FILE/g" "{}" \;
-
-# Génère les thumbnails (imagemagick et ffmpeg)
+# GÉNÈRE LES THUMBNAILS (IMAGEMAGICK ET FFMPEG)
 mkdir -p $JDHP_LOCAL_PATH/www/medias/thumbnails/
 
 echo "Génère les thumbnails (screenshot)"
