@@ -27,10 +27,54 @@
                 <h1><img src="./medias/images/header.jpeg" title="jdhp.org" alt="jdhp.org" /></h1>
                 
                 <ul id="menu">
-                    <li class="normal">  <a href="{/page/common/menu/home/@href}">     <xsl:value-of select="/page/common/menu/home/@label" /></a>      </li>
-                    <li class="normal">  <a href="{/page/common/menu/projects/@href}"> <xsl:value-of select="/page/common/menu/projects/@label" /></a>  </li>
-                    <li class="normal">  <a href="{/page/common/menu/articles/@href}"> <xsl:value-of select="/page/common/menu/articles/@label" /></a>  </li>
-                    <li class="selected"><a href="{/page/common/menu/tutorials/@href}"><xsl:value-of select="/page/common/menu/tutorials/@label" /></a> </li>
+ 
+                    <li>
+                        <xsl:attribute name="class">
+                            <xsl:choose>
+                                <xsl:when test="/page/@id = 'home'">selected</xsl:when>
+                                <xsl:otherwise>normal</xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:attribute>
+                        <a href="{/page/common/menu/home/@href}">
+                            <xsl:value-of select="/page/common/menu/home/@label" />
+                        </a>
+                    </li>
+
+                    <li>
+                        <xsl:attribute name="class">
+                            <xsl:choose>
+                                <xsl:when test="/page/@id = 'projects'">selected</xsl:when>
+                                <xsl:otherwise>normal</xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:attribute>
+                        <a href="{/page/common/menu/projects/@href}">
+                            <xsl:value-of select="/page/common/menu/projects/@label" />
+                        </a>
+                    </li>
+
+                    <li>
+                        <xsl:attribute name="class">
+                            <xsl:choose>
+                                <xsl:when test="/page/@id = 'articles'">selected</xsl:when>
+                                <xsl:otherwise>normal</xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:attribute>
+                        <a href="{/page/common/menu/articles/@href}">
+                            <xsl:value-of select="/page/common/menu/articles/@label" />
+                        </a>
+                    </li>
+
+                    <li>
+                        <xsl:attribute name="class">
+                            <xsl:choose>
+                                <xsl:when test="/page/@id = 'tutorials'">selected</xsl:when>
+                                <xsl:otherwise>normal</xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:attribute>
+                        <a href="{/page/common/menu/tutorials/@href}">
+                            <xsl:value-of select="/page/common/menu/tutorials/@label" />
+                        </a>
+                    </li>
                 </ul>
 
                 <div id="page">
@@ -38,16 +82,9 @@
                     <div id="flag">
                         <xsl:for-each select="/page/common/flag">
 
-                            <xsl:choose>
-                                <xsl:when test="@href">
-                                    <a href="{@href}">
-                                        <img src="{@src}" title="{@title}" alt="{@alt}" />
-                                    </a>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <img src="{@src}" title="{@title}" alt="{@alt}" />
-                                </xsl:otherwise>
-                            </xsl:choose>
+                            <a href="{/page/@id}_{@suffix}.html">
+                                <img src="{@src}" title="{@title}" alt="{@alt}" />
+                            </a>
 
                         </xsl:for-each>
                     </div>

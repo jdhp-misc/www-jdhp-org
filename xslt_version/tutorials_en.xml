@@ -6,7 +6,7 @@
     Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 -->
 
-<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="en">
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="en" id="tutorials">
     <xi:include href="common_en.xml"/>
 
     <name>Tutorials</name>

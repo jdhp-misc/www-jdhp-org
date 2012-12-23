@@ -6,7 +6,7 @@
     Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 -->
 
-<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="fr">
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="fr" id="projects">
     <xi:include href="common_fr.xml"/>
 
     <name>Travaux</name>

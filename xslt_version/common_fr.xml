@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <common>
-    <base href="http://www.jdhp.org/" />
+    <base href="./" />
     <!-- <base href="http://www.jdhp.org/" /> -->
     <!-- <base href="./" /> -->
 
@@ -12,6 +12,6 @@
         <tutorials href="./tutorials_fr.html" label="Tutoriels" />
     </menu>
 
-    <flag src="./medias/images/flag_en.png" title="English version" alt="English version" href="./tutorials_en.html" />
-    <flag src="./medias/images/flag_grey_fr.png" title="Version française" alt="Version française" />
+    <flag src="./medias/images/flag_en.png" title="English version" alt="English version" suffix="en" />
+    <flag src="./medias/images/flag_grey_fr.png" title="Version française" alt="Version française" suffix="fr" />
 </common>
