@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="xslt/pages.xslt" ?>
+
+<!--
+    Semantic JDHP
+    Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
+-->
+
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="en">
+    <xi:include href="common_en.xml"/>
+    
+    <name>Articles</name>
+
+    <keywords>jdhp, article</keywords>
+
+    <desc>
+        Some articles.
+    </desc>
+
+    <!-- ############################################################ -->
+
+    <group id="aiam">
+
+        <label>
+            Artificial Intelligence and Applied Maths 
+        </label>
+
+        <item id="XCSF" license="">
+            <label>
+                Learning Cost-Efficient Control Policies with XCSF
+            </label>
+            
+			<desc>
+                Learning Cost-Efficient Control Policies with XCSF:
+                Generalization Capabilities and Further Improvement.
+                Proceedings of the 13th annual conference on Genetic and
+                evolutionary computation (GECCO'11), ACM Press, publisher.
+                Pages 1235--1242.
+			</desc>
+	
+			<link url="http://www.isir.upmc.fr/files/2011ACTI1945.pdf">
+                <label>Article (PDF)</label>
+			</link>
+        </item>
+
+    </group>
+
+</page>

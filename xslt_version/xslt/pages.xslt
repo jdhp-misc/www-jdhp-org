@@ -59,7 +59,7 @@
                     <xsl:for-each select="/page/group">
                         <h2 id="{@id}"><xsl:value-of select="label" /></h2>
 
-                        <xsl:for-each select="item">
+                        <xsl:for-each select="./item">
                             <h3 id="vim_spell"><xsl:value-of select="label" /></h3>
 
                             <div class="item_desc"><xsl:value-of select="desc" /></div>
@@ -74,9 +74,11 @@
                             </xsl:choose>
 
                             <!-- metadatas -->
+                            <!--
                             <div class="item_metadatas">
-                                <!-- TODO -->
+                                TODO
                             </div>
+                            -->
 
                         </xsl:for-each>
 

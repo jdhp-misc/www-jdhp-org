@@ -1,19 +1,19 @@
 #!/bin/sh
 
 echo "Check page.xsd syntax..."
-xmllint --noout page.xsd
+xmllint --noout schemas/page.xsd
 
 echo "Check page.xsd DTD validity..."
-xmllint --noout --valid page.xsd
+xmllint --noout --valid schemas/page.xsd
 
 echo "Check page.xsd schema validity..."
-xmllint --noout --schema XMLSchema.xsd page.xsd
+xmllint --noout --schema schemas/XMLSchema.xsd schemas/page.xsd
 
 echo "Check articles.xml..."
-xmllint --noout --schema page.xsd articles.xml
+xmllint --noout --schema schemas/page.xsd articles.xml
 
 echo "Check projects.xml..."
-xmllint --noout --schema page.xsd projects.xml
+xmllint --noout --schema schemas/page.xsd projects.xml
 
 echo "Check tutorials.xml..."
-xmllint --noout --schema page.xsd tutorials.xml
+xmllint --noout --schema schemas/page.xsd tutorials.xml

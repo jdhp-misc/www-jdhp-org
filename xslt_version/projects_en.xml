@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="xslt/pages.xslt" ?>
+
+<!--
+    Semantic JDHP
+    Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
+-->
+
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="en">
+    <xi:include href="common_en.xml"/>
+
+    <name>Projects</name>
+
+    <keywords>jdhp, software</keywords>
+
+    <desc>
+        Some projects (computer science).
+    </desc>
+
+    <note>
+        <p>
+            A repository is available for <em>Debian</em> and <em>Ubuntu</em> users. To use it,<br />
+        </p>
+        <ul>
+            <li>
+                add the following line in your <em>/etc/apt/sources.list</em> file:
+                <strong>deb <a href="http://download.tuxfamily.org/jdhp/debian">http://download.tuxfamily.org/jdhp/debian</a> ./</strong>
+            </li>
+            <li>
+                then update the list of available packages from the apt sources:
+                <strong># apt-get update</strong>
+            </li>
+        </ul>
+    </note>
+    
+    <!-- ############################################################ -->
+
+    <group id="aiam">
+        <label>
+            Artificial Intelligence and Mathematics
+        </label>
+
+        <item id="jwumpus" license="MIT">
+            <label>JWumpus</label>
+			<desc>
+                JWumpus uses the <em>Jade</em> platform and a <em>Q-learning</em>
+                algorithm to solve the <em>Wumpus</em> problem (see
+                <em>"Artificial Intelligence"</em> by Stuart Russell and Peter Norvig).
+			</desc>
+			<debian_package filename="jwumpus_1.0-1_all.deb" arch="all" />
+			<git_repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
+                            weburl="http://git.tuxfamily.org/jwumpus/jwumpus/" />
+			<picture filename="jwumpus_1.png" />
+			<picture filename="jwumpus_2.png" />
+			<picture filename="jwumpus_3.png" />
+        </item>
+
+        <item id="chef" license="MIT">
+            <label>Chef</label>
+			<desc>
+                A multi-agent project using the
+                <a href="http://en.wikipedia.org/wiki/Belief-Desire-Intention_software_model">BDI</a>
+                software model and the
+                <a href="http://jason.sourceforge.net/Jason/Description.html">Jason</a>
+                platform.
+			</desc>
+			<git_repository url="git://git.tuxfamily.org/gitroot/chef/chef.git"
+                            weburl="http://git.tuxfamily.org/chef/chef/" />
+        </item>
+
+        <item id="projet_0069" license="MIT">
+            <label>Perceptron</label>
+			<desc>
+                A PHP script to show the calculation steps leading to the
+                equilibrium of a small neural network (Perceptron). It is
+                nothing more than an educational support.
+			</desc>
+			<tarball filename="perceptron_simple.zip">
+                <label>Sources</label>
+			</tarball>
+        </item>
+    </group>
+
+    <!-- ############################################################ -->
+
+    <group id="robotics">
+        <label>
+            Robotics and Electronics
+        </label>
+        
+        <item id="pyarm" license="MIT">
+            <label>PyArm</label>
+			<desc>
+                Pyarm is a simulator used for experiments on human motor
+                control with an anthropomorphic arm model.
+			</desc>
+			<debian_package filename="pyarm_0.1.3-1_all.deb" arch="all" />
+			<svn_repository url="http://pyarm.googlecode.com/svn/trunk/"
+                            weburl="http://code.google.com/p/pyarm/source/browse/" />
+			<video filename="pyarm_generalization.ogv">
+                <link url="http://www.youtube.com/watch?v=VjaBMbMt5Cw">
+                    <label>Watch it on Youtube</label>
+                </link>
+			</video>
+			<video filename="pyarm_optimization.ogv">
+                <link url="http://www.youtube.com/watch?v=sii8OsK62M8">
+                    <label>Watch it on Youtube</label>
+                </link>
+			</video>
+			<link url="http://code.google.com/p/pyarm/">
+                <label>Google Code</label>
+			</link>
+        </item>
+
+        <item id="botsim" license="MIT">
+            <label>Botsim</label>
+			<desc>
+                A robots simulator mainly used to test some evolutionary
+                algorithms.
+			</desc>
+			<tarball filename="botsim-0.1.tar.gz">
+                <label>Sources</label>
+			</tarball>
+			<git_repository url="git://git.tuxfamily.org/gitroot/botsim/botsim.git"
+                            weburl="http://git.tuxfamily.org/botsim/botsim/" />
+			<svn_repository url="svn://svn.tuxfamily.org/svnroot/botsim/isir"
+                            weburl="http://svnweb.tuxfamily.org/listing.php?repname=botsim%2Fisir&amp;amp;path=%2F&amp;amp;" />
+			<picture filename="botsim_1.png" />
+			<picture filename="botsim_2.png" />
+			<picture filename="botsim_3.png" />
+        </item>
+
+        <item id="libdynamixel" license="MIT">
+            <label>LibDynamixel</label>
+			<desc>
+                Use libdynamixel to control <a
+                href="http://www.robotis.com/xe/dynamixel_en">Dynamixel
+                AX-12</a> actuators directly from a computer (using a <a
+                href="http://www.robotis.com/xe/controller_en">USB2Dynamixel</a>
+                adapter).
+			</desc>
+			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/libdynamixel.git"
+                            weburl="http://git.tuxfamily.org/robotics/libdynamixel/" />
+			<!--<picture filename="dynamixel_1.png" />-->
+        </item>
+
+        <item id="pydynamixel" license="MIT">
+            <label>PyDynamixel</label>
+			<desc>
+                A Python implementation of libdynamixel.
+			</desc>
+			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/pydynamixel.git"
+                            weburl="http://git.tuxfamily.org/robotics/pydynamixel/" />
+        </item>
+
+        <item id="dtools" license="MIT">
+            <label>Dtools</label>
+			<desc>
+                A toolset to control
+                <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel
+                AX-12</a> actuators.
+			</desc>
+			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/dtools.git"
+                            weburl="http://git.tuxfamily.org/robotics/dtools/" />
+			<!--<picture filename="dtools_gtkui_1.png" />-->
+        </item>
+
+        <item id="bioloid" license="MIT">
+            <label>Bioloid</label>
+			<desc>
+                This demo uses libdynamixel to control a <a
+                href="http://www.robotis.com/xe/bioloid_en">bioloid</a>.
+			</desc>
+			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/bioloid.git"
+                            weburl="http://git.tuxfamily.org/robotics/bioloid/" />
+			<video filename="bioloid_quadrupedal_static.ogv">
+                <link url="http://www.youtube.com/watch?v=8jDYKBuRWvg">
+                    <label>Watch it on Youtube</label>
+                </link>
+			</video>
+			<video filename="bioloid_quadrupedal_dynamic_1.ogv">
+                <link url="http://www.youtube.com/watch?v=48PtL3mXUNU">
+                    <label>Watch it on Youtube</label>
+                </link>
+			</video>
+			<video filename="bioloid_quadrupedal_dynamic_2.ogv">
+                <link url="http://www.youtube.com/watch?v=S4RQAeOc79E">
+                    <label>Watch it on Youtube</label>
+                </link>
+			</video>
+        </item>
+    </group>
+
+    <!-- ############################################################ -->
+
+    <group id="util">
+        <label>
+            Utilities
+        </label>
+
+        <item id="clonefinder" license="MIT">
+            <label>Clonefinder</label>
+			<desc>
+                Finds duplicated files and directories.
+			</desc>
+			<debian_package filename="clonefinder_1.0-1_all.deb" arch="all" />
+			<tarball filename="clonefinder-1.0.tar.gz">
+                <label>Sources</label>
+			</tarball>
+			<git_repository url="git://git.tuxfamily.org/gitroot/systools/clonefinder.git"
+                            weburl="http://git.tuxfamily.org/systools/clonefinder/" />
+        </item>
+
+        <item id="binviewer" license="MIT">
+            <label>Binviewer</label>
+			<desc>
+                Creates a graphical representation of a binary file.
+			</desc>
+			<debian_package filename="binviewer_0.2-1_all.deb" arch="all" />
+			<tarball filename="binviewer-0.2.tar.gz">
+                <label>Sources</label>
+			</tarball>
+			<git_repository url="git://git.tuxfamily.org/gitroot/systools/binviewer.git"
+                            weburl="http://git.tuxfamily.org/systools/binviewer/" />
+			<picture filename="binviewer_1.png" />
+			<picture filename="binviewer_2.png" />
+        </item>
+
+        <item id="latex2png" license="MIT">
+            <label>Latex2png</label>
+			<desc>
+                Converts LaTeX files to PNG graphics (useful to create
+                mathematical formulas as images).
+			</desc>
+			<debian_package filename="latex2png_1.0-1_all.deb" arch="all" />
+			<tarball filename="latex2png-1.0.tar.gz">
+                <label>Sources</label>
+			</tarball>
+			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/scripts.git"
+                            weburl="http://git.tuxfamily.org/jdhp/scripts/" />
+        </item>
+    </group>
+
+    <!-- ############################################################ -->
+
+    <group id="misc">
+        <label>
+            Miscellaneous
+        </label>
+
+        <item id="demos" license="MIT">
+            <label>Demos</label>
+			<desc>
+                Some demos (for artistic or educational purpose).
+			</desc>
+			<tarball filename="demos.tar.gz">
+                <label>Sources</label>
+			</tarball>
+			<git_repository url="git://git.tuxfamily.org/gitroot/demos/demos.git"
+                            weburl="http://git.tuxfamily.org/demos/demos/" />
+			<picture filename="demos.png" />
+        </item>
+
+        <item id="pypong" license="MIT">
+            <label>PyPong</label>
+			<desc>
+                An implementation of the famous game <em>Pong</em>.
+			</desc>
+			<git_repository url="git://git.tuxfamily.org/gitroot/pygames/pypong.git"
+                            weburl="http://git.tuxfamily.org/pygames/pypong/" />
+			<picture filename="pypong.png" />
+        </item>
+
+        <item id="jdhp" license="cc-by-sa">
+            <label>JDHP</label>
+			<desc>
+                The source code of this web site.
+			</desc>
+			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/jdhp.git"
+                            weburl="http://git.tuxfamily.org/jdhp/jdhp/" />
+        </item>
+    </group>
+</page>

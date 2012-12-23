@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="xslt/pages.xslt" ?>
+
+<!--
+    Semantic JDHP
+    Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
+-->
+
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="fr">
+    <xi:include href="common_fr.xml"/>
+    
+    <name>Articles</name>
+
+    <keywords>jdhp, article, droit, informatique, brevet, logiciel</keywords>
+
+    <desc>
+        Documents d'études.
+    </desc>
+
+    <!-- ############################################################ -->
+
+    <group id="aiam">
+        <label>
+            Intelligence Artificielle et Mathématiques Appliquées
+        </label>
+
+        <item id="XCSF" license="">
+            <label>
+                Apprentissage de politiques efficaces avec XCSF et CEPS
+            </label>
+            
+			<desc>
+                Apprentissage de politiques efficaces avec XCSF et CEPS.
+                Sixièmes journées francophones MFI/JFPDA, B. Zanuttini,
+                editors, GREYC Caen, publisher. Pages 298-310.
+			</desc>
+	
+			<link url="http://www.isir.upmc.fr/files/2011ACTN1978.pdf">
+                <label>Article (PDF)</label>
+			</link>
+        </item>
+
+        <item id="rankboost" license="cc-by-sa">
+            <label>Rankboost</label>
+            
+			<desc>
+                Présentation de l'article <em>An efficient boosting algorithm
+                for combining preferences</em> (Y. Freund et al., 1998).
+			</desc>
+	
+			<pdf filename="rankboost_article.pdf">
+                <label>Article (PDF)</label>
+			</pdf>
+			<pdf filename="rankboost_slides.pdf">
+                <label>Slides (PDF)</label>
+			</pdf>
+
+			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+        </item>
+
+        <item id="ae_neurocomp" license="cc-by-sa">
+            <label>
+                Les algorithmes évolutionnistes utilisés dans le cadre des
+                neurosciences computationnelles
+            </label>
+            
+			<desc>
+                Quelques slides synthétisant l'utilisation des algorithmes
+                évolutionnistes dans le cadre des neurosciences
+                computationnelles.
+			</desc>
+	
+			<pdf filename="ae_neurocomp.pdf">
+                <label>PDF</label>
+			</pdf>
+
+			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+        </item>
+
+        <item id="robocup" license="cc-by-sa">
+            <label>
+                La coordination d'agents dans le cadre d'un jeu de football
+                (Robocup)
+            </label>
+            
+			<desc>
+                Présentation d'un protocole de coordination d'agents utilisé
+                dans la Robocup.
+			</desc>
+	
+			<pdf filename="robocup.pdf">
+                <label>PDF</label>
+			</pdf>
+
+			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+        </item>
+    </group>
+
+    <!-- ############################################################ -->
+
+    <group id="bi">
+        <label>Informatique de gestion</label>
+
+        <item id="wiki" license="cc-by-sa">
+            <label>
+                Les wikis un levier pour améliorer l’intégration et
+                l’efficacité des SI ?
+            </label>
+            
+			<desc>
+                <p>
+                    Les wikis font partis des applications phares du Web 2.0.
+                    Un wiki est un site internet que tout le monde a le droit
+                    de modifier. Ses lecteurs peuvent donc en enrichir le
+                    contenu.  Aucune connaissance en informatique n'est
+                    nécessaire pour modifier les pages d'un tel site, un
+                    formulaire permet de modifier chaque page ou d'en créer de
+                    nouvelles. Pour éviter le vandalisme, les modifications
+                    sont mémorisées par le système.  N'importe qui peut annuler
+                    une modification malveillante. C'est simple, rapide et très
+                    efficace.
+                </p>
+                <p>
+                    Le wiki est une technologie relativement jeune mais elle a
+                    fait ses preuves grâce à des sites tels que Wikipédia. Un
+                    tel succès incite de plus en plus d'entreprises à
+                    l'utiliser dans leur système d'information. On parle alors
+                    de Wiki Business.
+                </p>
+                <p>
+                    Mais est-ce réellement efficace ou sommes nous face à un
+                    simple effet de mode ? Les wikis peuvent-ils vraiment
+                    améliorer l'intégration et l'efficacité des SI ? [...]
+                </p>
+			</desc>
+	
+			<pdf filename="les_wikis_en_entreprise.pdf">
+                <label>PDF</label>
+			</pdf>
+
+			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+
+			<link url="http://www.jdhp.org/articles/les_wikis_en_entreprise.html">
+                <label>Lire la suite</label>
+			</link>
+        </item>
+    </group>
+
+    <!-- ############################################################ -->
+
+    <group id="law">
+        <label>Droit</label>
+
+        <item id="droit_du_logiciel" license="cc-by-sa">
+            <label>Le droit du logiciel</label>
+            
+			<desc>
+                <p>
+                    En France, depuis la loi du 3 juillet 1985, les logiciels
+                    sont protégés par le droit d'auteur, au même titre que
+                    n'importe quelle œuvre littéraire ou artistique. Toutefois
+                    le débat concernant leur statut juridique n'est pas clos.
+                    Certaines personnes soutiennent en effet que le droit
+                    d'auteur n'est pas adapté pour assurer une bonne protection
+                    des logiciels et demandent une remise en cause de ce choix.
+                </p>
+                <p>
+                    Quelles raisons les motivent ? Le droit d'auteur appliqué
+                    aux logiciels protège-t-il efficacement les intérêts de
+                    chacun ? Le régime des brevets apporte-t-il une réponse
+                    plus juste ?
+                </p>
+                <p>
+                    Nous présenterons dans un premier temps le contexte
+                    historique qui a amené au choix du droit d'auteur pour
+                    protéger les logiciels ainsi que les aménagements qui ont
+                    été nécessaires pour appliquer ce choix. Nous étudierons
+                    ensuite le système des brevets d'invention ainsi que la
+                    brevetabilité du logiciel. Nous comparerons enfin les deux
+                    dispositifs juridiques de protection en mettant en évidence
+                    les avantages et les limites de chacun d'eux. [...]
+                </p>
+			</desc>
+	
+			<pdf filename="droit_du_logiciel.pdf">
+                <label>PDF</label>
+			</pdf>
+
+			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+        </item>
+
+        <item id="brevets" license="cc-by-sa">
+            <label>Les brevets logiciels</label>
+            
+			<desc>
+                Quelques slides expliquant ce que sont les brevets et leur
+                portée sur les logiciels.
+			</desc>
+	
+			<pdf filename="brevets.pdf">
+                <label>PDF</label>
+			</pdf>
+
+			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+        </item>
+
+        <item id="droit_auteur" license="cc-by-sa">
+            <label>Le droit d'auteur</label>
+            
+			<desc>
+                <p>
+                    En France, depuis la loi du 3 juillet 1985, les logiciels
+                    sont protégés par le droit d'auteur, au même titre que
+                    n'importe quelle oeuvre littéraire ou artistique.
+                    Aujourd'hui certaines personnes prétendent que le droit
+                    d'auteur n'est pas adapté pour assurer une bonne protection
+                    des logiciels et demandent une remise en cause de ce choix.
+                </p>
+                <p>
+                    Quelles raisons les motivent ? Le droit d'auteur appliqué
+                    aux logiciels protège-t-il efficacement les intérêts de
+                    chacun ? [...]
+                </p>
+			</desc>
+	
+			<pdf filename="droits_auteurs.pdf">
+                <label>PDF</label>
+			</pdf>
+
+			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+
+			<link url="http://www.jdhp.org/articles/droits_auteurs.html">
+                <label>Lire la suite</label>
+			</link>
+        </item>
+    </group>
+</page>
