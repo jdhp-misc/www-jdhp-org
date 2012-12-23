@@ -26,6 +26,7 @@
             <body>
                 <h1><img src="./medias/images/header.jpeg" title="jdhp.org" alt="jdhp.org" /></h1>
                 
+                <!-- MENU -->
                 <ul id="menu">
  
                     <li>
@@ -35,8 +36,8 @@
                                 <xsl:otherwise>normal</xsl:otherwise>
                             </xsl:choose>
                         </xsl:attribute>
-                        <a href="{/page/common/menu/home/@href}">
-                            <xsl:value-of select="/page/common/menu/home/@label" />
+                        <a href="{/page/common_lang/menu/home/@href}">
+                            <xsl:value-of select="/page/common_lang/menu/home/@label" />
                         </a>
                     </li>
 
@@ -47,8 +48,8 @@
                                 <xsl:otherwise>normal</xsl:otherwise>
                             </xsl:choose>
                         </xsl:attribute>
-                        <a href="{/page/common/menu/projects/@href}">
-                            <xsl:value-of select="/page/common/menu/projects/@label" />
+                        <a href="{/page/common_lang/menu/projects/@href}">
+                            <xsl:value-of select="/page/common_lang/menu/projects/@label" />
                         </a>
                     </li>
 
@@ -59,8 +60,8 @@
                                 <xsl:otherwise>normal</xsl:otherwise>
                             </xsl:choose>
                         </xsl:attribute>
-                        <a href="{/page/common/menu/articles/@href}">
-                            <xsl:value-of select="/page/common/menu/articles/@label" />
+                        <a href="{/page/common_lang/menu/articles/@href}">
+                            <xsl:value-of select="/page/common_lang/menu/articles/@label" />
                         </a>
                     </li>
 
@@ -71,16 +72,18 @@
                                 <xsl:otherwise>normal</xsl:otherwise>
                             </xsl:choose>
                         </xsl:attribute>
-                        <a href="{/page/common/menu/tutorials/@href}">
-                            <xsl:value-of select="/page/common/menu/tutorials/@label" />
+                        <a href="{/page/common_lang/menu/tutorials/@href}">
+                            <xsl:value-of select="/page/common_lang/menu/tutorials/@label" />
                         </a>
                     </li>
                 </ul>
 
+                <!-- PAGE -->
                 <div id="page">
                     
+                    <!-- FLAGS -->
                     <div id="flag">
-                        <xsl:for-each select="/page/common/flag">
+                        <xsl:for-each select="/page/common_lang/flag">
 
                             <a href="{/page/@id}_{@suffix}.html">
                                 <img src="{@src}" title="{@title}" alt="{@alt}" />
@@ -89,10 +92,12 @@
                         </xsl:for-each>
                     </div>
                     
+                    <!-- PAGE DESCRIPTION -->
                     <div id="page_desc">
                         <xsl:value-of select="/page/desc" />
                     </div>
 
+                    <!-- GROUPS -->
                     <xsl:for-each select="/page/group">
                         <h2 id="{@id}"><xsl:value-of select="label" /></h2>
 

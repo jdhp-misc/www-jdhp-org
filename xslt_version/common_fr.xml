@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<common>
-    <base href="./" />
-    <!-- <base href="http://www.jdhp.org/" /> -->
-    <!-- <base href="./" /> -->
+<common_lang>
 
     <menu>
         <home      href="./home_fr.html"      label="Accueil" />
@@ -14,4 +11,5 @@
 
     <flag src="./medias/images/flag_en.png" title="English version" alt="English version" suffix="en" />
     <flag src="./medias/images/flag_grey_fr.png" title="Version française" alt="Version française" suffix="fr" />
-</common>
+
+</common_lang>
