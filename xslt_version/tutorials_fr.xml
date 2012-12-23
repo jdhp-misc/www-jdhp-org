@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="xslt/tutorials.xslt" ?>
+
+<!--
+    Tutorials (fr)
+    Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
+-->
+
+<!--
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="fr">
+    <xi:include href="common_en.xml"/>
+-->
+<page lang="fr">
+    <!-- TODO: workaround, remove this (use xinclude instead) ####### -->
+    <common>
+        <base href="http://www.jdhp.org/" />
+        <!-- <base href="http://www.jdhp.org/" /> -->
+        <!-- <base href="./" /> -->
+
+        <menu>
+            <home      href="./home_fr.html"      label="Accueil" />
+            <projects  href="./projects_fr.html"  label="Travaux" />
+            <articles  href="./articles_fr.html"  label="Articles" />
+            <tutorials href="./tutorials_fr.html" label="Tutoriels" />
+        </menu>
+
+        <flag src="./medias/images/flag_en.png" title="English version" alt="English version" href="./tutorials_en.html" />
+        <flag src="./medias/images/flag_grey_fr.png" title="Version française" alt="Version française" />
+    </common>
+    <!-- ############################################################ -->
+
+    <name>Tutoriels</name>
+
+    <keywords>jdhp, tutoriel, vim, orthographe</keywords>
+
+    <desc>
+        Tutoriels informatiques.
+    </desc>
+
+    <!-- ############################################################ -->
+
+    <group id="vim">
+        <label>VIM</label>
+
+        <item id="vim_spell" license="cc-by-sa">
+            <label>
+                Introduction à la correction orthographique avec Vim
+            </label>
+            
+			<desc>
+                Ce document explique comment installer et utiliser la correction
+                orthographique pour la langue française dans l'éditeur Vim.
+                [...]
+			</desc>
+	
+			<pdf filename="tutoriel_vim_spellfr.pdf">
+                <label>PDF</label>
+			</pdf>
+
+			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+
+			<link url="http://www.jdhp.org/articles/tutoriel_vim_spellfr.html">
+                <label>Lire la suite</label>
+			</link>
+        </item>
+    </group>
+</page>

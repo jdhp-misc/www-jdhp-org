@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<common>
+    <base href="http://www.jdhp.org/" />
+    <!-- <base href="http://www.jdhp.org/" /> -->
+    <!-- <base href="./" /> -->
+
+    <menu>
+        <home      href="./home_fr.html"      label="Accueil" />
+        <projects  href="./projects_fr.html"  label="Travaux" />
+        <articles  href="./articles_fr.html"  label="Articles" />
+        <tutorials href="./tutorials_fr.html" label="Tutoriels" />
+    </menu>
+
+    <flag src="./medias/images/flag_en.png" title="English version" alt="English version" href="./tutorials_en.html" />
+    <flag src="./medias/images/flag_grey_fr.png" title="Version française" alt="Version française" />
+</common>

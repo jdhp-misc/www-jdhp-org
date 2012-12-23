@@ -1,0 +1,386 @@
+/* Copyright (c) 2006,2008,2009 Jérémie DECOCK (jdhp.org)                 */
+
+/* TODO :                                                                 *
+ *  - Mettre le "text-align : left;" dans le selecteur universel et le    *
+ *    retirer des autres ?                                                */
+
+/* Sélécteur universel :                                                  *
+ * Initialise tous les margin et les padding à 0 pour uniformiser la      *
+ * mise en page sur les différents navigateurs (ils n'utilisent pas les   *
+ * mêmes valeures initiales).                                             *
+ * Fixe également d'autres paramètres par défaut (comme la police).       */
+* {
+    border-width     : 0px;
+
+    color            : #666666;
+    font-family      : verdana, sans-serif;
+    font-size        : 13px;
+    font-weight      : normal;
+
+    margin           : 0px;
+    padding          : 0px;
+}
+
+body {
+    background-color : #f4f4f4;
+    text-align       : center; /* cf ... */
+}
+
+li {
+    list-style-position : inside;
+}
+
+/* ************************************************************************* */
+/*                                 HEADER                                    */
+/* ************************************************************************* */
+
+h1 {
+    background-color : white;
+
+    border-top       : 1px solid #dddddd;
+    border-bottom    : 0px solid #dddddd;
+    border-left      : 1px solid #dddddd;
+    border-right     : 1px solid #dddddd;
+
+    margin-top       : 20px;
+    margin-left      : auto; /* cf ... */
+    margin-right     : auto; /* cf ... */
+
+    height           : 90px; /* !!! */
+    width            : 799px; /* cf ... */
+}
+
+/* ************************************************************************* */
+/*                                  MENU                                     */
+/* ************************************************************************* */
+
+ul#menu {
+    background-color : white;
+    border-right     : 1px solid #dddddd; /* !!! */
+    height           : 22px;              /* !!! */
+    list-style-type  : none;
+
+    margin-left      : auto;              /* cf ... */
+    margin-right     : auto;              /* cf ... */
+
+    text-align       : left;              /* cf ... */
+    width            : 800px;             /* cf ... */
+}
+
+ul#menu li {
+    float            : left;              /* http://www.siteduzero.com/tutoriel-3-13566-mise-en-boite-partie-2-2.html#ss_part_2 */
+    text-align       : center;
+    width            : 200px;
+}
+
+ul#menu li.normal a {
+    background-color : #eeeeee;
+
+    border-top       : 1px solid #dddddd;
+    border-bottom    : 1px solid #dddddd;
+    border-left      : 1px solid #dddddd;
+
+    display          : block;
+    font-weight      : bold;
+    line-height      : 22px;          /* pour centrer le texte verticalement */
+    text-decoration  : none;
+}
+
+ul#menu li.normal a:hover {
+    background-color : #dddddd;
+}
+
+ul#menu li.selected a {
+    background-color : white;
+
+    border-top       : 1px solid #dddddd;
+    border-bottom    : 1px solid white;
+    border-left      : 1px solid #dddddd;
+
+    display          : block;
+    font-weight      : bold;
+    line-height      : 22px;          /* pour centrer le texte verticalement */
+    text-decoration  : none;
+}
+
+/* ************************************************************************* */
+/*                                   PAGE                                    */
+/* ************************************************************************* */
+
+div#page {
+    background-color : white;
+
+    border-left      : 1px solid #dddddd;
+    border-right     : 1px solid #dddddd;
+
+    padding-top      : 2em;      /* il y a un bug d'affichage si on l'enleve */
+    padding-bottom   : 2.5em;
+
+    margin-left      : auto;     /* cf ... */
+    margin-right     : auto;     /* cf ... */
+    width            : 799px;    /* cf ... */
+    text-align       : left;     /* cf ... */
+}
+
+/*** flag ***/
+
+div#flag {
+    margin-left      : 26px;
+    margin-right     : 26px;
+
+    text-align       : right;
+}
+
+/*** table of content ***/
+
+ul#page_toc {
+    list-style       : square;
+
+    margin-top       : 1em;
+    margin-left      : 26px;
+    margin-right     : 26px;
+
+    text-align       : justify;
+}
+
+/*** page desc ***/
+
+div#page_desc {
+    margin-top       : 2em;
+    margin-left      : 26px;
+    margin-right     : 26px;
+
+    text-align       : justify;
+}
+
+/*** page note ***/
+
+div#page_note {
+    background-color : #f7f7f7;
+    border           : 1px solid #eeeeee;
+
+    font-size        : 10px;
+
+    margin-top       : 3em;
+    margin-left      : 60px;
+    margin-right     : 60px;
+
+    padding          : 1em;
+
+    text-align       : justify;
+}
+
+div#page_note * {
+    font-size        : 10px;
+
+    margin-bottom    : 0.5em;
+}
+
+div#page_note strong {
+    font-family      : monospace;
+    font-weight      : bold;
+}
+
+div#page_note strong a {
+    font-family      : monospace;
+    font-weight      : bold;
+
+    text-decoration  : none;
+}
+
+/*** groups ***/
+
+h2 {
+    background-color : #f7f7f7;
+
+    border-top       : 1px solid #dddddd;
+    border-bottom    : 1px solid #dddddd;
+
+    clear            : both;              /* http://www.siteduzero.com/tutoriel-3-13566-mise-en-boite-partie-2-2.html#ss_part_2 */
+
+    font-size        : 16px;
+    font-variant     : small-caps;
+    font-weight      : bold;
+
+    padding-top      : 2px;
+    padding-bottom   : 2px;
+    padding-left     : 13px;
+    padding-right    : 13px;
+
+    margin-top       : 2.5em;
+
+    text-align       : left;
+}
+
+/*** items ***/
+
+h3 {
+    clear            : both;
+
+    font-weight      : bold;
+
+    margin-top       : 2em;
+    margin-bottom    : 0.5em;
+    margin-left      : 26px;
+    margin-right     : 26px;
+
+    text-align       : left;
+}
+
+/* ************************************************************************* */
+/*                                HOME PAGE                                  */
+/* ************************************************************************* */
+
+div#home_title {
+    font-weight     : bold;
+
+    margin-left     : 3em;
+    margin-right    : 3em;
+    margin-top      : 2em;
+    margin-bottom   : 2em;
+}
+
+div#home_contact {
+    background-image    : url(../medias/images/jd.png);
+    background-repeat   : no-repeat;
+
+    margin-left      : 3em;
+    margin-right     : 3em;
+    margin-top       : 2em;
+    margin-bottom    : 2em;
+
+    min-height       : 140px;
+
+    padding-left     : 120px;
+
+    text-align       : justify;
+}
+
+div#home_contact > p#school {
+    margin-top       : 1.75em;
+}
+
+div#home_contact > p#resume {
+    margin-top       : 1.75em;
+}
+
+#home_cv {
+    margin-left      : 6em;
+    margin-right     : 6em;
+}
+
+#home_about {
+    margin-left      : 6em;
+    margin-right     : 6em;
+}
+
+#home_links {
+    margin-left      : 6em;
+    margin-right     : 6em;
+}
+
+/* ************************************************************************* */
+/*                                 ITEMS                                     */
+/* ************************************************************************* */
+
+/*** item description ***/
+
+div.item_desc {
+    margin-bottom    : 0.5em;
+    margin-left      : 26px;
+    margin-right     : 26px;
+
+    text-align       : justify;
+}
+
+/*** item link ***/
+
+div.item_link {
+    margin-bottom    : 0.5em;
+    margin-left      : 26px;
+    margin-right     : 26px;
+}
+
+div.item_link a {
+    font-size        : 11px;
+}
+
+/*** item metadatas (download, repositories and license) ***/
+
+div.item_metadatas {
+    border-left      : 5px solid #eeeeee;
+
+    margin-top       : 1.25em;
+    margin-left      : 26px;
+    margin-right     : 26px;
+
+    padding-left     : 1em;
+    padding-right    : 1em;
+}
+
+div.item_metadatas * {
+    font-size        : 11px;
+
+    margin-bottom    : 0.5em;
+}
+
+div.item_metadatas * strong {
+    font-weight      : normal;
+    font-size        : 11px;
+    font-style       : oblique;
+}
+
+div.item_metadatas * a {
+    font-size        : 11px;
+}
+
+/*** item thumbnails ***/
+
+div.item_thumbnails {
+    float            : right;              /* http://www.siteduzero.com/tutoriel-3-13566-mise-en-boite-partie-2-2.html#ss_part_2 */
+
+    margin-top       : 0.5em;
+    margin-bottom    : 0.5em;
+    margin-left      : 2em;
+    margin-right     : 6em;
+
+    text-align       : center;
+}
+
+div.item_thumbnails img {
+    margin-left      : 10px;
+    margin-top       : 10px;
+}
+
+/* ************************************************************************* */
+/*                                 FOOTER                                    */
+/* ************************************************************************* */
+
+div#footer {
+    background-color : #eeeeee;
+
+    border-top       : 1px solid #dddddd;
+    border-bottom    : 1px solid #dddddd;
+    border-left      : 1px solid #dddddd;
+    border-right     : 1px solid #dddddd;
+
+    height           : 19px;
+
+    margin-bottom    : 1em;
+    margin-left      : auto; /* cf ... */
+    margin-right     : auto; /* cf ... */
+
+    /* text-align       : left; /* cf ... */
+    text-align       : center;
+
+    width            : 799px; /* cf ... */
+}
+
+div#footer a img {
+    margin-top       : 2px;
+    margin-bottom    : 2px;
+    margin-left      : 2px;
+    margin-right     : 0px;
+}
+
+
