@@ -1,7 +1,8 @@
 <common>
 
-    <base href="./" />
+    <base href="https://www.lri.fr/~decock/" />
     <!-- <base href="http://www.jdhp.org/" /> -->
+    <!-- <base href="https://www.lri.fr/~decock/" /> -->  <!-- la balise "<?xml version="1.0" encoding="UTF-8"?>" au début des fichiers html rend les pages illisables sur le site du lri... bizarre -> firewall ? -->
     <!-- <base href="./" /> -->
 
     <thumbnail_base href="http://www.jdhp.org/medias/thumbnails/" />
