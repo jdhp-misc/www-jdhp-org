@@ -1,4 +1,3 @@
 - fix TODOs in xml files
 - fix/check schema/page.xsd
 - check generated html == former version
-- la balise "<?xml version="1.0" encoding="UTF-8"?>" au début des fichiers html rend les pages illisables sur le site du lri... bizarre -> firewall ?
