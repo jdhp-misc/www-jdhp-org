@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# See: http://www.microhowto.info/howto/process_an_xml_document_using_an_xslt_stylesheet.html
+
 # "tail -n +2" removes the first line of each generated html files
 # "<?xml version="1.0" encoding="UTF-8"?>".
 # Otherwise pages won't be displayed on hosts using PhP (this is the case for https://www.lri.fr/ !!)
@@ -15,6 +17,7 @@
 #    - Given a text/html content-type, an XML prolog will trigger IE6's quirks mode
 #    The latter is undesirable. The former all mean it makes no difference
 
+# XSLT1 ONLY
 xsltproc --xinclude home_en.xml | tail -n +2 > www/home_en.html
 xsltproc --xinclude home_fr.xml | tail -n +2 > www/home_fr.html
 
@@ -26,4 +29,23 @@ xsltproc --xinclude projects_fr.xml | tail -n +2 > www/projects_fr.html
 
 xsltproc --xinclude tutorials_en.xml | tail -n +2 > www/tutorials_en.html
 xsltproc --xinclude tutorials_fr.xml | tail -n +2 > www/tutorials_fr.html
+
+## XSLT2
+#
+## aptitude install libsaxonb-java
+#
+## Note that the package libsaxon-java is not Saxon-B (it contains Saxon-6, an older version described below).
+## Once installed you will need to place the Saxon JAR file on the CLASSPATH:
+#
+#export CLASSPATH=$CLASSPATH:/usr/share/java/saxonb.jar
+#
+## This affects only the process in which it is executed and processes descended
+## from it. If you want to alter the CLASSPATH permanently then you will need to
+## set it in a configuration file such as ~/.profile.
+#
+## Documents are processed by invoking the relevant Java class name, which (for
+## this variant of Saxon) is net.sf.saxon.Transform:
+#
+##java net.sf.saxon.Transform -o:output.xml -s:projects_fr.xml -xsl:style.xsl
+#java net.sf.saxon.Transform -a -o:test.html -s:projects_fr.xml
 
