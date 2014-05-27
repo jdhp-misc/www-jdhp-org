@@ -1,5 +1,6 @@
 To build html files:
 
-  xsltproc --xinclude tutorials_en.xml > tutorials_en.html
-  ...
+  - update ./common.xml : setup the "base" element
+  - then execute ./build.sh
 
+Html files are generated in ./www
