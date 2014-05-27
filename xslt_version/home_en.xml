@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="xslt/pages.xslt" ?>
+
+<!--
+    Semantic JDHP
+    Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
+-->
+
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="en" id="home">
+
+    <xi:include href="common.xml"/>
+    <xi:include href="common_en.xml"/>
+
+    <name>Projects</name>
+
+    <keywords>jdhp, software</keywords>
+
+    <desc>
+
+        <div id="home_title">Jérémie DECOCK Home Page</div>
+
+        <div id="home_contact">
+            <p id="name">Jérémie DECOCK</p>
+            <p id="email">Email : jd -DOT- jdhp -AT- gmail -DOT- com</p>
+            <p id="school">Ph.D. student at <a href="http://www.inria.fr/">INRIA</a></p>
+        </div>
+
+        <h3>Resume</h3>
+        <ul id="home_cv">
+            <li>2011 : <em>Master in <a href="http://www-master.ufr-info-p6.jussieu.fr/specialite/iad/">Artificial Intelligence and Decision</a></em> at <a href="http://www.upmc.fr/">Université Pierre et Marie Curie</a></li>
+            <li>2008 : <em>Master in <a href="http://miage.math-info.univ-paris5.fr/">Business Informatics</a> (Information Technology and Management)</em> at <a href="http://www.univ-paris5.fr/">Université Paris Descartes</a></li>
+            <li>2006 : <em>Bachelor's degree in <a href="http://miage.math-info.univ-paris5.fr/">Business Informatics</a> (Information Technology and Management)</em> at <a href="http://www.univ-paris5.fr/">Université Paris Descartes</a></li>
+        </ul>
+                
+        <h3>About this website...</h3>
+        <p id="home_about">
+            I made this website to share my work (articles and programs).
+        </p>
+        
+        <h3>Links</h3>
+        <p id="home_links">
+            <a href="http://www.fsf.org/"><img alt="FSF member #6116" src="./medias/images/fsf_member.png" title="FSF member #6116" /></a>
+            <a href="http://www.april.org/"><img alt="APRIL member - Promouvoir et soutenir le logiciel libre" src="http://www.april.org/association/documents/bannieres/boutons/april_soutien3_88x31.png" title="APRIL member" /></a>
+        </p> 
+
+    </desc>
+</page>

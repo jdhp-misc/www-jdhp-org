@@ -57,8 +57,9 @@
                 <label>Slides (PDF)</label>
 			</pdf>
 
-			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        type="git" />
         </item>
 
         <item id="ae_neurocomp" license="cc-by-sa">
@@ -77,8 +78,9 @@
                 <label>PDF</label>
 			</pdf>
 
-			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        type="git" />
         </item>
 
         <item id="robocup" license="cc-by-sa">
@@ -96,8 +98,9 @@
                 <label>PDF</label>
 			</pdf>
 
-			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        type="git" />
         </item>
     </group>
 
@@ -143,8 +146,9 @@
                 <label>PDF</label>
 			</pdf>
 
-			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        type="git" />
 
 			<link url="http://www.jdhp.org/articles/les_wikis_en_entreprise.html">
                 <label>Lire la suite</label>
@@ -192,8 +196,9 @@
                 <label>PDF</label>
 			</pdf>
 
-			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        type="git" />
         </item>
 
         <item id="brevets" license="cc-by-sa">
@@ -208,8 +213,9 @@
                 <label>PDF</label>
 			</pdf>
 
-			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        type="git" />
         </item>
 
         <item id="droit_auteur" license="cc-by-sa">
@@ -235,8 +241,9 @@
                 <label>PDF</label>
 			</pdf>
 
-			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        type="git" />
 
 			<link url="http://www.jdhp.org/articles/droits_auteurs.html">
                 <label>Lire la suite</label>

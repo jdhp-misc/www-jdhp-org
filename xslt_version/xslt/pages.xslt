@@ -16,7 +16,7 @@
                 <base href="{/page/common/base/@href}" />
                 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
                 <meta name="author" content="Jérémie DECOCK" />
-                <meta name="copyright" content="copyright (c) 2006,2007,2008,2009,2010,2011,2012 Jérémie DECOCK" />
+                <meta name="copyright" content="copyright (c) 2006,2007,2008,2009,2010,2011,2012,2014 Jérémie DECOCK" />
                 <meta name="keywords" content="{/page/keywords}" />
                 <link rel="shortcut icon" type="image/png" href="./medias/images/favicon.png" />
                 <link rel="stylesheet" type="text/css" href="./css/blue.css" media="screen" title="Normal" />
@@ -91,22 +91,68 @@
 
                         </xsl:for-each>
                     </div>
+
                     
                     <!-- PAGE DESCRIPTION -->
                     <div id="page_desc">
-                        <xsl:value-of select="/page/desc" />
+                        <xsl:copy-of select="/page/desc" />
                     </div>
+
+                    <!-- PAGE NOTES -->
+                    <xsl:choose>
+                        <xsl:when test="/page/@id = 'projects'">
+                            <div id="page_note">
+                                <xsl:copy-of select="/page/note/*" copy-namespaces="no" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
+                            </div>
+                        </xsl:when>
+                    </xsl:choose>
 
                     <!-- GROUPS -->
                     <xsl:for-each select="/page/group">
-                        <h2 id="{@id}"><xsl:value-of select="label" /></h2>
+                        <h2 id="{@id}">
+                            <xsl:value-of select="label" />
+                        </h2>
 
                         <xsl:for-each select="./item">
-                            <h3 id="vim_spell"><xsl:value-of select="label" /></h3>
+                            <h3 id="{@id}">
+                                <xsl:value-of select="label" />
+                            </h3>
 
-                            <div class="item_desc"><xsl:value-of select="desc" /></div>
+                            <!-- PICTURES -->
+                            <xsl:choose>
+                                <xsl:when test="picture">
+                                    <div class="item_thumbnails">
+                                        <a href="{/page/common/img_base/@href}{picture/@filename}">
+                                        <xsl:choose>
+                                            <xsl:when test="picture/@thumbnail_filename">
+                                                <img src="{/page/common/thumbnail_base/@href}{picture/@thumbnail_filename}" title="{/page/common_lang/i18n/image/@translation}" alt="{/page/common_lang/i18n/image/@translation}" />
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <img src="{/page/common/thumbnail_base/@href}{picture/@filename}" title="{/page/common_lang/i18n/image/@translation}" alt="{/page/common_lang/i18n/image/@translation}" />
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                        </a>
+                                    </div>
+                                </xsl:when>
+                            </xsl:choose>
 
-                            <!-- link -->
+                            <!-- VIDEOS -->
+                            <xsl:choose>
+                                <xsl:when test="video">
+                                    <div class="item_thumbnails">
+                                        <a href="{/page/common/video_base/@href}{video/@filename}">
+                                            <img src="{/page/common/thumbnail_base/@href}{video/@thumbnail_filename}" title="{/page/common_lang/i18n/video/@translation}" alt="{/page/common_lang/i18n/video/@translation}" />
+                                        </a>
+                                    </div>
+                                </xsl:when>
+                            </xsl:choose>
+
+                            <!-- DESC -->
+                            <div class="item_desc">
+                                <xsl:copy-of select="desc" copy-namespaces="no" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
+                            </div>
+
+                            <!-- LINK -->
                             <xsl:choose>
                                 <xsl:when test="link">
                                     <div class="item_link">
@@ -115,17 +161,75 @@
                                 </xsl:when>
                             </xsl:choose>
 
-                            <!-- metadatas -->
-                            <!--
-                            <div class="item_metadatas">
-                                TODO
-                            </div>
-                            -->
+                            <!-- METADATAS -->
+                            <xsl:choose>
+                                <xsl:when test="pdf or repository or archive or debian_package">
+                                    <div class="item_metadatas">
 
-                        </xsl:for-each>
+                                        <!-- DOWNLOAD -->
+                                        <xsl:choose>
+                                            <xsl:when test="pdf or archive or debian_package">
+                                                <div class="item_download">
+                                                    <strong><xsl:value-of select="/page/common_lang/i18n/download/@translation" /></strong> :
 
-                    </xsl:for-each>
-                </div>
+                                                    <xsl:for-each select="./pdf">
+                                                        <a href="{/page/common/pdf_base/@href}{@filename}">
+                                                            <xsl:value-of select="label" />
+                                                        </a> &#160;                       <!-- TODO séparateur quand il y a plusieurs pdf http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                    </xsl:for-each>
+
+                                                    <xsl:for-each select="./archive">
+                                                        <a href="{/page/common/archive_base/@href}{@filename}">
+                                                            <xsl:value-of select="label" />
+                                                        </a> &#160;                      <!-- TODO séparateur quand il y a plusieurs pdf http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                    </xsl:for-each>
+
+                                                    <xsl:for-each select="./debian_package">
+                                                        <a href="{/page/common/debian_package_base/@href}{@filename}">
+                                                            <xsl:value-of select="/page/common_lang/i18n/debian_package/@translation" /> (<xsl:value-of select="@arch" />)
+                                                        </a> &#160;                       <!-- TODO séparateur quand il y a plusieurs pdf http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                    </xsl:for-each>
+
+                                                </div>
+                                            </xsl:when>
+                                        </xsl:choose>
+
+                                        <!-- REPOSITORIES (GIT/SVN) -->
+                                        <xsl:choose>
+                                            <xsl:when test="repository">
+                                                <div class="item_repository">
+                                                    <strong><xsl:value-of select="/page/common_lang/i18n/source_code/@translation" /></strong> :
+
+                                                    <xsl:for-each select="./repository">
+                                                        <xsl:choose>
+                                                            <!-- GIT -->
+                                                            <xsl:when test="@type='git'">
+                                                                <a href="{@url}">Git</a> (<a href="{@weburl}">Gitweb</a>)
+                                                                &#160;
+                                                                <!-- TODO séparateur quand il y a plusieurs referentiels http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                            </xsl:when>
+
+                                                            <!-- SVN -->
+                                                            <xsl:when test="@type='svn'">
+                                                                <a href="{@url}">SVN</a> (<a href="{@weburl}">WebSVN</a>)
+                                                                &#160;
+                                                                <!-- TODO séparateur quand il y a plusieurs referentiels http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                            </xsl:when>
+                                                        </xsl:choose>
+                                                    </xsl:for-each>
+
+                                                </div>
+                                            </xsl:when>
+                                        </xsl:choose>
+
+                                    </div>
+                                </xsl:when>
+                            </xsl:choose> <!-- METADATAS -->
+
+                        </xsl:for-each> <!-- ITEMS -->
+
+                    </xsl:for-each> <!-- GROUPS -->
+                </div> <!-- PAGE -->
 
                 <div id="footer">
                     <a href="http://www.tuxfamily.org/"><img src="./medias/images/tux_family.png" title="Ce site est hébergé chez TuxFamily" alt="Ce site est hébergé chez TuxFamily" /></a>

@@ -12,4 +12,12 @@
     <flag src="./medias/images/flag_en.png" title="English version" alt="English version" suffix="en" />
     <flag src="./medias/images/flag_grey_fr.png" title="Version française" alt="Version française" suffix="fr" />
 
+    <i18n>
+        <download translation="Télécharger" />
+        <source_code translation="Fichiers sources" />
+        <debian_package translation="Paquet Debian" />
+        <image translation="Image" />
+        <video translation="Vidéo" />
+    </i18n>
+
 </common_lang>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="xslt/pages.xslt" ?>
+
+<!--
+    Semantic JDHP
+    Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
+-->
+
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="fr" id="home">
+
+    <xi:include href="common.xml"/>
+    <xi:include href="common_fr.xml"/>
+
+    <name>Projects</name>
+
+    <keywords>jdhp, software</keywords>
+
+    <desc>
+        <div id="home_title">Jérémie DECOCK Home Page</div>
+
+        <div id="home_contact">
+            <p id="name">Jérémie DECOCK</p>
+            <p id="email">Email : jd -POINT- jdhp -CHEZ- gmail -POINT- com</p>
+            <p id="school">Doctorant en informatique à l'<a href="http://www.inria.fr/">INRIA</a></p>
+        </div>
+
+        <h3>Bref CV</h3>
+        <ul id="home_cv">
+            <li>2011 : <em>Master <a href="http://www-master.ufr-info-p6.jussieu.fr/specialite/iad/">Intelligence Artificielle et Décision</a></em> à l'<a href="http://www.upmc.fr/">Université Pierre et Marie Curie</a></li>
+            <li>2008 : <em>Master <a href="http://miage.math-info.univ-paris5.fr/">MIAGE</a></em> à l'<a href="http://www.univ-paris5.fr/">Université Paris Descartes</a></li>
+            <li>2006 : <em>Licence <a href="http://miage.math-info.univ-paris5.fr/">MIAGE</a></em> à l'<a href="http://www.univ-paris5.fr/">Université Paris Descartes</a></li>
+        </ul>
+
+        <h3>À propos...</h3>
+        <p id="home_about">
+            Ce site sert à regrouper et à partager une partie de mes travaux (articles et programmes).
+        </p>
+
+        <h3>Liens</h3>
+        <p id="home_links">
+            <a href="http://www.fsf.org/"><img alt="FSF member #6116" src="./medias/images/fsf_member.png" title="FSF member #6116" /></a>
+            <a href="http://www.april.org/"><img alt="APRIL member - Promouvoir et soutenir le logiciel libre" src="http://www.april.org/association/documents/bannieres/boutons/april_soutien3_88x31.png" title="APRIL member" /></a>
+        </p> 
+    </desc>
+</page>
+

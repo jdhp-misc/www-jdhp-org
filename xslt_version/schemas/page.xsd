@@ -75,6 +75,10 @@
 	<!-- ###################### ELEMENTS DECLARATION ###################### -->
 
 	<xs:element name="page">
+        <!--
+        <xs:attribute name="lang" type="langType" use="required" />
+        <xs:attribute name="id" type="xs:string" use="required" />
+        -->
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element ref="name"  minOccurs="2" maxOccurs="2" />       <!-- exactly 1 for each lang -->

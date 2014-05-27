@@ -1,7 +1,14 @@
 <common>
 
-    <base href="http://www.jdhp.org/" />
+    <base href="./" />
     <!-- <base href="http://www.jdhp.org/" /> -->
     <!-- <base href="./" /> -->
+
+    <thumbnail_base href="http://www.jdhp.org/medias/thumbnails/" />
+    <img_base href="http://download.tuxfamily.org/jdhp/image/" />
+    <video_base href="http://download.tuxfamily.org/jdhp/video/" />
+    <pdf_base href="http://download.tuxfamily.org/jdhp/pdf/" />
+    <archive_base href="http://download.tuxfamily.org/jdhp/tarball/" />
+    <debian_package_base href="http://download.tuxfamily.org/jdhp/debian/" />
 
 </common>

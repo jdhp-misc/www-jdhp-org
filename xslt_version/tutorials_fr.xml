@@ -39,8 +39,9 @@
                 <label>PDF</label>
 			</pdf>
 
-			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                            weburl="http://git.tuxfamily.org/jdhp/articles/" />
+			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        type="git" />
 
 			<link url="http://www.jdhp.org/articles/tutoriel_vim_spellfr.html">
                 <label>Lire la suite</label>

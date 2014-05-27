@@ -1,0 +1,3 @@
+- fix TODOs in xml files
+- fix/check schema/page.xsd
+- check generated html == former version

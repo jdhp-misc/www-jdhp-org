@@ -26,7 +26,7 @@
         </p>-->
         <p>
             Un référentiel est disponible pour les utilisateurs de <em>Gnu/Linux Debian</em> et d'<em>Ubuntu</em>. 
-            Il permet de simplifier l'installation des logiciels présentés sur cette page. Pour l'utiliser :
+            Il permet de simplifier l'installation de la plupart des logiciels présentés sur cette page. Pour l'utiliser :
         </p>
         <ul>
             <li>
@@ -67,8 +67,9 @@
                 quoi il passe en mode exploitation.
 			</desc>
 			<debian_package filename="jwumpus_1.0-1_all.deb" arch="all" />
-			<git_repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
-                            weburl="http://git.tuxfamily.org/jwumpus/jwumpus/" />
+			<repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
+                        weburl="http://git.tuxfamily.org/jwumpus/jwumpus/"
+                        type="git" />
 			<picture filename="jwumpus_1.png" />
 			<picture filename="jwumpus_2.png" />
 			<picture filename="jwumpus_3.png" />
@@ -82,8 +83,9 @@
                 (Belief Desire and Intention) et l'interprète
                 <a href="http://jason.sourceforge.net/Jason/Description.html">Jason</a>.
 			</desc>
-			<git_repository url="git://git.tuxfamily.org/gitroot/chef/chef.git"
-                            weburl="http://git.tuxfamily.org/chef/chef/" />
+			<repository url="git://git.tuxfamily.org/gitroot/chef/chef.git"
+                        weburl="http://git.tuxfamily.org/chef/chef/"
+                        type="git" />
         </item>
 
         <item id="projet_0069" license="MIT">
@@ -94,9 +96,9 @@
                 fonctionnant suivant le modèle du Perceptron. Il n'a pas d'autre
                 intérêt que de servir de support pédagogique.
 			</desc>
-			<tarball filename="perceptron_simple.zip">
+			<archive filename="perceptron_simple.zip">
                 <label>Sources</label>
-			</tarball>
+			</archive>
         </item>
     </group>
 
@@ -114,15 +116,19 @@
                 l'apprentissage du contrôle moteur humain avec un modèle de bras
                 anthropomorphique.
 			</desc>
+			<pdf filename="pyarm.pdf">
+                <label>Documentation technique (PDF)</label>
+			</pdf>
 			<debian_package filename="pyarm_0.1.3-1_all.deb" arch="all" />
-			<svn_repository url="http://pyarm.googlecode.com/svn/trunk/"
-                            weburl="http://code.google.com/p/pyarm/source/browse/" />
-			<video filename="pyarm_generalization.ogv">
+			<repository url="http://pyarm.googlecode.com/svn/trunk/"
+                        weburl="http://code.google.com/p/pyarm/source/browse/"
+                        type="svn" />
+			<video filename="pyarm_generalization.ogv" thumbnail_filename="pyarm_generalization.png">
                 <link url="http://www.youtube.com/watch?v=VjaBMbMt5Cw">
                     <label>Regarder sur Youtube</label>
                 </link>
 			</video>
-			<video filename="pyarm_optimization.ogv">
+			<video filename="pyarm_optimization.ogv" thumbnail_filename="pyarm_optimization.png">
                 <link url="http://www.youtube.com/watch?v=sii8OsK62M8">
                     <label>Regarder sur Youtube</label>
                 </link>
@@ -139,13 +145,15 @@
                 travaux sur les algorithmes génétiques. La physique est simulée
                 via la librairie opensource Bullet.
 			</desc>
-			<tarball filename="botsim-0.1.tar.gz">
+			<archive filename="botsim-0.1.tar.gz">
                 <label>Sources</label>
-			</tarball>
-			<git_repository url="git://git.tuxfamily.org/gitroot/botsim/botsim.git"
-                            weburl="http://git.tuxfamily.org/botsim/botsim/" />
-			<svn_repository url="svn://svn.tuxfamily.org/svnroot/botsim/isir"
-                            weburl="http://svnweb.tuxfamily.org/listing.php?repname=botsim%2Fisir&amp;amp;path=%2F&amp;amp;" />
+			</archive>
+			<repository url="git://git.tuxfamily.org/gitroot/botsim/botsim.git"
+                        weburl="http://git.tuxfamily.org/botsim/botsim/"
+                        type="git" />
+			<repository url="svn://svn.tuxfamily.org/svnroot/botsim/isir"
+                        weburl="http://svnweb.tuxfamily.org/listing.php?repname=botsim%2Fisir&amp;amp;path=%2F&amp;amp;"
+                        type="svn" />
 			<picture filename="botsim_1.png" />
 			<picture filename="botsim_2.png" />
 			<picture filename="botsim_3.png" />
@@ -166,8 +174,9 @@
                 href="http://www.robotis.com">Robotis</a>.  LibDynamixel est
                 écrit en C et fonctionne sur les systèmes Gnu/Linux.
 			</desc>
-			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/libdynamixel.git"
-                            weburl="http://git.tuxfamily.org/robotics/libdynamixel/" />
+			<repository url="git://git.tuxfamily.org/gitroot/robotics/libdynamixel.git"
+                        weburl="http://git.tuxfamily.org/robotics/libdynamixel/"
+                        type="git" />
 			<!--<picture filename="dynamixel_1.png" />-->
         </item>
 
@@ -177,8 +186,9 @@
                 PyDynamixel est une implémentation écrite en Python (pur) de la
                 libdynamixel.
 			</desc>
-			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/pydynamixel.git"
-                            weburl="http://git.tuxfamily.org/robotics/pydynamixel/" />
+			<repository url="git://git.tuxfamily.org/gitroot/robotics/pydynamixel.git"
+                        weburl="http://git.tuxfamily.org/robotics/pydynamixel/"
+                        type="git" />
         </item>
 
         <item id="dtools" license="MIT">
@@ -188,8 +198,9 @@
                 <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel
                 AX-12</a>.
 			</desc>
-			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/dtools.git"
-                            weburl="http://git.tuxfamily.org/robotics/dtools/" />
+			<repository url="git://git.tuxfamily.org/gitroot/robotics/dtools.git"
+                        weburl="http://git.tuxfamily.org/robotics/dtools/"
+                        type="git" />
 			<!--<picture filename="dtools_gtkui_1.png" />-->
         </item>
 
@@ -200,19 +211,20 @@
                 contrôler un <a
                 href="http://www.robotis.com/xe/bioloid_en">bioloid</a>.
 			</desc>
-			<git_repository url="git://git.tuxfamily.org/gitroot/robotics/bioloid.git"
-                            weburl="http://git.tuxfamily.org/robotics/bioloid/" />
-			<video filename="bioloid_quadrupedal_static.ogv">
+			<repository url="git://git.tuxfamily.org/gitroot/robotics/bioloid.git"
+                        weburl="http://git.tuxfamily.org/robotics/bioloid/"
+                        type="git" />
+			<video filename="bioloid_quadrupedal_static.ogv" thumbnail_filename="bioloid_quadrupedal_static.png">
                 <link url="http://www.youtube.com/watch?v=8jDYKBuRWvg">
                     <label>Regarder sur Youtube</label>
                 </link>
 			</video>
-			<video filename="bioloid_quadrupedal_dynamic_1.ogv">
+			<video filename="bioloid_quadrupedal_dynamic_1.ogv" thumbnail_filename="bioloid_quadrupedal_dynamic_1.png">
                 <link url="http://www.youtube.com/watch?v=48PtL3mXUNU">
                     <label>Regarder sur Youtube</label>
                 </link>
 			</video>
-			<video filename="bioloid_quadrupedal_dynamic_2.ogv">
+			<video filename="bioloid_quadrupedal_dynamic_2.ogv" thumbnail_filename="bioloid_quadrupedal_dynamic_2.png">
                 <link url="http://www.youtube.com/watch?v=S4RQAeOc79E">
                     <label>Regarder sur Youtube</label>
                 </link>
@@ -234,11 +246,12 @@
                 arborescence.
 			</desc>
 			<debian_package filename="clonefinder_1.0-1_all.deb" arch="all" />
-			<tarball filename="clonefinder-1.0.tar.gz">
+			<archive filename="clonefinder-1.0.tar.gz">
                 <label>Sources</label>
-			</tarball>
-			<git_repository url="git://git.tuxfamily.org/gitroot/systools/clonefinder.git"
-                            weburl="http://git.tuxfamily.org/systools/clonefinder/" />
+			</archive>
+			<repository url="git://git.tuxfamily.org/gitroot/systools/clonefinder.git"
+                        weburl="http://git.tuxfamily.org/systools/clonefinder/"
+                        type="git" />
         </item>
 
         <item id="binviewer" license="MIT">
@@ -251,11 +264,12 @@
                 fichier.
 			</desc>
 			<debian_package filename="binviewer_0.2-1_all.deb" arch="all" />
-			<tarball filename="binviewer-0.2.tar.gz">
+			<archive filename="binviewer-0.2.tar.gz">
                 <label>Sources</label>
-			</tarball>
-			<git_repository url="git://git.tuxfamily.org/gitroot/systools/binviewer.git"
-                            weburl="http://git.tuxfamily.org/systools/binviewer/" />
+			</archive>
+			<repository url="git://git.tuxfamily.org/gitroot/systools/binviewer.git"
+                        weburl="http://git.tuxfamily.org/systools/binviewer/"
+                        type="git" />
 			<picture filename="binviewer_1.png" />
 			<picture filename="binviewer_2.png" />
         </item>
@@ -267,11 +281,12 @@
                 exemple d'exporter une formule mathématique isolée en image).
 			</desc>
 			<debian_package filename="latex2png_1.0-1_all.deb" arch="all" />
-			<tarball filename="latex2png-1.0.tar.gz">
+			<archive filename="latex2png-1.0.tar.gz">
                 <label>Sources</label>
-			</tarball>
-			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/scripts.git"
-                            weburl="http://git.tuxfamily.org/jdhp/scripts/" />
+			</archive>
+			<repository url="git://git.tuxfamily.org/gitroot/jdhp/scripts.git"
+                        weburl="http://git.tuxfamily.org/jdhp/scripts/"
+                        type="git" />
         </item>
     </group>
 
@@ -291,11 +306,12 @@
                 d'utilisation des librairies Bullet, OpenSceneGraph, SFML,
                 SDL, ...).
 			</desc>
-			<tarball filename="demos.tar.gz">
+			<archive filename="demos.tar.gz">
                 <label>Sources</label>
-			</tarball>
-			<git_repository url="git://git.tuxfamily.org/gitroot/demos/demos.git"
-                            weburl="http://git.tuxfamily.org/demos/demos/" />
+			</archive>
+			<repository url="git://git.tuxfamily.org/gitroot/demos/demos.git"
+                        weburl="http://git.tuxfamily.org/demos/demos/"
+                        type="git" />
 			<picture filename="demos.png" />
         </item>
 
@@ -306,8 +322,9 @@
                 <a href="http://www.python.org/">Python</a> et utilise les
                 modules <a href="http://www.pygame.org/">PyGame</a>.
 			</desc>
-			<git_repository url="git://git.tuxfamily.org/gitroot/pygames/pypong.git"
-                            weburl="http://git.tuxfamily.org/pygames/pypong/" />
+			<repository url="git://git.tuxfamily.org/gitroot/pygames/pypong.git"
+                        weburl="http://git.tuxfamily.org/pygames/pypong/"
+                        type="git" />
 			<picture filename="pypong.png" />
         </item>
 
@@ -316,8 +333,9 @@
 			<desc>
                 Le code source et les scripts de compilation du site jdhp.org.
 			</desc>
-			<git_repository url="git://git.tuxfamily.org/gitroot/jdhp/jdhp.git"
-                            weburl="http://git.tuxfamily.org/jdhp/jdhp/" />
+			<repository url="git://git.tuxfamily.org/gitroot/jdhp/jdhp.git"
+                        weburl="http://git.tuxfamily.org/jdhp/jdhp/"
+                        type="git" />
         </item>
     </group>
 </page>
