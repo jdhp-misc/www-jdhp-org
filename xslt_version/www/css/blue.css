@@ -317,6 +317,26 @@ div.item_desc {
     text-align       : justify;
 }
 
+/*** item bib (for academic articles) ***/
+
+div.item_bib {
+    margin-top       : 1em;
+    margin-bottom    : 0.5em;
+    margin-left      : 6em;
+    margin-right     : 6em;
+}
+
+p.bib_header {
+    font-size        : 11px;
+    font-weight      : bold;
+}
+
+p.bib_body {
+    font-size        : 11px;
+    /*font-style       : oblique;*/
+    text-align       : justify;
+}
+
 /*** item link ***/
 
 div.item_link {

@@ -100,7 +100,7 @@
 
                     <!-- PAGE NOTES -->
                     <xsl:choose>
-                        <xsl:when test="/page/@id = 'projects'">
+                        <xsl:when test="/page/note">
                             <div id="page_note">
                                 <xsl:copy-of select="/page/note/*" copy-namespaces="no" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
                             </div>
@@ -161,10 +161,36 @@
                                 </xsl:when>
                             </xsl:choose>
 
+                            <!-- BIB (FOR ACADEMIC ARTICLES) -->
+                            <xsl:choose>
+                                <xsl:when test="bib">
+                                    <div class="item_bib">
+                                        <p class="bib_header">
+                                            <xsl:value-of select="bib/@label" />
+                                        </p>
+                                        <p class="bib_body">
+                                            <xsl:copy-of select="bib" copy-namespaces="no" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
+                                        </p>
+                                    </div>
+                                </xsl:when>
+                            </xsl:choose>
+
                             <!-- METADATAS -->
                             <xsl:choose>
-                                <xsl:when test="pdf or repository or archive or debian_package">
+                                <xsl:when test="pdf or open_archive or repository or archive or debian_package">
                                     <div class="item_metadatas">
+
+                                        <!-- HAL -->
+                                        <xsl:choose>
+                                            <xsl:when test="open_archive">
+                                                <div class="item_open_archive">
+                                                    <strong><xsl:value-of select="/page/common_lang/i18n/open_archive/@translation" /></strong> :
+                                                    <a href="{./open_archive/@url}">
+                                                        <xsl:value-of select="./open_archive/@label" />
+                                                    </a>
+                                                </div>
+                                            </xsl:when>
+                                        </xsl:choose>
 
                                         <!-- DOWNLOAD -->
                                         <xsl:choose>
@@ -173,9 +199,18 @@
                                                     <strong><xsl:value-of select="/page/common_lang/i18n/download/@translation" /></strong> :
 
                                                     <xsl:for-each select="./pdf">
-                                                        <a href="{/page/common/pdf_base/@href}{@filename}">
-                                                            <xsl:value-of select="label" />
-                                                        </a> &#160;                       <!-- TODO séparateur quand il y a plusieurs pdf http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                        <xsl:choose>
+                                                            <xsl:when test="@url">
+                                                                <a href="{@url}">
+                                                                    <xsl:value-of select="@label" />
+                                                                </a> &#160;                       <!-- TODO séparateur quand il y a plusieurs pdf http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                            </xsl:when>
+                                                            <xsl:otherwise>
+                                                                <a href="{/page/common/pdf_base/@href}{@filename}">
+                                                                    <xsl:value-of select="@label" />
+                                                                </a> &#160;                       <!-- TODO séparateur quand il y a plusieurs pdf http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                            </xsl:otherwise>
+                                                        </xsl:choose>
                                                     </xsl:for-each>
 
                                                     <xsl:for-each select="./archive">

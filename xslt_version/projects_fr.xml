@@ -16,7 +16,8 @@
     <keywords>jdhp, robotique, programmation, logiciel, python, java, debian</keywords>
 
     <desc>
-        Projets et travaux en informatique.
+        Certains de mes projets et travaux <a href="http://fr.wikipedia.org/wiki/Open_source">open source</a> en informatique, électronique et robotique.
+        Ceci n'est pas une liste exhaustive, de nombreux projets professionnels ne peuvent pas être partagées ici.
     </desc>
 
     <note>
@@ -116,13 +117,15 @@
                 l'apprentissage du contrôle moteur humain avec un modèle de bras
                 anthropomorphique.
 			</desc>
-			<pdf filename="pyarm.pdf">
-                <label>Documentation technique (PDF)</label>
-			</pdf>
+
+            <pdf filename="pyarm.pdf" label="Documentation technique (PDF)" />
+
 			<debian_package filename="pyarm_0.1.3-1_all.deb" arch="all" />
+
 			<repository url="http://pyarm.googlecode.com/svn/trunk/"
                         weburl="http://code.google.com/p/pyarm/source/browse/"
                         type="svn" />
+
 			<video filename="pyarm_generalization.ogv" thumbnail_filename="pyarm_generalization.png">
                 <link url="http://www.youtube.com/watch?v=VjaBMbMt5Cw">
                     <label>Regarder sur Youtube</label>

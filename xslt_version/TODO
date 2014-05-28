@@ -1,3 +1,31 @@
+TODO List
+
+DEV
 - fix TODOs in xml files
 - fix/check schema/page.xsd
 - check generated html == former version
+- galerie photo en Java Script quand il y a + d'une photo/vidéo sur un projet
+
+CONTENT
++ add mes articles scientifiques (+ poster esann) et mes présentations (dvs?, xcsf, ...)
++ ajouter l'adresse du labo
++ mentionner mes enseignements + ajouter les ressources que j'ai créé + jeu de nim
++ add pdf_presenter
++ add systool_exif and audio_tag_py
++ add le code C utilsé pour créer un graph de dépendances dynamique
++ add piclockradio + screen on/off
++ add netfilter scripts ?
++ spotlight snippets (hundreds, list technologies concerned: numpy, matplotlib, qt4, xml, xslt, xmlschema, gtk, sdl, opengl, openscenegraph, boost, bullet, ...)
++ maj les archives (clonefinder par exemple)
++ add vim config ?
++ scripts dual screen ?
++ mini howto / mementos à thème (bash, python, etc.) faits à partir des questions opencal (utile pour prouver le CV) Latex/PDF + version HTML
++ article pour setup Raspbian (post install script)
+- add image rating (script python pyqt pour faire le tri dans les photos)
+- nettoyer: botsim, libdynamixel, pydinamixel, binviewer, pypong, dtools
+- add ia articles + codes
+- botsim/openscenegraph/bullet: screencast, antialiasing
+- add robotics/arduino (3pi, assuro, ...) + article about the toolchain
+- add android (qqch de simple; bus timetable)
+- add opclite...
+- add corpus ?

@@ -16,8 +16,18 @@
     <keywords>jdhp, article, droit, informatique, brevet, logiciel</keywords>
 
     <desc>
-        Documents d'études.
+        Collection de divers documents d'études écrits en français.
+        Pour obtenir la liste de mes publications académiques, cliquez <a href="http://hal.inria.fr/index.php?action_todo=search&#38;submit=1&#38;s_type=advanced&#38;search_without_file=YES&#38;f_0=LASTNAME&#38;p_0=is_exactly&#38;f_1=FIRSTNAME&#38;p_1=is_exactly&#38;l_0=and&#38;halsid=ophffv3l29ehc0f6frbmbk16a7&#38;v_0=Decock&#38;v_1=J%C3%A9r%C3%A9mie">ici</a>.
     </desc>
+
+    <note>
+        <p>
+            D'autres articles écrits en anglais sont disponibles <a href="./articles_en.html">ici</a>.
+        </p>
+        <p>
+            Mes <a href="http://hal.inria.fr/index.php?action_todo=search&#38;submit=1&#38;s_type=advanced&#38;search_without_file=YES&#38;f_0=LASTNAME&#38;p_0=is_exactly&#38;f_1=FIRSTNAME&#38;p_1=is_exactly&#38;l_0=and&#38;halsid=ophffv3l29ehc0f6frbmbk16a7&#38;v_0=Decock&#38;v_1=J%C3%A9r%C3%A9mie">publications scientifiques</a> sont disponibles sur <a href="http://hal.inria.fr/index.php?action_todo=search&#38;submit=1&#38;s_type=advanced&#38;search_without_file=YES&#38;f_0=LASTNAME&#38;p_0=is_exactly&#38;f_1=FIRSTNAME&#38;p_1=is_exactly&#38;l_0=and&#38;halsid=ophffv3l29ehc0f6frbmbk16a7&#38;v_0=Decock&#38;v_1=J%C3%A9r%C3%A9mie">HAL - Inria</a> (archive ouverte).
+        </p>
+    </note>
 
     <!-- ############################################################ -->
 
@@ -32,14 +42,35 @@
             </label>
             
 			<desc>
+                Nous proposons dans cette contribution une méthode qui permet
+                d'obtenir une politique efficace dans un cadre où l'état et
+                l'action sont continus. Le système contrôlé est un bras à deux
+                degrés de liberté actionné par six muscles. Nous apprenons par
+                démonstration une politique paramétrique avec le système de
+                classeurs xcsf à partir de trajectoires quasi-optimales et nous
+                étudions la capacité d'xcsf à généraliser ce qu'il a appris le
+                long de ces trajectoires sur l'ensemble de l'espace
+                atteignable. De plus, nous montrons qu'une méthode
+                d'optimisation stochastique appelée Cross-Entropy Policy Search
+                permet d'améliorer encore la performance du contrôleur
+                paramétrique.
+			</desc>
+
+			<bib label="Référence:">
+                <!--
                 Apprentissage de politiques efficaces avec XCSF et CEPS.
                 Sixièmes journées francophones MFI/JFPDA, B. Zanuttini,
                 editors, GREYC Caen, publisher. Pages 298-310.
-			</desc>
+                -->
+                Didier Marin, Jérémie Decock, Lionel Rigoux, and Olivier Sigaud.
+                Apprentissage de politiques efficaces avec XCSF et CEPS.
+                In <em>Sixièmes journées francophones MFI/JFPDA</em>, pages
+                298-310, Rouen, France, 2011.
+			</bib>
 	
-			<link url="http://www.isir.upmc.fr/files/2011ACTN1978.pdf">
-                <label>Article (PDF)</label>
-			</link>
+            <open_archive url="http://hal.inria.fr/index.php?halsid=ophffv3l29ehc0f6frbmbk16a7&#38;view_this_doc=hal-00703774&#38;version=1" label="HAL" />
+
+            <pdf url="http://www.isir.upmc.fr/files/2011ACTN1978.pdf" label="Article (PDF)" />
         </item>
 
         <item id="rankboost" license="cc-by-sa">
@@ -50,12 +81,9 @@
                 for combining preferences</em> (Y. Freund et al., 1998).
 			</desc>
 	
-			<pdf filename="rankboost_article.pdf">
-                <label>Article (PDF)</label>
-			</pdf>
-			<pdf filename="rankboost_slides.pdf">
-                <label>Slides (PDF)</label>
-			</pdf>
+            <pdf filename="rankboost_article.pdf" label="Article (PDF)" />
+
+            <pdf filename="rankboost_slides.pdf" label="Slides (PDF)" />
 
 			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
@@ -74,9 +102,7 @@
                 computationnelles.
 			</desc>
 	
-			<pdf filename="ae_neurocomp.pdf">
-                <label>PDF</label>
-			</pdf>
+            <pdf filename="ae_neurocomp.pdf" label="PDF" />
 
 			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
@@ -94,9 +120,7 @@
                 dans la Robocup.
 			</desc>
 	
-			<pdf filename="robocup.pdf">
-                <label>PDF</label>
-			</pdf>
+            <pdf filename="robocup.pdf" label="PDF" />
 
 			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
@@ -142,9 +166,7 @@
                 </p>
 			</desc>
 	
-			<pdf filename="les_wikis_en_entreprise.pdf">
-                <label>PDF</label>
-			</pdf>
+            <pdf filename="les_wikis_en_entreprise.pdf" label="PDF" />
 
 			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
@@ -192,9 +214,7 @@
                 </p>
 			</desc>
 	
-			<pdf filename="droit_du_logiciel.pdf">
-                <label>PDF</label>
-			</pdf>
+            <pdf filename="droit_du_logiciel.pdf" label="PDF" />
 
 			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
@@ -209,9 +229,7 @@
                 portée sur les logiciels.
 			</desc>
 	
-			<pdf filename="brevets.pdf">
-                <label>PDF</label>
-			</pdf>
+            <pdf filename="brevets.pdf" label="PDF" />
 
 			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
@@ -237,9 +255,7 @@
                 </p>
 			</desc>
 	
-			<pdf filename="droits_auteurs.pdf">
-                <label>PDF</label>
-			</pdf>
+            <pdf filename="droits_auteurs.pdf" label="PDF" />
 
 			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"

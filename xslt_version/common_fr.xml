@@ -18,6 +18,7 @@
         <debian_package translation="Paquet Debian" />
         <image translation="Image" />
         <video translation="Vidéo" />
+        <open_archive translation="Archive Ouverte" />
     </i18n>
 
 </common_lang>

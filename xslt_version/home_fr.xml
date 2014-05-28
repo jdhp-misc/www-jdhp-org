@@ -11,9 +11,9 @@
     <xi:include href="common.xml"/>
     <xi:include href="common_fr.xml"/>
 
-    <name>Projects</name>
+    <name>Accueil</name>
 
-    <keywords>jdhp, software</keywords>
+    <keywords>jdhp, jeremie, decock, informatique, logiciel, article, tutoriel</keywords>
 
     <desc>
         <div id="home_title">Jérémie DECOCK Home Page</div>
