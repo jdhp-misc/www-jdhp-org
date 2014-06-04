@@ -18,17 +18,17 @@
 #    The latter is undesirable. The former all mean it makes no difference
 
 # XSLT1 ONLY
-xsltproc --xinclude home_en.xml | tail -n +2 > www/home_en.html
-xsltproc --xinclude home_fr.xml | tail -n +2 > www/home_fr.html
+xsltproc --xinclude home_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > www/home_en.html
+xsltproc --xinclude home_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > www/home_fr.html
 
-xsltproc --xinclude articles_en.xml | tail -n +2 > www/articles_en.html
-xsltproc --xinclude articles_fr.xml | tail -n +2 > www/articles_fr.html
+xsltproc --xinclude articles_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > www/articles_en.html
+xsltproc --xinclude articles_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > www/articles_fr.html
 
-xsltproc --xinclude projects_en.xml | tail -n +2 > www/projects_en.html
-xsltproc --xinclude projects_fr.xml | tail -n +2 > www/projects_fr.html
+xsltproc --xinclude projects_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > www/projects_en.html
+xsltproc --xinclude projects_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > www/projects_fr.html
 
-xsltproc --xinclude tutorials_en.xml | tail -n +2 > www/tutorials_en.html
-xsltproc --xinclude tutorials_fr.xml | tail -n +2 > www/tutorials_fr.html
+xsltproc --xinclude tutorials_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > www/tutorials_en.html
+xsltproc --xinclude tutorials_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > www/tutorials_fr.html
 
 ## XSLT2
 #

@@ -95,14 +95,18 @@
                     
                     <!-- PAGE DESCRIPTION -->
                     <div id="page_desc">
-                        <xsl:copy-of select="/page/desc" />
+                        <!-- xsl:copy-of excluding parent: see http://stackoverflow.com/questions/1755661/xslcopy-of-excluding-parent -->
+                        <!-- copy elements but remove unused namespace(s): see http://stackoverflow.com/questions/1074767/xsl-copy-elements-but-remove-unused-namespaces -->
+                        <xsl:copy-of select="/page/desc/node()" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
                     </div>
 
                     <!-- PAGE NOTES -->
                     <xsl:choose>
                         <xsl:when test="/page/note">
                             <div id="page_note">
-                                <xsl:copy-of select="/page/note/*" copy-namespaces="no" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
+                                <!-- xsl:copy-of excluding parent: see http://stackoverflow.com/questions/1755661/xslcopy-of-excluding-parent -->
+                                <!-- copy elements but remove unused namespace(s): see http://stackoverflow.com/questions/1074767/xsl-copy-elements-but-remove-unused-namespaces -->
+                                <xsl:copy-of select="/page/note/node()" copy-namespaces="no" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
                             </div>
                         </xsl:when>
                     </xsl:choose>
@@ -149,7 +153,9 @@
 
                             <!-- DESC -->
                             <div class="item_desc">
-                                <xsl:copy-of select="desc" copy-namespaces="no" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
+                                <!-- xsl:copy-of excluding parent: see http://stackoverflow.com/questions/1755661/xslcopy-of-excluding-parent -->
+                                <!-- copy elements but remove unused namespace(s): see http://stackoverflow.com/questions/1074767/xsl-copy-elements-but-remove-unused-namespaces -->
+                                <xsl:copy-of select="desc/node()" copy-namespaces="no" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
                             </div>
 
                             <!-- LINK -->
@@ -169,7 +175,9 @@
                                             <xsl:value-of select="bib/@label" />
                                         </p>
                                         <p class="bib_body">
-                                            <xsl:copy-of select="bib" copy-namespaces="no" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
+                                            <!-- xsl:copy-of excluding parent: see http://stackoverflow.com/questions/1755661/xslcopy-of-excluding-parent -->
+                                            <!-- copy elements but remove unused namespace(s): see http://stackoverflow.com/questions/1074767/xsl-copy-elements-but-remove-unused-namespaces -->
+                                            <xsl:copy-of select="bib/node()" copy-namespaces="no" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
                                         </p>
                                     </div>
                                 </xsl:when>
