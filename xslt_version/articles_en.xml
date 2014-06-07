@@ -57,9 +57,9 @@
                 Apprentissage (JFPDA'14)</em>, Liège (Belgique), 12-13 mai 2014
             </bib>
 
-            <open_archive url="" label="HAL" />
+            <open_archive url="http://hal.inria.fr/hal-00997562" label="HAL" />
 
-            <pdf url="" label="Slides (PDF)" />
+            <pdf url="http://hal.inria.fr/docs/00/99/75/62/PDF/slides.pdf" label="Slides (PDF)" />
         </item>
 
         <item id="dmpc" license="">
