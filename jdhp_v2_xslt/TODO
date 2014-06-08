@@ -2,11 +2,49 @@ TODO List
 
 DEV
 - fix TODOs in xml files
+- ancres html -> sont-elles bien là pour chaque item ?
 - fix/check schema/page.xsd
 - check generated html == former version
 - galerie photo en Java Script quand il y a + d'une photo/vidéo sur un projet
+- Générer une page html pour chaque items (projets) pour y mettre plus
+  d'informations sans alourdir la page "projet_xx.html" (instructions pour Git,
+  licence, plusieurs screenshots, plusieurs vidéos, ...). 
+  Ajouter un fil d'Ariane (police des liens de couleur bordeaux)
+- vérif compatibilité avec IE et safari
+
+Web 2.0
++ social networks (amélorer le référencement, avoir un retour)
+  boutons "+1" google, "like" facebook, "in share" linkedin, "tweet" twitter, "dig" digger (?), ...
+  Où ? -> sur la page d'accueil du site et pour chaque "ancre html" (ie chaque item: article, logiciel, tutoriel, ...)
+  - https://developers.google.com/+/web/+1button/   and   https://developers.google.com/+/web/snippet/?hl=fr
+  - https://developers.google.com/+/web/share/
+  - https://support.google.com/plus/answer/3113301?p=plusone_posts&rd=1
+  - https://about.twitter.com/resources/buttons
+  - eg. http://apprendre-la-photo.fr/filtres-utiles-photo-numerique/
+        http://www.ya-graphic.com/2011/03/bouton-plus-un-de-google/
+* badges "follow me"/"suivre ce site": liens vers mon compte google+, facebook, twitter, linkedin, RSS, youtube, filcker, deviantart, stackoverflow, pinterest, instagram, reddit, github, vimeo, ...
+  - https://developers.google.com/+/web/badge/
+  - ...
+  - eg. http://www.davidrevoy.com/, 
+- commentaires avec Disqus (?) ou Juvia (?)
+- blog (eg. Pelican) (bien définir son utilité) ?
++ amélorer le référencement du site (robot.txt, etc.)
+  robot.txt, meta:description, sitmaps : http://en.wikipedia.org/wiki/Sitemaps, ...
+  https://support.google.com/webmasters/topic/4581352?hl=fr&ref_topic=4581229
+  http://www.ya-graphic.com/
++ ajouter des info (pro) sur mon profil google+
 
 CONTENT
+* Ajouter "Full CV on Linked In." sur la page d'accueil
+* CV: mettre des intervalles d'années plutot que la date d'obtention du diplome + ajouter "since 2012: PhD at Inria..."
+* Sous le nom et sous "PhD student at Inria...", ajouter le domaine (computer science, Learning and Optimization) et l'intitulé de mon sujet de thèse
+- ajouter la date de publication des items (ça change quoi côté ergonomie ?)
+  pour les articles et les tutos seulement ? la date de quoi exactement
+  (rédaction, publication sur jdhp, publication externe pour les articles
+  académiques, ... -> à expliciter sur le site) ?
++ remplacer "gitweb" par "browse source code"
+- Ajouter l'emprunte de ma clé GPG dans la page "home_**.html" et l'utiliser
+  pour signer les paquets et le dépôt Debian.
 + add mes articles scientifiques (+ poster esann) et mes présentations (dvs?, xcsf, ...)
 + ajouter: ~/Documents/master_IAD/M2_IAD_2010/M2S4v2_stage/ISIR/rapport_et_presentation
            ~/Documents/isir/rapport_et_presentation
