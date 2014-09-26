@@ -24,8 +24,33 @@
 a {
     /*color            : #0088cc;*/
     color            : #197cc1;
-    text-decoration  : none;
+
+    text-decoration  : underline;
+    /*text-decoration  : none;*/
+
+    /*
+    text-decoration  : underline;
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    */
 }
+
+/*
+a:link {
+}
+
+a:visited {
+}
+
+a:hover {
+    font-weight      : bold;
+    text-decoration  : underline;
+}
+
+a:active {
+}
+*/
 
 body {
     background-color : #f4f4f4;

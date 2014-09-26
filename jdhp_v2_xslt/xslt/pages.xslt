@@ -87,7 +87,7 @@
 
                             <a href="{/page/@id}_{@suffix}.html">
                                 <img src="{@src}" title="{@title}" alt="{@alt}" />
-                            </a>
+                            </a> &#160;
 
                         </xsl:for-each>
                     </div>
@@ -275,8 +275,8 @@
                 </div> <!-- PAGE -->
 
                 <div id="footer">
-                    <a href="http://www.tuxfamily.org/"><img src="./medias/images/tux_family.png" title="{/page/common_lang/i18n/tuxfamily_tag_title/@translation}" alt="{/page/common_lang/i18n/tuxfamily_tag_title/@translation}" /></a>
-                    <a href="http://validator.w3.org/check?uri=referer"><img src="./medias/images/xhtml.png" title="{/page/common_lang/i18n/xhtml_validator_tag_title/@translation}" alt="{/page/common_lang/i18n/xhtml_validator_tag_title/@translation}" /></a>
+                    <a href="http://www.tuxfamily.org/"><img src="./medias/images/tux_family.png" title="{/page/common_lang/i18n/tuxfamily_tag_title/@translation}" alt="{/page/common_lang/i18n/tuxfamily_tag_title/@translation}" /></a> &#160;
+                    <a href="http://validator.w3.org/check?uri=referer"><img src="./medias/images/xhtml.png" title="{/page/common_lang/i18n/xhtml_validator_tag_title/@translation}" alt="{/page/common_lang/i18n/xhtml_validator_tag_title/@translation}" /></a> &#160;
                     <a href="http://jigsaw.w3.org/css-validator/"><img src="./medias/images/css.png" title="{/page/common_lang/i18n/css_validator_tag_title/@translation}" alt="{/page/common_lang/i18n/css_validator_tag_title/@translation}" /></a>
                 </div>
 
