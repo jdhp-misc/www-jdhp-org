@@ -9,7 +9,7 @@
 
     <xsl:template match="/">
 
-        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{/page/@lang}" lang="{/page/@lang}">
 
             <head>
                 <title>JDHP - <xsl:value-of select="/page/name" /></title>
@@ -275,9 +275,9 @@
                 </div> <!-- PAGE -->
 
                 <div id="footer">
-                    <a href="http://www.tuxfamily.org/"><img src="./medias/images/tux_family.png" title="Ce site est hébergé chez TuxFamily" alt="Ce site est hébergé chez TuxFamily" /></a>
-                    <a href="http://validator.w3.org/check?uri=referer"><img src="./medias/images/xhtml.png" title="Cette page respecte le standard XHTML 1.0 Strict" alt="Cette page respecte le standard XHTML 1.0 Strict" /></a>
-                    <a href="http://jigsaw.w3.org/css-validator/"><img src="./medias/images/css.png" title="Cette page respecte le standard CSS 2.0" alt="Cette page respecte le standard CSS 2.0" /></a>
+                    <a href="http://www.tuxfamily.org/"><img src="./medias/images/tux_family.png" title="{/page/common_lang/i18n/tuxfamily_tag_title/@translation}" alt="{/page/common_lang/i18n/tuxfamily_tag_title/@translation}" /></a>
+                    <a href="http://validator.w3.org/check?uri=referer"><img src="./medias/images/xhtml.png" title="{/page/common_lang/i18n/xhtml_validator_tag_title/@translation}" alt="{/page/common_lang/i18n/xhtml_validator_tag_title/@translation}" /></a>
+                    <a href="http://jigsaw.w3.org/css-validator/"><img src="./medias/images/css.png" title="{/page/common_lang/i18n/css_validator_tag_title/@translation}" alt="{/page/common_lang/i18n/css_validator_tag_title/@translation}" /></a>
                 </div>
 
             </body>

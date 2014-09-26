@@ -30,6 +30,16 @@ xsltproc --xinclude projects_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/ww
 xsltproc --xinclude tutorials_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > www/tutorials_en.html
 xsltproc --xinclude tutorials_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > www/tutorials_fr.html
 
+# Well... I don't use redirection (http, meta, script, ...) but a simple copy in order to avoid problems with web indexing (Google and so).
+cp -a www/home_en.html www/index.html
+#ln --symbolic home_en.html www/index.html
+cp -a misc/favicon.ico www/
+cp -a misc/robots.txt www/
+cp -a css www/
+cp -a medias www/
+cp -a hevea www/
+cp -a html www/
+
 ## XSLT2
 #
 ## aptitude install libsaxonb-java

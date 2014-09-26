@@ -22,6 +22,16 @@
             <p id="name">Jérémie DECOCK</p>
             <p id="email">Email : jd -POINT- jdhp -CHEZ- gmail -POINT- com</p>
             <p id="school">Doctorant en informatique à l'<a href="http://www.inria.fr/">INRIA</a></p>
+            <p id="follow_me">
+                Réseaux sociaux
+                <div>
+                    <a href="https://plus.google.com/u/0/106609464008586085387/" title="Suivez-moi sur Google+" ><img src="medias/images/icons/social_network_class.pm/images/default/googleplus.png" /></a>
+                    <a href="https://twitter.com/jeremie_decock"                 title="Suivez-moi sur Twitter"><img src="medias/images/icons/social_network_class.pm/images/default/twitter.png" /></a>
+                    <a href="https://www.linkedin.com/in/jeremiedecock"          title="Suivez-moi sur Linkedin"><img src="medias/images/icons/social_network_class.pm/images/default/linkedin.png" /></a>
+                    <a href="https://www.youtube.com/user/jdhpvideo"             title="Suivez ma chaîne Youtube"><img src="medias/images/icons/social_network_class.pm/images/default/youtube.png" /></a>
+                    <!-- email, RSS, github, stackoverflow, ... -->
+                </div>
+            </p>
         </div>
 
         <h3>Bref CV</h3>
@@ -38,8 +48,8 @@
 
         <h3>Liens</h3>
         <p id="home_links">
-            <a href="http://www.fsf.org/"><img alt="FSF member #6116" src="./medias/images/fsf_member.png" title="FSF member #6116" /></a>
-            <a href="http://www.april.org/"><img alt="APRIL member - Promouvoir et soutenir le logiciel libre" src="http://www.april.org/association/documents/bannieres/boutons/april_soutien3_88x31.png" title="APRIL member" /></a>
+            <a href="http://www.fsf.org/"><img alt="Membre #6116 de la FSF" src="./medias/images/fsf_member.png" title="Membre #6116 de la FSF" /></a>
+            <a href="http://www.april.org/"><img alt="Membre de l'APRIL - Promouvoir et soutenir le logiciel libre" src="http://www.april.org/association/documents/bannieres/boutons/april_soutien3_88x31.png" title="Membre de l'APRIL - Promouvoir et soutenir le logiciel libre" /></a>
         </p> 
     </desc>
 </page>

@@ -1,16 +1,31 @@
 TODO List
 
 DEV
+- check generated html == former version
 - fix TODOs in xml files
+- délimiter visuellement les liens :
+  - soit avec un underligne discret (très clair) comme dans ../design_examples/genericons-demo.jpg (CSS3 only ou utiliser margin bottom pour CSS2) ou utiliser 
+    http://stackoverflow.com/questions/12804419/css-text-decoration-underline-color
+    http://stackoverflow.com/questions/12557707/changing-underline-color
+  - soit en personalisant
+    a:link {...}
+    a:visited {...}
+    a:hover {...}
+    a:active {...}
+    pour mettre en évidence le lien quand on le survole -> soit par l'apparition d'un underline, soit par une mise en gras, soit par un changement de couleur
+    comme dans http://demo.studiopress.com/education/sample-post/
+    cf. http://www.alsacreations.com/astuce/lire/43-comment-dfinir-lapparence-de-ses-liens.html pour la définition de link, visited, hover, active.
+- genericons -> icons in css + svg (see genericons on google) + see ../design_examples/genericons-demo.jpg for design suggestion
 - ancres html -> sont-elles bien là pour chaque item ?
 - fix/check schema/page.xsd
-- check generated html == former version
 - galerie photo en Java Script quand il y a + d'une photo/vidéo sur un projet
 - Générer une page html pour chaque items (projets) pour y mettre plus
   d'informations sans alourdir la page "projet_xx.html" (instructions pour Git,
   licence, plusieurs screenshots, plusieurs vidéos, ...). 
+  => créer un css pour ces pages et écrire directement des pages html regroupées dans un même répertoire (./html/xxx_en.html), idem avec les pages générées avec hevea (latex).
   Ajouter un fil d'Ariane (police des liens de couleur bordeaux)
 - vérif compatibilité avec IE et safari
+- Web Analytics: add Piwik (the most famous Opensource Web Analytics) : http://piwik.org/
 
 Web 2.0
 + social networks (amélorer le référencement, avoir un retour)
@@ -45,16 +60,15 @@ CONTENT
 + remplacer "gitweb" par "browse source code"
 - Ajouter l'emprunte de ma clé GPG dans la page "home_**.html" et l'utiliser
   pour signer les paquets et le dépôt Debian.
++ page d'accueil, liens -> ajouter vorobotics.
 + add mes articles scientifiques (+ poster esann) et mes présentations (dvs?, xcsf, ...)
-+ ajouter: ~/Documents/master_IAD/M2_IAD_2010/M2S4v2_stage/ISIR/rapport_et_presentation
++ ajouter les articles suivants:
+           ~/Documents/master_IAD/M2_IAD_2010/M2S4v2_stage/ISIR/rapport_et_presentation
            ~/Documents/isir/rapport_et_presentation
            ~/Documents/isir/rapport_et_presentation_11.tar.gz
-           
            ~/git_phd_docs/2012_03_hsinchu_xcsf_slides
-
            ~/git_phd_docs/2012_05_energy-forum_continuous_mcts
-
-           ~/Documents/cours_anglais/exposé/
+           ~/Documents/cours_anglais/exposé/  (opensource society)
 + ajouter l'adresse du labo
 + mentionner mes enseignements + ajouter les ressources que j'ai créé + jeu de nim
 + add pdf_presenter
@@ -68,6 +82,12 @@ CONTENT
 + scripts dual screen ?
 + mini howto / mementos à thème (bash, python, etc.) faits à partir des questions opencal (utile pour prouver le CV) Latex/PDF + version HTML
 + article pour setup Raspbian (post install script)
++ add openscad files + stl files + pictures
++ ajouter fichier openscad sur les plateformes de partages d'objets 3d... (+ lien vers ces pages)
++ add geda files + final pdf + pictures
++ add iptables scripts (firewall skills)
++ add a bib file with my publications
++ ajouter photos d'art
 - add image rating (script python pyqt pour faire le tri dans les photos)
 - nettoyer: botsim, libdynamixel, pydinamixel, binviewer, pypong, dtools
 - add ia articles + codes
@@ -76,3 +96,5 @@ CONTENT
 - add android (qqch de simple; bus timetable)
 - add opclite...
 - add corpus ?
+- add my reading list (like http://www.cs.utexas.edu/~shivaram/readings/res-cat-5.html)
+- HTML5-canvas / Javascript / CSS3 demos for AI (MDP, minimax, ...)

@@ -172,7 +172,7 @@
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
 
-			<link url="http://www.jdhp.org/articles/les_wikis_en_entreprise.html">
+			<link url="hevea/les_wikis_en_entreprise.html">
                 <label>Lire la suite</label>
 			</link>
         </item>
@@ -261,7 +261,7 @@
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
 
-			<link url="http://www.jdhp.org/articles/droits_auteurs.html">
+			<link url="hevea/droits_auteurs.html">
                 <label>Lire la suite</label>
 			</link>
         </item>

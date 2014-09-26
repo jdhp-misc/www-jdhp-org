@@ -5,7 +5,7 @@
     <!-- <base href="https://www.lri.fr/~decock/" /> -->
     <!-- <base href="./" /> -->
 
-    <thumbnail_base href="http://www.jdhp.org/medias/thumbnails/" />
+    <thumbnail_base href="medias/thumbnails/" />
     <img_base href="http://download.tuxfamily.org/jdhp/image/" />
     <video_base href="http://download.tuxfamily.org/jdhp/video/" />
     <pdf_base href="http://download.tuxfamily.org/jdhp/pdf/" />

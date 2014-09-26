@@ -23,6 +23,16 @@
             <p id="name">Jérémie DECOCK</p>
             <p id="email">Email : jd -DOT- jdhp -AT- gmail -DOT- com</p>
             <p id="school">Ph.D. student at <a href="http://www.inria.fr/">INRIA</a></p>
+            <p id="follow_me">
+                Follow me
+                <div>
+                    <a href="https://plus.google.com/u/0/106609464008586085387/" title="Follow me on Google+ (I use it as a blog)" ><img src="medias/images/icons/social_network_class.pm/images/default/googleplus.png" /></a>
+                    <a href="https://twitter.com/jeremie_decock"                 title="Follow me on Twitter"><img src="medias/images/icons/social_network_class.pm/images/default/twitter.png" /></a>
+                    <a href="https://www.linkedin.com/in/jeremiedecock"          title="Follow me on Linkedin"><img src="medias/images/icons/social_network_class.pm/images/default/linkedin.png" /></a>
+                    <a href="https://www.youtube.com/user/jdhpvideo"             title="Follow my Youtube channel (I post some videos about robotics and computer science there)"><img src="medias/images/icons/social_network_class.pm/images/default/youtube.png" /></a>
+                    <!-- email, RSS, github, stackoverflow, ... -->
+                </div>
+            </p>
         </div>
 
         <h3>Resume</h3>
@@ -37,7 +47,7 @@
             I made this website to share my work (articles and programs).
         </p>
         
-        <h3>Links</h3>
+        <h3>Related links</h3>
         <p id="home_links">
             <a href="http://www.fsf.org/"><img alt="FSF member #6116" src="./medias/images/fsf_member.png" title="FSF member #6116" /></a>
             <a href="http://www.april.org/"><img alt="APRIL member - Promouvoir et soutenir le logiciel libre" src="http://www.april.org/association/documents/bannieres/boutons/april_soutien3_88x31.png" title="APRIL member" /></a>

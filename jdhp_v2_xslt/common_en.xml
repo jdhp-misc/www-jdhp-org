@@ -19,6 +19,9 @@
         <image translation="Image" />
         <video translation="Video" />
         <open_archive translation="Open Archive" />
+        <tuxfamily_tag_title translation="Hosted by TuxFamily" />
+        <xhtml_validator_tag_title translation="XHTML 1.0 Strict compliant" />
+        <css_validator_tag_title translation="CSS 2.0 compliant" />
     </i18n>
 
 </common_lang>
