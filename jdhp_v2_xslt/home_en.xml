@@ -22,7 +22,7 @@
         <div id="home_contact">
             <p id="name">Jérémie DECOCK</p>
             <p id="email">Email : jd -DOT- jdhp -AT- gmail -DOT- com</p>
-            <p id="school">Ph.D. student at <a href="http://www.inria.fr/">INRIA</a></p>
+            <p id="school">Ph.D. student in Computer Science (Learning and Optimization) at <a href="http://www.inria.fr/">Inria</a></p>
             <p id="follow_me">
                 Follow me
                 <div>
@@ -36,11 +36,22 @@
         </div>
 
         <h3>Resume</h3>
-        <ul id="home_cv">
-            <li>2011 : <em>Master in <a href="http://www-master.ufr-info-p6.jussieu.fr/specialite/iad/">Artificial Intelligence and Decision</a></em> at <a href="http://www.upmc.fr/">Université Pierre et Marie Curie</a></li>
-            <li>2008 : <em>Master in <a href="http://miage.math-info.univ-paris5.fr/">Business Informatics</a> (Information Technology and Management)</em> at <a href="http://www.univ-paris5.fr/">Université Paris Descartes</a></li>
-            <li>2006 : <em>Bachelor's degree in <a href="http://miage.math-info.univ-paris5.fr/">Business Informatics</a> (Information Technology and Management)</em> at <a href="http://www.univ-paris5.fr/">Université Paris Descartes</a></li>
-        </ul>
+        <dl id="home_cv">
+            <dt>2011 - 2014</dt>
+            <dd><em>Ph.D. student in Computer Science (Learning and Optimization)</em></dd>
+            <dd>at <a href="http://www.inria.fr/">Inria</a> / <a href="http://www.u-psud.fr/en/">University Paris Sud (Orsay)</a> / <a href="http://www.lri.fr/index_en.php?lang=EN">LRI</a>, team <a href="http://tao.lri.fr/">TAO (Learning and Optimization)</a>.</dd>
+            <dd>Subject: &#8220;<em>Hybridization of dynamic optimization methodologies</em>&#8221;.</dd>
+            <dd>Doctoral advisor: <a href="http://www.lri.fr/~teytaud/">Olivier TEYTAUD</a>.</dd>
+
+            <dt>2008 - 2011</dt>
+            <dd><em>Master in <a href="http://www-master.ufr-info-p6.jussieu.fr/specialite/iad/">Artificial Intelligence and Decision</a></em> at <a href="http://www.upmc.fr/">Université Pierre et Marie Curie</a>.</dd>
+
+            <dt>2006 - 2008</dt>
+            <dd><em>Master in <a href="http://miage.math-info.univ-paris5.fr/">Business Informatics</a> (Information Technology and Management)</em> at <a href="http://www.univ-paris5.fr/">Université Paris Descartes</a>.</dd>
+
+            <dt>2005 - 2006</dt>
+            <dd><em>Bachelor's degree in <a href="http://miage.math-info.univ-paris5.fr/">Business Informatics</a> (Information Technology and Management)</em> at <a href="http://www.univ-paris5.fr/">Université Paris Descartes</a>.</dd>
+        </dl>
                 
         <h3>About this website...</h3>
         <p id="home_about">

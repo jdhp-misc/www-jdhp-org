@@ -22,6 +22,10 @@
         <tuxfamily_tag_title translation="Ce site est hébergé chez TuxFamily" />
         <xhtml_validator_tag_title translation="Cette page respecte le standard XHTML 1.0 Strict" />
         <css_validator_tag_title translation="Cette page respecte le standard CSS 2.0" />
+        <gitweb translation="Parcourir le code source" />
+        <svnweb translation="Parcourir le code source" />
+        <giturl translation="Référentiel Git" />
+        <svnurl translation="Référentiel SVN" />
     </i18n>
 
 </common_lang>

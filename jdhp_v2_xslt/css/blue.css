@@ -61,6 +61,17 @@ li {
     list-style-position : inside;
 }
 
+dt {
+    /*font-style       : italic;*/
+    font-weight      : bold;
+    margin-bottom    : 0.25em;
+    margin-top    : 0.75em;
+}
+
+dd {
+    margin-left      : 2em;
+}
+
 /* ************************************************************************* */
 /*                                 HEADER                                    */
 /* ************************************************************************* */

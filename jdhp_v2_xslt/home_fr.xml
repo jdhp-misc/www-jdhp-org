@@ -21,7 +21,7 @@
         <div id="home_contact">
             <p id="name">Jérémie DECOCK</p>
             <p id="email">Email : jd -POINT- jdhp -CHEZ- gmail -POINT- com</p>
-            <p id="school">Doctorant en informatique à l'<a href="http://www.inria.fr/">INRIA</a></p>
+            <p id="school">Doctorant en Informatique (Apprentissage et Optimisation) à l'<a href="http://www.inria.fr/">Inria</a></p>
             <p id="follow_me">
                 Réseaux sociaux
                 <div>
@@ -35,11 +35,22 @@
         </div>
 
         <h3>Bref CV</h3>
-        <ul id="home_cv">
-            <li>2011 : <em>Master <a href="http://www-master.ufr-info-p6.jussieu.fr/specialite/iad/">Intelligence Artificielle et Décision</a></em> à l'<a href="http://www.upmc.fr/">Université Pierre et Marie Curie</a></li>
-            <li>2008 : <em>Master <a href="http://miage.math-info.univ-paris5.fr/">MIAGE</a></em> à l'<a href="http://www.univ-paris5.fr/">Université Paris Descartes</a></li>
-            <li>2006 : <em>Licence <a href="http://miage.math-info.univ-paris5.fr/">MIAGE</a></em> à l'<a href="http://www.univ-paris5.fr/">Université Paris Descartes</a></li>
-        </ul>
+        <dl id="home_cv">
+            <dt>2011 - 2014</dt>
+            <dd><em>Doctorat en informatique (Apprentissage et Optimisation)</em></dd>
+            <dd>à l'<a href="http://www.inria.fr/">Inria</a> / <a href="http://www.u-psud.fr/fr/">Université Paris Sud (Orsay)</a> / <a href="http://www.lri.fr/">LRI</a>, dans l'équipe <a href="http://tao.lri.fr/">TAO (Apprentissage et Optimisation)</a>.</dd>
+            <dd>Sujet: &#171;<em>Hybridation de méthodes d'optimisation dynamique</em>&#187;.</dd>
+            <dd>Directeur de thèse: <a href="http://www.lri.fr/~teytaud/">Olivier TEYTAUD</a>.</dd>
+
+            <dt>2008 - 2011</dt>
+            <dd><em>Master <a href="http://www-master.ufr-info-p6.jussieu.fr/specialite/iad/">Intelligence Artificielle et Décision</a></em> à l'<a href="http://www.upmc.fr/">Université Pierre et Marie Curie</a>.</dd>
+
+            <dt>2006 - 2008</dt>
+            <dd><em>Master <a href="http://miage.math-info.univ-paris5.fr/">MIAGE</a></em> à l'<a href="http://www.univ-paris5.fr/">Université Paris Descartes</a>.</dd>
+
+            <dt>2005 - 2006</dt>
+            <dd><em>Licence <a href="http://miage.math-info.univ-paris5.fr/">MIAGE</a></em> à l'<a href="http://www.univ-paris5.fr/">Université Paris Descartes</a>.</dd>
+        </dl>
 
         <h3>À propos...</h3>
         <p id="home_about">

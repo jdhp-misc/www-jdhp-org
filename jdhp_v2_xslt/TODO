@@ -1,9 +1,10 @@
 TODO List
 
 DEV
-- check generated html == former version
+* corriger les erreurs du W3C validator !
+x check generated html == former version
 - fix TODOs in xml files
-- délimiter visuellement les liens :
+x délimiter visuellement les liens :
   - soit avec un underligne discret (très clair) comme dans ../design_examples/genericons-demo.jpg (CSS3 only ou utiliser margin bottom pour CSS2) ou utiliser 
     http://stackoverflow.com/questions/12804419/css-text-decoration-underline-color
     http://stackoverflow.com/questions/12557707/changing-underline-color
@@ -50,18 +51,17 @@ Web 2.0
 + ajouter des info (pro) sur mon profil google+
 
 CONTENT
-* Ajouter "Full CV on Linked In." sur la page d'accueil
-* CV: mettre des intervalles d'années plutot que la date d'obtention du diplome + ajouter "since 2012: PhD at Inria..."
-* Sous le nom et sous "PhD student at Inria...", ajouter le domaine (computer science, Learning and Optimization) et l'intitulé de mon sujet de thèse
-- ajouter la date de publication des items (ça change quoi côté ergonomie ?)
-  pour les articles et les tutos seulement ? la date de quoi exactement
-  (rédaction, publication sur jdhp, publication externe pour les articles
-  académiques, ... -> à expliciter sur le site) ?
-+ remplacer "gitweb" par "browse source code"
-- Ajouter l'emprunte de ma clé GPG dans la page "home_**.html" et l'utiliser
-  pour signer les paquets et le dépôt Debian.
-+ page d'accueil, liens -> ajouter vorobotics.
-+ add mes articles scientifiques (+ poster esann) et mes présentations (dvs?, xcsf, ...)
+x CV: mettre des intervalles d'années plutot que la date d'obtention du diplome + ajouter "since 2012: PhD at Inria..."
+x add mes articles scientifiques (+ poster esann) et mes présentations (dvs?, xcsf, ...)
+x Sous le nom et sous "PhD student at Inria...", ajouter le domaine (computer science, Learning and Optimization) et l'intitulé de mon sujet de thèse
+x remplacer "gitweb" par "browse source code"
+x gitweb: afficher directement l'arbre plutôt que les commit -> append "?a=tree" à la fin de toutes les url
+* jdhp sur LRI -> ajouter htaccess permanent redirect vers jdhp.org
+* Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
+* finir de mettre à jour la partie "snippets", la mettre plus en évidence
+* CV: mettre un CV un peu plus complet en html -> utiliser h2/h3 pour délimiter Formation/Enseignements/Expérience professionnelle/...
+* Ajouter "Full CV" sur la page d'accueil en PDF (sans numéro de tel, email, adresse postale et activités perso)
+* add a bib file with my publications
 + ajouter les articles suivants:
            ~/Documents/master_IAD/M2_IAD_2010/M2S4v2_stage/ISIR/rapport_et_presentation
            ~/Documents/isir/rapport_et_presentation
@@ -69,25 +69,37 @@ CONTENT
            ~/git_phd_docs/2012_03_hsinchu_xcsf_slides
            ~/git_phd_docs/2012_05_energy-forum_continuous_mcts
            ~/Documents/cours_anglais/exposé/  (opensource society)
-+ ajouter l'adresse du labo
+           document FTP
++ add openscad files + stl files + pictures
++ ajouter tutos suivant: make, kicad/geda + fabrication pcb, openscad + slic3r + witbox, blinkled avr with avr-gcc, iptables + initsys5/upstart, tcpwrappers, outils shell cookbook (sed, grep, find, awk, ...), outils shell pour la programmation (nm, ldd, ...), programmation system C (cf. cours), programmation avr, programmation gpio rpi, boutton on/off rpi, vim cookbook (+ vimrc), vim + screen
 + mentionner mes enseignements + ajouter les ressources que j'ai créé + jeu de nim
+- ajouter la date de publication des items (ça change quoi côté ergonomie ?)
+  pour les articles et les tutos seulement ? la date de quoi exactement
+  (rédaction, publication sur jdhp, publication externe pour les articles
+  académiques, ... -> à expliciter sur le site) ?
+- Ajouter l'emprunte de ma clé GPG dans la page "home_**.html" et l'utiliser
+  pour signer les paquets et le dépôt Debian.
++ attribut "license" non renseignés/affichés
+* comment mettre à jours automatiquement les articles (pdf, ...), images, thumbnails, ...
++ UTF-8 -> passe bien sur windows ?
++ page d'accueil, liens -> ajouter vorobotics (requière un logo...).
++ ajouter l'adresse du labo
 + add pdf_presenter
 + add systool_exif and audio_tag_py
 + add le code C utilsé pour créer un graph de dépendances dynamique
 + add piclockradio + screen on/off
 + add netfilter scripts ?
 + spotlight snippets (hundreds, list technologies concerned: numpy, matplotlib, qt4, xml, xslt, xmlschema, gtk, sdl, opengl, openscenegraph, boost, bullet, ...)
-+ maj les archives (clonefinder par exemple)
+x maj les archives (clonefinder par exemple)
 + add vim config ?
 + scripts dual screen ?
 + mini howto / mementos à thème (bash, python, etc.) faits à partir des questions opencal (utile pour prouver le CV) Latex/PDF + version HTML
 + article pour setup Raspbian (post install script)
-+ add openscad files + stl files + pictures
 + ajouter fichier openscad sur les plateformes de partages d'objets 3d... (+ lien vers ces pages)
 + add geda files + final pdf + pictures
 + add iptables scripts (firewall skills)
-+ add a bib file with my publications
 + ajouter photos d'art
++ poster des articles sur le site RPi
 - add image rating (script python pyqt pour faire le tri dans les photos)
 - nettoyer: botsim, libdynamixel, pydinamixel, binviewer, pypong, dtools
 - add ia articles + codes

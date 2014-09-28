@@ -22,6 +22,10 @@
         <tuxfamily_tag_title translation="Hosted by TuxFamily" />
         <xhtml_validator_tag_title translation="XHTML 1.0 Strict compliant" />
         <css_validator_tag_title translation="CSS 2.0 compliant" />
+        <gitweb translation="Browse source code" />
+        <svnweb translation="Browse source code" />
+        <giturl translation="Git repository" />
+        <svnurl translation="SVN repository" />
     </i18n>
 
 </common_lang>

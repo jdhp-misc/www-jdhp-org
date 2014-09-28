@@ -264,9 +264,112 @@
         </label>
 
         <item id="demos" license="MIT">
-            <label>Demos</label>
+            <label>Snippets</label>
 			<desc>
-                Some demos (for artistic or educational purpose).
+                A collection of hundreds of snippets, i.e. small pieces of code
+                to test a specific aspect of a programming language, a
+                programming library, a description format, a protocol, ...
+                <br />
+                Here you will find snippets about:
+                <dl>
+                    <dt>programming languages</dt>
+                    <dd>C/C++, Java, Python, Shell scripts, <a href="http://www.gnu.org/software/octave/">Octave</a> (Matlab clone), Javascript</dd>
+
+                    <dt>Unix programming</dt>
+                    <dd>
+                        Unix/Linux system calls in C,
+                        Debian packaging
+                    </dd>
+
+                    <dt>Scientific programming libraries</dt>
+                    <dd>
+                        <a href="http://www.gnu.org/software/gsl/">GSL (GNU Scientific Library)</a>,
+                        <a href="https://www.gnu.org/software/glpk/">GLPK (GNU Linear Programming Kit)</a>,
+                        <a href="http://eigen.tuxfamily.org">Eigen</a> C++ template library for linear algebra,
+                        <a href="http://matplotlib.org/">Matplotlib</a> python 2D plotting library,
+                        <a href="http://www.gnuplot.info/">Gnuplot</a> command-line driven graphing utility,
+                        <a href="http://www.numpy.org/">Numpy</a>  fundamental package for scientific computing with Python,
+                        <a href="http://code.enthought.com/projects/mayavi/">Mayavi</a> 3D Scientific Data Visualization and Plotting ,
+                        <a href="http://www.scipy.org/">Scipy</a> python library for linear algebra
+                    </dd>
+                    
+                    <dt>Parallel computing and high performance computing</dt>
+                    <dd>
+                        <a href="http://en.wikipedia.org/wiki/Message_Passing_Interface">MPI (Message Passing Interface)</a>,
+                        <a href="http://openmp.org">OpenMP</a> API for parallel programming
+                    </dd>
+                    
+                    <dt>Image processing programming libraries</dt>
+                    <dd>
+                        <a href="http://opencv.org/">OpenCV</a> image processing library (C/C++ and Python),
+                        <a href="http://www.pythonware.com/products/pil/">PIL</a> (Python Imaging Library)
+                    </dd>
+                    
+
+                    <dt>General API</dt>
+                    <dd>
+                        <a href="http://www.boost.org/">Boost</a> C++ libraries
+                    </dd>
+                    
+                    <dt>Programming tools</dt>
+                    <dd>
+                        <a href="http://www.gnu.org/software/make/">Gnu Make</a> multi-language build system,
+                        <a href="http://www.cmake.org/">CMake</a> cross-platform build system,
+                        <a href="http://ant.apache.org/">Ant</a> Java build system
+                    </dd>
+                    
+                    <dt>XML and web development</dt>
+                    <dd>
+                        <a href="http://www.saxproject.org/">SAX</a> (Simple API for XML) with Java, C++ and Python,
+                        HTML5,
+                        CSS,
+                        XML,
+                        DOM,
+                        Xpath,
+                        Xinclude,
+                        Xquery,
+                        SVG,
+                        XSD (XML Schema),
+                        <a href="http://en.wikipedia.org/wiki/Extensible_Stylesheet_Language_Transformations">XSLT</a>
+                    </dd>
+
+                    <dt>Embedded system</dt>
+                    <dd>
+                        <a href="http://www.android.com/">Android</a> framework,
+                        <a href="http://www.atmel.com/products/microcontrollers/">Atmel AVR micro-controller programming (in C)</a>,
+                        <a href="http://www.raspberrypi.org/documentation/usage/gpio/">Raspberry Pi GPIO libraries</a>,
+                        <a href="http://www.arduino.cc/">Arduino</a>
+                    </dd>
+
+                    <dt>Graphical User Interface libraries</dt>
+                    <dd>
+                        <a href="http://www.gtk.org/">GTK+</a> graphical user interfaces (C and Python),
+                        <a href="http://qt-project.org/">Qt</a> C++ and Python UI framework,
+                        <a href="http://docs.oracle.com/javase/6/docs/technotes/guides/swing/">Swing</a> Java UI framework,
+                        <a href="http://www.eclipse.org/swt/">SWT</a> (Standard Widget Toolkit) Java UI framework,
+                        <a href="https://docs.python.org/2/library/tkinter.html">TKinter</a> Python UI framework
+                    </dd>
+                    
+                    <dt>2D, 3D and Multimedia libraries</dt>
+                    <dd>
+                        <a href="http://bulletphysics.org">Bullet</a> physics engine,
+                        <a href="http://www.openscenegraph.org/">Open Scene Graph</a> 3D graphics toolkit,
+                        <a href="http://cairographics.org/">Cairo</a> with C and Python,
+                        <a href="https://www.libsdl.org/">SDL</a> (Simple DirectMedia Layer) C Multimedia Library,
+                        <a href="http://www.pygame.org">Pygame</a> Python wrapper for SDL,
+                        <a href="http://www.sfml-dev.org">SFML</a> C++ Multimedia Library
+                    </dd>
+                    
+                    <dt>Others</dt>
+                    <dd>
+                        <a href="http://en.wikipedia.org/wiki/Software_design_pattern">Design patterns</a> with C++ and Java,
+                        <a href="http://www.openscad.org/">OpenScad</a> Solid 3D CAD Modeler,
+                        <a href="http://en.wikipedia.org/wiki/Dbm">DBM</a> file format,
+                        <a href="http://en.wikipedia.org/wiki/JSON">JSON</a> file format,
+                        <a href="https://docs.python.org/2/library/pickle.html">Pickle</a>,
+                        ...
+                    </dd>
+                </dl>
 			</desc>
 			<archive filename="demos.tar.gz">
                 <label>Sources</label>

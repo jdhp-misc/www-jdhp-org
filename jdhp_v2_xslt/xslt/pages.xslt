@@ -247,14 +247,14 @@
                                                         <xsl:choose>
                                                             <!-- GIT -->
                                                             <xsl:when test="@type='git'">
-                                                                <a href="{@url}">Git</a> (<a href="{@weburl}">Gitweb</a>)
+                                                                <a href="{@weburl}?a=tree"><xsl:value-of select="/page/common_lang/i18n/gitweb/@translation" /></a> (<a href="{@url}"><xsl:value-of select="/page/common_lang/i18n/giturl/@translation" /></a>)
                                                                 &#160;
                                                                 <!-- TODO séparateur quand il y a plusieurs referentiels http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
                                                             </xsl:when>
 
                                                             <!-- SVN -->
                                                             <xsl:when test="@type='svn'">
-                                                                <a href="{@url}">SVN</a> (<a href="{@weburl}">WebSVN</a>)
+                                                                <a href="{@weburl}"><xsl:value-of select="/page/common_lang/i18n/svnweb/@translation" /></a> (<a href="{@url}"><xsl:value-of select="/page/common_lang/i18n/svnurl/@translation" /></a>)
                                                                 &#160;
                                                                 <!-- TODO séparateur quand il y a plusieurs referentiels http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
                                                             </xsl:when>
