@@ -24,14 +24,14 @@
             <p id="email">Email : jd -DOT- jdhp -AT- gmail -DOT- com</p>
             <p id="school">Ph.D. student in Computer Science (Learning and Optimization) at <a href="http://www.inria.fr/">Inria</a></p>
             <p id="follow_me">
-                Follow me
-                <div>
-                    <a href="https://plus.google.com/u/0/106609464008586085387/" title="Follow me on Google+ (I use it as a blog)" ><img src="medias/images/icons/social_network_class.pm/images/default/googleplus.png" /></a>
-                    <a href="https://twitter.com/jeremie_decock"                 title="Follow me on Twitter"><img src="medias/images/icons/social_network_class.pm/images/default/twitter.png" /></a>
-                    <a href="https://www.linkedin.com/in/jeremiedecock"          title="Follow me on Linkedin"><img src="medias/images/icons/social_network_class.pm/images/default/linkedin.png" /></a>
-                    <a href="https://www.youtube.com/user/jdhpvideo"             title="Follow my Youtube channel (I post some videos about robotics and computer science there)"><img src="medias/images/icons/social_network_class.pm/images/default/youtube.png" /></a>
+                Follow me<br />
+                <span>
+                    <a href="https://plus.google.com/u/0/106609464008586085387/" title="Follow me on Google+ (I use it as a blog)" ><img alt="Google+" src="medias/images/icons/social_network_class.pm/images/default/googleplus.png" /></a>
+                    <a href="https://twitter.com/jeremie_decock"                 title="Follow me on Twitter"><img alt="Twitter" src="medias/images/icons/social_network_class.pm/images/default/twitter.png" /></a>
+                    <a href="https://www.linkedin.com/in/jeremiedecock"          title="Follow me on Linkedin"><img alt="Linkedin" src="medias/images/icons/social_network_class.pm/images/default/linkedin.png" /></a>
+                    <a href="https://www.youtube.com/user/jdhpvideo"             title="Follow my Youtube channel (I post some videos about robotics and computer science there)"><img alt="Youtube" src="medias/images/icons/social_network_class.pm/images/default/youtube.png" /></a>
                     <!-- email, RSS, github, stackoverflow, ... -->
-                </div>
+                </span>
             </p>
         </div>
 

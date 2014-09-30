@@ -1,7 +1,7 @@
 TODO List
 
 DEV
-* corriger les erreurs du W3C validator !
+x corriger les erreurs du W3C validator !
 x check generated html == former version
 - fix TODOs in xml files
 x délimiter visuellement les liens :
@@ -56,12 +56,19 @@ x add mes articles scientifiques (+ poster esann) et mes présentations (dvs?, x
 x Sous le nom et sous "PhD student at Inria...", ajouter le domaine (computer science, Learning and Optimization) et l'intitulé de mon sujet de thèse
 x remplacer "gitweb" par "browse source code"
 x gitweb: afficher directement l'arbre plutôt que les commit -> append "?a=tree" à la fin de toutes les url
-* jdhp sur LRI -> ajouter htaccess permanent redirect vers jdhp.org
-* Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
-* finir de mettre à jour la partie "snippets", la mettre plus en évidence
+x jdhp sur LRI -> ajouter htaccess permanent redirect vers jdhp.org
+*! Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
+* add a bib file with my publications
 * CV: mettre un CV un peu plus complet en html -> utiliser h2/h3 pour délimiter Formation/Enseignements/Expérience professionnelle/...
 * Ajouter "Full CV" sur la page d'accueil en PDF (sans numéro de tel, email, adresse postale et activités perso)
-* add a bib file with my publications
+* finir de mettre à jour la partie "snippets", la mettre plus en évidence
+* ajouter les snippets (cf. CV): LaTeX, GnuPlot, Graphviz, Octave, make (faire comme pour cmake), autotools, gcov (?), gprof (?), ant, opengl, java DOM, bash, awk, geda/kicad, sqlite, sql (avec sqlite mais centré sur les requetes sql), xpath, xquery, php, RPi GPIO
+* snippets: mettre liens à la racine pour ant, make, javascript, xml, ...
+* snippets: nettoyer le répertoire "programmation avr"
++ ajouter lien vers facebook
++ déposer une appli android dans google play + ajouter un lien vers mon compte google play
++ publier un article dans linux mag
++ faire en sorte qu'un de mes logiciels soit accepté dans les dépots officiels Debian
 + ajouter les articles suivants:
            ~/Documents/master_IAD/M2_IAD_2010/M2S4v2_stage/ISIR/rapport_et_presentation
            ~/Documents/isir/rapport_et_presentation
