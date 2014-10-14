@@ -301,13 +301,109 @@
         </label>
 
         <item id="demos" license="MIT">
-            <label>Démos</label>
+            <label>Snippets</label>
 			<desc>
-                Un ensemble de démos sous licence BSD/MIT.
-                Ces démos ont soit un but artistique (animations graphiques),
-                soit un but pédagogique (pour donner des exemples
-                d'utilisation des librairies Bullet, OpenSceneGraph, SFML,
-                SDL, ...).
+                Une collection de centaines de <em>snippets</em>, c'est à dire
+                des petits morceaux de codes pour tester un aspect spécifique
+                d'un langage de programmation, d'une bibliothèque de
+                programmation, d'un format de description, d'un protocole, etc.
+                <br />
+                Ici vous trouverez des exemples de code pour:
+                <dl>
+                    <dt>Langages de programmation</dt>
+                    <dd>C/C++, Java, Python, scripts Shell, <a href="http://www.gnu.org/software/octave/">Octave</a> (un clone de Matlab), Javascript</dd>
+
+                    <dt>Programmation Unix</dt>
+                    <dd>
+                        <a href="http://fr.wikipedia.org/wiki/Appel_système">appels systèmes</a> Unix/Linux en C et
+                        création de paquets <a href="http://fr.wikipedia.org/wiki/Debian">Debian</a>
+                    </dd>
+
+                    <dt>Bibliothèques de programmation scientifique</dt>
+                    <dd>
+                        bibliothèques de calcul scientifique <a href="http://www.gnu.org/software/gsl/">GSL (GNU Scientific Library)</a> (C) et <a href="http://www.scipy.org/">Scipy</a> (Python),
+                        bibliothèque de programmation mathématique <a href="https://www.gnu.org/software/glpk/">GLPK (GNU Linear Programming Kit)</a> (programmation linéaire et programmation en nombre entiers),
+                        bibliothèques d'algèbre linéaire <a href="http://eigen.tuxfamily.org">Eigen</a> (C++) et <a href="http://www.numpy.org/">Numpy</a> (Python),
+                        bibliothèques de visualisation de fonctions et de données scientifiques <a href="http://matplotlib.org/">Matplotlib</a> (Python) et <a href="http://www.gnuplot.info/">Gnuplot</a>,
+                        bibliothèque de visualisation de données scientifiques en 3D <a href="http://code.enthought.com/projects/mayavi/">Mayavi</a>
+                    </dd>
+                    
+                    <dt>Calcul parallèle et calcul haute performance</dt>
+                    <dd>
+                        bibliothèque de programmation parallèle en mémoire distribuée <a href="http://en.wikipedia.org/wiki/Message_Passing_Interface">MPI (Message Passing Interface)</a> et
+                        bibliothèque de programmation parallèle en mémoire partagée <a href="http://openmp.org">OpenMP</a>
+                    </dd>
+                    
+                    <dt>Bibliothèques de traitement d'images</dt>
+                    <dd>
+                        bibliothèque de traitement d'images et de reconnaissance de formes <a href="http://opencv.org/">OpenCV</a> (C/C++ et Python) et
+                        bibliothèque de traitement d'images <a href="http://www.pythonware.com/products/pil/">PIL</a> (Python Imaging Library)
+                    </dd>
+                    
+
+                    <dt>API généralistes</dt>
+                    <dd>
+                        bibliothèques généralistes <a href="http://www.boost.org/">Boost</a> (C++)
+                    </dd>
+                    
+                    <dt>Outils de programmation</dt>
+                    <dd>
+                        moteurs de production multi-langages <a href="http://www.gnu.org/software/make/">Gnu Make</a>,
+                        <a href="http://www.cmake.org/">CMake</a> et
+                        <a href="http://ant.apache.org/">Ant</a>
+                    </dd>
+                    
+                    <dt>XML et développement web</dt>
+                    <dd>
+                        <a href="http://www.saxproject.org/">SAX</a> (Simple API for XML) pour Java, C++ et Python,
+                        langages HTML5,
+                        CSS,
+                        XML,
+                        DOM,
+                        Xpath,
+                        Xinclude,
+                        Xquery,
+                        SVG,
+                        XSD (XML Schema)
+                        et <a href="http://en.wikipedia.org/wiki/Extensible_Stylesheet_Language_Transformations">XSLT</a>
+                    </dd>
+
+                    <dt>Systèmes embarqués</dt>
+                    <dd>
+                        plate-formes <a href="http://www.android.com/">Android</a> (Google),
+                        programmation de micro-contrôleurs <a href="http://www.atmel.com/products/microcontrollers/">Atmel AVR</a> (en C),
+                        bibliothèques de manipulation des <a href="http://fr.wikipedia.org/wiki/General_Purpose_Input/Output">GPIO</a> du <a href="http://www.raspberrypi.org/documentation/usage/gpio/">Raspberry Pi</a>,
+                        programmation sur <a href="http://www.arduino.cc/">Arduino</a>
+                    </dd>
+
+                    <dt>Bibliothèques d'interface graphiques</dt>
+                    <dd>
+                        bibliothèques d'interfaces graphiques <a href="http://www.gtk.org/">GTK+</a> (C et Python),
+                        <a href="http://qt-project.org/">Qt</a> (C++ et Python),
+                        <a href="http://docs.oracle.com/javase/6/docs/technotes/guides/swing/">Swing</a> (Java),
+                        <a href="http://www.eclipse.org/swt/">SWT</a> (Standard Widget Toolkit) (Java) et 
+                        <a href="https://docs.python.org/2/library/tkinter.html">TKinter</a> (Python)
+                    </dd>
+                    
+                    <dt>Bibliothèques 2D, 3D et multimédia</dt>
+                    <dd>
+                        moteur physique (simulations mécaniques)  <a href="http://bulletphysics.org">Bullet</a>,
+                        bibliothèque de rendu 3D <a href="http://www.openscenegraph.org/">Open Scene Graph</a>,
+                        bibliothèque de rendu 2D <a href="http://cairographics.org/">Cairo</a> en C et Python,
+                        bibliothèque multimédia <a href="https://www.libsdl.org/">SDL</a> (Simple DirectMedia Layer) en C et Python (<a href="http://www.pygame.org">Pygame</a>),
+                        bibliothèque multimédia C++ <a href="http://www.sfml-dev.org">SFML</a>
+                    </dd>
+                    
+                    <dt>Autres</dt>
+                    <dd>
+                        <a href="http://en.wikipedia.org/wiki/Software_design_pattern">Design patterns</a> en C++ et Java,
+                        outil de CAO <a href="http://www.openscad.org/">OpenScad</a>,
+                        formats de fichier <a href="http://en.wikipedia.org/wiki/Dbm">DBM</a> et
+                        <a href="http://en.wikipedia.org/wiki/JSON">JSON</a>,
+                        <a href="https://docs.python.org/2/library/pickle.html">Pickle</a>,
+                        ...
+                    </dd>
+                </dl>
 			</desc>
 			<archive filename="demos.tar.gz">
                 <label>Sources</label>

@@ -272,7 +272,7 @@
                 <br />
                 Here you will find snippets about:
                 <dl>
-                    <dt>programming languages</dt>
+                    <dt>Programming languages</dt>
                     <dd>C/C++, Java, Python, Shell scripts, <a href="http://www.gnu.org/software/octave/">Octave</a> (Matlab clone), Javascript</dd>
 
                     <dt>Unix programming</dt>
@@ -363,7 +363,7 @@
                     <dt>Others</dt>
                     <dd>
                         <a href="http://en.wikipedia.org/wiki/Software_design_pattern">Design patterns</a> with C++ and Java,
-                        <a href="http://www.openscad.org/">OpenScad</a> Solid 3D CAD Modeler,
+                        <a href="http://www.openscad.org/">OpenScad</a> solid 3D CAD modeler,
                         <a href="http://en.wikipedia.org/wiki/Dbm">DBM</a> file format,
                         <a href="http://en.wikipedia.org/wiki/JSON">JSON</a> file format,
                         <a href="https://docs.python.org/2/library/pickle.html">Pickle</a>,
@@ -383,7 +383,7 @@
         <item id="jdhpcad" license="CC BY-SA">
             <label>3D Design Collection</label>
 			<desc>
-                A collection of printable 3D objects (made with <a href="http://www.openscad.org/">OpenSCAD</a>).
+                A collection of design files for printable 3D objects (made with <a href="http://www.openscad.org/">OpenSCAD</a>).
 			</desc>
 			<repository url="git://git.tuxfamily.org/gitroot/jdhpcad/jdhpcad.git"
                         weburl="http://git.tuxfamily.org/jdhpcad/jdhpcad/"
@@ -393,7 +393,7 @@
         <item id="jdhppcb" license="CC BY-SA">
             <label>PCB Collection</label>
 			<desc>
-                A collection of <a href="http://en.wikipedia.org/wiki/Printed_circuit_board">PCB</a> (Printed Circuit Board) ready to be manufactured (made with <a href="http://www.kicad-pcb.org">KiCad</a> <a href="http://en.wikipedia.org/wiki/Electronic_design_automation">EDA</a>).
+                A collection of <a href="http://en.wikipedia.org/wiki/Printed_circuit_board">PCB</a> (Printed Circuit Board) design files ready to be manufactured (made with <a href="http://www.kicad-pcb.org">KiCad</a> <a href="http://en.wikipedia.org/wiki/Electronic_design_automation">EDA</a>).
                 <!-- Each realization contain the KiCad source files (which define the PCB), the Gerber files for manufacturing and the printable schematic and PCB in SVG files. -->
 			</desc>
 			<repository url="git://git.tuxfamily.org/gitroot/jdhppcb/jdhppcb.git"
