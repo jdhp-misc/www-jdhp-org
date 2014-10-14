@@ -380,6 +380,27 @@
 			<picture filename="demos.png" />
         </item>
 
+        <item id="jdhpcad" license="CC BY-SA">
+            <label>3D Design Collection</label>
+			<desc>
+                A collection of printable 3D objects (made with <a href="http://www.openscad.org/">OpenSCAD</a>).
+			</desc>
+			<repository url="git://git.tuxfamily.org/gitroot/jdhpcad/jdhpcad.git"
+                        weburl="http://git.tuxfamily.org/jdhpcad/jdhpcad/"
+                        type="git" />
+        </item>
+
+        <item id="jdhppcb" license="CC BY-SA">
+            <label>PCB Collection</label>
+			<desc>
+                A collection of <a href="http://en.wikipedia.org/wiki/Printed_circuit_board">PCB</a> (Printed Circuit Board) ready to be manufactured (made with <a href="http://www.kicad-pcb.org">KiCad</a> <a href="http://en.wikipedia.org/wiki/Electronic_design_automation">EDA</a>).
+                <!-- Each realization contain the KiCad source files (which define the PCB), the Gerber files for manufacturing and the printable schematic and PCB in SVG files. -->
+			</desc>
+			<repository url="git://git.tuxfamily.org/gitroot/jdhppcb/jdhppcb.git"
+                        weburl="http://git.tuxfamily.org/jdhppcb/jdhppcb/"
+                        type="git" />
+        </item>
+
         <item id="pypong" license="MIT">
             <label>PyPong</label>
 			<desc>

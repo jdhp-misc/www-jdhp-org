@@ -318,6 +318,26 @@
 			<picture filename="demos.png" />
         </item>
 
+        <item id="jdhpcad" license="CC BY-SA">
+            <label>Objets 3D</label>
+			<desc>
+                Une collection de plans de conception d'objets imprimables en 3 dimensions (réalisés avec  <a href="http://www.openscad.org/">OpenSCAD</a>).
+			</desc>
+			<repository url="git://git.tuxfamily.org/gitroot/jdhpcad/jdhpcad.git"
+                        weburl="http://git.tuxfamily.org/jdhpcad/jdhpcad/"
+                        type="git" />
+        </item>
+
+        <item id="jdhppcb" license="CC BY-SA">
+            <label>Circuits Imprimés</label>
+			<desc>
+                Une collection de plans de conception de circuits imprimés prêts à être fabriqués (réalisés avec <a href="http://www.kicad-pcb.org">KiCad</a>).
+			</desc>
+			<repository url="git://git.tuxfamily.org/gitroot/jdhppcb/jdhppcb.git"
+                        weburl="http://git.tuxfamily.org/jdhppcb/jdhppcb/"
+                        type="git" />
+        </item>
+
         <item id="pypong" license="MIT">
             <label>PyPong</label>
 			<desc>
