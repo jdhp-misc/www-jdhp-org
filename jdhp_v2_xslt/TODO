@@ -58,12 +58,42 @@ x Sous le nom et sous "PhD student at Inria...", ajouter le domaine (computer sc
 x remplacer "gitweb" par "browse source code"
 x gitweb: afficher directement l'arbre plutôt que les commit -> append "?a=tree" à la fin de toutes les url
 x jdhp sur LRI -> ajouter htaccess permanent redirect vers jdhp.org
-*! Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
+X Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
+* Ajouter/commiter les snippets suivants:
+    Référencés sur le site:
+    + GPIO du Raspberry Pi
+    + OpenCV Python
+    + Arduino
+    cairo (C)
+    sdl (c)
+    + Octave (un clone de Matlab)
+    + Gnuplot
+    + OpenMP
+    + Pickle
+    + Design patterns en C++ et Java
+    XSD
+    Xquery
+    CSS
+    DOM
+
+    Non-référencés sur le site (ie. à ajouter dans les pages web):
+    + LaTeX
+    + Graphviz
+    + make (faire comme pour cmake)
+    - autotools
+    gcov (?)/gprof (?)
+    + ant
+    opengl
+    bash
+    awk
+    sqlite
+    sql (avec sqlite mais centré sur les requetes sql)
+    xpath
+    php
 * add a bib file with my publications
 * CV: mettre un CV un peu plus complet en html -> utiliser h2/h3 pour délimiter Formation/Enseignements/Expérience professionnelle/...
 * Ajouter "Full CV" sur la page d'accueil en PDF (sans numéro de tel, email, adresse postale et activités perso)
 * finir de mettre à jour la partie "snippets", la mettre plus en évidence
-* ajouter les snippets (cf. CV): LaTeX, GnuPlot, Graphviz, Octave, make (faire comme pour cmake), autotools, gcov (?), gprof (?), ant, opengl, java DOM, bash, awk, geda/kicad, sqlite, sql (avec sqlite mais centré sur les requetes sql), xpath, xquery, php, RPi GPIO
 * snippets: mettre liens à la racine pour ant, make, javascript, xml, ...
 * snippets: nettoyer le répertoire "programmation avr"
 + ajouter lien vers facebook
