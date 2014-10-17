@@ -29,21 +29,21 @@
                 Introduction à la correction orthographique avec Vim
             </label>
             
-			<desc>
+            <desc>
                 Ce document explique comment installer et utiliser la correction
                 orthographique pour la langue française dans l'éditeur Vim.
                 [...]
-			</desc>
-	
+            </desc>
+    
             <pdf filename="tutoriel_vim_spellfr.pdf" label="PDF" />
 
-			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
 
-			<link url="hevea/tutoriel_vim_spellfr.html">
+            <link url="hevea/tutoriel_vim_spellfr.html">
                 <label>Lire la suite</label>
-			</link>
+            </link>
         </item>
     </group>
 </page>

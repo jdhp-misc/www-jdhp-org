@@ -41,7 +41,7 @@
                 Apprentissage de politiques efficaces avec XCSF et CEPS
             </label>
             
-			<desc>
+            <desc>
                 Nous proposons dans cette contribution une méthode qui permet
                 d'obtenir une politique efficace dans un cadre où l'état et
                 l'action sont continus. Le système contrôlé est un bras à deux
@@ -54,9 +54,9 @@
                 d'optimisation stochastique appelée Cross-Entropy Policy Search
                 permet d'améliorer encore la performance du contrôleur
                 paramétrique.
-			</desc>
+            </desc>
 
-			<bib label="Référence:">
+            <bib label="Référence:">
                 <!--
                 Apprentissage de politiques efficaces avec XCSF et CEPS.
                 Sixièmes journées francophones MFI/JFPDA, B. Zanuttini,
@@ -66,8 +66,8 @@
                 Apprentissage de politiques efficaces avec XCSF et CEPS.
                 In <em>Sixièmes journées francophones MFI/JFPDA</em>, pages
                 298-310, Rouen, France, 2011.
-			</bib>
-	
+            </bib>
+    
             <open_archive url="http://hal.inria.fr/index.php?halsid=ophffv3l29ehc0f6frbmbk16a7&#38;view_this_doc=hal-00703774&#38;version=1" label="HAL" />
 
             <pdf url="http://www.isir.upmc.fr/files/2011ACTN1978.pdf" label="Article (PDF)" />
@@ -76,16 +76,16 @@
         <item id="rankboost" license="cc-by-sa">
             <label>Rankboost</label>
             
-			<desc>
+            <desc>
                 Présentation de l'article <em>An efficient boosting algorithm
                 for combining preferences</em> (Y. Freund et al., 1998).
-			</desc>
-	
+            </desc>
+    
             <pdf filename="rankboost_article.pdf" label="Article (PDF)" />
 
             <pdf filename="rankboost_slides.pdf" label="Slides (PDF)" />
 
-			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
         </item>
@@ -96,15 +96,15 @@
                 neurosciences computationnelles
             </label>
             
-			<desc>
+            <desc>
                 Quelques slides synthétisant l'utilisation des algorithmes
                 évolutionnistes dans le cadre des neurosciences
                 computationnelles.
-			</desc>
-	
+            </desc>
+    
             <pdf filename="ae_neurocomp.pdf" label="PDF" />
 
-			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
         </item>
@@ -115,14 +115,14 @@
                 (Robocup)
             </label>
             
-			<desc>
+            <desc>
                 Présentation d'un protocole de coordination d'agents utilisé
                 dans la Robocup.
-			</desc>
-	
+            </desc>
+    
             <pdf filename="robocup.pdf" label="PDF" />
 
-			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
         </item>
@@ -139,7 +139,7 @@
                 l’efficacité des SI ?
             </label>
             
-			<desc>
+            <desc>
                 <p>
                     Les wikis font partis des applications phares du Web 2.0.
                     Un wiki est un site internet que tout le monde a le droit
@@ -164,17 +164,17 @@
                     simple effet de mode ? Les wikis peuvent-ils vraiment
                     améliorer l'intégration et l'efficacité des SI ? [...]
                 </p>
-			</desc>
-	
+            </desc>
+    
             <pdf filename="les_wikis_en_entreprise.pdf" label="PDF" />
 
-			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
 
-			<link url="hevea/les_wikis_en_entreprise.html">
+            <link url="hevea/les_wikis_en_entreprise.html">
                 <label>Lire la suite</label>
-			</link>
+            </link>
         </item>
     </group>
 
@@ -186,7 +186,7 @@
         <item id="droit_du_logiciel" license="cc-by-sa">
             <label>Le droit du logiciel</label>
             
-			<desc>
+            <desc>
                 <p>
                     En France, depuis la loi du 3 juillet 1985, les logiciels
                     sont protégés par le droit d'auteur, au même titre que
@@ -212,11 +212,11 @@
                     dispositifs juridiques de protection en mettant en évidence
                     les avantages et les limites de chacun d'eux. [...]
                 </p>
-			</desc>
-	
+            </desc>
+    
             <pdf filename="droit_du_logiciel.pdf" label="PDF" />
 
-			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
         </item>
@@ -224,14 +224,14 @@
         <item id="brevets" license="cc-by-sa">
             <label>Les brevets logiciels</label>
             
-			<desc>
+            <desc>
                 Quelques slides expliquant ce que sont les brevets et leur
                 portée sur les logiciels.
-			</desc>
-	
+            </desc>
+    
             <pdf filename="brevets.pdf" label="PDF" />
 
-			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
         </item>
@@ -239,7 +239,7 @@
         <item id="droit_auteur" license="cc-by-sa">
             <label>Le droit d'auteur</label>
             
-			<desc>
+            <desc>
                 <p>
                     En France, depuis la loi du 3 juillet 1985, les logiciels
                     sont protégés par le droit d'auteur, au même titre que
@@ -253,17 +253,17 @@
                     aux logiciels protège-t-il efficacement les intérêts de
                     chacun ? [...]
                 </p>
-			</desc>
-	
+            </desc>
+    
             <pdf filename="droits_auteurs.pdf" label="PDF" />
 
-			<repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
 
-			<link url="hevea/droits_auteurs.html">
+            <link url="hevea/droits_auteurs.html">
                 <label>Lire la suite</label>
-			</link>
+            </link>
         </item>
     </group>
 </page>
