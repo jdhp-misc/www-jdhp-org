@@ -222,9 +222,18 @@
                                                     </xsl:for-each>
 
                                                     <xsl:for-each select="./archive">
-                                                        <a href="{/page/common/archive_base/@href}{@filename}">
-                                                            <xsl:value-of select="label" />
-                                                        </a> &#160;                      <!-- TODO séparateur quand il y a plusieurs pdf http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                        <xsl:choose>
+                                                            <xsl:when test="@url">
+                                                                <a href="{@url}">
+                                                                    <xsl:value-of select="label" />
+                                                                </a> &#160;                      <!-- TODO séparateur quand il y a plusieurs pdf http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                            </xsl:when>
+                                                            <xsl:otherwise>
+                                                                <a href="{/page/common/archive_base/@href}{@filename}">
+                                                                    <xsl:value-of select="label" />
+                                                                </a> &#160;                      <!-- TODO séparateur quand il y a plusieurs pdf http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                            </xsl:otherwise>
+                                                        </xsl:choose>
                                                     </xsl:for-each>
 
                                                     <xsl:for-each select="./debian_package">

@@ -405,9 +405,9 @@
                     </dd>
                 </dl>
 			</desc>
-			<archive filename="demos.tar.gz">
+            <archive url="http://git.tuxfamily.org/demos/demos/?p=demos/demos.git;a=snapshot;h=HEAD;sf=tgz">
                 <label>Sources</label>
-			</archive>
+            </archive>
 			<repository url="git://git.tuxfamily.org/gitroot/demos/demos.git"
                         weburl="http://git.tuxfamily.org/demos/demos/"
                         type="git" />
