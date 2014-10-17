@@ -148,7 +148,7 @@
                 travaux sur les algorithmes génétiques. La physique est simulée
                 via la librairie opensource Bullet.
 			</desc>
-			<archive filename="botsim-0.1.tar.gz">
+            <archive url="http://git.tuxfamily.org/botsim/botsim/?p=botsim/botsim.git;a=snapshot;h=HEAD;sf=tgz">
                 <label>Sources</label>
 			</archive>
 			<repository url="git://git.tuxfamily.org/gitroot/botsim/botsim.git"
@@ -249,7 +249,7 @@
                 arborescence.
 			</desc>
 			<debian_package filename="clonefinder_1.0-1_all.deb" arch="all" />
-			<archive filename="clonefinder-1.0.tar.gz">
+            <archive url="http://git.tuxfamily.org/systools/clonefinder/?p=systools/clonefinder.git;a=snapshot;h=HEAD;sf=tgz">
                 <label>Sources</label>
 			</archive>
 			<repository url="git://git.tuxfamily.org/gitroot/systools/clonefinder.git"
@@ -267,7 +267,7 @@
                 fichier.
 			</desc>
 			<debian_package filename="binviewer_0.2-1_all.deb" arch="all" />
-			<archive filename="binviewer-0.2.tar.gz">
+            <archive url="http://git.tuxfamily.org/systools/binviewer/?p=systools/binviewer.git;a=snapshot;h=HEAD;sf=tgz">
                 <label>Sources</label>
 			</archive>
 			<repository url="git://git.tuxfamily.org/gitroot/systools/binviewer.git"
