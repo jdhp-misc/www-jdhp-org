@@ -1,6 +1,7 @@
 TODO List
 
 DEV
+- corriger les erreurs 404 (cf. http://stats.tuxfamily.org/awstats.pl?config=jdhp.org&framename=mainright&output=errors404) avec des "permanent-redirect" dans le fichier .htaccess
 x corriger les erreurs du W3C validator !
 x check generated html == former version
 - fix TODOs in xml files
