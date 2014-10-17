@@ -68,6 +68,9 @@
                 quoi il passe en mode exploitation.
             </desc>
             <debian_package filename="jwumpus_1.0-1_all.deb" arch="all" />
+            <archive url="http://git.tuxfamily.org/jwumpus/jwumpus/?p=jwumpus/jwumpus.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
                         weburl="http://git.tuxfamily.org/jwumpus/jwumpus/"
                         type="git" />
@@ -84,6 +87,9 @@
                 (Belief Desire and Intention) et l'interprète
                 <a href="http://jason.sourceforge.net/Jason/Description.html">Jason</a>.
             </desc>
+            <archive url="http://git.tuxfamily.org/chef/chef/?p=chef/chef.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/chef/chef.git"
                         weburl="http://git.tuxfamily.org/chef/chef/"
                         type="git" />
@@ -419,6 +425,9 @@
             <desc>
                 Une collection de plans de conception d'objets imprimables en 3 dimensions (réalisés avec  <a href="http://www.openscad.org/">OpenSCAD</a>).
             </desc>
+            <archive url="http://git.tuxfamily.org/jdhpcad/jdhpcad/?p=jdhpcad/jdhpcad.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhpcad/jdhpcad.git"
                         weburl="http://git.tuxfamily.org/jdhpcad/jdhpcad/"
                         type="git" />
@@ -429,6 +438,9 @@
             <desc>
                 Une collection de plans de conception de circuits imprimés prêts à être fabriqués (réalisés avec <a href="http://www.kicad-pcb.org">KiCad</a>).
             </desc>
+            <archive url="http://git.tuxfamily.org/jdhppcb/jdhppcb/?p=jdhppcb/jdhppcb.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhppcb/jdhppcb.git"
                         weburl="http://git.tuxfamily.org/jdhppcb/jdhppcb/"
                         type="git" />
@@ -441,6 +453,9 @@
                 <a href="http://www.python.org/">Python</a> et utilise les
                 modules <a href="http://www.pygame.org/">PyGame</a>.
             </desc>
+            <archive url="http://git.tuxfamily.org/pygames/pypong/?p=pygames/pypong.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/pygames/pypong.git"
                         weburl="http://git.tuxfamily.org/pygames/pypong/"
                         type="git" />
@@ -452,6 +467,9 @@
             <desc>
                 Le code source et les scripts de compilation du site jdhp.org.
             </desc>
+            <archive url="http://git.tuxfamily.org/jdhp/jdhp/?p=jdhp/jdhp.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/jdhp.git"
                         weburl="http://git.tuxfamily.org/jdhp/jdhp/"
                         type="git" />

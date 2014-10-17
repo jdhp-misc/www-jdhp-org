@@ -51,6 +51,9 @@
                 <em>"Artificial Intelligence"</em> by Stuart Russell and Peter Norvig).
             </desc>
             <debian_package filename="jwumpus_1.0-1_all.deb" arch="all" />
+            <archive url="http://git.tuxfamily.org/jwumpus/jwumpus/?p=jwumpus/jwumpus.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
                         weburl="http://git.tuxfamily.org/jwumpus/jwumpus/"
                         type="git" />
@@ -68,6 +71,9 @@
                 <a href="http://jason.sourceforge.net/Jason/Description.html">Jason</a>
                 platform.
             </desc>
+            <archive url="http://git.tuxfamily.org/chef/chef/?p=chef/chef.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/chef/chef.git"
                         weburl="http://git.tuxfamily.org/chef/chef/"
                         type="git" />
@@ -385,6 +391,9 @@
             <desc>
                 A collection of design files for printable 3D objects (made with <a href="http://www.openscad.org/">OpenSCAD</a>).
             </desc>
+            <archive url="http://git.tuxfamily.org/jdhpcad/jdhpcad/?p=jdhpcad/jdhpcad.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhpcad/jdhpcad.git"
                         weburl="http://git.tuxfamily.org/jdhpcad/jdhpcad/"
                         type="git" />
@@ -396,6 +405,9 @@
                 A collection of <a href="http://en.wikipedia.org/wiki/Printed_circuit_board">PCB</a> (Printed Circuit Board) design files ready to be manufactured (made with <a href="http://www.kicad-pcb.org">KiCad</a> <a href="http://en.wikipedia.org/wiki/Electronic_design_automation">EDA</a>).
                 <!-- Each realization contain the KiCad source files (which define the PCB), the Gerber files for manufacturing and the printable schematic and PCB in SVG files. -->
             </desc>
+            <archive url="http://git.tuxfamily.org/jdhppcb/jdhppcb/?p=jdhppcb/jdhppcb.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhppcb/jdhppcb.git"
                         weburl="http://git.tuxfamily.org/jdhppcb/jdhppcb/"
                         type="git" />
@@ -406,6 +418,9 @@
             <desc>
                 An implementation of the famous game <em>Pong</em>.
             </desc>
+            <archive url="http://git.tuxfamily.org/pygames/pypong/?p=pygames/pypong.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/pygames/pypong.git"
                         weburl="http://git.tuxfamily.org/pygames/pypong/"
                         type="git" />
@@ -417,6 +432,9 @@
             <desc>
                 The source code of this web site.
             </desc>
+            <archive url="http://git.tuxfamily.org/jdhp/jdhp/?p=jdhp/jdhp.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/jdhp.git"
                         weburl="http://git.tuxfamily.org/jdhp/jdhp/"
                         type="git" />
