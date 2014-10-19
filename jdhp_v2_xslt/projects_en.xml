@@ -79,7 +79,24 @@
                         type="git" />
         </item>
 
-        <item id="projet_0069" license="MIT">
+        <item id="ai_framework_for_python" license="MIT">
+            <label>Artificial Intelligence frameworks for Python</label>
+            <desc>
+                A set of open source frameworks for Artificial Intelligence (mostly
+                artificial learning and optimization).
+                It contains (among others) an MDP framework (Markov Decision Processes), an
+                artificial learning framework and a black box non-linear noisy optimization
+                framework.
+            </desc>
+            <archive url="http://git.tuxfamily.org/aiscripts/python/?p=aiscripts/python.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/aiscripts/python.git"
+                        weburl="http://git.tuxfamily.org/aiscripts/python/"
+                        type="git" />
+        </item>
+
+        <item id="perceptron_php" license="MIT">
             <label>Perceptron</label>
             <desc>
                 A PHP script to show the calculation steps leading to the

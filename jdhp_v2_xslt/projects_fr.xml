@@ -95,7 +95,25 @@
                         type="git" />
         </item>
 
-        <item id="projet_0069" license="MIT">
+        <item id="ai_framework_for_python" license="MIT">
+            <label>Artificial Intelligence frameworks for Python</label>
+            <desc>
+                Plusieurs bibliothèques d'Intelligence Artificielle pour
+                Python.
+                Contient notamment une bibliothèque centrée sur la résolution de
+                Processus Décisionnels Markoviens (PDM), une bibliothèque
+                dédiée à l'apprentissage artificiel et une bibliothèque
+                d'optimisation stochastique non-linéaire.
+            </desc>
+            <archive url="http://git.tuxfamily.org/aiscripts/python/?p=aiscripts/python.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/aiscripts/python.git"
+                        weburl="http://git.tuxfamily.org/aiscripts/python/"
+                        type="git" />
+        </item>
+
+        <item id="perceptron_php" license="MIT">
             <label>Perceptron simple</label>
             <desc>
                 Ce script PHP sert uniquement à mieux comprendre les étapes de
