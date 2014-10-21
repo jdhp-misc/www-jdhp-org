@@ -102,7 +102,7 @@
                 computationnelles.
             </desc>
     
-            <pdf filename="ae_neurocomp.pdf" label="PDF" />
+            <pdf filename="ae_neurocomp.pdf" label="Slides (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
@@ -138,7 +138,7 @@
                 dans la Robocup.
             </desc>
     
-            <pdf filename="robocup.pdf" label="PDF" />
+            <pdf filename="robocup.pdf" label="Slides (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
