@@ -109,6 +109,24 @@
                         type="git" />
         </item>
 
+        <item id="novelty_search" license="">
+            <label>
+                Recherche de comportements innovants dans les algorithmes évolutionnistes
+            </label>
+
+            <desc>
+                Une présentation de l'article "Exploiting Open-Endedness to
+                Solve Problems Through the Search for Novelty" (Lehman and
+                Stanley, 2008).
+                Cet article propose une approche originale pour contourner le
+                piège des optimums locaux dans les algorithmes évolutionnistes:
+                évaluer les solutions suivant la "nouveauté" des comportement
+                générés plutôt que selon leur fitness.
+            </desc>
+
+            <pdf filename="noveltysearch_slides.pdf" label="Slides (PDF)" />
+        </item>
+
         <item id="robocup" license="cc-by-sa">
             <label>
                 La coordination d'agents dans le cadre d'un jeu de football
@@ -126,6 +144,20 @@
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
         </item>
+
+        <item id="learning_to_tag" license="">
+            <label>
+                Learning to tag (Lei Wuk, Linjun Yang, Nenghai Yu, Xian-Sheng Hua, 2009)
+            </label>
+
+            <desc>
+                Une présentation de l'article "Learning to tag" (Lei Wuk,
+                Linjun Yang, Nenghai Yu, Xian-Sheng Hua, 2009).
+            </desc>
+
+            <pdf filename="learning_to_tag_slides.pdf" label="Slides (PDF)" />
+        </item>
+
     </group>
 
     <!-- ############################################################ -->
@@ -136,7 +168,7 @@
         <item id="wiki" license="cc-by-sa">
             <label>
                 Les wikis un levier pour améliorer l’intégration et
-                l’efficacité des SI ?
+                l’efficacité des Systèmes d'Information ?
             </label>
             
             <desc>
