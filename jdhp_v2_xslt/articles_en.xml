@@ -193,14 +193,52 @@
 
     </group>
 
-    <!--
+
     <group id="aiam">
 
+        <!-- Various (non Academic) Documents about Artificial Intelligence and Applied Maths  -->
+
         <label>
-            Various (non Academic) Documents about Artificial Intelligence and Applied Maths 
+            Introduction to Artificial Intelligence concepts
         </label>
 
+        <item id="mcts" license="">
+            <label>
+                An Introduction to Monte-Carlo Tree Search
+            </label>
+
+            <desc>
+                An introduction to Monte-Carlo Tree Search (MCTS): an efficient
+                algorithm for decision processes (especially with computer
+                games).
+            </desc>
+
+            <bib label="Presented in:">
+                Taiwan energy-forum, Tainan (Taiwan), mai 2012.
+            </bib>
+
+            <!--
+            <open_archive url="http://hal.inria.fr/hal-00997562" label="HAL" />
+
+            <pdf url="http://hal.inria.fr/docs/00/99/75/62/PDF/slides.pdf" label="Slides (PDF)" />
+            -->
+
+            <pdf filename="mcts_slides.pdf" label="Slides (PDF)" />
+        </item>
+
+        <item id="minimax" license="">
+            <label>
+                An Introduction to Algorithms for Computer Games with MiniMax
+            </label>
+
+            <desc>
+                An introduction to MiniMax: a very simple algorithm for
+                decision making in computer games.
+            </desc>
+
+            <pdf filename="minimax_slides.pdf" label="Slides (PDF)" />
+        </item>
+
     </group>
-    -->
 
 </page>
