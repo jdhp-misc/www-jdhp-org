@@ -61,16 +61,15 @@ x jdhp sur LRI -> ajouter htaccess permanent redirect vers jdhp.org
 X Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
 * Ajouter/commiter les snippets suivants:
     Référencés sur le site:
-    + GPIO du Raspberry Pi
+    + OpenMP (ajouter Makefile/CMakefile + tester les snippets)
     + OpenCV Python
     + Arduino
-    cairo (C)
-    sdl (c)
     + Octave (un clone de Matlab)
     + Gnuplot
-    + OpenMP
     + Pickle
     + Design patterns en C++ et Java
+    cairo (C)
+    sdl (C)
     XSD
     Xquery
     CSS
@@ -104,11 +103,8 @@ X Git: ajouter automatiquement "Get source code (tarball)" -> génération auto 
            ~/Documents/master_IAD/M2_IAD_2010/M2S4v2_stage/ISIR/rapport_et_presentation
            ~/Documents/isir/rapport_et_presentation
            ~/Documents/isir/rapport_et_presentation_11.tar.gz
-           ~/git_phd_docs/2012_03_hsinchu_xcsf_slides
-           ~/git_phd_docs/2012_05_energy-forum_continuous_mcts
            ~/Documents/cours_anglais/exposé/  (opensource society)
            document FTP
-+ add openscad files + stl files + pictures
 + ajouter tutos suivant: make, kicad/geda + fabrication pcb, openscad + slic3r + witbox, blinkled avr with avr-gcc, iptables + initsys5/upstart, tcpwrappers, outils shell cookbook (sed, grep, find, awk, ...), outils shell pour la programmation (nm, ldd, ...), programmation system C (cf. cours), programmation avr, programmation gpio rpi, boutton on/off rpi, vim cookbook (+ vimrc), vim + screen
 + mentionner mes enseignements + ajouter les ressources que j'ai créé + jeu de nim
 - ajouter la date de publication des items (ça change quoi côté ergonomie ?)
@@ -120,21 +116,18 @@ X Git: ajouter automatiquement "Get source code (tarball)" -> génération auto 
 + attribut "license" non renseignés/affichés
 * comment mettre à jours automatiquement les articles (pdf, ...), images, thumbnails, ...
 + UTF-8 -> passe bien sur windows ?
-+ page d'accueil, liens -> ajouter vorobotics (requière un logo...).
 + ajouter l'adresse du labo
 + add pdf_presenter
 + add systool_exif and audio_tag_py
 + add le code C utilsé pour créer un graph de dépendances dynamique
 + add piclockradio + screen on/off
 + add netfilter scripts ?
-+ spotlight snippets (hundreds, list technologies concerned: numpy, matplotlib, qt4, xml, xslt, xmlschema, gtk, sdl, opengl, openscenegraph, boost, bullet, ...)
 x maj les archives (clonefinder par exemple)
 + add vim config ?
 + scripts dual screen ?
 + mini howto / mementos à thème (bash, python, etc.) faits à partir des questions opencal (utile pour prouver le CV) Latex/PDF + version HTML
 + article pour setup Raspbian (post install script)
 + ajouter fichier openscad sur les plateformes de partages d'objets 3d... (+ lien vers ces pages)
-+ add geda files + final pdf + pictures
 + add iptables scripts (firewall skills)
 + ajouter photos d'art
 + poster des articles sur le site RPi
