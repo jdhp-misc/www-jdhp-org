@@ -484,7 +484,7 @@
         <item id="jdhp" license="cc-by-sa">
             <label>JDHP</label>
             <desc>
-                Le code source et les scripts de compilation du site jdhp.org.
+                Le code source et les scripts de compilation du site jdhp.org (écrit en XML/XSLT/CSS).
             </desc>
             <archive url="http://git.tuxfamily.org/jdhp/jdhp/?p=jdhp/jdhp.git;a=snapshot;h=HEAD;sf=tgz">
                 <label>Sources</label>
