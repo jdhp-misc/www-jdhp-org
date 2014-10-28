@@ -34,6 +34,10 @@
                 orthographique pour la langue française dans l'éditeur Vim.
                 [...]
             </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock, février 2008.
+            </bib>
     
             <pdf filename="tutoriel_vim_spellfr.pdf" label="PDF" />
 

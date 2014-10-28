@@ -83,6 +83,10 @@
                 Présentation de l'article <em>An efficient boosting algorithm
                 for combining preferences</em> (Y. Freund et al., 1998).
             </desc>
+
+            <bib label="Référence:">
+                François Rousseau et Jérémie Decock, UPMC, octobre 2010.
+            </bib>
     
             <pdf filename="rankboost_article.pdf" label="Article (PDF)" />
 
@@ -104,6 +108,10 @@
                 évolutionnistes dans le cadre des neurosciences
                 computationnelles.
             </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock, UPMC, janvier 2010.
+            </bib>
     
             <pdf filename="ae_neurocomp.pdf" label="Slides (PDF)" />
 
@@ -127,6 +135,10 @@
                 générés plutôt que selon leur fitness.
             </desc>
 
+            <bib label="Référence:">
+                Jérémie Decock et Vincent Renaudineau, UPMC, mars 2010.
+            </bib>
+
             <pdf filename="noveltysearch_slides.pdf" label="Slides (PDF)" />
         </item>
 
@@ -140,6 +152,10 @@
                 Présentation d'un protocole de coordination d'agents utilisé
                 dans la Robocup.
             </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock, UPMC, mars 2010.
+            </bib>
     
             <pdf filename="robocup.pdf" label="Slides (PDF)" />
 
@@ -157,6 +173,10 @@
                 Une présentation de l'article "Learning to tag" (Lei Wuk,
                 Linjun Yang, Nenghai Yu, Xian-Sheng Hua, 2009).
             </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock et Daniel Ristic, UPMC, octobre 2009.
+            </bib>
 
             <pdf filename="learning_to_tag_slides.pdf" label="Slides (PDF)" />
         </item>
@@ -200,6 +220,10 @@
                     améliorer l'intégration et l'efficacité des SI ? [...]
                 </p>
             </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock, Université Paris Descartes, février 2008.
+            </bib>
     
             <pdf filename="les_wikis_en_entreprise.pdf" label="PDF" />
 
@@ -248,6 +272,10 @@
                     les avantages et les limites de chacun d'eux. [...]
                 </p>
             </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock, UPMC, octobre 2010.
+            </bib>
     
             <pdf filename="droit_du_logiciel.pdf" label="PDF" />
 
@@ -263,6 +291,10 @@
                 Quelques slides expliquant ce que sont les brevets et leur
                 portée sur les logiciels.
             </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock, Université Paris Descartes, mars 2008.
+            </bib>
     
             <pdf filename="brevets.pdf" label="PDF" />
 
@@ -289,6 +321,10 @@
                     chacun ? [...]
                 </p>
             </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock, Université Paris Descartes, avril 2006.
+            </bib>
     
             <pdf filename="droits_auteurs.pdf" label="PDF" />
 

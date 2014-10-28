@@ -58,7 +58,7 @@
 
             <bib label="Presented in:">
                 <em>9èmes Journées Francophones de Planification, Décision et
-                Apprentissage (JFPDA'14)</em>, Liège (Belgique), 12-13 mai 2014
+                Apprentissage (JFPDA'14)</em>, Liège (Belgique), May 2014.
             </bib>
 
             <open_archive url="http://hal.inria.fr/hal-00997562" label="HAL" />
@@ -218,7 +218,7 @@
             </desc>
 
             <bib label="Presented in:">
-                Taiwan energy-forum, Tainan (Taiwan), mai 2012.
+                Taiwan energy-forum, Tainan (Taiwan), May 2012.
             </bib>
 
             <!--
@@ -239,6 +239,10 @@
                 An introduction to MiniMax: a very simple algorithm for
                 decision making in computer games.
             </desc>
+
+            <bib label="Reference:">
+                Jérémie Decock, October 2012.
+            </bib>
 
             <pdf filename="minimax_slides.pdf" label="Slides (PDF)" />
         </item>
