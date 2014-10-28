@@ -21,10 +21,11 @@
 
         <div id="home_contact">
             <p id="name">Jérémie DECOCK</p>
-            <p id="email">Email : jd -DOT- jdhp -AT- gmail -DOT- com</p>
+            <!-- See http://www.smashingmagazine.com/2006/12/14/preventing-spam-bulletproof-solution/ about spam... -->
+            <p id="email">Email : <a href="mailto:jd.jdhp@gmail.com">jd.jdhp@gmail.com</a></p>
             <p id="school">Ph.D. student in Computer Science (Learning and Optimization) at <a href="http://www.inria.fr/">Inria</a></p>
             <p id="follow_me">
-                Follow me<br />
+                <!--Follow me<br />-->
                 <span>
                     <a href="https://plus.google.com/u/0/106609464008586085387/" title="Follow me on Google+ (I use it as a blog)" ><img alt="Google+" src="medias/images/icons/social_network_class.pm/images/default/googleplus.png" /></a>
                     <a href="https://twitter.com/jeremie_decock"                 title="Follow me on Twitter"><img alt="Twitter" src="medias/images/icons/social_network_class.pm/images/default/twitter.png" /></a>
@@ -34,6 +35,15 @@
                 </span>
             </p>
         </div>
+
+        <h3>Postal mail</h3>
+        <p id="home_postal_mail">
+            Jérémie DECOCK<br />
+            Université Paris Sud - LRI<br />
+            Bâtiment 660 - Claude SHANNON<br />
+            Rue Noetzlin<br />
+            91190 Gif-sur-Yvette, FRANCE<br />
+        </p>
 
         <h3>Resume</h3>
         <dl id="home_cv">
@@ -55,10 +65,10 @@
                 
         <h3>About this website...</h3>
         <p id="home_about">
-            I made this website to share my work (articles and programs).
+            I made this website to share a part my work (articles and open source projects).
         </p>
         
-        <h3>Related links</h3>
+        <h3>I'm a member of</h3>
         <p id="home_links">
             <a href="http://www.vorobotics.com/"><img alt="VoRobotics" src="./medias/images/volab_logo2.png" title="VoRobotics" /></a> &#160; &#160; &#160;
             <a href="http://www.fsf.org/"><img alt="FSF member #6116" src="./medias/images/fsf_member.png" title="FSF member #6116" /></a> &#160;

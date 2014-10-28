@@ -18,6 +18,7 @@ x délimiter visuellement les liens :
     comme dans http://demo.studiopress.com/education/sample-post/
     cf. http://www.alsacreations.com/astuce/lire/43-comment-dfinir-lapparence-de-ses-liens.html pour la définition de link, visited, hover, active.
 - genericons -> icons in css + svg (see genericons on google) + see ../design_examples/genericons-demo.jpg for design suggestion
+- refaire les "notes" en haut de page (elle s'affichent mal sur smartphones et tablettes)
 - ancres html -> sont-elles bien là pour chaque item ?
 - fix/check schema/page.xsd
 - galerie photo en Java Script quand il y a + d'une photo/vidéo sur un projet
@@ -61,12 +62,11 @@ x jdhp sur LRI -> ajouter htaccess permanent redirect vers jdhp.org
 X Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
 * Ajouter/commiter les snippets suivants:
     Référencés sur le site:
-    + OpenMP (ajouter Makefile/CMakefile + tester les snippets)
     + OpenCV Python
+    + Pickle
     + Arduino
     + Octave (un clone de Matlab)
     + Gnuplot
-    + Pickle
     + Design patterns en C++ et Java
     cairo (C)
     sdl (C)
@@ -76,17 +76,16 @@ X Git: ajouter automatiquement "Get source code (tarball)" -> génération auto 
     DOM
 
     Non-référencés sur le site (ie. à ajouter dans les pages web):
-    + LaTeX
+    * curses (python)
+    * ant
+    + bash
     + Graphviz
-    + make (faire comme pour cmake)
-    - autotools
-    gcov (?)/gprof (?)
-    + ant
     opengl
-    bash
     awk
     sqlite
     sql (avec sqlite mais centré sur les requetes sql)
+    - autotools
+    gcov (?)/gprof (?)
     xpath
     php
 * add a bib file with my publications

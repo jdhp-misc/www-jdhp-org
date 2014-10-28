@@ -17,7 +17,6 @@
 
     <desc>
         Certains de mes projets et travaux <a href="http://fr.wikipedia.org/wiki/Open_source">open source</a> en informatique, électronique et robotique.
-        Ceci n'est pas une liste exhaustive, de nombreux projets professionnels ne peuvent pas être partagées ici.
     </desc>
 
     <note>
@@ -26,13 +25,17 @@
             <strong>$ git clone git://...</strong>
         </p>-->
         <p>
+            Ceci n'est pas une liste exhaustive, de nombreux projets professionnels ne peuvent pas être partagées ici.
+        </p>
+        <br />
+        <p>
             Un référentiel est disponible pour les utilisateurs de <em>Gnu/Linux Debian</em> et d'<em>Ubuntu</em>. 
             Il permet de simplifier l'installation de la plupart des logiciels présentés sur cette page. Pour l'utiliser :
         </p>
         <ul>
             <li>
-                ajoutez la ligne suivante au fichier <em>/etc/apt/sources.list</em> :
-                <strong>deb <a href="http://download.tuxfamily.org/jdhp/debian">http://download.tuxfamily.org/jdhp/debian</a> ./</strong>
+                ajoutez la ligne suivante au fichier <em>/etc/apt/sources.list</em> :<br />
+                &#160; &#160; <strong>deb <a href="http://download.tuxfamily.org/jdhp/debian">http://download.tuxfamily.org/jdhp/debian</a> ./</strong>
             </li>
             <li>
                 puis mettez à jour la liste des paquets :
@@ -43,6 +46,7 @@
                 <strong># apt-get install NOM_DU_PAQUET</strong>
             </li>
         </ul>
+        <br />
         <p>
             Un manuel est fourni avec chaque paquet. Une fois le paquet installé, sa <em>manpage</em> peut être consultée :
             <strong>$ man NOM_DU_PAQUET</strong>

@@ -39,6 +39,7 @@ cp -a css www/
 cp -a medias www/
 cp -a hevea www/
 cp -a html www/
+cp -a bib www/
 
 ## XSLT2
 #

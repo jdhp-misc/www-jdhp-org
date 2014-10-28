@@ -17,17 +17,20 @@
 
     <desc>
         Some of my <a href="http://en.wikipedia.org/wiki/Open_source">open source</a> projects (mostly in computer science, electronics and robotics).
-        This is not a comprehensive list, many professional projects can't be shared here.
     </desc>
 
     <note>
+        <p>
+            This is not a comprehensive list, many professional projects can't be shared here.
+        </p>
+        <br />
         <p>
             A repository is available for <em>Debian</em> and <em>Ubuntu</em> users. To use it,<br />
         </p>
         <ul>
             <li>
-                add the following line in your <em>/etc/apt/sources.list</em> file:
-                <strong>deb <a href="http://download.tuxfamily.org/jdhp/debian">http://download.tuxfamily.org/jdhp/debian</a> ./</strong>
+                add the following line in your <em>/etc/apt/sources.list</em> file:<br />
+                &#160; &#160; <strong>deb <a href="http://download.tuxfamily.org/jdhp/debian">http://download.tuxfamily.org/jdhp/debian</a> ./</strong>
             </li>
             <li>
                 then update the list of available packages from the apt sources:
