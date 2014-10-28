@@ -35,6 +35,8 @@ cp -a www/home_en.html www/index.html
 #ln --symbolic home_en.html www/index.html
 cp -a misc/favicon.ico www/
 cp -a misc/robots.txt www/
+cp -a misc/debian_howto_en www/
+cp -a misc/debian_howto_fr www/
 cp -a css www/
 cp -a medias www/
 cp -a hevea www/

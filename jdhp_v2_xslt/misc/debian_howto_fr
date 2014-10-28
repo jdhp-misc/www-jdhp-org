@@ -1,0 +1,20 @@
+Un référentiel est disponible pour les utilisateurs de Gnu/Linux Debian et d'Ubuntu.
+Il permet de simplifier l'installation de la plupart des logiciels présentés sur cette page.
+Pour l'utiliser, ajoutez la ligne suivante au fichier /etc/apt/sources.list :
+
+    deb http://download.tuxfamily.org/jdhp/debian ./
+
+puis mettez à jour la liste des paquets :
+
+    # apt-get update
+
+et installez le(s) paquet(s) souhaité(s) :
+
+    # apt-get install NOM_DU_PAQUET
+
+
+Un manuel est fourni avec chaque paquet.
+Une fois le paquet installé, sa manpage peut être consultée :
+
+    $ man NOM_DU_PAQUET 
+

@@ -25,18 +25,9 @@
         </p>
         <br />
         <p>
-            A repository is available for <em>Debian</em> and <em>Ubuntu</em> users. To use it,<br />
+            A repository is available for <em>Debian</em> and <em>Ubuntu</em> users.
+            Click <a href="debian_howto_en">here</a> for more information.
         </p>
-        <ul>
-            <li>
-                add the following line in your <em>/etc/apt/sources.list</em> file:<br />
-                &#160; &#160; <strong>deb <a href="http://download.tuxfamily.org/jdhp/debian">http://download.tuxfamily.org/jdhp/debian</a> ./</strong>
-            </li>
-            <li>
-                then update the list of available packages from the apt sources:
-                <strong># apt-get update</strong>
-            </li>
-        </ul>
     </note>
     
     <!-- ############################################################ -->

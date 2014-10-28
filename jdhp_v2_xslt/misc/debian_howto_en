@@ -1,0 +1,9 @@
+A repository is available for Debian and Ubuntu users.
+To use it, add the following line in your /etc/apt/sources.list file:
+
+    deb http://download.tuxfamily.org/jdhp/debian ./
+
+Then update the list of available packages from the apt sources:
+
+    # apt-get update
+
