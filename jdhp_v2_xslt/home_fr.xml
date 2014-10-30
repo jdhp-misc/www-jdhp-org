@@ -44,6 +44,7 @@
             91190 Gif-sur-Yvette, FRANCE<br />
         </p>
 
+        <!--
         <h3>Bref CV</h3>
         <dl id="home_cv">
             <dt>2011 - 2014</dt>
@@ -61,6 +62,7 @@
             <dt>2005 - 2006</dt>
             <dd><em>Licence <a href="http://miage.math-info.univ-paris5.fr/">MIAGE</a></em> à l'<a href="http://www.univ-paris5.fr/">Université Paris Descartes</a>.</dd>
         </dl>
+        -->
 
         <h3>À propos...</h3>
         <p id="home_about">
