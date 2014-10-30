@@ -45,7 +45,7 @@
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
 
-            <link url="hevea/tutoriel_vim_spellfr.html">
+            <link url="hevea/tutoriel_vim_spellfr/tutoriel_vim_spellfr.html">
                 <label>Lire la suite</label>
             </link>
         </item>

@@ -39,9 +39,11 @@ cp -a misc/debian_howto_en www/
 cp -a misc/debian_howto_fr www/
 cp -a css www/
 cp -a medias www/
-cp -a hevea www/
+#cp -a hevea www/
 cp -a html www/
 cp -a bib www/
+
+./sync_hevea.sh
 
 ## XSLT2
 #

@@ -59,7 +59,9 @@ x Sous le nom et sous "PhD student at Inria...", ajouter le domaine (computer sc
 x remplacer "gitweb" par "browse source code"
 x gitweb: afficher directement l'arbre plutôt que les commit -> append "?a=tree" à la fin de toutes les url
 x jdhp sur LRI -> ajouter htaccess permanent redirect vers jdhp.org
-X Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
+x Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
+x add a bib file with my publications
+* HeVeA: modifier le CSS (s'inspirer de https://scaron.info/doc/intro-arbres-decision/) et régler le pb avec les images + ajouter une cible "hevea" dans les makefiles (nottament dans les snippets LaTeX) -> cf. http://hevea.inria.fr/doc/manual002.html
 * Ajouter/commiter les snippets suivants:
     Référencés sur le site:
     + OpenCV Python
@@ -88,7 +90,6 @@ X Git: ajouter automatiquement "Get source code (tarball)" -> génération auto 
     gcov (?)/gprof (?)
     xpath
     php
-* add a bib file with my publications
 * CV: mettre un CV un peu plus complet en html -> utiliser h2/h3 pour délimiter Formation/Enseignements/Expérience professionnelle/...
 * Ajouter "Full CV" sur la page d'accueil en PDF (sans numéro de tel, email, adresse postale et activités perso)
 * finir de mettre à jour la partie "snippets", la mettre plus en évidence
