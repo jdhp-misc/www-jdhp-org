@@ -1,33 +1,43 @@
 TODO List
 
 DEV
-- corriger les erreurs 404 (cf. http://stats.tuxfamily.org/awstats.pl?config=jdhp.org&framename=mainright&output=errors404) avec des "permanent-redirect" dans le fichier .htaccess
+- ajouter un fichier .htaccess et corriger les erreurs 404 (cf. http://stats.tuxfamily.org/awstats.pl?config=jdhp.org&framename=mainright&output=errors404) avec des "permanent-redirect" dans le fichier .htaccess
 x corriger les erreurs du W3C validator !
 x check generated html == former version
 - fix TODOs in xml files
-x délimiter visuellement les liens :
-  - soit avec un underligne discret (très clair) comme dans ../design_examples/genericons-demo.jpg (CSS3 only ou utiliser margin bottom pour CSS2) ou utiliser 
-    http://stackoverflow.com/questions/12804419/css-text-decoration-underline-color
-    http://stackoverflow.com/questions/12557707/changing-underline-color
-  - soit en personalisant
-    a:link {...}
-    a:visited {...}
-    a:hover {...}
-    a:active {...}
-    pour mettre en évidence le lien quand on le survole -> soit par l'apparition d'un underline, soit par une mise en gras, soit par un changement de couleur
-    comme dans http://demo.studiopress.com/education/sample-post/
-    cf. http://www.alsacreations.com/astuce/lire/43-comment-dfinir-lapparence-de-ses-liens.html pour la définition de link, visited, hover, active.
+* délimiter visuellement les liens :
+  - underline uniquement quand on survole le lien (comme dans wikipedia, etc.)
+  alt
+      - soit avec un underligne discret (très clair) comme dans ../design_examples/genericons-demo.jpg (CSS3 only ou utiliser margin bottom pour CSS2) ou utiliser 
+        http://stackoverflow.com/questions/12804419/css-text-decoration-underline-color
+        http://stackoverflow.com/questions/12557707/changing-underline-color
+      - soit en personalisant
+        a:link {...}
+        a:visited {...}
+        a:hover {...}
+        a:active {...}
+        pour mettre en évidence le lien quand on le survole -> soit par l'apparition d'un underline, soit par une mise en gras, soit par un changement de couleur
+        comme dans http://demo.studiopress.com/education/sample-post/
+        cf. http://www.alsacreations.com/astuce/lire/43-comment-dfinir-lapparence-de-ses-liens.html pour la définition de link, visited, hover, active.
 - genericons -> icons in css + svg (see genericons on google) + see ../design_examples/genericons-demo.jpg for design suggestion
-- refaire les "notes" en haut de page (elle s'affichent mal sur smartphones et tablettes)
+x refaire les "notes" en haut de page (elle s'affichent mal sur smartphones et tablettes)
 - ancres html -> sont-elles bien là pour chaque item ?
 - fix/check schema/page.xsd
-- galerie photo en Java Script quand il y a + d'une photo/vidéo sur un projet
+* galerie photo en Java Script quand il y a + d'une photo/vidéo sur un projet
+  On appelle ça un "carousel"
+  En mettre un qui défile automatiquement pour que les internautes voient qu'il y a plusieurs images...
+  Chercher "carousel image open source"
+  La pluspart sont écrit en Javascript/JQuery (http://fr.wikipedia.org/wiki/JQuery)
+  http://designm.ag/inspiration/32-open-source-plugins-for-image-galleries-carousels/
+  http://designshack.net/articles/freebies/weekly-freebies-25-awesome-free-jquery-image-sliders-and-carousels/
+  http://www.jssor.com/
+  http://mathieu-robin.developpez.com/tutoriels/javascript/creer-plugin-slideshow-pour-jquery/
 - Générer une page html pour chaque items (projets) pour y mettre plus
   d'informations sans alourdir la page "projet_xx.html" (instructions pour Git,
   licence, plusieurs screenshots, plusieurs vidéos, ...). 
   => créer un css pour ces pages et écrire directement des pages html regroupées dans un même répertoire (./html/xxx_en.html), idem avec les pages générées avec hevea (latex).
   Ajouter un fil d'Ariane (police des liens de couleur bordeaux)
-- vérif compatibilité avec IE et safari
+* vérif compatibilité avec IE et safari
 - Web Analytics: add Piwik (the most famous Opensource Web Analytics) : http://piwik.org/
 
 Web 2.0
@@ -62,6 +72,9 @@ x jdhp sur LRI -> ajouter htaccess permanent redirect vers jdhp.org
 x Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
 x add a bib file with my publications
 * HeVeA: modifier le CSS (s'inspirer de https://scaron.info/doc/intro-arbres-decision/) et régler le pb avec les images + ajouter une cible "hevea" dans les makefiles (nottament dans les snippets LaTeX) -> cf. http://hevea.inria.fr/doc/manual002.html
+* ajouter des mini tuto en IA -> 1 document = 1 algo (contexte + algo + explications + exemple d'implémentation python) => rester simple et concis => une sorte de snippet appliquée algos (traite d'un sujet précis)
+  "tutorial.tex" (enrobage document, meta, packages, etc.) + "saes.tex" (contenu réutilisable dans des articles)
+  faire en parallèle des vrais articles qui réutilisent ces "snippets" (include fichier .tex)
 * Ajouter/commiter les snippets suivants:
     Référencés sur le site:
     + OpenCV Python
@@ -114,7 +127,7 @@ x add a bib file with my publications
 - Ajouter l'emprunte de ma clé GPG dans la page "home_**.html" et l'utiliser
   pour signer les paquets et le dépôt Debian.
 + attribut "license" non renseignés/affichés
-* comment mettre à jours automatiquement les articles (pdf, ...), images, thumbnails, ...
++ comment mettre à jours automatiquement les packages debian (via les makefiles comme pour les articles), images, thumbnails, ...
 + UTF-8 -> passe bien sur windows ?
 + ajouter l'adresse du labo
 + add pdf_presenter
