@@ -21,36 +21,37 @@
     padding          : 0px;
 }
 
+/*
 a {
-    /*color            : #0088cc;*/
     color            : #197cc1;
-
     text-decoration  : underline;
-    /*text-decoration  : none;*/
-
-    /*
-    text-decoration  : underline;
-    -moz-text-decoration-color: -moz-use-text-color;
-    -moz-text-decoration-line: none;
-    -moz-text-decoration-style: solid;
-    */
 }
+*/
 
 /*
+ * Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
+ * Note: a:active MUST come after a:hover in the CSS definition in order to be effective.
+ */
 a:link {
+    color          : #197cc1;
+    text-decoration: none;
 }
 
 a:visited {
+    color          : #197cc1;
+    text-decoration: none;
 }
 
 a:hover {
-    font-weight      : bold;
-    text-decoration  : underline;
+    color          : #197cc1;
+    text-decoration: underline;
 }
 
 a:active {
+    color          : #197cc1;
+    text-decoration: underline;
 }
-*/
+
 
 body {
     background-color : #f4f4f4;
@@ -253,7 +254,7 @@ h2 {
 /*
     border-top       : 1px solid #dddddd;
 */
-    border-bottom    : 0px solid #dddddd;
+    border-bottom    : 5px solid #eee;
 
     clear            : both;              /* http://www.siteduzero.com/tutoriel-3-13566-mise-en-boite-partie-2-2.html#ss_part_2 */
 
