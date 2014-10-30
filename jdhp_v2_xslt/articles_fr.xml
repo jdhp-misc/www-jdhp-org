@@ -225,13 +225,13 @@
                 Jérémie Decock, Université Paris Descartes, février 2008.
             </bib>
     
-            <pdf filename="les_wikis_en_entreprise.pdf" label="PDF" />
+            <pdf filename="les_wikis_en_entreprise.pdf" label="Article (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
 
-            <link url="hevea/les_wikis_en_entreprise.html">
+            <link url="hevea/les_wikis_en_entreprise/les_wikis_en_entreprise.html">
                 <label>Lire la suite</label>
             </link>
         </item>
@@ -277,7 +277,7 @@
                 Jérémie Decock, UPMC, octobre 2010.
             </bib>
     
-            <pdf filename="droit_du_logiciel.pdf" label="PDF" />
+            <pdf filename="droit_du_logiciel.pdf" label="Slides (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
@@ -296,7 +296,7 @@
                 Jérémie Decock, Université Paris Descartes, mars 2008.
             </bib>
     
-            <pdf filename="brevets.pdf" label="PDF" />
+            <pdf filename="brevets.pdf" label="Slides (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
@@ -326,13 +326,13 @@
                 Jérémie Decock, Université Paris Descartes, avril 2006.
             </bib>
     
-            <pdf filename="droits_auteurs.pdf" label="PDF" />
+            <pdf filename="droits_auteurs.pdf" label="Article (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
                         weburl="http://git.tuxfamily.org/jdhp/articles/"
                         type="git" />
 
-            <link url="hevea/droits_auteurs.html">
+            <link url="hevea/droits_auteurs/droits_auteurs.html">
                 <label>Lire la suite</label>
             </link>
         </item>
