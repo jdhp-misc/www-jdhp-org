@@ -78,10 +78,7 @@ x add a bib file with my publications
 * Ajouter/commiter les snippets suivants:
     Référencés sur le site:
     + OpenCV Python
-    + Pickle
     + Arduino
-    + Octave (un clone de Matlab)
-    + Gnuplot
     + Design patterns en C++ et Java
     cairo (C)
     sdl (C)
@@ -95,8 +92,8 @@ x add a bib file with my publications
     * ant
     + bash
     + Graphviz
-    opengl
     awk
+    opengl
     sqlite
     sql (avec sqlite mais centré sur les requetes sql)
     - autotools
