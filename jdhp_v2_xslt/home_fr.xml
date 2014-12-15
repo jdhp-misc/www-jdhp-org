@@ -71,9 +71,9 @@
 
         <h3>Je suis membre de</h3>
         <p id="home_links">
-            <a href="http://www.vorobotics.com/"><img alt="VoRobotics" src="./medias/images/volab_logo2.png" title="VoRobotics" /></a> &#160; &#160; &#160;
-            <a href="http://www.fsf.org/"><img alt="Membre #6116 de la FSF" src="./medias/images/fsf_member.png" title="Membre #6116 de la FSF" /></a> &#160;
-            <a href="http://www.april.org/"><img alt="Membre de l'APRIL - Promouvoir et soutenir le logiciel libre" src="http://www.april.org/association/documents/bannieres/boutons/april_soutien3_88x31.png" title="Membre de l'APRIL - Promouvoir et soutenir le logiciel libre" /></a>
+            <a href="http://www.fsf.org/"><img alt="Membre #6116 de la FSF" src="./medias/images/fsf_member.png" title="Membre #6116 de la FSF" /></a> &#160; &#160;
+            <a href="http://www.april.org/"><img alt="Membre de l'APRIL - Promouvoir et soutenir le logiciel libre" src="http://www.april.org/association/documents/bannieres/boutons/april_soutien3_88x31.png" title="Membre de l'APRIL - Promouvoir et soutenir le logiciel libre" /></a> &#160; &#160;
+            <a href="http://www.vorobotics.com/"><img alt="VoRobotics" src="./medias/images/vorobotics.png" title="VoRobotics" /></a>
         </p> 
     </desc>
 </page>
