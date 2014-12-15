@@ -257,6 +257,24 @@
             <picture filename="binviewer_2.png" />
         </item>
 
+        <item id="dspp" license="MIT">
+            <label>Dual Screen PDF Presenter</label>
+            <desc>
+                An open source multi-monitor presentation tool for PDF files.
+
+                It uses Keynote-like multi-monitor output to provide meta information to the speaker.
+                It can show a normal presentation window on one screen and personal notes for the speaker on the other.
+
+                This tool is written in Python and released under the MIT license.
+            </desc>
+            <archive url="http://git.tuxfamily.org/dspp/dspp/?p=dspp/dspp.git;a=snapshot;h=HEAD;sf=tgz">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/dspp/dspp.git"
+                        weburl="http://git.tuxfamily.org/dspp/dspp/"
+                        type="git" />
+        </item>
+
         <item id="latex2png" license="MIT">
             <label>Latex2png</label>
             <desc>
