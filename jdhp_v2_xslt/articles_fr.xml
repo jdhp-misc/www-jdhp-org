@@ -82,7 +82,7 @@
             <desc>
                 Nous présentons ici une synthèse des travaux de Y. Freund,
                 R.D. Iyer, R.E. Schapire et Y. Singe sur l'algorithme Rankboost,
-                présenté dans l'article <em>An efficient boosting algorithm
+                publiés dans l'article <em>An efficient boosting algorithm
                 for combining preferences</em> (ICML 1998).
 
                 Les principes généraux des méthodes de boosting ainsi que
@@ -140,10 +140,16 @@
                 Une présentation de l'article "Exploiting Open-Endedness to
                 Solve Problems Through the Search for Novelty" (Lehman and
                 Stanley, 2008).
+
                 Cet article propose une approche originale pour contourner le
                 piège des optimums locaux dans les algorithmes évolutionnistes:
                 évaluer les solutions suivant la "nouveauté" des comportement
                 générés plutôt que selon leur fitness.
+                
+                Ce travail de synthèse a été effectué dans le cadre du master 2
+                <em>Intelligence Artificielle et Décision</em> de 
+                l'<a href="http://www.upmc.fr/">Université Pierre et Marie
+                Curie</a> (Paris 6).
             </desc>
 
             <bib label="Référence:">
@@ -160,8 +166,14 @@
             </label>
             
             <desc>
-                Présentation d'un protocole de coordination d'agents utilisé
-                dans la Robocup.
+                Nous présentons ici un protocole de coordination d'agents utilisé
+                par l'équipe ART (Azzurra Robot Team) pour la Robocup (la
+                principale compétition de football robotique).
+                
+                Ce travail de synthèse a été effectué dans le cadre du master 2
+                <em>Intelligence Artificielle et Décision</em> de 
+                l'<a href="http://www.upmc.fr/">Université Pierre et Marie
+                Curie</a> (Paris 6).
             </desc>
 
             <bib label="Référence:">
@@ -177,12 +189,22 @@
 
         <item id="learning_to_tag" license="">
             <label>
-                Learning to tag (Lei Wuk, Linjun Yang, Nenghai Yu, Xian-Sheng Hua, 2009)
+                Indexation automatique d'images pour le Web
             </label>
 
             <desc>
-                Une présentation de l'article "Learning to tag" (Lei Wuk,
-                Linjun Yang, Nenghai Yu, Xian-Sheng Hua, 2009).
+                Nous présentons ici une synthèse des travaux de Lei Wuk, Linjun
+                Yang, Nenghai Yu et Xian-Sheng Hua, publiés dans l'article
+                <em>Learning to Tag</em> (présentés à la conférence <em>World
+                Wide Web 2009</em>).
+
+                L'article présenté décrit un algorithme d'indexation automatique
+                d'images pour le Web.
+                
+                Ce travail de synthèse a été effectué dans le cadre du master 2
+                <em>Intelligence Artificielle et Décision</em> de 
+                l'<a href="http://www.upmc.fr/">Université Pierre et Marie
+                Curie</a> (Paris 6).
             </desc>
 
             <bib label="Référence:">
