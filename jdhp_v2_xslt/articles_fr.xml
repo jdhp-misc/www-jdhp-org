@@ -80,8 +80,19 @@
             <label>Rankboost</label>
             
             <desc>
-                Présentation de l'article <em>An efficient boosting algorithm
-                for combining preferences</em> (Y. Freund et al., 1998).
+                Nous présentons ici une synthèse des travaux de Y. Freund,
+                R.D. Iyer, R.E. Schapire et Y. Singe sur l'algorithme Rankboost,
+                présenté dans l'article <em>An efficient boosting algorithm
+                for combining preferences</em> (ICML 1998).
+
+                Les principes généraux des méthodes de boosting ainsi que
+                l'algorithme de référence Adaboost sont également présentés pour
+                resituer le contexte de l'article.
+                
+                Ce travail de synthèse a été effectué dans le cadre du master 2
+                <em>Intelligence Artificielle et Décision</em> de 
+                l'<a href="http://www.upmc.fr/">Université Pierre et Marie
+                Curie</a> (Paris 6).
             </desc>
 
             <bib label="Référence:">
