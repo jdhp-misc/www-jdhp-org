@@ -23,7 +23,8 @@
             <p id="name">Jérémie DECOCK</p>
             <!-- See http://www.smashingmagazine.com/2006/12/14/preventing-spam-bulletproof-solution/ about spam... -->
             <p id="email">Email : <a href="mailto:jd.jdhp@gmail.com">jd.jdhp@gmail.com</a></p>
-            <p id="school">Ph.D. student in Computer Science (Learning and Optimization) at <a href="http://www.inria.fr/">Inria</a></p>
+            <!-- <p id="school">Ph.D. student in Computer Science (Learning and Optimization) at <a href="http://www.inria.fr/">Inria</a></p> -->
+            <p id="school">Ph.D., Research Scientist (post doctoral fellow)<br />in Computer Science (Learning and Optimization) at <a href="http://www.inria.fr/">Inria</a></p>
             <p id="follow_me">
                 <!--Follow me<br />-->
                 <span>
