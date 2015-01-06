@@ -258,14 +258,20 @@
         </item>
 
         <item id="dspp" license="MIT">
-            <label>Dual Screen PDF Presenter</label>
+            <label>DSPP (Dual Screen PDF Presenter)</label>
             <desc>
-                An open source multi-monitor presentation tool for PDF files.
+                DSPP is a presentation software (such as Microsoft PowerPoint,
+                Apple Keynote and Libre Office Impress).
+                It can show PDF files on multiple screens.
 
-                It uses Keynote-like multi-monitor output to provide meta information to the speaker.
-                It can show a normal presentation window on one screen and personal notes for the speaker on the other.
+                It uses Keynote-like multi-monitor output to provide meta
+                information to the speaker.
+                Thus, DSPP can show a normal presentation window on one screen
+                (usually a video projector) and personal notes for the speaker
+                on the other (usually a laptop screen used for the
+                presentation).
 
-                This tool is written in Python and released under the MIT license.
+                DSPP is written in Python and released under the MIT license.
             </desc>
             <archive url="http://git.tuxfamily.org/dspp/dspp/?p=dspp/dspp.git;a=snapshot;h=HEAD;sf=tgz">
                 <label>Sources</label>
