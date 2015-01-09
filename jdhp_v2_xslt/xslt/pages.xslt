@@ -113,14 +113,17 @@
                     </xsl:choose>
 
                     <!-- CONTENTS -->
-                    <div id="page_contents">
-                        <h2><xsl:value-of select="/page/common_lang/i18n/contents/@translation" /></h2>
-                        <ul>
-                            <xsl:for-each select="/page/group">
-                                <li><a href="{/page/@id}_{/page/@lang}.html#{@id}"><xsl:value-of select="label" /></a></li> <!-- TODO -->
-                            </xsl:for-each>
-                        </ul>
-                    </div>
+                    <!-- if number of groups > 0 -->
+                    <xsl:if test="/page/group">
+                        <div id="page_contents">
+                            <h2><xsl:value-of select="/page/common_lang/i18n/contents/@translation" /></h2>
+                            <ul>
+                                <xsl:for-each select="/page/group">
+                                    <li><a href="{/page/@id}_{/page/@lang}.html#{@id}"><xsl:value-of select="label" /></a></li> <!-- TODO -->
+                                </xsl:for-each>
+                            </ul>
+                        </div>
+                    </xsl:if> 
 
                     <!-- GROUPS -->
                     <xsl:for-each select="/page/group">
