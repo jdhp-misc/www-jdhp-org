@@ -7,3 +7,5 @@
 
 rsync -a -v -e ssh --delete www/* gremy@ssh.tuxfamily.org:~/jdhp/jdhp.org-web/htdocs/
 
+./sync_hevea.sh
+

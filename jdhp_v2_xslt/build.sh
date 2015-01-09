@@ -43,8 +43,6 @@ cp -a medias www/
 cp -a html www/
 cp -a bib www/
 
-./sync_hevea.sh
-
 ## XSLT2
 #
 ## aptitude install libsaxonb-java
