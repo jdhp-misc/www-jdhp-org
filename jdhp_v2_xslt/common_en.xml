@@ -13,6 +13,7 @@
     <flag src="./medias/images/flag_fr.png" title="Version française" alt="Version française" suffix="fr" />
 
     <i18n>
+        <contents translation="Contents" />
         <download translation="Download" />
         <source_code translation="Source code" />
         <debian_package translation="Debian Package" />
