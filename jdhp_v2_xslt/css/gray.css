@@ -42,7 +42,7 @@ h1 {
     border-left      : 1px solid #dddddd;
     border-right     : 1px solid #dddddd;
 
-    margin-top       : 20px;
+    margin-top       : 0px;
     margin-left      : auto; /* cf ... */
     margin-right     : auto; /* cf ... */
 
@@ -125,6 +125,8 @@ div#page {
 /*** flag ***/
 
 div#flag {
+    margin-top       : 1em;
+    margin-bottom    : 0em;
     margin-left      : 26px;
     margin-right     : 26px;
 
@@ -146,7 +148,7 @@ ul#page_toc {
 /*** page desc ***/
 
 div#page_desc {
-    margin-top       : 2em;
+    margin-top       : 3em;
     margin-left      : 26px;
     margin-right     : 26px;
 
@@ -449,4 +451,21 @@ div#footer a img {
     margin-right     : 0px;
 }
 
+
+/*** legal ***/
+
+div#legal {
+    color            : #808080;
+
+    margin-top       : 3em;
+    margin-bottom    : 2em;
+
+    font-family      : verdana, sans-serif;
+    font-size        : 10px;
+}
+
+div#legal a {
+    color            : #808080;
+    font-size        : 10px;
+}
 

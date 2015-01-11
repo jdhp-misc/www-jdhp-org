@@ -14,6 +14,7 @@
 
     <i18n>
         <contents translation="Contenu" />
+        <flags translation="Changer de langue :" />
         <download translation="Télécharger" />
         <source_code translation="Fichiers sources" />
         <debian_package translation="Paquet Debian" />
@@ -27,6 +28,7 @@
         <svnweb translation="Parcourir le code source" />
         <giturl translation="Référentiel Git" />
         <svnurl translation="Référentiel SVN" />
+        <legal>Site hébergé par <a href="http://www.tuxfamily.org/">Tuxfamily.org</a>.</legal>
     </i18n>
 
 </common_lang>

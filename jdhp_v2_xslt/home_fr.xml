@@ -27,8 +27,9 @@
             <p id="follow_me">
                 <!--Réseaux sociaux<br />-->
                 <span>
-                    <a href="https://plus.google.com/u/0/106609464008586085387/" title="Suivez-moi sur Google+" ><img alt="Google+" src="medias/images/icons/social_network_class.pm/images/default/googleplus.png" /></a>
                     <a href="https://twitter.com/jeremie_decock"                 title="Suivez-moi sur Twitter"><img alt="Twitter" src="medias/images/icons/social_network_class.pm/images/default/twitter.png" /></a>
+                    <a href="https://plus.google.com/u/0/106609464008586085387/" title="Suivez-moi sur Google+" ><img alt="Google+" src="medias/images/icons/social_network_class.pm/images/default/googleplus.png" /></a>
+                    <a href="https://www.facebook.com/jeremie.decock"            title="Suivez-moi sur Facebook"><img alt="Facebook" src="medias/images/icons/social_network_class.pm/images/default/facebook.png" /></a>
                     <a href="https://www.linkedin.com/in/jeremiedecock"          title="Suivez-moi sur Linkedin"><img alt="Linkedin" src="medias/images/icons/social_network_class.pm/images/default/linkedin.png" /></a>
                     <a href="https://www.youtube.com/user/jdhpvideo/videos"      title="Suivez ma chaîne Youtube"><img alt="Youtube" src="medias/images/icons/social_network_class.pm/images/default/youtube.png" /></a>
                     <!-- email, RSS, github, stackoverflow, ... -->

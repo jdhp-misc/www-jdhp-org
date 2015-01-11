@@ -25,6 +25,19 @@
             </head>
 
             <body>
+                <!-- FLAGS -->
+                <div id="flag">
+                    <xsl:value-of select="/page/common_lang/i18n/flags/@translation" /> &#160;
+                    <xsl:for-each select="/page/common_lang/flag">
+
+                        <a href="{/page/@id}_{@suffix}.html">
+                            <img src="{@src}" title="{@title}" alt="{@alt}" />
+                        </a> &#160;
+
+                    </xsl:for-each>
+                </div>
+
+                <!-- LOGO -->
                 <h1><img src="./medias/images/header.jpeg" title="jdhp.org" alt="jdhp.org" /></h1>
                 
                 <!-- MENU -->
@@ -83,6 +96,7 @@
                 <div id="page">
                     
                     <!-- FLAGS -->
+                    <!--
                     <div id="flag">
                         <xsl:for-each select="/page/common_lang/flag">
 
@@ -92,6 +106,7 @@
 
                         </xsl:for-each>
                     </div>
+                    -->
 
                     
                     <!-- PAGE DESCRIPTION -->
@@ -301,6 +316,12 @@
                     <a href="http://www.tuxfamily.org/"><img src="./medias/images/tux_family.png" title="{/page/common_lang/i18n/tuxfamily_tag_title/@translation}" alt="{/page/common_lang/i18n/tuxfamily_tag_title/@translation}" /></a> &#160;
                     <a href="http://validator.w3.org/check?uri=referer"><img src="./medias/images/xhtml.png" title="{/page/common_lang/i18n/xhtml_validator_tag_title/@translation}" alt="{/page/common_lang/i18n/xhtml_validator_tag_title/@translation}" /></a> &#160;
                     <a href="http://jigsaw.w3.org/css-validator/"><img src="./medias/images/css.png" title="{/page/common_lang/i18n/css_validator_tag_title/@translation}" alt="{/page/common_lang/i18n/css_validator_tag_title/@translation}" /></a>
+                </div>
+
+                <div id="legal">
+                    <!-- xsl:copy-of excluding parent: see http://stackoverflow.com/questions/1755661/xslcopy-of-excluding-parent -->
+                    <!-- copy elements but remove unused namespace(s): see http://stackoverflow.com/questions/1074767/xsl-copy-elements-but-remove-unused-namespaces -->
+                    <xsl:copy-of select="/page/common_lang/i18n/legal/node()" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
                 </div>
 
             </body>
