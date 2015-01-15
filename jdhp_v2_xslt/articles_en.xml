@@ -34,6 +34,65 @@
 
     <!-- ############################################################ -->
 
+    <group id="phd">
+
+        <label>
+            Ph.D. Thesis in Computer Science
+        </label>
+
+        <item id="phd" license="">
+            <label>
+                Hybridization of dynamic optimization methodologies 
+            </label>
+
+            <desc>
+                <p>
+                    This thesis is dedicated to sequential decision making (also known as
+                    multistage optimization) in uncertain complex environments. Studied algorithms
+                    are essentially applied to power systems ("Unit Commitment" problems).
+
+                    Among my main contributions, I present a new algorithm named "Direct Value
+                    Search" (DVS), designed to solve large scale unit commitment problems with few
+                    assumptions on the model, and to tackle some new challenges in the Power Systems
+                    community.
+
+                    Noisy optimization (a key component of the DVS algorithm) is studied and a
+                    new convergence bound proved. Some variance reduction techniques aimed at
+                    improving the convergence rate of graybox noisy optimization problems are also
+                    presented.
+                </p>
+                <br />
+                <p>
+                    Presented and publicly defended on November 28 2014 in Orsay, France.<br />
+                </p>
+                <br />
+                <p>
+                    <!--<em>University</em>: Université Paris-Sud 11.<br />-->
+                    <em>Laboratory</em>: Inria Saclay / LRI (Université Paris-Sud 11).<br />
+                    <em>Advisor</em>: Olivier Teytaud.<br />
+                    <em>Reviewers</em>: Pierre-Olivier Malaterre and Liva Ralaivola.
+                </p>
+            </desc>
+
+            <bib label="Reference:">
+                Jérémie Decock. <em>Hybridization of dynamic optimization methodologies</em>.
+                Theses, Université Paris-Sud, November 2014.
+            </bib>
+
+            <open_archive url="https://hal.inria.fr/tel-01103935" label="HAL" />
+
+            <!-- TAO
+            https://tao.lri.fr/tiki-index.php?page=PhD+Theses
+            -->
+
+            <pdf url="https://hal.inria.fr/tel-01103935/document" label="Article (PDF)" />
+            <!-- <pdf url=".../slides.pdf" label="Slides (PDF)" /> -->
+        </item>
+
+    </group>
+
+    <!-- ############################################################ -->
+
     <group id="research_aiam">
 
         <label>
@@ -197,6 +256,7 @@
 
     </group>
 
+    <!-- ############################################################ -->
 
     <group id="aiam">
 

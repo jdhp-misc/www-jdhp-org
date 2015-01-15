@@ -34,6 +34,63 @@
 
     <!-- ############################################################ -->
 
+    <group id="phd">
+
+        <label>
+            Thèse de doctorat en Informatique
+        </label>
+
+        <item id="phd" license="">
+            <label>
+                L'hybridation de méthodes d'optimisation dynamique
+            </label>
+
+            <desc>
+                <p>
+                    Dans ce manuscrit de thèse, mes travaux portent sur la comparaison et la 
+                    combinaison de méthodes pour la prise de décision séquentielle (plusieurs
+                    étapes de décision corrélées) dans des environnements complexes et incertains. 
+                    Ces travaux ont été exercés dans le cadre d'un partenariat ("Inria Innovation
+                    Lab") entre l'équipe TAO (LRI-Inria) et l'entreprise Artelys, spécialisée dans 
+                    l'optimisation de systèmes complexes. Les méthodes mises au point sont
+                    essentiellement appliquées à des problèmes de gestion et de production
+                    d'électricité ("unit commitment") tels que l'optimisation de la gestion des
+                    stocks d'énergie (réservoirs d'eau dans les centrales hydrauliques, etc.) dans
+                    un parc de production afin d'anticiper au mieux la fluctuation de la
+                    consommation des clients.
+                </p>
+                <br />
+                <p>
+                    Présentée et soutenue publiquement le 28 novembre 2014 à Orsay, France.<br />
+                </p>
+                <br />
+                <p>
+                    <!--<em>Université</em> : Université Paris-Sud 11.<br />-->
+                    <em>Laboratoire</em> : Inria Saclay / LRI (Université Paris-Sud 11).<br />
+                    <em>Directeur de Thèse</em> : Olivier Teytaud.<br />
+                    <em>Rapporteurs</em> : Pierre-Olivier Malaterre et Liva Ralaivola.
+                </p>
+            </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock. <em>Hybridization of dynamic optimization methodologies</em>.
+                Theses, Université Paris-Sud, November 2014.
+            </bib>
+
+            <open_archive url="https://hal.inria.fr/tel-01103935" label="HAL" />
+
+            <!-- TAO
+            https://tao.lri.fr/tiki-index.php?page=PhD+Theses
+            -->
+
+            <pdf url="https://hal.inria.fr/tel-01103935/document" label="Article (PDF)" />
+            <!-- <pdf url=".../slides.pdf" label="Slides (PDF)" /> -->
+        </item>
+
+    </group>
+
+    <!-- ############################################################ -->
+
     <group id="aiam">
         <label>
             Intelligence Artificielle et Mathématiques Appliquées
