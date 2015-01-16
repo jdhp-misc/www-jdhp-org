@@ -60,15 +60,15 @@
                     consommation des clients.
                 </p>
                 <br />
-                <p>
+                <p class="meta">
                     Présentée et soutenue publiquement le 28 novembre 2014 à Orsay, France.<br />
                 </p>
                 <br />
-                <p>
+                <p class="meta">
                     <!--<em>Université</em> : Université Paris-Sud 11.<br />-->
-                    <em>Laboratoire</em> : Inria Saclay / LRI (Université Paris-Sud 11).<br />
-                    <em>Directeur de Thèse</em> : Olivier Teytaud.<br />
-                    <em>Rapporteurs</em> : Pierre-Olivier Malaterre et Liva Ralaivola.
+                    <em>Laboratoire :</em> Inria Saclay / LRI (Université Paris-Sud 11).<br />
+                    <em>Directeur de Thèse :</em> Olivier Teytaud.<br />
+                    <em>Rapporteurs :</em> Pierre-Olivier Malaterre et Liva Ralaivola.
                 </p>
             </desc>
 
@@ -276,7 +276,9 @@
     <!-- ############################################################ -->
 
     <group id="cours">
-        <label>Supports de cours</label>
+        <label>
+            Supports de cours
+        </label>
 
         <item id="prog_sys" license="">
             <label>
@@ -331,7 +333,9 @@
     <!-- ############################################################ -->
 
     <group id="bi">
-        <label>Informatique de gestion</label>
+        <label>
+            Informatique de gestion
+        </label>
 
         <item id="wiki" license="cc-by-sa">
             <label>
@@ -385,7 +389,9 @@
     <!-- ############################################################ -->
 
     <group id="law">
-        <label>Droit</label>
+        <label>
+            Droit
+        </label>
 
         <item id="droit_du_logiciel" license="cc-by-sa">
             <label>Le droit du logiciel</label>

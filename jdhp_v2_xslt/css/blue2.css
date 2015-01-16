@@ -410,6 +410,22 @@ div.item_desc {
     text-align       : justify;
 }
 
+div.item_desc p.meta {
+    font-size        : 11px;
+    text-align       : justify;
+}
+
+div.item_desc p.meta * {
+    font-size        : 11px;
+    text-align       : justify;
+}
+
+div.item_desc p.meta em {
+    font-size        : 11px;
+    font-style       : normal;
+    font-weight      : bold;
+}
+
 /*** item bib (for academic articles) ***/
 
 div.item_bib {

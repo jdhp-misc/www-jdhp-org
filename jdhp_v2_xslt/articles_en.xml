@@ -62,15 +62,15 @@
                     presented.
                 </p>
                 <br />
-                <p>
+                <p class="meta">
                     Presented and publicly defended on November 28 2014 in Orsay, France.<br />
                 </p>
                 <br />
-                <p>
+                <p class="meta">
                     <!--<em>University</em>: Université Paris-Sud 11.<br />-->
-                    <em>Laboratory</em>: Inria Saclay / LRI (Université Paris-Sud 11).<br />
-                    <em>Advisor</em>: Olivier Teytaud.<br />
-                    <em>Reviewers</em>: Pierre-Olivier Malaterre and Liva Ralaivola.
+                    <em>Laboratory:</em> Inria Saclay / LRI (Université Paris-Sud 11).<br />
+                    <em>Advisor:</em> Olivier Teytaud.<br />
+                    <em>Reviewers:</em> Pierre-Olivier Malaterre and Liva Ralaivola.
                 </p>
             </desc>
 
