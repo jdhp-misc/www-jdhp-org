@@ -11,7 +11,6 @@ echo "Génère les thumbnails (screenshot)"
 mogrify -format png -path ${OUTPUT_DIR}/ -thumbnail 80x80 ${IMG_INPUT_DIR}/*.png
 mogrify -format png -path ${OUTPUT_DIR}/ -thumbnail 80x80 ${IMG_INPUT_DIR}/*.jpeg
 
-
 # MAKE THUMBNAILS (VIDEOS)
 
 echo "Génère les thumbnails (videos)"
@@ -25,4 +24,17 @@ do
     avconv -y -i ${VIDEO_PATH} -f mjpeg -ss 1 -vframes 1 -s 80x80 -an ${OUTPUT_DIR}/${VIDEO_FILE}.jpeg
 
     composite -gravity center ${LOGO_FILE} ${OUTPUT_DIR}/${VIDEO_FILE}.jpeg ${OUTPUT_DIR}/${VIDEO_FILE}.png
+done
+
+# APPLY THE "POLAROID" EFFECT
+
+for FILE in ${OUTPUT_DIR}/*.jpeg
+do
+    mv -v "${FILE}" "$(basename ${FILE})".png
+done
+
+# http://www.imagemagick.org/Usage/thumbnails/
+for FILE in ${OUTPUT_DIR}/*.png
+do
+    convert ${FILE} -bordercolor snow -background black +polaroid ${FILE}
 done
