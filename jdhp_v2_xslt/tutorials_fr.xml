@@ -21,8 +21,34 @@
 
     <!-- ############################################################ -->
 
-    <group id="vim">
-        <label>VIM</label>
+    <group id="informatique">
+        <label>Informatique</label>
+
+        <item id="tutoriel_acceder_fs_android_depuis_linux" license="cc-by-sa">
+            <label>
+                Accéder à la mémoire des appareils Android sur Debian Jessie via le protocole MTP
+            </label>
+            
+            <desc>
+                Ce tutoriel très court décrit simplement comment accéder à la
+                mémoire des téléphones et tablettes Android sur Debian Jessie.
+                [...]
+            </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock, janvier 2015.
+            </bib>
+    
+            <pdf filename="tutoriel_acceder_fs_android_depuis_linux.pdf" label="PDF" />
+
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        type="git" />
+
+            <link url="hevea/tutoriel_acceder_fs_android_depuis_linux/tutoriel_acceder_fs_android_depuis_linux.html">
+                <label>Lire la suite</label>
+            </link>
+        </item>
 
         <item id="vim_spell" license="cc-by-sa">
             <label>
@@ -49,5 +75,6 @@
                 <label>Lire la suite</label>
             </link>
         </item>
+
     </group>
 </page>
