@@ -15,8 +15,11 @@
                 <title>JDHP - <xsl:value-of select="/page/name" /></title>
                 <base href="{/page/common/base/@href}" />
                 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+                <meta http-equiv="expires" content="0" />
+                <meta http-equiv="pragma" content="no-cache" />
+                <meta http-equiv="cache-control" content="no-cache" />
                 <meta name="author" content="Jérémie DECOCK" />
-                <meta name="copyright" content="copyright (c) 2006,2007,2008,2009,2010,2011,2012,2014 Jérémie DECOCK" />
+                <meta name="copyright" content="copyright (c) 2006,2007,2008,2009,2010,2011,2012,2014,2015 Jérémie DECOCK" />
                 <meta name="keywords" content="{/page/keywords}" />
                 <link rel="shortcut icon" type="image/png" href="./medias/images/favicon.png" />
                 <link rel="stylesheet" type="text/css" href="./css/blue2.css" media="screen" title="Normal" />
