@@ -1,5 +1,5 @@
 hevea/
-medias/thumbnails/
+medias/thumbnails/*.png
 www/articles_en.html
 www/articles_fr.html
 www/home_en.html

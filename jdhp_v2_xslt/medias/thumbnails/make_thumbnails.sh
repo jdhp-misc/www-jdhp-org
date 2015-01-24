@@ -1,0 +1,1 @@
+../../make_thumbnails.sh
