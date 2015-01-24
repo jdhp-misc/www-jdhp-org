@@ -192,7 +192,7 @@
             <repository url="git://git.tuxfamily.org/gitroot/robotics/libdynamixel.git"
                         weburl="http://git.tuxfamily.org/robotics/libdynamixel/"
                         type="git" />
-            <!--<picture filename="dynamixel_1.png" />-->
+            <picture filename="dynamixel_1.png" />
         </item>
 
         <item id="pydynamixel" license="MIT">
@@ -329,6 +329,7 @@
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/scripts.git"
                         weburl="http://git.tuxfamily.org/jdhp/scripts/"
                         type="git" />
+            <picture filename="latex2png_2.png" />
         </item>
     </group>
 
@@ -465,6 +466,7 @@
             <repository url="git://git.tuxfamily.org/gitroot/jdhpcad/jdhpcad.git"
                         weburl="http://git.tuxfamily.org/jdhpcad/jdhpcad/"
                         type="git" />
+            <picture filename="scad.png" />
         </item>
 
         <item id="jdhppcb" license="CC BY-SA">
@@ -478,6 +480,7 @@
             <repository url="git://git.tuxfamily.org/gitroot/jdhppcb/jdhppcb.git"
                         weburl="http://git.tuxfamily.org/jdhppcb/jdhppcb/"
                         type="git" />
+            <picture filename="pcb.png" />
         </item>
 
         <item id="pypong" license="MIT">
