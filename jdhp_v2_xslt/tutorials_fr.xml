@@ -21,6 +21,52 @@
 
     <!-- ############################################################ -->
 
+    <group id="rpi">
+        <label>Raspberry Pi</label>
+
+        <item id="tutoriel_rpi_qemu" license="cc-by-sa">
+            <label>
+                Émuler le Raspberry Pi sous Debian avec Qemu
+            </label>
+            
+            <desc>
+                Qemu est un logiciel libre de virtualisation, capable de
+                simuler un grand nombre d’architectures matérielles, notamment
+                le processeur ARM du Raspberry Pi.
+                Il permet ainsi de manipuler un ou plusieurs Raspberry Pi
+                virtuels dans un ordinateur hôte.
+                <br />
+                Cette virtualisation est très utile pour configurer et tester
+                rapidement des environnements logiciels.  Elle simplifie entre
+                autre la création de sauvegardes lors de la mise au point de
+                ces environnements.
+                Elle épargne également de longs transferts de données avec les
+                cartes SD qui servent de support de stockage principale au
+                Raspberry Pi.
+                <br />
+                Ce tutoriel, explique comment émuler un Raspberry Pi avec Qemu
+                sur un système hôte Gnu/Linux Debian Jessie.
+                [...]
+            </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock, janvier 2015.
+            </bib>
+    
+            <pdf filename="tutoriel_rpi_qemu.pdf" label="PDF" />
+
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        type="git" />
+
+            <link url="hevea/tutoriel_rpi_qemu/tutoriel_rpi_qemu.html">
+                <label>Lire la suite</label>
+            </link>
+        </item>
+    </group>
+
+    <!-- ############################################################ -->
+
     <group id="informatique">
         <label>Informatique</label>
 
