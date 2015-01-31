@@ -49,7 +49,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
-                        weburl="http://git.tuxfamily.org/jwumpus/jwumpus/"
+                        weburl="http://git.tuxfamily.org/jwumpus/jwumpus.git/tree/"
                         type="git" />
             <picture filename="jwumpus_1.png" />
             <picture filename="jwumpus_2.png" />
@@ -69,7 +69,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/chef/chef.git"
-                        weburl="http://git.tuxfamily.org/chef/chef/"
+                        weburl="http://git.tuxfamily.org/chef/chef.git/tree/"
                         type="git" />
         </item>
 
@@ -86,7 +86,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/aiscripts/python.git"
-                        weburl="http://git.tuxfamily.org/aiscripts/python/"
+                        weburl="http://git.tuxfamily.org/aiscripts/python.git/tree/"
                         type="git" />
         </item>
 
@@ -145,7 +145,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/botsim/botsim.git"
-                        weburl="http://git.tuxfamily.org/botsim/botsim/"
+                        weburl="http://git.tuxfamily.org/botsim/botsim.git/tree/"
                         type="git" />
             <repository url="svn://svn.tuxfamily.org/svnroot/botsim/isir"
                         weburl="http://svnweb.tuxfamily.org/listing.php?repname=botsim%2Fisir&amp;amp;path=%2F&amp;amp;"
@@ -165,7 +165,7 @@
                 adapter).
             </desc>
             <repository url="git://git.tuxfamily.org/gitroot/robotics/libdynamixel.git"
-                        weburl="http://git.tuxfamily.org/robotics/libdynamixel/"
+                        weburl="http://git.tuxfamily.org/robotics/libdynamixel.git/tree/"
                         type="git" />
             <picture filename="dynamixel_1.png" />
         </item>
@@ -176,7 +176,7 @@
                 A Python implementation of libdynamixel.
             </desc>
             <repository url="git://git.tuxfamily.org/gitroot/robotics/pydynamixel.git"
-                        weburl="http://git.tuxfamily.org/robotics/pydynamixel/"
+                        weburl="http://git.tuxfamily.org/robotics/pydynamixel.git/tree/"
                         type="git" />
         </item>
 
@@ -188,7 +188,7 @@
                 AX-12</a> actuators.
             </desc>
             <repository url="git://git.tuxfamily.org/gitroot/robotics/dtools.git"
-                        weburl="http://git.tuxfamily.org/robotics/dtools/"
+                        weburl="http://git.tuxfamily.org/robotics/dtools.git/tree/"
                         type="git" />
             <!--<picture filename="dtools_gtkui_1.png" />-->
         </item>
@@ -200,7 +200,7 @@
                 href="http://www.robotis.com/xe/bioloid_en">bioloid</a>.
             </desc>
             <repository url="git://git.tuxfamily.org/gitroot/robotics/bioloid.git"
-                        weburl="http://git.tuxfamily.org/robotics/bioloid/"
+                        weburl="http://git.tuxfamily.org/robotics/bioloid.git/tree/"
                         type="git" />
             <video filename="bioloid_quadrupedal_static.ogv" thumbnail_filename="bioloid_quadrupedal_static.png">
                 <link url="http://www.youtube.com/watch?v=8jDYKBuRWvg">
@@ -237,7 +237,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/systools/clonefinder.git"
-                        weburl="http://git.tuxfamily.org/systools/clonefinder/"
+                        weburl="http://git.tuxfamily.org/systools/clonefinder.git/tree/"
                         type="git" />
         </item>
 
@@ -251,7 +251,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/systools/binviewer.git"
-                        weburl="http://git.tuxfamily.org/systools/binviewer/"
+                        weburl="http://git.tuxfamily.org/systools/binviewer.git/tree/"
                         type="git" />
             <picture filename="binviewer_1.png" />
             <picture filename="binviewer_2.png" />
@@ -277,7 +277,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/dspp/dspp.git"
-                        weburl="http://git.tuxfamily.org/dspp/dspp/"
+                        weburl="http://git.tuxfamily.org/dspp/dspp.git/tree/"
                         type="git" />
         </item>
 
@@ -292,7 +292,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/scripts.git"
-                        weburl="http://git.tuxfamily.org/jdhp/scripts/"
+                        weburl="http://git.tuxfamily.org/jdhp/scripts.git/tree/"
                         type="git" />
             <picture filename="latex2png_2.png" />
         </item>
@@ -418,7 +418,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/demos/demos.git"
-                        weburl="http://git.tuxfamily.org/demos/demos/"
+                        weburl="http://git.tuxfamily.org/demos/demos.git/tree/"
                         type="git" />
             <picture filename="demos.png" />
         </item>
@@ -432,7 +432,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhpcad/jdhpcad.git"
-                        weburl="http://git.tuxfamily.org/jdhpcad/jdhpcad/"
+                        weburl="http://git.tuxfamily.org/jdhpcad/jdhpcad.git/tree/"
                         type="git" />
             <picture filename="scad.png" />
         </item>
@@ -447,7 +447,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhppcb/jdhppcb.git"
-                        weburl="http://git.tuxfamily.org/jdhppcb/jdhppcb/"
+                        weburl="http://git.tuxfamily.org/jdhppcb/jdhppcb.git/tree/"
                         type="git" />
             <picture filename="pcb.png" />
         </item>
@@ -461,7 +461,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/pygames/pypong.git"
-                        weburl="http://git.tuxfamily.org/pygames/pypong/"
+                        weburl="http://git.tuxfamily.org/pygames/pypong.git/tree/"
                         type="git" />
             <picture filename="pypong.png" />
         </item>
@@ -475,7 +475,7 @@
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/jdhp.git"
-                        weburl="http://git.tuxfamily.org/jdhp/jdhp/"
+                        weburl="http://git.tuxfamily.org/jdhp/jdhp.git/tree/"
                         type="git" />
         </item>
     </group>

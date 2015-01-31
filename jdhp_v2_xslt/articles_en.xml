@@ -28,7 +28,7 @@
             <a href="bib/bibliography_jeremie_decock.bib">List of my publications</a> (BibTex format).
         </p>
         <p>
-            My academic papers are also available on <a href="http://hal.inria.fr/search/index">HAL - Inria</a> (open archive).
+            My academic papers are also available on <a href="https://hal.inria.fr/search/index/q/*/authFullName_t/J%C3%A9r%C3%A9mie+Decock">HAL - Inria</a> (open archive).
         </p>
     </note>
 
@@ -150,7 +150,7 @@
                 April 2014.
             </bib>
 
-            <open_archive url="http://hal.inria.fr/index.php?halsid=ophffv3l29ehc0f6frbmbk16a7&#38;view_this_doc=hal-00958192&#38;version=1" label="HAL" />
+            <open_archive url="http://hal.inria.fr/hal-00958192" label="HAL" />
 
             <pdf url="http://hal.inria.fr/docs/00/95/81/92/PDF/dpsandmpc.pdf" label="Article (PDF)" />
         </item>
@@ -180,7 +180,7 @@
                 August 2013. Springer.
             </bib>
 
-            <open_archive url="http://hal.inria.fr/index.php?halsid=ophffv3l29ehc0f6frbmbk16a7&#38;view_this_doc=hal-00907671&#38;version=1" label="HAL" />
+            <open_archive url="http://hal.inria.fr/hal-00907671" label="HAL" />
 
             <pdf url="http://hal.inria.fr/docs/00/90/76/71/PDF/linearConvergence.pdf" label="Article (PDF)" />
 
@@ -208,7 +208,7 @@
                 Adelaide, Australie, February 2013.
             </bib>
 
-            <open_archive url="http://hal.inria.fr/index.php?halsid=ophffv3l29ehc0f6frbmbk16a7&#38;view_this_doc=hal-00755663&#38;version=1" label="HAL" />
+            <open_archive url="http://hal.inria.fr/hal-00755663" label="HAL" />
 
             <pdf url="http://hal.inria.fr/docs/00/75/56/63/PDF/foga006-decock.pdf" label="Article (PDF)" />
 
@@ -247,7 +247,7 @@
                 evolutionary computation (GECCO'11)</em>, pages 1235-1242, Dublin, Irlande, 2011.
             </bib>
     
-            <open_archive url="http://hal.inria.fr/index.php?halsid=ophffv3l29ehc0f6frbmbk16a7&#38;view_this_doc=hal-00703760&#38;version=1" label="HAL" />
+            <open_archive url="http://hal.inria.fr/hal-00703760" label="HAL" />
 
             <pdf url="http://www.isir.upmc.fr/files/2011ACTI1945.pdf" label="Article (PDF)" />
 
@@ -283,8 +283,6 @@
 
             <!--
             <open_archive url="http://hal.inria.fr/hal-00997562" label="HAL" />
-
-            <pdf url="http://hal.inria.fr/docs/00/99/75/62/PDF/slides.pdf" label="Slides (PDF)" />
             -->
 
             <pdf filename="mcts_slides.pdf" label="Slides (PDF)" />

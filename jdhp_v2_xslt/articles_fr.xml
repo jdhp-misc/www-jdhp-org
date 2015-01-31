@@ -28,7 +28,7 @@
             Pour obtenir la liste de mes publications académiques, cliquez <a href="bib/bibliography_jeremie_decock.bib">ici</a> (format BibTex).
         </p>
         <p>
-            Mes publications scientifiques sont également disponibles sur <a href="http://hal.inria.fr/search/index">HAL - Inria</a> (archive ouverte).
+            Mes publications scientifiques sont également disponibles sur <a href="https://hal.inria.fr/search/index/q/*/authFullName_t/J%C3%A9r%C3%A9mie+Decock">HAL - Inria</a> (archive ouverte).
         </p>
     </note>
 
@@ -128,7 +128,7 @@
                 298-310, Rouen, France, 2011.
             </bib>
     
-            <open_archive url="http://hal.inria.fr/index.php?halsid=ophffv3l29ehc0f6frbmbk16a7&#38;view_this_doc=hal-00703774&#38;version=1" label="HAL" />
+            <open_archive url="http://hal.inria.fr/hal-00703774" label="HAL" />
 
             <pdf url="http://www.isir.upmc.fr/files/2011ACTN1978.pdf" label="Article (PDF)" />
         </item>
@@ -161,7 +161,7 @@
             <pdf filename="rankboost_slides.pdf" label="Slides (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/rankboost"
                         type="git" />
         </item>
 
@@ -184,7 +184,7 @@
             <pdf filename="ae_neurocomp.pdf" label="Slides (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/ae_neurocomp"
                         type="git" />
         </item>
 
@@ -214,6 +214,10 @@
             </bib>
 
             <pdf filename="noveltysearch_slides.pdf" label="Slides (PDF)" />
+
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/noveltysearch"
+                        type="git" />
         </item>
 
         <item id="robocup" license="cc-by-sa">
@@ -240,7 +244,7 @@
             <pdf filename="robocup.pdf" label="Slides (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/robocup"
                         type="git" />
         </item>
 
@@ -269,6 +273,10 @@
             </bib>
 
             <pdf filename="learning_to_tag_slides.pdf" label="Slides (PDF)" />
+
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/learning_to_tag"
+                        type="git" />
         </item>
 
     </group>
@@ -320,12 +328,9 @@
             <pdf filename="supports_cours_iut_orsay/c_cycle_v2.pdf" label="Chaîne de compilation en C avec GCC (PDF)" />
             -->
 
-            <pdf url="http://git.tuxfamily.org/jdhp/articles/?p=jdhp/articles.git;a=snapshot;h=ecf9710db17c5469795e44e217da0ed334612695;sf=tgz" label="Tous les supports de cours (OpenOffice)" />
-
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/supports_cours_iut_orsay"
                         type="git" />
-                    <!-- weburl="http://git.tuxfamily.org/jdhp/articles/?p=jdhp/articles.git;a=tree;f=supports_cours_iut_orsay;hb=HEAD" -->
         </item>
 
     </group>
@@ -377,7 +382,7 @@
             <pdf filename="les_wikis_en_entreprise.pdf" label="Article (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/les_wikis_en_entreprise"
                         type="git" />
 
             <link url="hevea/les_wikis_en_entreprise/les_wikis_en_entreprise.html">
@@ -431,7 +436,7 @@
             <pdf filename="droit_du_logiciel.pdf" label="Slides (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/droit_du_logiciel"
                         type="git" />
         </item>
 
@@ -450,7 +455,7 @@
             <pdf filename="brevets.pdf" label="Slides (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/brevets"
                         type="git" />
         </item>
 
@@ -480,7 +485,7 @@
             <pdf filename="droits_auteurs.pdf" label="Article (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles/"
+                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/droits_auteurs"
                         type="git" />
 
             <link url="hevea/droits_auteurs/droits_auteurs.html">
