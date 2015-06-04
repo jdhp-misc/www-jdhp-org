@@ -126,9 +126,33 @@
         <item id="pyarm" license="MIT">
             <label>PyArm</label>
             <desc>
-                Un simulateur utilisé dans le cadre d'expériences sur
+                Pyarm est un simulateur utilisé dans le cadre d'expériences sur
                 l'apprentissage du contrôle moteur humain avec un modèle de bras
                 anthropomorphique.
+                <br />
+
+                Le modèle physique utilisé est décrit dans <a href="http://download.tuxfamily.org/jdhp/pdf/pyarm.pdf">ce rapport technique</a>.
+                <br />
+                <br />
+
+                Pyarm a été utilisé à l'<a href="http://www.isir.upmc.fr/">Institut des Systèmes Intelligents
+                et de Robotique</a> pour conduire des expériences sur les systèmes adaptatifs.
+                Ces expériences sont décrites dans l'article suivant <em>"Learning
+                cost-efficient control policies with XCSF: generalization capabilities and
+                further improvement"</em> par Didier Marin, Jérémie Decock, Lionel Rigoux and Olivier
+                Sigaud.
+                <br />
+
+                Cette contribution scientifique a été publié dans les
+                <em>"Actes de la 13e conférence annuelle sur le calcul génétique et évolutionnaire (GECCO'11)"</em>,
+                la principale conférence internationale sur le calcul génétique et évolutionnaire.
+                <br />
+
+                Ces expériences ont également été présentées en français aux <em>Sixièmes journées francophones MFI/JFPDA</em>.
+                <br />
+                
+                Ces articles peuvent être téléchargés <a href="http://www.jdhp.org/articles_en.html#XCSF">ici</a>
+                pour la version anglaise et <a href="http://www.jdhp.org/articles_fr.html#XCSF">là</a> pour la version française.
             </desc>
 
             <pdf filename="pyarm.pdf" label="Documentation technique (PDF)" />
@@ -151,7 +175,7 @@
             </video>
 
             <link url="http://github.com/jeremiedecock/pyarm">
-                <label>Github</label>
+                <label>Suivre ce projet sur Github</label>
             </link>
             <link url="http://code.google.com/p/pyarm/">
                 <label>Google Code</label>

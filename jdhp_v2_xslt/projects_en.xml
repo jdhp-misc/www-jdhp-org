@@ -115,8 +115,31 @@
         <item id="pyarm" license="MIT">
             <label>PyArm</label>
             <desc>
+                <!--
                 Pyarm is a simulator used for experiments on human motor
                 control with an anthropomorphic arm model.
+                -->
+                Pyarm is a physics simulator which provides an anthropomorphic arm model for
+                experiments on human like motor control. 
+                <br />
+
+                The arm model is described in the following <a href="http://download.tuxfamily.org/jdhp/pdf/pyarm.pdf">technical report</a> (written in
+                French).
+                <br />
+                <br />
+
+                Pyarm has been used at the <a href="http://www.isir.upmc.fr/">Institute for Intelligent Systems and Robotics</a>
+                for experiments on adaptive systems.
+                These experiments are described in the following academic paper <em>"Learning
+                cost-efficient control policies with XCSF: generalization capabilities and
+                further improvement"</em> by Didier Marin, Jérémie Decock, Lionel Rigoux and Olivier
+                Sigaud.
+                <br />
+                This scientific contribution has been published in the <em>"Proceedings of the 13th
+                    annual conference on Genetic and evolutionary computation (GECCO'11)"</em>, the main
+                international conference on genetic and evolutionary computation.
+                <br />
+                This paper can be downloaded <a href="http://www.jdhp.org/articles_en.html#XCSF">here</a>.
             </desc>
 
             <pdf filename="pyarm.pdf" label="Documentation (in French) (PDF)" />
@@ -139,7 +162,7 @@
             </video>
 
             <link url="http://github.com/jeremiedecock/pyarm">
-                <label>Github</label>
+                <label>Follow this project on Github</label>
             </link>
             <link url="http://code.google.com/p/pyarm/">
                 <label>Google Code</label>

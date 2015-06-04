@@ -99,6 +99,27 @@
             Academic Papers in Artificial Intelligence and Applied Maths 
         </label>
 
+        <!--
+        TODO: add papier EA2015 ???
+        "Evolutionary Cutting Planes"
+         -->
+
+        <!--
+        <item id="variance_reduction" license="">
+            <label>
+                Variance Reduction in Population-Based Optimization: Application to Unit Commitment
+            </label>
+            
+            To be published in "GECCO'15: 2015 Genetic and Evolutionary Computation Conference Companion Proceedings"
+
+        TODO: add http://cms.acm.org/forms/prform.cfm?confID=020500051C0001030904&proceedingID=060D0503&paperID=0400&sequence=1
+        Title of non-ACM work:  Variance Reduction in Population-Based Optimization: Application to Unit Commitment
+        Submission ID:  pap187
+        Authors:    Jérémie Decock (TAO; INRIA); Jialin Liu (TAO; INRIA); Olivier Teytaud (TAO; INRIA)
+        Type of material:   Poster; supplemental material(s)
+        Title of ACM publication:   GECCO'15: 2015 Genetic and Evolutionary Computation Conference Companion Proceedings
+         -->
+
         <item id="dvs" license="">
             <label>
                 An Introduction to Direct Value Search
