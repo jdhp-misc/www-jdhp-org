@@ -56,7 +56,8 @@
                 quoi il passe en mode exploitation.
             </desc>
             <debian_package filename="jwumpus_1.0-1_all.deb" arch="all" />
-            <archive url="http://git.tuxfamily.org/jwumpus/jwumpus/?p=jwumpus/jwumpus.git;a=snapshot;h=HEAD;sf=tgz">
+            <!-- http://git.tuxfamily.org/jwumpus/jwumpus.git/snapshot/jwumpus-master.zip -->
+            <archive url="http://git.tuxfamily.org/jwumpus/jwumpus.git/refs/">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
@@ -446,7 +447,7 @@
                     </dd>
                 </dl>
             </desc>
-            <archive url="http://git.tuxfamily.org/demos/demos/?p=demos/demos.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/demos/demos.git/snapshot/demos-master.zip">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/demos/demos.git"
@@ -460,7 +461,7 @@
             <desc>
                 Une collection de plans de conception d'objets imprimables en 3 dimensions (réalisés avec  <a href="http://www.openscad.org/">OpenSCAD</a>).
             </desc>
-            <archive url="http://git.tuxfamily.org/jdhpcad/jdhpcad/?p=jdhpcad/jdhpcad.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/jdhpcad/jdhpcad.git/snapshot/jdhpcad-master.zip">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhpcad/jdhpcad.git"
@@ -474,7 +475,7 @@
             <desc>
                 Une collection de plans de conception de circuits imprimés prêts à être fabriqués (réalisés avec <a href="http://www.kicad-pcb.org">KiCad</a>).
             </desc>
-            <archive url="http://git.tuxfamily.org/jdhppcb/jdhppcb/?p=jdhppcb/jdhppcb.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/jdhppcb/jdhppcb.git/snapshot/jdhppcb-master.zip">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhppcb/jdhppcb.git"
@@ -504,7 +505,7 @@
             <desc>
                 Le code source et les scripts de compilation du site jdhp.org (écrit en XML/XSLT/CSS).
             </desc>
-            <archive url="http://git.tuxfamily.org/jdhp/jdhp/?p=jdhp/jdhp.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/jdhp/jdhp.git/snapshot/jdhp-master.zip">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/jdhp.git"

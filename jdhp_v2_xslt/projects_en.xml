@@ -45,7 +45,9 @@
                 <em>"Artificial Intelligence"</em> by Stuart Russell and Peter Norvig).
             </desc>
             <debian_package filename="jwumpus_1.0-1_all.deb" arch="all" />
-            <archive url="http://git.tuxfamily.org/jwumpus/jwumpus/?p=jwumpus/jwumpus.git;a=snapshot;h=HEAD;sf=tgz">
+            <!-- http://git.tuxfamily.org/jwumpus/jwumpus.git/snapshot/jwumpus-master.zip -->
+            <!-- http://git.tuxfamily.org/jwumpus/jwumpus.git/snapshot/jwumpus-1.0-rc2.zip -->
+            <archive url="http://git.tuxfamily.org/jwumpus/jwumpus.git/refs/">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
@@ -414,7 +416,7 @@
                     </dd>
                 </dl>
             </desc>
-            <archive url="http://git.tuxfamily.org/demos/demos/?p=demos/demos.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/demos/demos.git/snapshot/demos-master.zip">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/demos/demos.git"
@@ -428,7 +430,7 @@
             <desc>
                 A collection of design files for printable 3D objects (made with <a href="http://www.openscad.org/">OpenSCAD</a>).
             </desc>
-            <archive url="http://git.tuxfamily.org/jdhpcad/jdhpcad/?p=jdhpcad/jdhpcad.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/jdhpcad/jdhpcad.git/snapshot/jdhpcad-master.zip">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhpcad/jdhpcad.git"
@@ -443,7 +445,7 @@
                 A collection of <a href="http://en.wikipedia.org/wiki/Printed_circuit_board">PCB</a> (Printed Circuit Board) design files ready to be manufactured (made with <a href="http://www.kicad-pcb.org">KiCad</a> <a href="http://en.wikipedia.org/wiki/Electronic_design_automation">EDA</a>).
                 <!-- Each realization contain the KiCad source files (which define the PCB), the Gerber files for manufacturing and the printable schematic and PCB in SVG files. -->
             </desc>
-            <archive url="http://git.tuxfamily.org/jdhppcb/jdhppcb/?p=jdhppcb/jdhppcb.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/jdhppcb/jdhppcb.git/snapshot/jdhppcb-master.zip">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhppcb/jdhppcb.git"
@@ -471,7 +473,7 @@
             <desc>
                 The source code of this web site (written in XML/XSLT/CSS).
             </desc>
-            <archive url="http://git.tuxfamily.org/jdhp/jdhp/?p=jdhp/jdhp.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/jdhp/jdhp.git/snapshot/jdhp-master.zip">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/jdhp.git"
