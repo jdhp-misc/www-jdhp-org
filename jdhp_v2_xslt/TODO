@@ -1,5 +1,38 @@
 TODO List
 
+DEV URGENT
+- Les sites non "mobile friendly" seront bientôt moins bien classés dans google search.
+  JDHP n'est pas "mobile friendly" d'après l'outil de test de Google: https://www.google.com/webmasters/tools/mobile-friendly/?url=www.jdhp.org
+  L'annonce officielle : http://googlewebmastercentral.blogspot.fr/2015/02/finding-more-mobile-friendly-search.html
+  La page d'aide de google pour aider les webmaster à rendre leur site "mobile friendly" : https://developers.google.com/webmasters/mobile-sites/get-started/?utm_source=wmc-blog&utm_medium=referral&utm_campaign=mobile-friendly
+    MUST SEE: https://developers.google.com/web/fundamentals/getting-started/
+              https://developers.google.com/webmasters/mobile-sites/mobile-seo/?hl=fr
+  Dans la presse française: http://www.lefigaro.fr/secteur/high-tech/2015/04/21/01007-20150421ARTFIG00199-google-declenche-un-mobilegeddon-en-changeant-l-ordre-de-ses-resultats.php
+                            Google Search : soyez « mobile-friendly » ou déclassé: http://www.linformatique.org/google-search-soyez-mobile-friendly-ou-declasse/
+  Cf. aussi la FAQ très intéressante : http://searchengineland.com/tomorrow-is-mobilegeddon-are-you-ready-for-the-google-mobile-friendly-update-219291
+- Ajout d'un sitemap : https://support.google.com/webmasters/answer/156184
+- Ajout de données structurées : https://www.google.com/webmasters/tools/structured-data?hl=fr&siteUrl=http://www.jdhp.org/&authuser=0
+- Ajour de marqueurs de données : https://www.google.com/webmasters/tools/data-highlighter?hl=fr&siteUrl=http://www.jdhp.org/&authuser=0
+
+SEO
+- https://developers.google.com/webmasters/mobile-sites/mobile-seo/common-mistakes/
+- conseils de http://searchengineland.com : http://searchengineland.com/seotable
+
+- https://www.google.com/webmasters/tools/home?hl=fr
+  Bénéficiez de données, d'outils et de diagnostics pour un site sans erreurs et facilement explorable par Google. Voici quelques conseils :
+
+      Vérifiez l'état de santé de votre site pour traiter les éventuels problèmes détectés par Google.
+      Identifiez les tendances en termes de trafic issu de la recherche sur votre site et découvrez comment les internautes trouvent celui-ci.
+      Optimisez votre site pour qu'il soit mieux analysé et représenté dans les résultats de recherche Google.
+
+    Outils pour les webmasters
+    Recommandée : Importer un fichier HTML Importez un fichier HTML sur votre site.
+    1. Téléchargez ce fichier de validation HTML [googleddb024b403704a98.html] .
+    2. Transférez le fichier vers http://www.jdhp.org/.
+    3. Confirmez la réussite du transfert en accédant au site http://www.jdhp.org/googleddb024b403704a98.html dans votre navigateur.
+    4. Cliquez sur "Valider" ci-dessous.
+    Pour conserver votre statut de propriétaire confirmé, ne supprimez pas le fichier HTML, même une fois la validation effectuée.
+
 DEV
 - ajouter un fichier .htaccess et corriger les erreurs 404 (cf. http://stats.tuxfamily.org/awstats.pl?config=jdhp.org&framename=mainright&output=errors404) avec des "permanent-redirect" dans le fichier .htaccess
 x corriger les erreurs du W3C validator !
@@ -72,6 +105,7 @@ x jdhp sur LRI -> ajouter htaccess permanent redirect vers jdhp.org
 x Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
 x add a bib file with my publications
 * HeVeA: modifier le CSS (s'inspirer de https://scaron.info/doc/intro-arbres-decision/) et régler le pb avec les images + ajouter une cible "hevea" dans les makefiles (nottament dans les snippets LaTeX) -> cf. http://hevea.inria.fr/doc/manual002.html
+* Ajouter compte Github sur la page d'accueil
 * ajouter des mini tuto en IA -> 1 document = 1 algo (contexte + algo + explications + exemple d'implémentation python) => rester simple et concis => une sorte de snippet appliquée algos (traite d'un sujet précis)
   "tutorial.tex" (enrobage document, meta, packages, etc.) + "saes.tex" (contenu réutilisable dans des articles)
   faire en parallèle des vrais articles qui réutilisent ces "snippets" (include fichier .tex)
