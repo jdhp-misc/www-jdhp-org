@@ -459,7 +459,7 @@
             <desc>
                 An implementation of the famous game <em>Pong</em>.
             </desc>
-            <archive url="http://git.tuxfamily.org/pygames/pypong/?p=pygames/pypong.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/pygames/pypong.git/refs/">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/pygames/pypong.git"
