@@ -67,7 +67,7 @@
                 <a href="http://jason.sourceforge.net/Jason/Description.html">Jason</a>
                 platform.
             </desc>
-            <archive url="http://git.tuxfamily.org/chef/chef/?p=chef/chef.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/chef/chef.git/refs/">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/chef/chef.git"
@@ -84,7 +84,7 @@
                 artificial learning framework and a black box non-linear noisy optimization
                 framework.
             </desc>
-            <archive url="http://git.tuxfamily.org/aiscripts/python/?p=aiscripts/python.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/aiscripts/python.git/snapshot/python-master.zip">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/aiscripts/python.git"
