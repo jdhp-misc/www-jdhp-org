@@ -335,6 +335,17 @@ h3 {
     text-align       : left;
 }
 
+/*** the headerlinks near h2 and h3 ***/
+
+h2 a.headerlink, h3 a.headerlink {
+    color            : #eee;
+    font-size        : 1em;
+}
+
+h2 a:hover.headerlink, h3 a:hover.headerlink {
+    color            : #197cc1;
+}
+
 /* ************************************************************************* */
 /*                                HOME PAGE                                  */
 /* ************************************************************************* */

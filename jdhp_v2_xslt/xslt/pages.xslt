@@ -131,6 +131,7 @@
                     </xsl:choose>
 
                     <!-- CONTENTS -->
+                    <!-- This define the table of content (table des matières) at the top of the "projects", "articles" and "tutorials" pages. -->
                     <!-- if number of groups > 0 -->
                     <xsl:if test="/page/group">
                         <div id="page_contents">
@@ -147,11 +148,13 @@
                     <xsl:for-each select="/page/group">
                         <h2 id="{@id}">
                             <xsl:value-of select="label" />
+                            &#160; <a class="headerlink" title="Permalink to this headline" href="{/page/@id}_{/page/@lang}.html#{@id}">&#182;</a>
                         </h2>
 
                         <xsl:for-each select="./item">
                             <h3 id="{@id}">
                                 <xsl:value-of select="label" />
+                                &#160; <a class="headerlink" title="Permalink to this headline" href="{/page/@id}_{/page/@lang}.html#{@id}">&#182;</a>
                             </h3>
 
                             <!-- PICTURES -->
