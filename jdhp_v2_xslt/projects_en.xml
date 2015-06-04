@@ -235,7 +235,7 @@
                 Finds duplicated files and directories.
             </desc>
             <debian_package filename="clonefinder_1.0-1_all.deb" arch="all" />
-            <archive url="http://git.tuxfamily.org/systools/clonefinder/?p=systools/clonefinder.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/systools/clonefinder.git/refs/">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/systools/clonefinder.git"
@@ -249,7 +249,7 @@
                 Creates a graphical representation of a binary file.
             </desc>
             <debian_package filename="binviewer_0.2-1_all.deb" arch="all" />
-            <archive url="http://git.tuxfamily.org/systools/binviewer/?p=systools/binviewer.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/systools/binviewer.git/refs/">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/systools/binviewer.git"
