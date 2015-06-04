@@ -104,7 +104,12 @@ x gitweb: afficher directement l'arbre plutôt que les commit -> append "?a=tree
 x jdhp sur LRI -> ajouter htaccess permanent redirect vers jdhp.org
 x Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
 x add a bib file with my publications
+* Reécrire la description du projet "pyarm" -> mentionner les articles, expliquer succintement avec des mots simples le principe (scientifique) et les résultats.
 * Faire une unique vidéo de pyarm en 2 parties : "learning phase : ... (expliquer que les trajectoires sont calculées avec ...)" puis "generalization phase: (expliquer qu'on utilise le controleur appris ...)"
+  -> pour le texte: police blanche sur fond noir (s'inspirer des vidéos de Phymec (Bullet Physics) avec transition douce
+  -> apprendre à créer des vidéos HD (720p) de qualité sur youtube (voir même full HD si possible)...
+     https://support.google.com/youtube/answer/1722171?hl=en
+     https://productforums.google.com/forum/#!topic/youtube/LMN2pL2oNIs
 * HeVeA: modifier le CSS (s'inspirer de https://scaron.info/doc/intro-arbres-decision/) et régler le pb avec les images + ajouter une cible "hevea" dans les makefiles (nottament dans les snippets LaTeX) -> cf. http://hevea.inria.fr/doc/manual002.html
 * Ajouter compte Github sur la page d'accueil
 * ajouter des mini tuto en IA -> 1 document = 1 algo (contexte + algo + explications + exemple d'implémentation python) => rester simple et concis => une sorte de snippet appliquée algos (traite d'un sujet précis)
