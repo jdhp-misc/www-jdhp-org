@@ -187,6 +187,9 @@
                 href="http://www.robotis.com">Robotis</a>.  LibDynamixel est
                 écrit en C et fonctionne sur les systèmes Gnu/Linux.
             </desc>
+            <archive url="http://git.tuxfamily.org/robotics/libdynamixel.git/refs/">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/robotics/libdynamixel.git"
                         weburl="http://git.tuxfamily.org/robotics/libdynamixel.git/tree/"
                         type="git" />
@@ -196,9 +199,12 @@
         <item id="pydynamixel" license="MIT">
             <label>PyDynamixel</label>
             <desc>
-                PyDynamixel est une implémentation écrite en Python (pur) de la
-                libdynamixel.
+                PyDynamixel est une implémentation écrite en Python de la
+                <a href="projects_fr.html#libdynamixel">libdynamixel</a>.
             </desc>
+            <archive url="http://git.tuxfamily.org/robotics/pydynamixel.git/refs/">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/robotics/pydynamixel.git"
                         weburl="http://git.tuxfamily.org/robotics/pydynamixel.git/tree/"
                         type="git" />
@@ -211,6 +217,9 @@
                 <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel
                 AX-12</a>.
             </desc>
+            <archive url="http://git.tuxfamily.org/robotics/dtools.git/refs/">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/robotics/dtools.git"
                         weburl="http://git.tuxfamily.org/robotics/dtools.git/tree/"
                         type="git" />
@@ -224,6 +233,9 @@
                 contrôler un <a
                 href="http://www.robotis.com/xe/bioloid_en">bioloid</a>.
             </desc>
+            <archive url="http://git.tuxfamily.org/robotics/bioloid.git/refs/">
+                <label>Sources</label>
+            </archive>
             <repository url="git://git.tuxfamily.org/gitroot/robotics/bioloid.git"
                         weburl="http://git.tuxfamily.org/robotics/bioloid.git/tree/"
                         type="git" />
