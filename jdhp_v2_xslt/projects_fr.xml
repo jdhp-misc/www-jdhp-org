@@ -135,9 +135,9 @@
 
             <debian_package filename="pyarm_0.1.3-1_all.deb" arch="all" />
 
-            <repository url="http://pyarm.googlecode.com/svn/trunk/"
-                        weburl="http://code.google.com/p/pyarm/source/browse/"
-                        type="svn" />
+            <repository url="git@github.com:jeremiedecock/pyarm.git"
+                        weburl="https://github.com/jeremiedecock/pyarm"
+                        type="git" />
 
             <video filename="pyarm_generalization.ogv" thumbnail_filename="pyarm_generalization.png">
                 <link url="http://www.youtube.com/watch?v=VjaBMbMt5Cw">
@@ -149,6 +149,10 @@
                     <label>Regarder sur Youtube</label>
                 </link>
             </video>
+
+            <link url="http://github.com/jeremiedecock/pyarm">
+                <label>Github</label>
+            </link>
             <link url="http://code.google.com/p/pyarm/">
                 <label>Google Code</label>
             </link>
