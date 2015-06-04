@@ -155,21 +155,18 @@
         </item>
 
         <item id="botsim" license="MIT">
-            <label>Botsim</label>
+            <label>Botsim.org</label>
             <desc>
                 Botsim est un simulateur de robots utilisé dans le cadre de
                 travaux sur les algorithmes génétiques. La physique est simulée
                 via la librairie opensource Bullet.
             </desc>
-            <archive url="http://git.tuxfamily.org/botsim/botsim/?p=botsim/botsim.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/botsim/botsim.git/refs/">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/botsim/botsim.git"
                         weburl="http://git.tuxfamily.org/botsim/botsim.git/tree/"
                         type="git" />
-            <repository url="svn://svn.tuxfamily.org/svnroot/botsim/isir"
-                        weburl="http://svnweb.tuxfamily.org/listing.php?repname=botsim%2Fisir&amp;amp;path=%2F&amp;amp;"
-                        type="svn" />
             <picture filename="botsim_1.png" />
             <picture filename="botsim_2.png" />
             <picture filename="botsim_3.png" />

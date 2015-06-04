@@ -138,20 +138,17 @@
         </item>
 
         <item id="botsim" license="MIT">
-            <label>Botsim</label>
+            <label>Botsim.org</label>
             <desc>
                 A robots simulator mainly used to test some evolutionary
                 algorithms.
             </desc>
-            <archive url="http://git.tuxfamily.org/botsim/botsim/?p=botsim/botsim.git;a=snapshot;h=HEAD;sf=tgz">
+            <archive url="http://git.tuxfamily.org/botsim/botsim.git/refs/">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/botsim/botsim.git"
                         weburl="http://git.tuxfamily.org/botsim/botsim.git/tree/"
                         type="git" />
-            <repository url="svn://svn.tuxfamily.org/svnroot/botsim/isir"
-                        weburl="http://svnweb.tuxfamily.org/listing.php?repname=botsim%2Fisir&amp;amp;path=%2F&amp;amp;"
-                        type="svn" />
             <picture filename="botsim_1.png" />
             <picture filename="botsim_2.png" />
             <picture filename="botsim_3.png" />
