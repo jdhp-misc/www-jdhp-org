@@ -119,6 +119,8 @@
                 control with an anthropomorphic arm model.
             </desc>
 
+            <pdf filename="pyarm.pdf" label="Documentation (in French) (PDF)" />
+
             <debian_package filename="pyarm_0.1.3-1_all.deb" arch="all" />
 
             <repository url="git@github.com:jeremiedecock/pyarm.git"
