@@ -94,12 +94,17 @@
                 dédiée à l'apprentissage artificiel et une bibliothèque
                 d'optimisation stochastique non-linéaire.
             </desc>
+
             <archive url="http://git.tuxfamily.org/aiscripts/python.git/snapshot/python-master.zip">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/aiscripts/python.git"
                         weburl="http://git.tuxfamily.org/aiscripts/python.git/tree/"
                         type="git" />
+
+            <link url="http://github.com/jeremiedecock/pyai">
+                <label>Suivre ce projet sur Github</label>
+            </link>
         </item>
 
         <item id="perceptron_php" license="MIT">
@@ -198,15 +203,21 @@
                 travaux sur les algorithmes génétiques. La physique est simulée
                 via la librairie opensource Bullet.
             </desc>
+
             <archive url="http://git.tuxfamily.org/botsim/botsim.git/refs/">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/botsim/botsim.git"
                         weburl="http://git.tuxfamily.org/botsim/botsim.git/tree/"
                         type="git" />
+
             <picture filename="botsim_1.png" />
             <picture filename="botsim_2.png" />
             <picture filename="botsim_3.png" />
+
+            <link url="http://github.com/jeremiedecock/botsim">
+                <label>Suivre ce projet sur Github</label>
+            </link>
         </item>
 
         <item id="libdynamixel" license="MIT">
@@ -307,13 +318,19 @@
                 Recherche les fichiers et les répertoires dupliqués dans une
                 arborescence.
             </desc>
+
             <debian_package filename="clonefinder_1.0-1_all.deb" arch="all" />
+
             <archive url="http://git.tuxfamily.org/systools/clonefinder.git/refs/">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/systools/clonefinder.git"
                         weburl="http://git.tuxfamily.org/systools/clonefinder.git/tree/"
                         type="git" />
+
+            <link url="http://github.com/jeremiedecock/clonefinder">
+                <label>Suivre ce projet sur Github</label>
+            </link>
         </item>
 
         <item id="binviewer" license="MIT">
@@ -498,12 +515,18 @@
                     </dd>
                 </dl>
             </desc>
+
             <archive url="http://git.tuxfamily.org/demos/demos.git/snapshot/demos-master.zip">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/demos/demos.git"
                         weburl="http://git.tuxfamily.org/demos/demos.git/tree/"
                         type="git" />
+
+            <link url="http://github.com/jeremiedecock/snippets">
+                <label>Suivre ce projet sur Github</label>
+            </link>
+
             <picture filename="demos.png" />
         </item>
 
