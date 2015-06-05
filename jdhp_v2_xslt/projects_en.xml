@@ -146,8 +146,17 @@
 
             <debian_package filename="pyarm_0.1.3-1_all.deb" arch="all" />
 
+            <!--
             <repository url="git@github.com:jeremiedecock/pyarm.git"
                         weburl="https://github.com/jeremiedecock/pyarm"
+                        type="git" />
+            -->
+
+            <archive url="http://git.tuxfamily.org/botsim/pyarm.git/refs/">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/botsim/pyarm.git"
+                        weburl="http://git.tuxfamily.org/botsim/pyarm.git/tree/"
                         type="git" />
 
             <video filename="pyarm_generalization.ogv" thumbnail_filename="pyarm_generalization.png">
