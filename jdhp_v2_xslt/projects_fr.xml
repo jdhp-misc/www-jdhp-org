@@ -355,12 +355,17 @@
 
                 DSPP est écrit en Python et distribué selon la licence MIT.
             </desc>
+
             <archive url="http://git.tuxfamily.org/dspp/dspp.git/refs/">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/dspp/dspp.git"
                         weburl="http://git.tuxfamily.org/dspp/dspp.git/tree/"
                         type="git" />
+
+            <link url="http://github.com/jeremiedecock/dspp">
+                <label>Suivre ce projet sur Github</label>
+            </link>
         </item>
 
         <item id="latex2png" license="MIT">

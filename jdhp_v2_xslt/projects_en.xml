@@ -314,23 +314,28 @@
             <desc>
                 DSPP is a presentation software (such as Microsoft PowerPoint,
                 Apple Keynote and Libre Office Impress).
-                It can show PDF files on multiple screens.
+                It can show simultaneously two PDF files on multiple screens.
 
                 It uses Keynote-like multi-monitor output to provide meta
                 information to the speaker.
-                Thus, DSPP can show a normal presentation window on one screen
-                (usually a video projector) and personal notes for the speaker
-                on the other (usually a laptop screen used for the
+                Thus, DSPP can show a normal presentation window on the first
+                screen (usually a video projector) and personal notes for the
+                speaker on the second one (usually a laptop screen used for the
                 presentation).
 
                 DSPP is written in Python and released under the MIT license.
             </desc>
+
             <archive url="http://git.tuxfamily.org/dspp/dspp.git/refs/">
                 <label>Sources</label>
             </archive>
             <repository url="git://git.tuxfamily.org/gitroot/dspp/dspp.git"
                         weburl="http://git.tuxfamily.org/dspp/dspp.git/tree/"
                         type="git" />
+
+            <link url="http://github.com/jeremiedecock/dspp">
+                <label>Follow this project on Github</label>
+            </link>
         </item>
 
         <item id="latex2png" license="MIT">
