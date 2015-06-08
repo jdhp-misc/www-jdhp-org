@@ -39,95 +39,13 @@
     
     <!-- ############################################################ -->
 
-    <group id="aiam">
+    <group id="highlight">
         <label>
-            Intelligence Artificielle et Mathématiques Appliquées
+            Principaux Projets Open Source
         </label>
 
-        <item id="jwumpus" license="MIT">
-            <label>JWumpus</label>
-            <desc>
-                JWumpus est un exemple d'utilisation de la plate-forme <a
-                href="http://jade.tilab.com">Jade</a> et de l'algorithme de
-                Q-Learning (apprentissage par renforcement) pour résoudre le
-                problème du Wumpus (tel que présenté dans le livre "Intelligence
-                Artificielle" de Russell et Norvig).  L'algorithme explore
-                l'espace des états-actions jusqu'à la 2000e itération, après
-                quoi il passe en mode exploitation.
-            </desc>
-            <debian_package filename="jwumpus_1.0-1_all.deb" arch="all" />
-            <!-- http://git.tuxfamily.org/jwumpus/jwumpus.git/snapshot/jwumpus-master.zip -->
-            <archive url="http://git.tuxfamily.org/jwumpus/jwumpus.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
-                        weburl="http://git.tuxfamily.org/jwumpus/jwumpus.git/tree/"
-                        type="git" />
-            <picture filename="jwumpus_1.png" />
-            <picture filename="jwumpus_2.png" />
-            <picture filename="jwumpus_3.png" />
-        </item>
+        <!-- PYARM -->
 
-        <item id="chef" license="MIT">
-            <label>Chef</label>
-            <desc>
-                Chef est un exemple de projet multi-agents utilisant l'architecture
-                <a href="http://en.wikipedia.org/wiki/Belief-Desire-Intention_software_model">BDI</a>
-                (Belief Desire and Intention) et l'interprète
-                <a href="http://jason.sourceforge.net/Jason/Description.html">Jason</a>.
-            </desc>
-            <archive url="http://git.tuxfamily.org/chef/chef.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/chef/chef.git"
-                        weburl="http://git.tuxfamily.org/chef/chef.git/tree/"
-                        type="git" />
-        </item>
-
-        <item id="ai_framework_for_python" license="MIT">
-            <label>Artificial Intelligence frameworks for Python</label>
-            <desc>
-                Plusieurs bibliothèques d'Intelligence Artificielle pour
-                Python.
-                Contient notamment une bibliothèque centrée sur la résolution de
-                Processus Décisionnels Markoviens (PDM), une bibliothèque
-                dédiée à l'apprentissage artificiel et une bibliothèque
-                d'optimisation stochastique non-linéaire.
-            </desc>
-
-            <archive url="http://git.tuxfamily.org/aiscripts/python.git/snapshot/python-master.zip">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/aiscripts/python.git"
-                        weburl="http://git.tuxfamily.org/aiscripts/python.git/tree/"
-                        type="git" />
-
-            <link url="http://github.com/jeremiedecock/pyai">
-                <label>Suivre ce projet sur Github</label>
-            </link>
-        </item>
-
-        <item id="perceptron_php" license="MIT">
-            <label>Perceptron simple</label>
-            <desc>
-                Ce script PHP sert uniquement à mieux comprendre les étapes de
-                calcul conduisant à l'équilibre d'un réseau de neurones
-                fonctionnant suivant le modèle du Perceptron. Il n'a pas d'autre
-                intérêt que de servir de support pédagogique.
-            </desc>
-            <archive filename="perceptron_simple.zip">
-                <label>Sources</label>
-            </archive>
-        </item>
-    </group>
-
-    <!-- ############################################################ -->
-
-    <group id="robotics">
-        <label>
-            Robotique et Électronique Numérique
-        </label>
-        
         <item id="pyarm" license="MIT">
             <label>PyArm</label>
             <desc>
@@ -196,6 +114,8 @@
             </link>
         </item>
 
+        <!-- BOTSIM -->
+
         <item id="botsim" license="MIT">
             <label>Botsim.org</label>
             <desc>
@@ -220,196 +140,9 @@
             </link>
         </item>
 
-        <item id="libdynamixel" license="MIT">
-            <label>LibDynamixel</label>
-            <desc>
-                LibDynamixel est une librairie qui permet de contrôler des
-                servomoteurs <a
-                href="http://www.robotis.com/xe/dynamixel_en">Dynamixel
-                AX-12</a> directement depuis un ordinateur (via une brique <a
-                href="http://www.robotis.com/xe/controller_en">USB2Dynamixel</a>).
-                Elle peut être utilisée pour dépasser les limites des
-                contrôleurs types <a
-                href="http://www.robotis.com/xe/controller_en">CM-5</a> ou
-                pour remplacer les logiciels propriétaires fournis par <a
-                href="http://www.robotis.com">Robotis</a>.  LibDynamixel est
-                écrit en C et fonctionne sur les systèmes Gnu/Linux.
-            </desc>
-            <archive url="http://git.tuxfamily.org/robotics/libdynamixel.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/robotics/libdynamixel.git"
-                        weburl="http://git.tuxfamily.org/robotics/libdynamixel.git/tree/"
-                        type="git" />
-            <picture filename="dynamixel_1.png" />
-        </item>
+        <!-- SNIPPETS -->
 
-        <item id="pydynamixel" license="MIT">
-            <label>PyDynamixel</label>
-            <desc>
-                PyDynamixel est une implémentation écrite en Python de la
-                <a href="projects_fr.html#libdynamixel">libdynamixel</a>.
-            </desc>
-            <archive url="http://git.tuxfamily.org/robotics/pydynamixel.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/robotics/pydynamixel.git"
-                        weburl="http://git.tuxfamily.org/robotics/pydynamixel.git/tree/"
-                        type="git" />
-        </item>
-
-        <item id="dtools" license="MIT">
-            <label>Dtools</label>
-            <desc>
-                Un ensemble d'outils pour faciliter le contrôle des servomoteurs
-                <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel
-                AX-12</a>.
-            </desc>
-            <archive url="http://git.tuxfamily.org/robotics/dtools.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/robotics/dtools.git"
-                        weburl="http://git.tuxfamily.org/robotics/dtools.git/tree/"
-                        type="git" />
-            <!--<picture filename="dtools_gtkui_1.png" />-->
-        </item>
-
-        <item id="bioloid" license="MIT">
-            <label>Bioloid</label>
-            <desc>
-                Quelques exemples d'utilisation de la libdynamixel pour
-                contrôler un <a
-                href="http://www.robotis.com/xe/bioloid_en">bioloid</a>.
-            </desc>
-            <archive url="http://git.tuxfamily.org/robotics/bioloid.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/robotics/bioloid.git"
-                        weburl="http://git.tuxfamily.org/robotics/bioloid.git/tree/"
-                        type="git" />
-            <video filename="bioloid_quadrupedal_static.ogv" thumbnail_filename="bioloid_quadrupedal_static.png">
-                <link url="http://www.youtube.com/watch?v=8jDYKBuRWvg">
-                    <label>Regarder sur Youtube</label>
-                </link>
-            </video>
-            <video filename="bioloid_quadrupedal_dynamic_1.ogv" thumbnail_filename="bioloid_quadrupedal_dynamic_1.png">
-                <link url="http://www.youtube.com/watch?v=48PtL3mXUNU">
-                    <label>Regarder sur Youtube</label>
-                </link>
-            </video>
-            <video filename="bioloid_quadrupedal_dynamic_2.ogv" thumbnail_filename="bioloid_quadrupedal_dynamic_2.png">
-                <link url="http://www.youtube.com/watch?v=S4RQAeOc79E">
-                    <label>Regarder sur Youtube</label>
-                </link>
-            </video>
-        </item>
-    </group>
-
-    <!-- ############################################################ -->
-
-    <group id="util">
-        <label>
-            Utilitaires
-        </label>
-
-        <item id="clonefinder" license="MIT">
-            <label>Clonefinder</label>
-            <desc>
-                Recherche les fichiers et les répertoires dupliqués dans une
-                arborescence.
-            </desc>
-
-            <debian_package filename="clonefinder_1.0-1_all.deb" arch="all" />
-
-            <archive url="http://git.tuxfamily.org/systools/clonefinder.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/systools/clonefinder.git"
-                        weburl="http://git.tuxfamily.org/systools/clonefinder.git/tree/"
-                        type="git" />
-
-            <link url="http://github.com/jeremiedecock/clonefinder">
-                <label>Suivre ce projet sur Github</label>
-            </link>
-        </item>
-
-        <item id="binviewer" license="MIT">
-            <label>Binviewer</label>
-            <desc>
-                Donne une représentation graphique d'un fichier binaire
-                (disque, partition, image ISO, exécutable, ...). Ce
-                programme sert notamment à l'analyse de partitions chiffrées.
-                Il permet également de voir la structure d'un système de
-                fichier.
-            </desc>
-            <debian_package filename="binviewer_0.2-1_all.deb" arch="all" />
-            <archive url="http://git.tuxfamily.org/systools/binviewer.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/systools/binviewer.git"
-                        weburl="http://git.tuxfamily.org/systools/binviewer.git/tree/"
-                        type="git" />
-            <picture filename="binviewer_1.png" />
-            <picture filename="binviewer_2.png" />
-        </item>
-
-        <item id="dspp" license="MIT">
-            <label>DSPP (Dual Screen PDF Presenter)</label>
-            <desc>
-                DSPP est un logiciel de présentation (comme Microsoft
-                PowerPoint, Libre Office Impress et Apple Keynote).
-                Il permet de présenter des fichiers PDF sur plusieurs écrans.
-
-                Tout comme le logiciel Keynote d'Apple, DSPP exploite les
-                configurations multi-écrans pour fournir des métadonnées à
-                l'orateur.
-
-                Il peut ainsi afficher la présentation à destination de
-                l'auditoire sur un écran (généralement un vidéo projecteur) et
-                des notes personnelles pour le locuteur sur un autre écran
-                (généralement l'écran d'un ordinateur portable utilisé pour
-                faire la présentation).
-
-                DSPP est écrit en Python et distribué selon la licence MIT.
-            </desc>
-
-            <archive url="http://git.tuxfamily.org/dspp/dspp.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/dspp/dspp.git"
-                        weburl="http://git.tuxfamily.org/dspp/dspp.git/tree/"
-                        type="git" />
-
-            <link url="http://github.com/jeremiedecock/dspp">
-                <label>Suivre ce projet sur Github</label>
-            </link>
-        </item>
-
-        <item id="latex2png" license="MIT">
-            <label>Latex2png</label>
-            <desc>
-                Convertit des fichiers latex en images PNG (permet par
-                exemple d'exporter une formule mathématique isolée en image).
-            </desc>
-            <debian_package filename="latex2png_1.0-1_all.deb" arch="all" />
-            <archive filename="latex2png-1.0.tar.gz">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/scripts.git"
-                        weburl="http://git.tuxfamily.org/jdhp/scripts.git/tree/"
-                        type="git" />
-            <picture filename="latex2png_2.png" />
-        </item>
-    </group>
-
-    <!-- ############################################################ -->
-
-    <group id="misc">
-        <label>
-            Divers
-        </label>
-
-        <item id="demos" license="MIT">
+        <item id="snippets" license="MIT">
             <label>Snippets</label>
             <desc>
                 Une collection de centaines de <em>snippets</em>, c'est à dire
@@ -529,6 +262,288 @@
 
             <picture filename="demos.png" />
         </item>
+    
+    <!-- ############################################################ -->
+
+    <group id="aiam">
+        <label>
+            Intelligence Artificielle et Mathématiques Appliquées
+        </label>
+
+        <item id="ai_framework_for_python" license="MIT">
+            <label>Artificial Intelligence frameworks for Python</label>
+            <desc>
+                Plusieurs bibliothèques d'Intelligence Artificielle pour
+                Python.
+                Contient notamment une bibliothèque centrée sur la résolution de
+                Processus Décisionnels Markoviens (PDM), une bibliothèque
+                dédiée à l'apprentissage artificiel et une bibliothèque
+                d'optimisation stochastique non-linéaire.
+            </desc>
+
+            <archive url="http://git.tuxfamily.org/aiscripts/python.git/snapshot/python-master.zip">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/aiscripts/python.git"
+                        weburl="http://git.tuxfamily.org/aiscripts/python.git/tree/"
+                        type="git" />
+
+            <link url="http://github.com/jeremiedecock/pyai">
+                <label>Suivre ce projet sur Github</label>
+            </link>
+        </item>
+
+        <item id="jwumpus" license="MIT">
+            <label>JWumpus</label>
+            <desc>
+                JWumpus est un exemple d'utilisation de la plate-forme <a
+                href="http://jade.tilab.com">Jade</a> et de l'algorithme de
+                Q-Learning (apprentissage par renforcement) pour résoudre le
+                problème du Wumpus (tel que présenté dans le livre "Intelligence
+                Artificielle" de Russell et Norvig).  L'algorithme explore
+                l'espace des états-actions jusqu'à la 2000e itération, après
+                quoi il passe en mode exploitation.
+            </desc>
+            <debian_package filename="jwumpus_1.0-1_all.deb" arch="all" />
+            <!-- http://git.tuxfamily.org/jwumpus/jwumpus.git/snapshot/jwumpus-master.zip -->
+            <archive url="http://git.tuxfamily.org/jwumpus/jwumpus.git/refs/">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
+                        weburl="http://git.tuxfamily.org/jwumpus/jwumpus.git/tree/"
+                        type="git" />
+            <picture filename="jwumpus_1.png" />
+            <picture filename="jwumpus_2.png" />
+            <picture filename="jwumpus_3.png" />
+        </item>
+
+        <item id="chef" license="MIT">
+            <label>Chef</label>
+            <desc>
+                Chef est un exemple de projet multi-agents utilisant l'architecture
+                <a href="http://en.wikipedia.org/wiki/Belief-Desire-Intention_software_model">BDI</a>
+                (Belief Desire and Intention) et l'interprète
+                <a href="http://jason.sourceforge.net/Jason/Description.html">Jason</a>.
+            </desc>
+            <archive url="http://git.tuxfamily.org/chef/chef.git/refs/">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/chef/chef.git"
+                        weburl="http://git.tuxfamily.org/chef/chef.git/tree/"
+                        type="git" />
+        </item>
+
+        <item id="perceptron_php" license="MIT">
+            <label>Perceptron simple</label>
+            <desc>
+                Ce script PHP sert uniquement à mieux comprendre les étapes de
+                calcul conduisant à l'équilibre d'un réseau de neurones
+                fonctionnant suivant le modèle du Perceptron. Il n'a pas d'autre
+                intérêt que de servir de support pédagogique.
+            </desc>
+            <archive filename="perceptron_simple.zip">
+                <label>Sources</label>
+            </archive>
+        </item>
+    </group>
+
+    <!-- ############################################################ -->
+
+    <group id="robotics">
+        <label>
+            Robotique et Électronique Numérique
+        </label>
+        
+        <item id="libdynamixel" license="MIT">
+            <label>LibDynamixel</label>
+            <desc>
+                LibDynamixel est une librairie qui permet de contrôler des
+                servomoteurs <a
+                href="http://www.robotis.com/xe/dynamixel_en">Dynamixel
+                AX-12</a> directement depuis un ordinateur (via une brique <a
+                href="http://www.robotis.com/xe/controller_en">USB2Dynamixel</a>).
+                Elle peut être utilisée pour dépasser les limites des
+                contrôleurs types <a
+                href="http://www.robotis.com/xe/controller_en">CM-5</a> ou
+                pour remplacer les logiciels propriétaires fournis par <a
+                href="http://www.robotis.com">Robotis</a>.  LibDynamixel est
+                écrit en C et fonctionne sur les systèmes Gnu/Linux.
+            </desc>
+            <archive url="http://git.tuxfamily.org/robotics/libdynamixel.git/refs/">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/robotics/libdynamixel.git"
+                        weburl="http://git.tuxfamily.org/robotics/libdynamixel.git/tree/"
+                        type="git" />
+            <picture filename="dynamixel_1.png" />
+        </item>
+
+        <item id="pydynamixel" license="MIT">
+            <label>PyDynamixel</label>
+            <desc>
+                PyDynamixel est une implémentation écrite en Python de la
+                <a href="projects_fr.html#libdynamixel">libdynamixel</a>.
+            </desc>
+            <archive url="http://git.tuxfamily.org/robotics/pydynamixel.git/refs/">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/robotics/pydynamixel.git"
+                        weburl="http://git.tuxfamily.org/robotics/pydynamixel.git/tree/"
+                        type="git" />
+        </item>
+
+        <item id="dtools" license="MIT">
+            <label>Dtools</label>
+            <desc>
+                Un ensemble d'outils pour faciliter le contrôle des servomoteurs
+                <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel AX-12</a>.
+            </desc>
+            <archive url="http://git.tuxfamily.org/robotics/dtools.git/refs/">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/robotics/dtools.git"
+                        weburl="http://git.tuxfamily.org/robotics/dtools.git/tree/"
+                        type="git" />
+            <!--<picture filename="dtools_gtkui_1.png" />-->
+        </item>
+
+        <item id="bioloid" license="MIT">
+            <label>Bioloid</label>
+            <desc>
+                Quelques exemples d'utilisation de la
+                <a href="projects_fr.html#libdynamixel">libdynamixel</a>
+                pour contrôler un
+                <a href="http://www.robotis.com/xe/bioloid_en">bioloid</a>.
+            </desc>
+            <archive url="http://git.tuxfamily.org/robotics/bioloid.git/refs/">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/robotics/bioloid.git"
+                        weburl="http://git.tuxfamily.org/robotics/bioloid.git/tree/"
+                        type="git" />
+            <video filename="bioloid_quadrupedal_static.ogv" thumbnail_filename="bioloid_quadrupedal_static.png">
+                <link url="http://www.youtube.com/watch?v=8jDYKBuRWvg">
+                    <label>Regarder sur Youtube</label>
+                </link>
+            </video>
+            <video filename="bioloid_quadrupedal_dynamic_1.ogv" thumbnail_filename="bioloid_quadrupedal_dynamic_1.png">
+                <link url="http://www.youtube.com/watch?v=48PtL3mXUNU">
+                    <label>Regarder sur Youtube</label>
+                </link>
+            </video>
+            <video filename="bioloid_quadrupedal_dynamic_2.ogv" thumbnail_filename="bioloid_quadrupedal_dynamic_2.png">
+                <link url="http://www.youtube.com/watch?v=S4RQAeOc79E">
+                    <label>Regarder sur Youtube</label>
+                </link>
+            </video>
+        </item>
+    </group>
+
+    <!-- ############################################################ -->
+
+    <group id="util">
+        <label>
+            Utilitaires
+        </label>
+
+        <item id="clonefinder" license="MIT">
+            <label>Clonefinder</label>
+            <desc>
+                Recherche les fichiers et les répertoires dupliqués dans une
+                arborescence.
+            </desc>
+
+            <debian_package filename="clonefinder_1.0-1_all.deb" arch="all" />
+
+            <archive url="http://git.tuxfamily.org/systools/clonefinder.git/refs/">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/systools/clonefinder.git"
+                        weburl="http://git.tuxfamily.org/systools/clonefinder.git/tree/"
+                        type="git" />
+
+            <link url="http://github.com/jeremiedecock/clonefinder">
+                <label>Suivre ce projet sur Github</label>
+            </link>
+        </item>
+
+        <item id="dspp" license="MIT">
+            <label>DSPP (Dual Screen PDF Presenter)</label>
+            <desc>
+                DSPP est un logiciel de présentation (comme Microsoft
+                PowerPoint, Libre Office Impress et Apple Keynote).
+                Il permet de présenter des fichiers PDF sur plusieurs écrans.
+
+                Tout comme le logiciel Keynote d'Apple, DSPP exploite les
+                configurations multi-écrans pour fournir des métadonnées à
+                l'orateur.
+
+                Il peut ainsi afficher la présentation à destination de
+                l'auditoire sur un écran (généralement un vidéo projecteur) et
+                des notes personnelles pour le locuteur sur un autre écran
+                (généralement l'écran d'un ordinateur portable utilisé pour
+                faire la présentation).
+
+                DSPP est écrit en Python et distribué selon la licence MIT.
+            </desc>
+
+            <archive url="http://git.tuxfamily.org/dspp/dspp.git/refs/">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/dspp/dspp.git"
+                        weburl="http://git.tuxfamily.org/dspp/dspp.git/tree/"
+                        type="git" />
+
+            <link url="http://github.com/jeremiedecock/dspp">
+                <label>Suivre ce projet sur Github</label>
+            </link>
+        </item>
+
+        <!--
+        <item id="binviewer" license="MIT">
+            <label>Binviewer</label>
+            <desc>
+                Donne une représentation graphique d'un fichier binaire
+                (disque, partition, image ISO, exécutable, ...). Ce
+                programme sert notamment à l'analyse de partitions chiffrées.
+                Il permet également de voir la structure d'un système de
+                fichier.
+            </desc>
+            <debian_package filename="binviewer_0.2-1_all.deb" arch="all" />
+            <archive url="http://git.tuxfamily.org/systools/binviewer.git/refs/">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/systools/binviewer.git"
+                        weburl="http://git.tuxfamily.org/systools/binviewer.git/tree/"
+                        type="git" />
+            <picture filename="binviewer_1.png" />
+            <picture filename="binviewer_2.png" />
+        </item>
+        -->
+
+        <item id="latex2png" license="MIT">
+            <label>Latex2png</label>
+            <desc>
+                Convertit des fichiers latex en images PNG (permet par
+                exemple d'exporter une formule mathématique isolée en image).
+            </desc>
+            <debian_package filename="latex2png_1.0-1_all.deb" arch="all" />
+            <archive filename="latex2png-1.0.tar.gz">
+                <label>Sources</label>
+            </archive>
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/scripts.git"
+                        weburl="http://git.tuxfamily.org/jdhp/scripts.git/tree/"
+                        type="git" />
+            <picture filename="latex2png_2.png" />
+        </item>
+    </group>
+
+    <!-- ############################################################ -->
+
+    <group id="misc">
+        <label>
+            Divers
+        </label>
 
         <item id="jdhpcad" license="CC BY-SA">
             <label>Objets 3D</label>
