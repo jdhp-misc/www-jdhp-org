@@ -122,6 +122,9 @@
                 Botsim est un simulateur de robots utilisé dans le cadre de
                 travaux sur les algorithmes génétiques. La physique est simulée
                 via la librairie opensource Bullet.
+
+                Le projet Botsim.org a un site web dédié à l'adresse suivante :
+                <a href="http://www.botsim.org">www.botsim.org</a>.
             </desc>
 
             <archive url="http://git.tuxfamily.org/botsim/botsim.git/refs/">

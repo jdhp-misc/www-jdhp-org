@@ -112,6 +112,9 @@
             <desc>
                 A robots simulator mainly used to test some evolutionary
                 algorithms.
+
+                The Botsim.org project has a dedicated web site at
+                <a href="http://www.botsim.org">www.botsim.org</a>.
             </desc>
 
             <archive url="http://git.tuxfamily.org/botsim/botsim.git/refs/">
