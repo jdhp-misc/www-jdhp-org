@@ -55,8 +55,8 @@
     
             <pdf filename="tutoriel_rpi_qemu.pdf" label="PDF" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/tutoriel_rpi_qemu"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/rpi-qemu.git"
+                        weburl="http://git.tuxfamily.org/jdhpdocs/rpi-qemu.git/tree/"
                         type="git" />
 
             <link url="hevea/tutoriel_rpi_qemu/tutoriel_rpi_qemu.html">
@@ -87,8 +87,8 @@
     
             <pdf filename="tutoriel_acceder_fs_android_depuis_linux.pdf" label="PDF" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/tutoriel_acceder_fs_android_depuis_linux"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/mtp-debian.git"
+                        weburl="http://git.tuxfamily.org/jdhpdocs/mtp-debian.git/tree/"
                         type="git" />
 
             <link url="hevea/tutoriel_acceder_fs_android_depuis_linux/tutoriel_acceder_fs_android_depuis_linux.html">
@@ -113,8 +113,8 @@
     
             <pdf filename="tutoriel_vim_spellfr.pdf" label="PDF" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/tutoriel_vim_spellfr"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/vim-spell-fr.git"
+                        weburl="http://git.tuxfamily.org/jdhpdocs/vim-spell-fr.git/tree/"
                         type="git" />
 
             <link url="hevea/tutoriel_vim_spellfr/tutoriel_vim_spellfr.html">
