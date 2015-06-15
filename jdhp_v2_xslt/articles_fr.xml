@@ -91,9 +91,9 @@
 
     <!-- ############################################################ -->
 
-    <group id="aiam">
+    <group id="grp_resh">
         <label>
-            Intelligence Artificielle et Mathématiques Appliquées
+            Travaux de recherche rédigés en français
         </label>
 
         <item id="XCSF" license="">
@@ -132,6 +132,70 @@
 
             <pdf url="http://www.isir.upmc.fr/files/2011ACTN1978.pdf" label="Article (PDF)" />
         </item>
+
+    </group>
+
+    <!-- ############################################################ -->
+
+    <group id="cours">
+        <label>
+            Missions d'enseignement et monitorat à l'Université
+        </label>
+
+        <item id="prog_sys" license="">
+            <label>
+                La programmation système en C sous Unix
+            </label>
+            
+            <desc>
+                <p>
+                    Quelques supports de cours de programmation système en C sous
+                    Unix.
+                    Ces supports ont été écrits pour le cour "système-réseaux" du DUT
+                    d'informatique d'Orsay (Université Paris-Sud).
+                </p>
+                <br />
+
+                Supports:
+                <ul>
+                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/fork_step_by_step.pdf">     Appel système fork (PDF)</a></li>
+                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/fork_step_by_step_var.pdf"> Appel système fork avec une variable (PDF)</a></li>
+                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/printf_scanf.pdf">          Fonctions printf et scanf (PDF)</a></li>
+                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/fibonacci.pdf">             Compilation séparée et édition des liens (PDF)</a></li>
+                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/exec.pdf">                  Appel système exec (PDF)</a></li>
+                    <!-- <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/c_cycle.pdf">               Chaîne de compilation en C avec GCC (PDF)</a></li> -->
+                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/c_cycle_v2.pdf">            Chaîne de compilation en C avec GCC (PDF)</a></li>
+                </ul>
+            </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock, Université Paris-Sud, 2013.
+            </bib>
+
+            <!-- 
+            <pdf filename="supports_cours_iut_orsay/fork_step_by_step.pdf" label="Appel système fork (PDF)" />
+            <pdf filename="supports_cours_iut_orsay/fork_step_by_step_var.pdf" label="Appel système fork avec une variable (PDF)" />
+            <pdf filename="supports_cours_iut_orsay/printf_scanf.pdf" label="Fonctions printf et scanf (PDF)" />
+            <pdf filename="supports_cours_iut_orsay/fibonacci.pdf" label="Compilation séparée et édition des liens (PDF)" />
+            <pdf filename="supports_cours_iut_orsay/exec.pdf" label="Appel système exec (PDF)" />
+            <pdf filename="supports_cours_iut_orsay/c_cycle.pdf" label="Chaîne de compilation en C avec GCC (PDF)" />
+            <pdf filename="supports_cours_iut_orsay/c_cycle_v2.pdf" label="Chaîne de compilation en C avec GCC (PDF)" />
+            -->
+
+            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
+                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/supports_cours_iut_orsay"
+                        type="git" />
+        </item>
+
+    </group>
+
+    <!-- ############################################################ -->
+
+    <group id="grp_master_iad">
+        <label>
+            Présentations effectuées en Master IAD (Intelligence Artificielle et Décision)
+        </label>
+        <!-- Travaux effectuées en Master IAD (Intelligence Artificielle et Décision) -->
 
         <item id="rankboost" license="cc-by-sa">
             <label>Rankboost</label>
@@ -279,57 +343,45 @@
                         type="git" />
         </item>
 
-    </group>
-
-    <!-- ############################################################ -->
-
-    <group id="cours">
-        <label>
-            Supports de cours
-        </label>
-
-        <item id="prog_sys" license="">
-            <label>
-                La programmation système en C sous Unix
-            </label>
+        <item id="droit_du_logiciel" license="cc-by-sa">
+            <label>Le droit du logiciel</label>
             
             <desc>
                 <p>
-                    Quelques supports de cours de programmation système en C sous
-                    Unix.
-                    Ces supports ont été écrits pour le cour "système-réseaux" du DUT
-                    d'informatique d'Orsay (Université Paris-Sud).
+                    En France, depuis la loi du 3 juillet 1985, les logiciels
+                    sont protégés par le droit d'auteur, au même titre que
+                    n'importe quelle œuvre littéraire ou artistique. Toutefois
+                    le débat concernant leur statut juridique n'est pas clos.
+                    Certaines personnes soutiennent en effet que le droit
+                    d'auteur n'est pas adapté pour assurer une bonne protection
+                    des logiciels et demandent une remise en cause de ce choix.
                 </p>
-                <br />
-
-                Supports:
-                <ul>
-                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/fork_step_by_step.pdf">     Appel système fork (PDF)</a></li>
-                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/fork_step_by_step_var.pdf"> Appel système fork avec une variable (PDF)</a></li>
-                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/printf_scanf.pdf">          Fonctions printf et scanf (PDF)</a></li>
-                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/fibonacci.pdf">             Compilation séparée et édition des liens (PDF)</a></li>
-                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/exec.pdf">                  Appel système exec (PDF)</a></li>
-                    <!-- <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/c_cycle.pdf">               Chaîne de compilation en C avec GCC (PDF)</a></li> -->
-                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/c_cycle_v2.pdf">            Chaîne de compilation en C avec GCC (PDF)</a></li>
-                </ul>
+                <p>
+                    Quelles raisons les motivent ? Le droit d'auteur appliqué
+                    aux logiciels protège-t-il efficacement les intérêts de
+                    chacun ? Le régime des brevets apporte-t-il une réponse
+                    plus juste ?
+                </p>
+                <p>
+                    Nous présenterons dans un premier temps le contexte
+                    historique qui a amené au choix du droit d'auteur pour
+                    protéger les logiciels ainsi que les aménagements qui ont
+                    été nécessaires pour appliquer ce choix. Nous étudierons
+                    ensuite le système des brevets d'invention ainsi que la
+                    brevetabilité du logiciel. Nous comparerons enfin les deux
+                    dispositifs juridiques de protection en mettant en évidence
+                    les avantages et les limites de chacun d'eux. [...]
+                </p>
             </desc>
 
             <bib label="Référence:">
-                Jérémie Decock, Université Paris-Sud, 2013.
+                Jérémie Decock, UPMC, octobre 2010.
             </bib>
-
-            <!-- 
-            <pdf filename="supports_cours_iut_orsay/fork_step_by_step.pdf" label="Appel système fork (PDF)" />
-            <pdf filename="supports_cours_iut_orsay/fork_step_by_step_var.pdf" label="Appel système fork avec une variable (PDF)" />
-            <pdf filename="supports_cours_iut_orsay/printf_scanf.pdf" label="Fonctions printf et scanf (PDF)" />
-            <pdf filename="supports_cours_iut_orsay/fibonacci.pdf" label="Compilation séparée et édition des liens (PDF)" />
-            <pdf filename="supports_cours_iut_orsay/exec.pdf" label="Appel système exec (PDF)" />
-            <pdf filename="supports_cours_iut_orsay/c_cycle.pdf" label="Chaîne de compilation en C avec GCC (PDF)" />
-            <pdf filename="supports_cours_iut_orsay/c_cycle_v2.pdf" label="Chaîne de compilation en C avec GCC (PDF)" />
-            -->
+    
+            <pdf filename="droit_du_logiciel.pdf" label="Slides (PDF)" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/supports_cours_iut_orsay"
+                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/droit_du_logiciel"
                         type="git" />
         </item>
 
@@ -337,9 +389,9 @@
 
     <!-- ############################################################ -->
 
-    <group id="bi">
+    <group id="grp_master_miage">
         <label>
-            Informatique de gestion
+            Présentations effectuées en Master MIAGE
         </label>
 
         <item id="wiki" license="cc-by-sa">
@@ -388,56 +440,6 @@
             <link url="hevea/les_wikis_en_entreprise/les_wikis_en_entreprise.html">
                 <label>Lire la suite</label>
             </link>
-        </item>
-    </group>
-
-    <!-- ############################################################ -->
-
-    <group id="law">
-        <label>
-            Droit
-        </label>
-
-        <item id="droit_du_logiciel" license="cc-by-sa">
-            <label>Le droit du logiciel</label>
-            
-            <desc>
-                <p>
-                    En France, depuis la loi du 3 juillet 1985, les logiciels
-                    sont protégés par le droit d'auteur, au même titre que
-                    n'importe quelle œuvre littéraire ou artistique. Toutefois
-                    le débat concernant leur statut juridique n'est pas clos.
-                    Certaines personnes soutiennent en effet que le droit
-                    d'auteur n'est pas adapté pour assurer une bonne protection
-                    des logiciels et demandent une remise en cause de ce choix.
-                </p>
-                <p>
-                    Quelles raisons les motivent ? Le droit d'auteur appliqué
-                    aux logiciels protège-t-il efficacement les intérêts de
-                    chacun ? Le régime des brevets apporte-t-il une réponse
-                    plus juste ?
-                </p>
-                <p>
-                    Nous présenterons dans un premier temps le contexte
-                    historique qui a amené au choix du droit d'auteur pour
-                    protéger les logiciels ainsi que les aménagements qui ont
-                    été nécessaires pour appliquer ce choix. Nous étudierons
-                    ensuite le système des brevets d'invention ainsi que la
-                    brevetabilité du logiciel. Nous comparerons enfin les deux
-                    dispositifs juridiques de protection en mettant en évidence
-                    les avantages et les limites de chacun d'eux. [...]
-                </p>
-            </desc>
-
-            <bib label="Référence:">
-                Jérémie Decock, UPMC, octobre 2010.
-            </bib>
-    
-            <pdf filename="droit_du_logiciel.pdf" label="Slides (PDF)" />
-
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/droit_du_logiciel"
-                        type="git" />
         </item>
 
         <item id="brevets" license="cc-by-sa">
@@ -492,5 +494,7 @@
                 <label>Lire la suite</label>
             </link>
         </item>
+
     </group>
+
 </page>

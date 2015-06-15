@@ -279,13 +279,15 @@
 
     <!-- ############################################################ -->
 
-    <group id="aiam">
+    <group id="grp_teaching_aiam">
 
         <!-- Various (non Academic) Documents about Artificial Intelligence and Applied Maths  -->
 
         <label>
-            Introduction to Artificial Intelligence concepts
+            Teaching materials
         </label>
+        <!-- Educational materials (=documents pédagogiques) -->
+        <!-- Introduction to Artificial Intelligence concepts -->
 
         <item id="mcts" license="">
             <label>
