@@ -350,7 +350,10 @@
         <item id="pyax12" license="MIT">
             <label>PyAX-12</label>
             <desc>
-                PyAX-12 is a Python library to control Dynamixel AX-12+ actuators.
+                PyAX-12 is a Python library to control
+                <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel AX-12+</a> actuators.
+                directly from a computer (using a <a href="http://www.robotis.com/xe/controller_en">USB2Dynamixel</a>
+                adapter).
             </desc>
 
             <archive url="http://git.tuxfamily.org/robotics/pydynamixel.git/refs/">
@@ -363,6 +366,8 @@
             <link url="https://github.com/jeremiedecock/pyax12">
                 <label>Follow this project on Github</label>
             </link>
+
+            <picture filename="dynamixel_1.png" />
         </item>
         
         <item id="libdynamixel" license="MIT">

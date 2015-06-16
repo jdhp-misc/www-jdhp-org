@@ -361,8 +361,17 @@
         <item id="pyax12" license="MIT">
             <label>PyAX-12</label>
             <desc>
-                PyDynamixel est une implémentation écrite en Python de la
-                <a href="projects_fr.html#libdynamixel">libdynamixel</a>.
+                PyAX-12 est une librairie qui permet de contrôler des
+                servomoteurs <a
+                href="http://www.robotis.com/xe/dynamixel_en">Dynamixel
+                AX-12</a> directement depuis un ordinateur (via une brique <a
+                href="http://www.robotis.com/xe/controller_en">USB2Dynamixel</a>).
+                Elle peut être utilisée pour dépasser les limites des
+                contrôleurs types <a
+                href="http://www.robotis.com/xe/controller_en">CM-5</a> ou
+                pour remplacer les logiciels propriétaires fournis par <a
+                href="http://www.robotis.com">Robotis</a>. PyAX-12 est
+                écrite en Python.
             </desc>
             <archive url="http://git.tuxfamily.org/robotics/pydynamixel.git/refs/">
                 <label>Sources</label>
@@ -374,6 +383,8 @@
             <link url="https://github.com/jeremiedecock/pyax12">
                 <label>Suivre ce projet sur Github</label>
             </link>
+
+            <picture filename="dynamixel_1.png" />
         </item>
         
         <item id="libdynamixel" license="MIT">
