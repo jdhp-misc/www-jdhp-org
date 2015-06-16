@@ -182,8 +182,8 @@
             <pdf filename="supports_cours_iut_orsay/c_cycle_v2.pdf" label="Chaîne de compilation en C avec GCC (PDF)" />
             -->
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/supports_cours_iut_orsay"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/prog-sys-unix-c.git"
+                        weburl="http://git.tuxfamily.org/jdhpdocs/prog-sys-unix-c.git/tree/"
                         type="git" />
         </item>
 
