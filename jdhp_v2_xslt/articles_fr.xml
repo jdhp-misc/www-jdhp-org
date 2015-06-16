@@ -433,8 +433,8 @@
     
             <pdf filename="les_wikis_en_entreprise.pdf" label="Article (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/les_wikis_en_entreprise"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/wikis.git"
+                        weburl="http://git.tuxfamily.org/jdhpdocs/wikis.git/tree/"
                         type="git" />
 
             <link url="hevea/les_wikis_en_entreprise/les_wikis_en_entreprise.html">
@@ -456,8 +456,8 @@
     
             <pdf filename="brevets.pdf" label="Slides (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/brevets"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/brevets-logiciels.git"
+                        weburl="http://git.tuxfamily.org/jdhpdocs/brevets-logiciels.git/tree/"
                         type="git" />
         </item>
 
@@ -486,8 +486,8 @@
     
             <pdf filename="droits_auteurs.pdf" label="Article (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/droits_auteurs"
+            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/droit-auteur.git"
+                        weburl="http://git.tuxfamily.org/jdhpdocs/droit-auteur.git/tree/"
                         type="git" />
 
             <link url="hevea/droits_auteurs/droits_auteurs.html">
