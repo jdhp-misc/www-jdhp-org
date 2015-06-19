@@ -119,9 +119,34 @@
         <item id="botsim" license="MIT">
             <label>Botsim.org</label>
             <desc>
-                Botsim est un simulateur de robots utilisé dans le cadre de
-                travaux sur les algorithmes génétiques. La physique est simulée
-                via la librairie opensource Bullet.
+                Botsim.org est un simulateur de robots utilisé dans le cadre de
+                travaux sur des algorithmes bio-inspirés (apprentissage
+                artificiel, algorithmes évolutionnaires, apprentissage par
+                renforcement, ...).
+                <br />
+                <br />
+
+                Nos motivations : utiliser des méthodes bio-inspirées pour
+                générer in-silico des formes de vie artificielles originales et
+                performantes dans l'accomplissement d'une tache donnée (se
+                déplacer, modifier son environnement, survivre, ...).
+                <br />
+                <br />
+
+                Plus particulièrement, Botsim.org a été écrit pour:
+                <ol>
+                    <li>reproduire les expériences et les résultats du <a href="http://www.demo.cs.brandeis.edu/golem/">projet Golem</a>:
+                        optimiser la morphologie et le contrôle de robots en simulation via des méthodes bio-inspirées (algorithmes évolutionnaires et réseaux de neurones) puis
+                        matérialiser ces organismes auto-générés à l'aide d'une imprimante 3D;</li>
+                    <li>améliorer le contrôle de robots existants en générant un grand nombre de simulations in-silico;</li>
+                    <li>reproduire certaines expériences de l'équipe <a href="http://www.inria.fr/equipes/flowers">Inria Flowers</a> sur la curiosité artificielle.</li>
+                </ol>
+                <br />
+
+                Botsim.org utilise la bibliothèque opensource Bullet pour
+                simuler la physique.
+                <br />
+                <br />
 
                 Le projet Botsim.org dispose d'un site web dédié à l'adresse suivante :
                 <a href="http://www.botsim.org">www.botsim.org</a>.

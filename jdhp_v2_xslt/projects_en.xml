@@ -110,8 +110,27 @@
         <item id="botsim" license="MIT">
             <label>Botsim.org</label>
             <desc>
-                A robots simulator mainly used to test some evolutionary
-                algorithms.
+                Botsim.org is a robots simulator mainly used to test some
+                biologically inspired algorithms (machine learning,
+                evolutionary algorithms, reinforcement learning, ...).
+                <br />
+                <br />
+
+                Our motivations: generate in-silico original artificial
+                organisms which can efficiently accomplish some given tasks
+                (move, change their environment, survive, ...).
+                <br />
+                <br />
+
+                More precisely, Botsim.org was written to:
+                <ol>
+                    <li>reproduce the experiments and the results of the <a href="http://www.demo.cs.brandeis.edu/golem/">projet Golem</a>:
+                        optimize the morphology and control of robots in simulation via biologically inspired methods (evolutionary algorithms and neural networks)
+                        then materialize these self-generated organisms using a 3D printer;</li>
+                    <li>improve control of existing robots by generating a large number of in-silico simulations;</li>
+                    <li>reproduce some experiments on artificial curiosity by the <a href="http://www.inria.fr/equipes/flowers">Inria Flowers</a> team.</li>
+                </ol>
+                <br />
 
                 The Botsim.org project has a dedicated web site at
                 <a href="http://www.botsim.org">www.botsim.org</a>.
