@@ -1,6 +1,7 @@
-TODO List
+# TODO List
 
-DEV URGENT
+## DEV URGENT
+
 - Les sites non "mobile friendly" seront bientôt moins bien classés dans google search.
   JDHP n'est pas "mobile friendly" d'après l'outil de test de Google: https://www.google.com/webmasters/tools/mobile-friendly/?url=www.jdhp.org
   L'annonce officielle : http://googlewebmastercentral.blogspot.fr/2015/02/finding-more-mobile-friendly-search.html
@@ -13,8 +14,11 @@ DEV URGENT
 - Ajout d'un sitemap : https://support.google.com/webmasters/answer/156184
 - Ajout de données structurées : https://www.google.com/webmasters/tools/structured-data?hl=fr&siteUrl=http://www.jdhp.org/&authuser=0
 - Ajour de marqueurs de données : https://www.google.com/webmasters/tools/data-highlighter?hl=fr&siteUrl=http://www.jdhp.org/&authuser=0
+- Inspiration pour le nouveau CSS:
+    - http://makefly.depotoi.re/ (bar de menu simple mais efficace)
 
-SEO
+## SEO
+
 - https://developers.google.com/webmasters/mobile-sites/mobile-seo/common-mistakes/
 - conseils de http://searchengineland.com : http://searchengineland.com/seotable
 
@@ -33,7 +37,8 @@ SEO
     4. Cliquez sur "Valider" ci-dessous.
     Pour conserver votre statut de propriétaire confirmé, ne supprimez pas le fichier HTML, même une fois la validation effectuée.
 
-DEV
+## DEV
+
 - ajouter un fichier .htaccess et corriger les erreurs 404 (cf. http://stats.tuxfamily.org/awstats.pl?config=jdhp.org&framename=mainright&output=errors404) avec des "permanent-redirect" dans le fichier .htaccess
 x corriger les erreurs du W3C validator !
 x check generated html == former version
@@ -73,7 +78,8 @@ x refaire les "notes" en haut de page (elle s'affichent mal sur smartphones et t
 * vérif compatibilité avec IE et safari
 - Web Analytics: add Piwik (the most famous Opensource Web Analytics) : http://piwik.org/
 
-Web 2.0
+## Web 2.0
+
 + social networks (amélorer le référencement, avoir un retour)
   boutons "+1" google, "like" facebook, "in share" linkedin, "tweet" twitter, "dig" digger (?), ...
   Où ? -> sur la page d'accueil du site et pour chaque "ancre html" (ie chaque item: article, logiciel, tutoriel, ...)
@@ -87,7 +93,7 @@ Web 2.0
   - https://developers.google.com/+/web/badge/
   - ...
   - eg. http://www.davidrevoy.com/, 
-- commentaires avec Disqus (?) ou Juvia (?)
+- commentaires avec Disqus (?) ou Juvia (?) ou Isso (http://posativ.org/isso/)
 - blog (eg. Pelican) (bien définir son utilité) ?
 + amélorer le référencement du site (robot.txt, etc.)
   robot.txt, meta:description, sitmaps : http://en.wikipedia.org/wiki/Sitemaps, ...
@@ -95,7 +101,8 @@ Web 2.0
   http://www.ya-graphic.com/
 + ajouter des info (pro) sur mon profil google+
 
-CONTENT
+## CONTENT
+
 x CV: mettre des intervalles d'années plutot que la date d'obtention du diplome + ajouter "since 2012: PhD at Inria..."
 x add mes articles scientifiques (+ poster esann) et mes présentations (dvs?, xcsf, ...)
 x Sous le nom et sous "PhD student at Inria...", ajouter le domaine (computer science, Learning and Optimization) et l'intitulé de mon sujet de thèse
