@@ -503,13 +503,13 @@
             Utilities
         </label>
 
-        <item id="clonefinder" license="MIT">
-            <label>Clonefinder</label>
+        <item id="pydfm" license="MIT">
+            <label>PyDuplicateFileManager</label>
             <desc>
-                Finds duplicated files and directories.
+                PyDuplicateFileManager finds duplicated files and directories.
             </desc>
 
-            <debian_package filename="clonefinder_1.0-1_all.deb" arch="all" />
+            <!-- <debian_package filename="clonefinder_1.0-1_all.deb" arch="all" /> -->
 
             <archive url="http://git.tuxfamily.org/systools/clonefinder.git/refs/">
                 <label>Sources</label>
@@ -518,7 +518,7 @@
                         weburl="http://git.tuxfamily.org/systools/clonefinder.git/tree/"
                         type="git" />
 
-            <link url="http://github.com/jeremiedecock/clonefinder">
+            <link url="http://github.com/jeremiedecock/pydfm">
                 <label>Follow this project on Github</label>
             </link>
         </item>
