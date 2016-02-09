@@ -1,7 +1,5 @@
 *.swp
-*.pyc
-*.pyo
-files/
+.DS_Store
+download.tuxfamily.org/
 www/
 design_examples/
-jdhp_v1_tf_html_backup/
