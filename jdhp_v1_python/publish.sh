@@ -6,6 +6,7 @@
 
 JDHP_SRC_PATH=.
 JDHP_LOCAL_PATH=/tmp/jdhp.org
+DST="tf:~/jdhp/jdhp.org-web/htdocs"
 
 # VIDE LE RÉPERTOIRE CIBLE DE L'EXPORT
 echo "Vide le répertoire cible de l'export"
@@ -47,7 +48,7 @@ echo -n "Les fichiers sont sur le point d'être chargés sur le serveur web dist
 read upload
 if [ "$upload" = "oui" ]
 then
-	rsync -a -v -e ssh --delete $JDHP_LOCAL_PATH/www/ gremy@ssh.tuxfamily.org:/home/jdhp/jdhp.org-web/htdocs/
+    rsync -a -v -e ssh --delete ${JDHP_LOCAL_PATH}/www/ ${DST}/
 fi
 
 # RÉTABLI LES PERMISSIONS POUR LA SUPPRESSION DES FICHIERS
