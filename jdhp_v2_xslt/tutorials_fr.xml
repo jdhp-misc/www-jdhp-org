@@ -63,6 +63,43 @@
                 <label>Lire la suite</label>
             </link>
         </item>
+
+    </group>
+
+    <!-- ############################################################ -->
+
+    <group id="python">
+        <label>Programmation Python</label>
+
+        <item id="initiation_python" license="cc-by-sa">
+            <label>
+                Atelier d'initiation à la programmation Python
+            </label>
+            
+            <desc>
+                L'objectif de ce cours est de vous aider à faire vos premiers
+                pas en programmation Python (version 3) en mettant l'accent sur
+                la pratique.
+
+                Ce cours a également pour but de vous donner les clés qui vous
+                permettront d'approfondir rapidement vos connaissances en toute
+                autonomie et de vous aider à concevoir rapidement de vraies
+                applications utiles.
+                [...]
+            </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock, février 2016.
+            </bib>
+    
+            <link url="http://github.com/jdhp-docs/atelier-python-part1">
+                <label>Suivre ce projet sur Github</label>
+            </link>
+            <link url="docs/initiation_python/index.html">
+                <label>Lire la suite</label>
+            </link>
+        </item>
+
     </group>
 
     <!-- ############################################################ -->
