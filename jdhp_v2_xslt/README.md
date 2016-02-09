@@ -1,6 +1,8 @@
-To build html files:
+# JDHP.org
+
+To build HTML files:
 
   - update ./common.xml : setup the "base" element
   - then execute ./build.sh
 
-Html files are generated in ./www
+HTML files are generated in ./www
