@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FILE_REMOTE_PATH="tf:~/jdhp/jdhp-repository"
-FILE_LOCAL_PATH=~/jdhp/download.tuxfamily.org
+LOCAL_DIR_PATH=~/jdhp/download.tuxfamily.org
+REMOTE_DIR_PATH="tf:~/jdhp/jdhp-repository"
 
-rsync -a -v -e ssh --delete ${FILE_LOCAL_PATH}/ ${FILE_REMOTE_PATH}/
+rsync -a -v -e ssh --delete ${LOCAL_DIR_PATH}/ ${REMOTE_DIR_PATH}/

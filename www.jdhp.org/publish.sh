@@ -1,11 +1,14 @@
 #!/bin/sh
 
-DST="tf:~/jdhp/jdhp.org-web/htdocs"
+JDHP_ROOT_PATH=~/jdhp/www.jdhp.org
 
-./clean.sh
-./build.sh
+LOCAL_DIR_PATH=~/jdhp/www.jdhp.org
+REMOTE_DIR_PATH="tf:~/jdhp/jdhp.org-web/htdocs"
 
-rsync -a -v -e ssh --delete www/* ${DST}/
+${JDHP_ROOT_PATH}/clean.sh
+${JDHP_ROOT_PATH}/build.sh
 
-./sync_hevea.sh
+rsync -a -v -e ssh --delete ${LOCAL_DIR_PATH}/www/* ${REMOTE_DIR_PATH}/
+
+${JDHP_ROOT_PATH}/push_hevea.sh
 
