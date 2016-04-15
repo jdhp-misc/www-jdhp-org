@@ -1,17 +1,19 @@
 #!/bin/sh
 
-IMG_INPUT_DIR=../files/image
-MOV_INPUT_DIR=../files/video
-OUTPUT_DIR=medias/thumbnails
-LOGO_FILE=medias/images/video.png
+JDHP_ROOT_PATH=~/jdhp/www.jdhp.org
 
-# MAKE THUMBNAILS (SCREENSHOT)
+IMG_INPUT_DIR=${JDHP_ROOT_PATH}/../download.tuxfamily.org/image
+MOV_INPUT_DIR=${JDHP_ROOT_PATH}/../download.tuxfamily.org/video
+OUTPUT_DIR=${JDHP_ROOT_PATH}/medias/thumbnails
+LOGO_FILE=${JDHP_ROOT_PATH}/medias/images/video.png
+
+# MAKE THUMBNAILS (SCREENSHOT) ################################################
 
 echo "Génère les thumbnails (screenshot)"
 mogrify -format png -path ${OUTPUT_DIR}/ -thumbnail 80x80 ${IMG_INPUT_DIR}/*.png
 mogrify -format png -path ${OUTPUT_DIR}/ -thumbnail 80x80 ${IMG_INPUT_DIR}/*.jpeg
 
-# MAKE THUMBNAILS (VIDEOS)
+# MAKE THUMBNAILS (VIDEOS) ####################################################
 
 echo "Génère les thumbnails (videos)"
 for VIDEO_PATH in ${MOV_INPUT_DIR}/*.ogv
@@ -28,7 +30,8 @@ do
     rm -v ${OUTPUT_DIR}/${VIDEO_FILE}.jpeg
 done
 
-# APPLY THE "POLAROID" EFFECT
+# APPLY THE "POLAROID" EFFECT #################################################
+
 # http://www.imagemagick.org/Usage/thumbnails/
 
 for FILE in ${OUTPUT_DIR}/*.png
