@@ -1,5 +1,11 @@
 #!/bin/sh
 
+if [ -z ${JDHP_ROOT_PATH} ] || [ \! -d ${JDHP_ROOT_PATH} ]
+then
+    echo "ERROR: the JDHP_ROOT_PATH environment variable is not set or not valid."
+    exit 1
+fi
+
 # See: http://www.microhowto.info/howto/process_an_xml_document_using_an_xslt_stylesheet.html
 
 # "tail -n +2" removes the first line of each generated html files
@@ -41,10 +47,9 @@ xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/tutorials_fr.xml | tail -n +2
 # Well... I don't use redirection (http, meta, script, ...) but a simple copy
 # in order to avoid problems with web indexing (Google and so).
 cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/www/home_en.html      ${JDHP_ROOT_PATH}/www.jdhp.org/www/index.html
-cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/misc/favicon.ico      ${JDHP_ROOT_PATH}/www.jdhp.org/www/
-cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/misc/robots.txt       ${JDHP_ROOT_PATH}/www.jdhp.org/www/
-cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/misc/debian_howto_en  ${JDHP_ROOT_PATH}/www.jdhp.org/www/
-cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/misc/debian_howto_fr  ${JDHP_ROOT_PATH}/www.jdhp.org/www/
+cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/favicon.ico           ${JDHP_ROOT_PATH}/www.jdhp.org/www/
+cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/robots.txt            ${JDHP_ROOT_PATH}/www.jdhp.org/www/
+cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/htaccess              ${JDHP_ROOT_PATH}/www.jdhp.org/www/.htaccess
 cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/css     ${JDHP_ROOT_PATH}/www.jdhp.org/www/
 cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/medias  ${JDHP_ROOT_PATH}/www.jdhp.org/www/
 cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/hevea   ${JDHP_ROOT_PATH}/www.jdhp.org/www/

@@ -1,5 +1,11 @@
 #!/bin/sh
 
+if [ -z ${JDHP_ROOT_PATH} ] || [ \! -d ${JDHP_ROOT_PATH} ]
+then
+    echo "ERROR: the JDHP_ROOT_PATH environment variable is not set or not valid."
+    exit 1
+fi
+
 IMG_INPUT_DIR=${JDHP_ROOT_PATH}/download.tuxfamily.org/image
 MOV_INPUT_DIR=${JDHP_ROOT_PATH}/download.tuxfamily.org/video
 OUTPUT_DIR=${JDHP_ROOT_PATH}/www.jdhp.org/medias/thumbnails
