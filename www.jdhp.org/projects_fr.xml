@@ -100,11 +100,13 @@
                     <label>Regarder sur Youtube</label>
                 </link>
             </video>
+            <!--
             <video filename="pyarm_optimization.ogv" thumbnail_filename="pyarm_optimization.png">
                 <link url="http://www.youtube.com/watch?v=sii8OsK62M8">
                     <label>Regarder sur Youtube</label>
                 </link>
             </video>
+            -->
 
             <link url="http://github.com/jeremiedecock/pyarm">
                 <label>Suivre ce projet sur Github</label>
@@ -159,9 +161,7 @@
                         weburl="http://git.tuxfamily.org/botsim/botsim.git/tree/"
                         type="git" />
 
-            <picture filename="botsim_1.png" />
-            <picture filename="botsim_2.png" />
-            <picture filename="botsim_3.png" />
+            <picture filename="botsim_1.png" thumbnail_filename="botsim_1.png" />
 
             <link url="http://github.com/jeremiedecock/botsim">
                 <label>Suivre ce projet sur Github</label>
@@ -284,11 +284,11 @@
                         weburl="http://git.tuxfamily.org/demos/demos.git/tree/"
                         type="git" />
 
+            <picture filename="demos.png" thumbnail_filename="demos.png" />
+
             <link url="http://github.com/jeremiedecock/snippets">
                 <label>Suivre ce projet sur Github</label>
             </link>
-
-            <picture filename="demos.png" />
         </item>
     </group>
     
@@ -341,9 +341,7 @@
             <repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
                         weburl="http://git.tuxfamily.org/jwumpus/jwumpus.git/tree/"
                         type="git" />
-            <picture filename="jwumpus_1.png" />
-            <picture filename="jwumpus_2.png" />
-            <picture filename="jwumpus_3.png" />
+            <picture filename="jwumpus_1.png" thumbnail_filename="jwumpus_1.png" />
         </item>
 
         <item id="chef" license="MIT">
@@ -419,7 +417,7 @@
             </link>
             -->
 
-            <picture filename="dynamixel_1.png" />
+            <picture filename="dynamixel_1.png" thumbnail_filename="dynamixel_1.png" />
         </item>
         
         <item id="vor12" license="MIT">
@@ -476,7 +474,7 @@
             <repository url="git://git.tuxfamily.org/gitroot/robotics/libdynamixel.git"
                         weburl="http://git.tuxfamily.org/robotics/libdynamixel.git/tree/"
                         type="git" />
-            <picture filename="dynamixel_1.png" />
+            <picture filename="dynamixel_1.png" thumbnail_filename="dynamixel_1.png" />
         </item>
 
         <item id="dtools" license="MIT">
@@ -491,7 +489,7 @@
             <repository url="git://git.tuxfamily.org/gitroot/robotics/dtools.git"
                         weburl="http://git.tuxfamily.org/robotics/dtools.git/tree/"
                         type="git" />
-            <!--<picture filename="dtools_gtkui_1.png" />-->
+            <!--<picture filename="dtools_gtkui_1.png" thumbnail_filename="dtools_gtkui_1.png" />-->
         </item>
 
         <item id="bioloid" license="MIT">
@@ -513,6 +511,7 @@
                     <label>Regarder sur Youtube</label>
                 </link>
             </video>
+            <!--
             <video filename="bioloid_quadrupedal_dynamic_1.ogv" thumbnail_filename="bioloid_quadrupedal_dynamic_1.png">
                 <link url="http://www.youtube.com/watch?v=48PtL3mXUNU">
                     <label>Regarder sur Youtube</label>
@@ -523,6 +522,7 @@
                     <label>Regarder sur Youtube</label>
                 </link>
             </video>
+            -->
         </item>
     </group>
 
@@ -603,8 +603,7 @@
             <repository url="git://git.tuxfamily.org/gitroot/systools/binviewer.git"
                         weburl="http://git.tuxfamily.org/systools/binviewer.git/tree/"
                         type="git" />
-            <picture filename="binviewer_1.png" />
-            <picture filename="binviewer_2.png" />
+            <picture filename="binviewer_1.png" thumbnail_filename="binviewer_1.png" />
         </item>
         -->
 
@@ -621,7 +620,7 @@
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/scripts.git"
                         weburl="http://git.tuxfamily.org/jdhp/scripts.git/tree/"
                         type="git" />
-            <picture filename="latex2png_2.png" />
+            <picture filename="latex2png_2.png" thumbnail_filename="latex2png_2.png" />
         </item>
     </group>
 
@@ -643,7 +642,7 @@
             <repository url="git://git.tuxfamily.org/gitroot/jdhpcad/jdhpcad.git"
                         weburl="http://git.tuxfamily.org/jdhpcad/jdhpcad.git/tree/"
                         type="git" />
-            <picture filename="scad.png" />
+            <picture filename="scad.png" thumbnail_filename="scad.png" />
         </item>
 
         <item id="jdhppcb" license="CC BY-SA">
@@ -657,7 +656,7 @@
             <repository url="git://git.tuxfamily.org/gitroot/jdhppcb/jdhppcb.git"
                         weburl="http://git.tuxfamily.org/jdhppcb/jdhppcb.git/tree/"
                         type="git" />
-            <picture filename="pcb.png" />
+            <picture filename="pcb.png" thumbnail_filename="pcb.png" />
         </item>
 
         <item id="pypong" license="MIT">
@@ -673,7 +672,7 @@
             <repository url="git://git.tuxfamily.org/gitroot/pygames/pypong.git"
                         weburl="http://git.tuxfamily.org/pygames/pypong.git/tree/"
                         type="git" />
-            <picture filename="pypong.png" />
+            <picture filename="pypong.png" thumbnail_filename="pypong.png" />
         </item>
 
         <item id="jdhp" license="cc-by-sa">
