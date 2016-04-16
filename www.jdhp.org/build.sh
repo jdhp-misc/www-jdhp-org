@@ -1,7 +1,5 @@
 #!/bin/sh
 
-JDHP_ROOT_PATH=~/jdhp/www.jdhp.org
-
 # See: http://www.microhowto.info/howto/process_an_xml_document_using_an_xslt_stylesheet.html
 
 # "tail -n +2" removes the first line of each generated html files
@@ -22,36 +20,35 @@ JDHP_ROOT_PATH=~/jdhp/www.jdhp.org
 #    - Given a text/html content-type, an XML prolog will trigger IE6's quirks mode
 #    The latter is undesirable. The former all mean it makes no difference
 
-if [ \! -d ${JDHP_ROOT_PATH}/www ]
+if [ \! -d ${JDHP_ROOT_PATH}/www.jdhp.org/www ]
 then
-    mkdir ${JDHP_ROOT_PATH}/www
+    mkdir ${JDHP_ROOT_PATH}/www.jdhp.org/www
 fi
 
 # XSLT1 ONLY
-xsltproc --xinclude ${JDHP_ROOT_PATH}/home_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www/home_en.html
-xsltproc --xinclude ${JDHP_ROOT_PATH}/home_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www/home_fr.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/home_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/home_en.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/home_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/home_fr.html
 
-xsltproc --xinclude ${JDHP_ROOT_PATH}/articles_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www/articles_en.html
-xsltproc --xinclude ${JDHP_ROOT_PATH}/articles_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www/articles_fr.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/articles_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/articles_en.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/articles_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/articles_fr.html
 
-xsltproc --xinclude ${JDHP_ROOT_PATH}/projects_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www/projects_en.html
-xsltproc --xinclude ${JDHP_ROOT_PATH}/projects_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www/projects_fr.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/projects_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/projects_en.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/projects_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/projects_fr.html
 
-xsltproc --xinclude ${JDHP_ROOT_PATH}/tutorials_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www/tutorials_en.html
-xsltproc --xinclude ${JDHP_ROOT_PATH}/tutorials_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www/tutorials_fr.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/tutorials_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/tutorials_en.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/tutorials_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/tutorials_fr.html
 
 # Well... I don't use redirection (http, meta, script, ...) but a simple copy
 # in order to avoid problems with web indexing (Google and so).
-cp -a ${JDHP_ROOT_PATH}/www/home_en.html      ${JDHP_ROOT_PATH}/www/index.html
-cp -a ${JDHP_ROOT_PATH}/misc/favicon.ico      ${JDHP_ROOT_PATH}/www/
-cp -a ${JDHP_ROOT_PATH}/misc/robots.txt       ${JDHP_ROOT_PATH}/www/
-cp -a ${JDHP_ROOT_PATH}/misc/debian_howto_en  ${JDHP_ROOT_PATH}/www/
-cp -a ${JDHP_ROOT_PATH}/misc/debian_howto_fr  ${JDHP_ROOT_PATH}/www/
-cp -a ${JDHP_ROOT_PATH}/css     ${JDHP_ROOT_PATH}/www/
-cp -a ${JDHP_ROOT_PATH}/medias  ${JDHP_ROOT_PATH}/www/
-cp -a ${JDHP_ROOT_PATH}/bib     ${JDHP_ROOT_PATH}/www/
-cp -a ${JDHP_ROOT_PATH}/hevea   ${JDHP_ROOT_PATH}/www/
-#cp -a ${JDHP_ROOT_PATH}/html    ${JDHP_ROOT_PATH}/www/
+cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/www/home_en.html      ${JDHP_ROOT_PATH}/www.jdhp.org/www/index.html
+cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/misc/favicon.ico      ${JDHP_ROOT_PATH}/www.jdhp.org/www/
+cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/misc/robots.txt       ${JDHP_ROOT_PATH}/www.jdhp.org/www/
+cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/misc/debian_howto_en  ${JDHP_ROOT_PATH}/www.jdhp.org/www/
+cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/misc/debian_howto_fr  ${JDHP_ROOT_PATH}/www.jdhp.org/www/
+cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/css     ${JDHP_ROOT_PATH}/www.jdhp.org/www/
+cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/medias  ${JDHP_ROOT_PATH}/www.jdhp.org/www/
+cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/hevea   ${JDHP_ROOT_PATH}/www.jdhp.org/www/
+#cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/html    ${JDHP_ROOT_PATH}/www.jdhp.org/www/
 #ln --symbolic home_en.html www/index.html
 
 ## XSLT2

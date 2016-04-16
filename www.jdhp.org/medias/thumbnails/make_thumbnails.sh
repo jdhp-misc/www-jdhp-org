@@ -1,11 +1,9 @@
 #!/bin/sh
 
-JDHP_ROOT_PATH=~/jdhp/www.jdhp.org
-
-IMG_INPUT_DIR=${JDHP_ROOT_PATH}/../download.tuxfamily.org/image
-MOV_INPUT_DIR=${JDHP_ROOT_PATH}/../download.tuxfamily.org/video
-OUTPUT_DIR=${JDHP_ROOT_PATH}/medias/thumbnails
-LOGO_FILE=${JDHP_ROOT_PATH}/medias/images/video.png
+IMG_INPUT_DIR=${JDHP_ROOT_PATH}/download.tuxfamily.org/image
+MOV_INPUT_DIR=${JDHP_ROOT_PATH}/download.tuxfamily.org/video
+OUTPUT_DIR=${JDHP_ROOT_PATH}/www.jdhp.org/medias/thumbnails
+LOGO_FILE=${JDHP_ROOT_PATH}/www.jdhp.org/medias/images/video.png
 
 # MAKE THUMBNAILS (SCREENSHOT) ################################################
 
