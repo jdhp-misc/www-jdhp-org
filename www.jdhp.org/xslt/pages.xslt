@@ -41,7 +41,7 @@
                 </div>
 
                 <!-- LOGO -->
-                <h1><img src="./medias/images/header.jpeg" title="jdhp.org" alt="jdhp.org" /></h1>
+                <h1><img src="./medias/images/header.png" title="jdhp.org" alt="jdhp.org" /></h1>
                 
                 <!-- MENU -->
                 <ul id="menu">
