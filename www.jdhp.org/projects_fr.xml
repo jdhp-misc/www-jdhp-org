@@ -436,7 +436,7 @@
                         weburl="http://git.tuxfamily.org/robotics/vor12.git/tree/"
                         type="git" />
 
-            <link url="https://github.com/volab/vor12">
+            <link url="https://github.com/jeremiedecock/vor12">
                 <label>Suivre ce projet sur Github</label>
             </link>
 
