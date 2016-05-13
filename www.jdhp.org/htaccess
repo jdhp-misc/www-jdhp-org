@@ -1,3 +1,15 @@
+# Redirect directories www.jdhp.org/dl/*/ to http://download.tuxfamily.org/jdhp/*/
+Redirect permanent /dl/bib/                  http://download.tuxfamily.org/jdhp/bib/
+Redirect permanent /dl/debian/               http://download.tuxfamily.org/jdhp/debian/
+Redirect permanent /dl/image/                http://download.tuxfamily.org/jdhp/image/
+Redirect permanent /dl/jupyter/              http://download.tuxfamily.org/jdhp/jupyter/
+Redirect permanent /dl/man/                  http://download.tuxfamily.org/jdhp/man/
+Redirect permanent /dl/pdf/                  http://download.tuxfamily.org/jdhp/pdf/
+Redirect permanent /dl/rpm/                  http://download.tuxfamily.org/jdhp/rpm/
+Redirect permanent /dl/tarball/              http://download.tuxfamily.org/jdhp/tarball/
+Redirect permanent /dl/video/                http://download.tuxfamily.org/jdhp/video/
+
+# Redirect some files
 Redirect permanent /phd.pdf                                                       https://hal.inria.fr/tel-01103935/file/phd.pdf
 Redirect permanent /phd_slides.pdf                                                http://download.tuxfamily.org/jdhp/pdf/phd_slides.pdf
 Redirect permanent /bib/bibliography_jeremie_decock.bib                           http://download.tuxfamily.org/jdhp/bib/bibliography_jeremie_decock.bib
