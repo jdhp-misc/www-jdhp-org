@@ -59,7 +59,7 @@
                         weburl="http://git.tuxfamily.org/jdhpdocs/rpi-qemu.git/tree/"
                         type="git" />
 
-            <link url="hevea/tutoriel_rpi_qemu/tutoriel_rpi_qemu.html">
+            <link url="docs/tutoriel_rpi_qemu/tutoriel_rpi_qemu.html">
                 <label>Lire la suite</label>
             </link>
         </item>
@@ -128,7 +128,7 @@
                         weburl="http://git.tuxfamily.org/jdhpdocs/mtp-debian.git/tree/"
                         type="git" />
 
-            <link url="hevea/tutoriel_acceder_fs_android_depuis_linux/tutoriel_acceder_fs_android_depuis_linux.html">
+            <link url="docs/tutoriel_acceder_fs_android_depuis_linux/tutoriel_acceder_fs_android_depuis_linux.html">
                 <label>Lire la suite</label>
             </link>
         </item>
@@ -154,7 +154,7 @@
                         weburl="http://git.tuxfamily.org/jdhpdocs/vim-spell-fr.git/tree/"
                         type="git" />
 
-            <link url="hevea/tutoriel_vim_spellfr/tutoriel_vim_spellfr.html">
+            <link url="docs/tutoriel_vim_spellfr/tutoriel_vim_spellfr.html">
                 <label>Lire la suite</label>
             </link>
         </item>

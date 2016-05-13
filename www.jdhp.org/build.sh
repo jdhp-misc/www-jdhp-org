@@ -52,7 +52,7 @@ cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/robots.txt            ${JDHP_ROOT_PATH}/www
 cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/htaccess              ${JDHP_ROOT_PATH}/www.jdhp.org/www/.htaccess
 cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/css     ${JDHP_ROOT_PATH}/www.jdhp.org/www/
 cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/medias  ${JDHP_ROOT_PATH}/www.jdhp.org/www/
-cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/hevea   ${JDHP_ROOT_PATH}/www.jdhp.org/www/
+cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/docs    ${JDHP_ROOT_PATH}/www.jdhp.org/www/
 #cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/html    ${JDHP_ROOT_PATH}/www.jdhp.org/www/
 #ln --symbolic home_en.html www/index.html
 

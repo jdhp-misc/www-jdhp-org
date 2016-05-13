@@ -27,7 +27,7 @@
         <p>
             Liste de mes publications académiques:
             <a href="http://download.tuxfamily.org/jdhp/pdf/bibliography_jeremie_decock.pdf">PDF</a>, 
-            <a href="http://www.jdhp.org/hevea/bibliography_jeremie_decock/bibliography_jeremie_decock.html">HTML</a>, 
+            <a href="http://www.jdhp.org/docs/bibliography_jeremie_decock/bibliography_jeremie_decock.html">HTML</a>, 
             <a href="http://download.tuxfamily.org/jdhp/bib/bibliography_jeremie_decock.bib">BibTex</a>.
         </p>
         <p>
@@ -440,7 +440,7 @@
                         weburl="http://git.tuxfamily.org/jdhpdocs/wikis.git/tree/"
                         type="git" />
 
-            <link url="hevea/les_wikis_en_entreprise/les_wikis_en_entreprise.html">
+            <link url="docs/les_wikis_en_entreprise/les_wikis_en_entreprise.html">
                 <label>Lire la suite</label>
             </link>
         </item>
@@ -493,7 +493,7 @@
                         weburl="http://git.tuxfamily.org/jdhpdocs/droit-auteur.git/tree/"
                         type="git" />
 
-            <link url="hevea/droits_auteurs/droits_auteurs.html">
+            <link url="docs/droits_auteurs/droits_auteurs.html">
                 <label>Lire la suite</label>
             </link>
         </item>

@@ -1,1 +1,7 @@
-Put here html files generated with HeVeA.
+Put here external HTML documents: articles, tutorials, slides, ...
+Use one subdirectory per document.
+
+Only documents directly readable by web browsers should be put here (i.e.
+HTML/CSS/JS).
+All other files (PDF, tarballs, packages, videos, ...) should be put in
+"www.jdhp.org/dl/".
