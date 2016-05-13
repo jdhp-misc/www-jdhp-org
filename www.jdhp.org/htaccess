@@ -4,6 +4,9 @@ Redirect permanent /dl/        http://download.tuxfamily.org/jdhp/
 # Redirect www.jdhp.org/hevea/ to www.jdhp.org/docs/
 Redirect permanent /hevea/     http://www.jdhp.org/docs/
 
+# Errors detected by Google search console
+Redirect permanent /index_en.html                                                 http://www.jdhp.org/home_en.html
+
 # Redirect some files
 Redirect permanent /phd.pdf                                                       https://hal.inria.fr/tel-01103935/file/phd.pdf
 Redirect permanent /phd_slides.pdf                                                http://download.tuxfamily.org/jdhp/pdf/phd_slides.pdf
