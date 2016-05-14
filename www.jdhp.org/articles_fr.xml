@@ -26,9 +26,9 @@
         <br />
         <p>
             Liste de mes publications académiques:
-            <a href="http://download.tuxfamily.org/jdhp/pdf/bibliography_jeremie_decock.pdf">PDF</a>, 
+            <a href="http://www.jdhp.org/dl/pdf/bibliography_jeremie_decock.pdf">PDF</a>,
             <a href="http://www.jdhp.org/docs/bibliography_jeremie_decock/bibliography_jeremie_decock.html">HTML</a>, 
-            <a href="http://download.tuxfamily.org/jdhp/bib/bibliography_jeremie_decock.bib">BibTex</a>.
+            <a href="http://www.jdhp.org/dl/bib/bibliography_jeremie_decock.bib">BibTex</a>.
         </p>
         <p>
             Mes publications scientifiques sont également disponibles sur <a href="https://hal.inria.fr/search/index/q/*/authFullName_t/J%C3%A9r%C3%A9mie+Decock">HAL - Inria</a> (archive ouverte).
@@ -161,13 +161,13 @@
 
                 Supports:
                 <ul>
-                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/fork_step_by_step.pdf">     Appel système fork (PDF)</a></li>
-                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/fork_step_by_step_var.pdf"> Appel système fork avec une variable (PDF)</a></li>
-                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/printf_scanf.pdf">          Fonctions printf et scanf (PDF)</a></li>
-                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/fibonacci.pdf">             Compilation séparée et édition des liens (PDF)</a></li>
-                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/exec.pdf">                  Appel système exec (PDF)</a></li>
-                    <!-- <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/c_cycle.pdf">               Chaîne de compilation en C avec GCC (PDF)</a></li> -->
-                    <li><a href="http://download.tuxfamily.org/jdhp/pdf/supports_cours_iut_orsay/c_cycle_v2.pdf">            Chaîne de compilation en C avec GCC (PDF)</a></li>
+                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/fork_step_by_step.pdf">     Appel système fork (PDF)</a></li>
+                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/fork_step_by_step_var.pdf"> Appel système fork avec une variable (PDF)</a></li>
+                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/printf_scanf.pdf">          Fonctions printf et scanf (PDF)</a></li>
+                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/fibonacci.pdf">             Compilation séparée et édition des liens (PDF)</a></li>
+                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/exec.pdf">                  Appel système exec (PDF)</a></li>
+                    <!-- <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/c_cycle.pdf">               Chaîne de compilation en C avec GCC (PDF)</a></li> -->
+                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/c_cycle_v2.pdf">            Chaîne de compilation en C avec GCC (PDF)</a></li>
                 </ul>
             </desc>
 
