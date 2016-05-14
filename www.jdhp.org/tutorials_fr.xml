@@ -55,9 +55,7 @@
     
             <pdf filename="tutoriel_rpi_qemu.pdf" label="PDF" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/rpi-qemu.git"
-                        weburl="http://git.tuxfamily.org/jdhpdocs/rpi-qemu.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/rpi_qemu_part1" />
 
             <link url="docs/tutoriel_rpi_qemu/tutoriel_rpi_qemu.html">
                 <label>Lire la suite</label>
@@ -92,9 +90,8 @@
                 Jérémie Decock, février 2016.
             </bib>
     
-            <link url="https://github.com/jdhp-docs/atelier-initiation-python">
-                <label>Suivre ce projet sur Github</label>
-            </link>
+            <repository type="github" url="http://github.com/jdhp-docs/atelier-initiation-python" />
+
             <link url="docs/initiation_python/index.html">
                 <label>Lire la suite</label>
             </link>
@@ -124,9 +121,7 @@
     
             <pdf filename="tutoriel_acceder_fs_android_depuis_linux.pdf" label="PDF" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/mtp-debian.git"
-                        weburl="http://git.tuxfamily.org/jdhpdocs/mtp-debian.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/mtp_android_debian" />
 
             <link url="docs/tutoriel_acceder_fs_android_depuis_linux/tutoriel_acceder_fs_android_depuis_linux.html">
                 <label>Lire la suite</label>
@@ -150,9 +145,7 @@
     
             <pdf filename="tutoriel_vim_spellfr.pdf" label="PDF" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/vim-spell-fr.git"
-                        weburl="http://git.tuxfamily.org/jdhpdocs/vim-spell-fr.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/vim_spell" />
 
             <link url="docs/tutoriel_vim_spellfr/tutoriel_vim_spellfr.html">
                 <label>Lire la suite</label>

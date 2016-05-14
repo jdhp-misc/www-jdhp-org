@@ -17,6 +17,7 @@
         <flags translation="Changer de langue :" />
         <download translation="Télécharger" />
         <source_code translation="Fichiers sources" />
+        <download_sources translation="Sources" />
         <debian_package translation="Paquet Debian" />
         <image translation="Image" />
         <video translation="Vidéo" />
@@ -24,10 +25,9 @@
         <tuxfamily_tag_title translation="Ce site est hébergé chez TuxFamily" />
         <xhtml_validator_tag_title translation="Cette page respecte le standard XHTML 1.0 Strict" />
         <css_validator_tag_title translation="Cette page respecte le standard CSS 2.0" />
+        <github translation="Explorer ce projet sur Github" />
         <gitweb translation="Parcourir le code source" />
-        <svnweb translation="Parcourir le code source" />
         <giturl translation="Référentiel Git" />
-        <svnurl translation="Référentiel SVN" />
         <legal>Site hébergé par <a href="http://www.tuxfamily.org/">Tuxfamily.org</a>.</legal>
     </i18n>
 

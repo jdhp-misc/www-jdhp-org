@@ -313,9 +313,7 @@
 
             <pdf filename="mcts_slides.pdf" label="Slides (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/mcts.git"
-                        weburl="http://git.tuxfamily.org/jdhpdocs/mcts.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/mcts" />
         </item>
 
         <item id="minimax" license="">
@@ -334,9 +332,7 @@
 
             <pdf filename="minimax_slides.pdf" label="Slides (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/minimax.git"
-                        weburl="http://git.tuxfamily.org/jdhpdocs/minimax.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/minimax" />
         </item>
 
     </group>

@@ -78,42 +78,19 @@
                 pour la version anglaise et <a href="http://www.jdhp.org/articles_fr.html#XCSF">là</a> pour la version française.
             </desc>
 
+            <repository type="github" url="http://github.com/jeremiedecock/pyarm" />
+
+            <download_sources url="http://github.com/jeremiedecock/pyarm/releases" />
+
             <pdf filename="pyarm.pdf" label="Documentation technique (PDF)" />
 
             <debian_package filename="pyarm_0.1.3-1_all.deb" arch="all" />
-
-            <!--
-            <repository url="git@github.com:jeremiedecock/pyarm.git"
-                        weburl="https://github.com/jeremiedecock/pyarm"
-                        type="git" />
-            -->
-
-            <archive url="http://git.tuxfamily.org/botsim/pyarm.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/botsim/pyarm.git"
-                        weburl="http://git.tuxfamily.org/botsim/pyarm.git/tree/"
-                        type="git" />
 
             <video filename="pyarm_generalization.ogv" thumbnail_filename="pyarm_generalization.png">
                 <link url="http://www.youtube.com/watch?v=VjaBMbMt5Cw">
                     <label>Regarder sur Youtube</label>
                 </link>
             </video>
-            <!--
-            <video filename="pyarm_optimization.ogv" thumbnail_filename="pyarm_optimization.png">
-                <link url="http://www.youtube.com/watch?v=sii8OsK62M8">
-                    <label>Regarder sur Youtube</label>
-                </link>
-            </video>
-            -->
-
-            <link url="http://github.com/jeremiedecock/pyarm">
-                <label>Suivre ce projet sur Github</label>
-            </link>
-            <link url="http://code.google.com/p/pyarm/">
-                <label>Google Code</label>
-            </link>
         </item>
 
         <!-- BOTSIM -->
@@ -154,18 +131,11 @@
                 <a href="http://www.botsim.org">www.botsim.org</a>.
             </desc>
 
-            <archive url="http://git.tuxfamily.org/botsim/botsim.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/botsim/botsim.git"
-                        weburl="http://git.tuxfamily.org/botsim/botsim.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jeremiedecock/botsim" />
+
+            <download_sources url="http://github.com/jeremiedecock/botsim/releases" />
 
             <picture filename="botsim_1.png" thumbnail_filename="botsim_1.png" />
-
-            <link url="http://github.com/jeremiedecock/botsim">
-                <label>Suivre ce projet sur Github</label>
-            </link>
         </item>
 
         <!-- SNIPPETS -->
@@ -277,18 +247,11 @@
                 </dl>
             </desc>
 
-            <archive url="http://git.tuxfamily.org/demos/demos.git/snapshot/demos-master.zip">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/demos/demos.git"
-                        weburl="http://git.tuxfamily.org/demos/demos.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jeremiedecock/snippets" />
+
+            <download_sources url="https://github.com/jeremiedecock/snippets/archive/master.zip" />
 
             <picture filename="demos.png" thumbnail_filename="demos.png" />
-
-            <link url="http://github.com/jeremiedecock/snippets">
-                <label>Suivre ce projet sur Github</label>
-            </link>
         </item>
     </group>
     
@@ -310,16 +273,7 @@
                 d'optimisation stochastique non-linéaire.
             </desc>
 
-            <archive url="http://git.tuxfamily.org/aiscripts/python.git/snapshot/python-master.zip">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/aiscripts/python.git"
-                        weburl="http://git.tuxfamily.org/aiscripts/python.git/tree/"
-                        type="git" />
-
-            <link url="http://github.com/jeremiedecock/pyai">
-                <label>Suivre ce projet sur Github</label>
-            </link>
+            <repository type="github" url="http://github.com/jeremiedecock/pyai" />
         </item>
 
         <item id="jwumpus" license="MIT">
@@ -335,9 +289,8 @@
             </desc>
             <debian_package filename="jwumpus_1.0-1_all.deb" arch="all" />
             <!-- http://git.tuxfamily.org/jwumpus/jwumpus.git/snapshot/jwumpus-master.zip -->
-            <archive url="http://git.tuxfamily.org/jwumpus/jwumpus.git/refs/">
-                <label>Sources</label>
-            </archive>
+            <download_sources url="http://git.tuxfamily.org/jwumpus/jwumpus.git/refs/" />
+
             <repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
                         weburl="http://git.tuxfamily.org/jwumpus/jwumpus.git/tree/"
                         type="git" />
@@ -352,12 +305,8 @@
                 (Belief Desire and Intention) et l'interprète
                 <a href="http://jason.sourceforge.net/Jason/Description.html">Jason</a>.
             </desc>
-            <archive url="http://git.tuxfamily.org/chef/chef.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/chef/chef.git"
-                        weburl="http://git.tuxfamily.org/chef/chef.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jeremiedecock/chef" />
+            <download_sources url="http://github.com/jeremiedecock/chef/releases" />
         </item>
 
         <item id="perceptron_php" license="MIT">
@@ -368,9 +317,7 @@
                 fonctionnant suivant le modèle du Perceptron. Il n'a pas d'autre
                 intérêt que de servir de support pédagogique.
             </desc>
-            <archive filename="perceptron_simple.zip">
-                <label>Sources</label>
-            </archive>
+            <download_sources filename="perceptron_simple.zip" />
         </item>
     </group>
 
@@ -396,27 +343,12 @@
                 href="http://www.robotis.com">Robotis</a>. PyAX-12 est
                 écrite en Python.
             </desc>
-            <archive url="http://git.tuxfamily.org/robotics/pydynamixel.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/robotics/pydynamixel.git"
-                        weburl="http://git.tuxfamily.org/robotics/pydynamixel.git/tree/"
-                        type="git" />
-
-            <link url="https://github.com/jeremiedecock/pyax12">
-                <label>Suivre ce projet sur Github</label>
-            </link>
-
+            <repository type="github" url="http://github.com/jeremiedecock/pyax12" />
+            <download_sources url="http://github.com/jeremiedecock/pyax12/releases" />
             <!--
-            <link url="http://pyax-12.readthedocs.org/">
-                <label>Documentation</label>
-            </link>
-
-            <link url="https://pypi.python.org/pypi/pyax12">
-                <label>PyAX-12 sur PyPI</label>
-            </link>
+            <readthedocs url="http://pyax-12.readthedocs.org/" />
+            <label>Online documentation</label>
             -->
-
             <picture filename="dynamixel_1.png" thumbnail_filename="dynamixel_1.png" />
         </item>
         
@@ -428,28 +360,13 @@
                 AX-12</a> et la bibliothèque de traitement d'image <a href="http://opencv.org/">OpenCV</a>
                 pour effectuer des expériences de suivi d'objets.
             </desc>
-
-            <archive url="http://git.tuxfamily.org/robotics/vor12.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/robotics/vor12.git"
-                        weburl="http://git.tuxfamily.org/robotics/vor12.git/tree/"
-                        type="git" />
-
-            <link url="https://github.com/jeremiedecock/vor12">
-                <label>Suivre ce projet sur Github</label>
-            </link>
-
+            <repository type="github" url="http://github.com/jeremiedecock/vor12" />
+            <download_sources url="http://github.com/jeremiedecock/vor12/releases" />
             <!--
             <link url="http://vor12.readthedocs.org">
-                <label>Documentation</label>
-            </link>
-
-            <link url="https://pypi.python.org/pypi/vor12">
-                <label>VoR12 sur PyPI</label>
+                <label>Online documentation</label>
             </link>
             -->
-
             <picture filename="vor12-2.jpeg" thumbnail_filename="vor12-2.png" />
         </item>
         
@@ -468,9 +385,8 @@
                 href="http://www.robotis.com">Robotis</a>.  LibDynamixel est
                 écrit en C et fonctionne sur les systèmes Gnu/Linux.
             </desc>
-            <archive url="http://git.tuxfamily.org/robotics/libdynamixel.git/refs/">
-                <label>Sources</label>
-            </archive>
+            <download_sources url="http://git.tuxfamily.org/robotics/libdynamixel.git/refs/" />
+
             <repository url="git://git.tuxfamily.org/gitroot/robotics/libdynamixel.git"
                         weburl="http://git.tuxfamily.org/robotics/libdynamixel.git/tree/"
                         type="git" />
@@ -483,13 +399,8 @@
                 Un ensemble d'outils pour faciliter le contrôle des servomoteurs
                 <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel AX-12</a>.
             </desc>
-            <archive url="http://git.tuxfamily.org/robotics/dtools.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/robotics/dtools.git"
-                        weburl="http://git.tuxfamily.org/robotics/dtools.git/tree/"
-                        type="git" />
-            <!--<picture filename="dtools_gtkui_1.png" thumbnail_filename="dtools_gtkui_1.png" />-->
+            <repository type="github" url="http://github.com/jeremiedecock/dtools" />
+            <download_sources url="http://github.com/jeremiedecock/dtools/releases" />
         </item>
 
         <item id="bioloid" license="MIT">
@@ -500,9 +411,8 @@
                 pour contrôler un
                 <a href="http://www.robotis.com/xe/bioloid_en">bioloid</a>.
             </desc>
-            <archive url="http://git.tuxfamily.org/robotics/bioloid.git/refs/">
-                <label>Sources</label>
-            </archive>
+            <download_sources url="http://git.tuxfamily.org/robotics/bioloid.git/refs/" />
+
             <repository url="git://git.tuxfamily.org/gitroot/robotics/bioloid.git"
                         weburl="http://git.tuxfamily.org/robotics/bioloid.git/tree/"
                         type="git" />
@@ -539,19 +449,7 @@
                 PyDuplicateFileManager recherche les fichiers et les
                 répertoires dupliqués dans une arborescence.
             </desc>
-
-            <!-- <debian_package filename="clonefinder_1.0-1_all.deb" arch="all" /> -->
-
-            <archive url="http://git.tuxfamily.org/systools/clonefinder.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/systools/clonefinder.git"
-                        weburl="http://git.tuxfamily.org/systools/clonefinder.git/tree/"
-                        type="git" />
-
-            <link url="http://github.com/jeremiedecock/pydfm">
-                <label>Suivre ce projet sur Github</label>
-            </link>
+            <repository type="github" url="http://github.com/jeremiedecock/pydfm" />
         </item>
 
         <item id="dspp" license="MIT">
@@ -573,17 +471,8 @@
 
                 DSPP est écrit en Python et distribué selon la licence MIT.
             </desc>
-
-            <archive url="http://git.tuxfamily.org/dspp/dspp.git/refs/">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/dspp/dspp.git"
-                        weburl="http://git.tuxfamily.org/dspp/dspp.git/tree/"
-                        type="git" />
-
-            <link url="http://github.com/jeremiedecock/dspp">
-                <label>Suivre ce projet sur Github</label>
-            </link>
+            <repository type="github" url="http://github.com/jeremiedecock/dspp" />
+            <download_sources url="http://github.com/jeremiedecock/dspp/releases" />
         </item>
 
         <!--
@@ -597,9 +486,8 @@
                 fichier.
             </desc>
             <debian_package filename="binviewer_0.2-1_all.deb" arch="all" />
-            <archive url="http://git.tuxfamily.org/systools/binviewer.git/refs/">
-                <label>Sources</label>
-            </archive>
+            <download_sources url="http://git.tuxfamily.org/systools/binviewer.git/refs/" />
+
             <repository url="git://git.tuxfamily.org/gitroot/systools/binviewer.git"
                         weburl="http://git.tuxfamily.org/systools/binviewer.git/tree/"
                         type="git" />
@@ -614,9 +502,8 @@
                 exemple d'exporter une formule mathématique isolée en image).
             </desc>
             <debian_package filename="latex2png_1.0-1_all.deb" arch="all" />
-            <archive filename="latex2png-1.0.tar.gz">
-                <label>Sources</label>
-            </archive>
+            <download_sources filename="latex2png-1.0.tar.gz" />
+
             <repository url="git://git.tuxfamily.org/gitroot/jdhp/scripts.git"
                         weburl="http://git.tuxfamily.org/jdhp/scripts.git/tree/"
                         type="git" />
@@ -636,12 +523,12 @@
             <desc>
                 Une collection de plans de conception d'objets imprimables en 3 dimensions (réalisés avec  <a href="http://www.openscad.org/">OpenSCAD</a>).
             </desc>
-            <archive url="http://git.tuxfamily.org/jdhpcad/jdhpcad.git/snapshot/jdhpcad-master.zip">
-                <label>Sources</label>
-            </archive>
+            <download_sources url="http://git.tuxfamily.org/jdhpcad/jdhpcad.git/snapshot/jdhpcad-master.zip" />
+
             <repository url="git://git.tuxfamily.org/gitroot/jdhpcad/jdhpcad.git"
                         weburl="http://git.tuxfamily.org/jdhpcad/jdhpcad.git/tree/"
                         type="git" />
+
             <picture filename="scad.png" thumbnail_filename="scad.png" />
         </item>
 
@@ -650,9 +537,7 @@
             <desc>
                 Une collection de plans de conception de circuits imprimés prêts à être fabriqués (réalisés avec <a href="http://www.kicad-pcb.org">KiCad</a>).
             </desc>
-            <archive url="http://git.tuxfamily.org/jdhppcb/jdhppcb.git/snapshot/jdhppcb-master.zip">
-                <label>Sources</label>
-            </archive>
+            <download_sources url="http://git.tuxfamily.org/jdhppcb/jdhppcb.git/snapshot/jdhppcb-master.zip" />
             <repository url="git://git.tuxfamily.org/gitroot/jdhppcb/jdhppcb.git"
                         weburl="http://git.tuxfamily.org/jdhppcb/jdhppcb.git/tree/"
                         type="git" />
@@ -666,26 +551,19 @@
                 <a href="http://www.python.org/">Python</a> et utilise les
                 modules <a href="http://www.pygame.org/">PyGame</a>.
             </desc>
-            <archive url="http://git.tuxfamily.org/pygames/pypong.git/refs/">
-                <label>Sources</label>
-            </archive>
+            <download_sources url="http://git.tuxfamily.org/pygames/pypong.git/refs/" />
             <repository url="git://git.tuxfamily.org/gitroot/pygames/pypong.git"
                         weburl="http://git.tuxfamily.org/pygames/pypong.git/tree/"
                         type="git" />
             <picture filename="pypong.png" thumbnail_filename="pypong.png" />
         </item>
 
-        <item id="jdhp" license="cc-by-sa">
+        <item id="jdhp" license="CC BY-SA">
             <label>JDHP</label>
             <desc>
                 Le code source et les scripts de compilation du site jdhp.org (écrit en XML/XSLT/CSS).
             </desc>
-            <archive url="http://git.tuxfamily.org/jdhp/jdhp.git/snapshot/jdhp-master.zip">
-                <label>Sources</label>
-            </archive>
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/jdhp.git"
-                        weburl="http://git.tuxfamily.org/jdhp/jdhp.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-misc/www-jdhp-org" />
         </item>
     </group>
 </page>

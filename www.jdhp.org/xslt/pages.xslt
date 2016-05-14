@@ -19,7 +19,7 @@
                 <meta http-equiv="pragma" content="no-cache" />
                 <meta http-equiv="cache-control" content="no-cache" />
                 <meta name="author" content="Jérémie DECOCK" />
-                <meta name="copyright" content="copyright (c) 2006,2007,2008,2009,2010,2011,2012,2014,2015 Jérémie DECOCK" />
+                <meta name="copyright" content="copyright (c) 2006-2016 Jérémie DECOCK" />
                 <meta name="keywords" content="{/page/keywords}" />
                 <link rel="shortcut icon" type="image/png" href="./medias/images/favicon.png" />
                 <link rel="stylesheet" type="text/css" href="./css/blue2.css" media="screen" title="Normal" />
@@ -146,18 +146,23 @@
 
                     <!-- GROUPS -->
                     <xsl:for-each select="/page/group">
+
+                        <!-- Group title -->
                         <h2 id="{@id}">
                             <xsl:value-of select="label" />
                             &#160; <a class="headerlink" title="Permalink to this headline" href="{/page/@id}_{/page/@lang}.html#{@id}">&#182;</a>
                         </h2>
 
+                        <!-- ITEMS -->
                         <xsl:for-each select="./item">
+
+                            <!-- Item title -->
                             <h3 id="{@id}">
                                 <xsl:value-of select="label" />
                                 &#160; <a class="headerlink" title="Permalink to this headline" href="{/page/@id}_{/page/@lang}.html#{@id}">&#182;</a>
                             </h3>
 
-                            <!-- PICTURES -->
+                            <!-- Pictures -->
                             <xsl:choose>
                                 <xsl:when test="picture">
                                     <div class="item_thumbnails">
@@ -175,7 +180,7 @@
                                 </xsl:when>
                             </xsl:choose>
 
-                            <!-- VIDEOS -->
+                            <!-- Videos -->
                             <xsl:choose>
                                 <xsl:when test="video">
                                     <div class="item_thumbnails">
@@ -186,14 +191,14 @@
                                 </xsl:when>
                             </xsl:choose>
 
-                            <!-- DESC -->
+                            <!-- Description -->
                             <div class="item_desc">
                                 <!-- xsl:copy-of excluding parent: see http://stackoverflow.com/questions/1755661/xslcopy-of-excluding-parent -->
                                 <!-- copy elements but remove unused namespace(s): see http://stackoverflow.com/questions/1074767/xsl-copy-elements-but-remove-unused-namespaces -->
                                 <xsl:copy-of select="desc/node()" copy-namespaces="no" /> <!-- TODO http://stackoverflow.com/questions/19998180/xsl-copy-nodes-without-xmlns -->
                             </div>
 
-                            <!-- LINK -->
+                            <!-- Link -->
                             <xsl:choose>
                                 <xsl:when test="link">
                                     <div class="item_link">
@@ -202,7 +207,7 @@
                                 </xsl:when>
                             </xsl:choose>
 
-                            <!-- BIB (FOR ACADEMIC ARTICLES) -->
+                            <!-- Bib (for academic articles) -->
                             <xsl:choose>
                                 <xsl:when test="bib">
                                     <div class="item_bib">
@@ -218,9 +223,9 @@
                                 </xsl:when>
                             </xsl:choose>
 
-                            <!-- METADATAS -->
+                            <!-- Metadatas -->
                             <xsl:choose>
-                                <xsl:when test="pdf or open_archive or repository or archive or debian_package">
+                                <xsl:when test="pdf or open_archive or repository or download_sources or debian_package">
                                     <div class="item_metadatas">
 
                                         <!-- HAL -->
@@ -235,9 +240,37 @@
                                             </xsl:when>
                                         </xsl:choose>
 
+                                        <!-- REPOSITORIES (GIT/SVN) -->
+                                        <xsl:choose>
+                                            <xsl:when test="repository">
+                                                <div class="item_repository">
+                                                    <strong><xsl:value-of select="/page/common_lang/i18n/source_code/@translation" /></strong> :
+
+                                                    <xsl:for-each select="./repository">
+                                                        <xsl:choose>
+                                                            <!-- GITHUB -->
+                                                            <xsl:when test="@type='github'">
+                                                                <a href="{@url}"><xsl:value-of select="/page/common_lang/i18n/github/@translation" /></a>
+                                                                &#160;
+                                                                <!-- TODO séparateur quand il y a plusieurs referentiels http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                            </xsl:when>
+
+                                                            <!-- GIT TUXFAMILY -->
+                                                            <xsl:when test="@type='git'">
+                                                                <a href="{@weburl}"><xsl:value-of select="/page/common_lang/i18n/gitweb/@translation" /></a> (<a href="{@url}"><xsl:value-of select="/page/common_lang/i18n/giturl/@translation" /></a>)
+                                                                &#160;
+                                                                <!-- TODO séparateur quand il y a plusieurs referentiels http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
+                                                            </xsl:when>
+                                                        </xsl:choose>
+                                                    </xsl:for-each>
+
+                                                </div>
+                                            </xsl:when>
+                                        </xsl:choose>
+
                                         <!-- DOWNLOAD -->
                                         <xsl:choose>
-                                            <xsl:when test="pdf or archive or debian_package">
+                                            <xsl:when test="pdf or download_sources or debian_package">
                                                 <div class="item_download">
                                                     <strong><xsl:value-of select="/page/common_lang/i18n/download/@translation" /></strong> :
 
@@ -256,16 +289,16 @@
                                                         </xsl:choose>
                                                     </xsl:for-each>
 
-                                                    <xsl:for-each select="./archive">
+                                                    <xsl:for-each select="./download_sources">
                                                         <xsl:choose>
                                                             <xsl:when test="@url">
                                                                 <a href="{@url}">
-                                                                    <xsl:value-of select="label" />
+                                                                    <xsl:value-of select="/page/common_lang/i18n/download_sources/@translation" />
                                                                 </a> &#160;                      <!-- TODO séparateur quand il y a plusieurs pdf http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
                                                             </xsl:when>
                                                             <xsl:otherwise>
                                                                 <a href="{/page/common/archive_base/@href}{@filename}">
-                                                                    <xsl:value-of select="label" />
+                                                                    <xsl:value-of select="/page/common_lang/i18n/download_sources/@translation" />
                                                                 </a> &#160;                      <!-- TODO séparateur quand il y a plusieurs pdf http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
                                                             </xsl:otherwise>
                                                         </xsl:choose>
@@ -275,34 +308,6 @@
                                                         <a href="{/page/common/debian_package_base/@href}{@filename}">
                                                             <xsl:value-of select="/page/common_lang/i18n/debian_package/@translation" /> (<xsl:value-of select="@arch" />)
                                                         </a> &#160;                       <!-- TODO séparateur quand il y a plusieurs pdf http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
-                                                    </xsl:for-each>
-
-                                                </div>
-                                            </xsl:when>
-                                        </xsl:choose>
-
-                                        <!-- REPOSITORIES (GIT/SVN) -->
-                                        <xsl:choose>
-                                            <xsl:when test="repository">
-                                                <div class="item_repository">
-                                                    <strong><xsl:value-of select="/page/common_lang/i18n/source_code/@translation" /></strong> :
-
-                                                    <xsl:for-each select="./repository">
-                                                        <xsl:choose>
-                                                            <!-- GIT -->
-                                                            <xsl:when test="@type='git'">
-                                                                <a href="{@weburl}"><xsl:value-of select="/page/common_lang/i18n/gitweb/@translation" /></a> (<a href="{@url}"><xsl:value-of select="/page/common_lang/i18n/giturl/@translation" /></a>)
-                                                                &#160;
-                                                                <!-- TODO séparateur quand il y a plusieurs referentiels http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
-                                                            </xsl:when>
-
-                                                            <!-- SVN -->
-                                                            <xsl:when test="@type='svn'">
-                                                                <a href="{@weburl}"><xsl:value-of select="/page/common_lang/i18n/svnweb/@translation" /></a> (<a href="{@url}"><xsl:value-of select="/page/common_lang/i18n/svnurl/@translation" /></a>)
-                                                                &#160;
-                                                                <!-- TODO séparateur quand il y a plusieurs referentiels http://stackoverflow.com/questions/2817664/xsl-how-to-tell-if-element-is-last-in-series   and   http://stackoverflow.com/questions/1461649/how-to-insert-nbsp-in-xslt  -->
-                                                            </xsl:when>
-                                                        </xsl:choose>
                                                     </xsl:for-each>
 
                                                 </div>
