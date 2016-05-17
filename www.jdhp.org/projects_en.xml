@@ -461,12 +461,11 @@
                 Converts LaTeX files to PNG graphics (useful to create
                 mathematical formulas as images).
             </desc>
-            <debian_package filename="latex2png_1.0-1_all.deb" arch="all" />
-            <download_sources filename="latex2png-1.0.tar.gz" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/scripts.git"
-                        weburl="http://git.tuxfamily.org/jdhp/scripts.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jeremiedecock/latex2png" />
+            <download_sources url="http://github.com/jeremiedecock/latex2png/releases" />
+            <debian_package filename="latex2png_1.0-1_all.deb" arch="all" />
+
             <picture filename="latex2png_2.png" thumbnail_filename="latex2png_2.png" />
         </item>
     </group>
