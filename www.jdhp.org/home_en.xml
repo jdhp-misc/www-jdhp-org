@@ -24,16 +24,16 @@
             <!-- See http://www.smashingmagazine.com/2006/12/14/preventing-spam-bulletproof-solution/ about spam... -->
             <p id="email">Email : <a href="mailto:jd.jdhp@gmail.com">jd.jdhp@gmail.com</a></p>
             <!-- <p id="school">Ph.D. student in Computer Science (Learning and Optimization) at <a href="http://www.inria.fr/">Inria</a></p> -->
-            <p id="school">Ph.D., Research Scientist (postdoctoral fellow)<br />in Computer Science (Signal Processing, Learning and Optimization) at <a href="http://irfu.cea.fr/Sap/">CEA</a></p>
+            <p id="school"><em><a href="http://www.jdhp.org/articles_en.html#grp_phd">Ph.D.</a></em>, Research Scientist (postdoctoral fellow) in <em>Artificial Intelligence</em><br />(Mathematical Optimization, Machine Learning and Signal Processing)<br />at <a href="http://www.cea.fr/" title="French Alternative Energies and Atomic Energy Commission">CEA</a> (<a href="http://irfu.cea.fr/Sap/">Astrophysics division</a>)</p>
             <p id="follow_me">
                 <!--Follow me<br />-->
                 <span>
                     <a href="https://twitter.com/jeremie_decock"                 title="Follow me on Twitter"><img alt="Twitter" src="medias/images/icons/social_network_class.pm/images/default/twitter.png" /></a>
-                    <a href="https://plus.google.com/u/0/106609464008586085387/" title="Follow me on Google+ (I use it as a blog)" ><img alt="Google+" src="medias/images/icons/social_network_class.pm/images/default/googleplus.png" /></a>
-                    <a href="https://www.facebook.com/jeremie.decock"            title="Follow me on Facebook"><img alt="Facebook" src="medias/images/icons/social_network_class.pm/images/default/facebook.png" /></a>
+                    <a href="https://github.com/jeremiedecock"                   title="Follow me on GitHub"><img alt="GitHub" src="medias/images/icons/social_network_class.pm/images/default/github.png" /></a>
                     <a href="https://www.linkedin.com/in/jeremiedecock"          title="Follow me on Linkedin"><img alt="Linkedin" src="medias/images/icons/social_network_class.pm/images/default/linkedin.png" /></a>
                     <a href="https://www.youtube.com/user/jdhpvideo/videos"      title="Follow my Youtube channel (I post some videos about robotics and computer science there)"><img alt="Youtube" src="medias/images/icons/social_network_class.pm/images/default/youtube.png" /></a>
-                    <a href="https://github.com/jeremiedecock"                   title="Follow me on GitHub"><img alt="GitHub" src="medias/images/icons/social_network_class.pm/images/default/github.png" /></a>
+                    <a href="https://plus.google.com/u/0/106609464008586085387/" title="Follow me on Google+ (I use it as a blog)" ><img alt="Google+" src="medias/images/icons/social_network_class.pm/images/default/googleplus.png" /></a>
+                    <a href="https://www.facebook.com/jeremie.decock"            title="Follow me on Facebook"><img alt="Facebook" src="medias/images/icons/social_network_class.pm/images/default/facebook.png" /></a>
                     <!-- email, RSS, github, stackoverflow, ... -->
                 </span>
             </p>
