@@ -13,10 +13,15 @@
 
     <name>Documentation</name>
 
-    <keywords>jdhp, tutoriel, vim, orthographe</keywords>
+    <keywords>jeremie, decock, article, tutoriel, memento, slides, notebook, informatique</keywords>
 
     <desc>
-        Tutoriels informatiques.
+        Cette page contient des articles, des tutoriels, des présentations et
+        des mémentos sur divers sujets (informatique, intelligence
+        artificielle, maths, etc.).
+        La plupart de ces documents servent de support pédagogiques.
+        D'autres documents sont accessibles uniquement
+        <a href="tutorials_en.html">en anglais</a>.
     </desc>
 
     <!-- ############################################################ -->

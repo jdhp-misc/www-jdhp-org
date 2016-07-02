@@ -13,10 +13,12 @@
     
     <name>Publications</name>
 
-    <keywords>jdhp, article, droit, informatique, brevet, logiciel</keywords>
+    <keywords>publications, jeremie, decock, doctorat, recherche, doctorat, thèse, articles, optimisation, apprentissage, maths</keywords>
 
     <desc>
-        Cette page contient certains de mes articles écrits en français.
+        Cette page contient mes articles de recherche rédigés en français.
+        La plupart de mes travaux de recherche sont rédigés en anglais et sont
+        disponibles <a href="articles_en.html">ici</a>.
     </desc>
 
     <note>
@@ -134,6 +136,24 @@
             <open_archive url="http://hal.inria.fr/hal-00703774" label="HAL" />
 
             <pdf url="http://www.isir.upmc.fr/files/2011ACTN1978.pdf" label="Article (PDF)" />
+        </item>
+
+    </group>
+
+    <group id="grp_resh_en">
+        <label>
+            Travaux de recherche rédigés en anglais
+        </label>
+
+        <item id="english_papers" license="">
+            <label>
+                Travaux de recherche rédigés en anglais
+            </label>
+
+            <desc>
+                La plupart de mes travaux de recherche sont rédigés en anglais et sont
+                disponibles <a href="articles_en.html">ici</a>.
+            </desc>
         </item>
 
     </group>
