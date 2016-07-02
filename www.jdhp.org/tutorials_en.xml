@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="xslt/pages.xslt" ?>
 
 <!--
-    Tutorials (en)
+    Documentation (en)
     Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 -->
 
@@ -11,7 +11,7 @@
     <xi:include href="common.xml"/>
     <xi:include href="common_en.xml"/>
 
-    <name>Tutorials</name>
+    <name>Documentation</name>
 
     <keywords>jdhp, tutorial</keywords>
 

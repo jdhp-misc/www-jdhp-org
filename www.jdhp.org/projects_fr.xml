@@ -11,7 +11,7 @@
     <xi:include href="common.xml"/>
     <xi:include href="common_fr.xml"/>
 
-    <name>Travaux</name>
+    <name>Logiciels</name>
 
     <keywords>jdhp, robotique, programmation, logiciel, python, java, debian</keywords>
 

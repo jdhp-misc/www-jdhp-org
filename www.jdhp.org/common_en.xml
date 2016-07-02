@@ -4,9 +4,9 @@
 
     <menu>
         <home      href="./home_en.html"      label="Home" />
-        <projects  href="./projects_en.html"  label="Projects" />
-        <articles  href="./articles_en.html"  label="Articles" />
-        <tutorials href="./tutorials_en.html" label="Tutorials" />
+        <projects  href="./projects_en.html"  label="Softwares" />
+        <articles  href="./articles_en.html"  label="Publications" />
+        <tutorials href="./tutorials_en.html" label="Documentation" />
     </menu>
 
     <flag src="./medias/images/flag_grey_en.png" title="English version" alt="English version" suffix="en" />

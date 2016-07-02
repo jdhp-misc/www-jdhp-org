@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="xslt/pages.xslt" ?>
 
 <!--
-    Tutorials (fr)
+    Documentation (fr)
     Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 -->
 
@@ -11,7 +11,7 @@
     <xi:include href="common.xml"/>
     <xi:include href="common_fr.xml"/>
 
-    <name>Tutoriels</name>
+    <name>Documentation</name>
 
     <keywords>jdhp, tutoriel, vim, orthographe</keywords>
 
