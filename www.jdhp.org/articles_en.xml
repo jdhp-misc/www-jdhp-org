@@ -88,8 +88,8 @@
             https://tao.lri.fr/tiki-index.php?page=PhD+Theses
             -->
 
-            <pdf url="https://hal.inria.fr/tel-01103935/document" label="Article (PDF)" />
-            <!-- <pdf url=".../slides.pdf" label="Slides (PDF)" /> -->
+            <pdf url="https://hal.inria.fr/tel-01103935/document" label="Manuscript (PDF)" />
+            <pdf url="https://hal.inria.fr/hal-00997562/document" label="Slides (PDF)" />
         </item>
 
     </group>
