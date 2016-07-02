@@ -16,8 +16,66 @@
     <keywords>jdhp, tutorial</keywords>
 
     <desc>
-        There is no tutorial available in English at the moment,
-        some are available in French <a href="tutorials_fr.html">here</a>.
+        This page contains some documents I use for teaching (articles,
+        tutorials, slides, notebooks, mementos, ...). More documents are
+        available in French <a href="tutorials_fr.html">here</a>.
     </desc>
+
+    <!-- ############################################################ -->
+
+    <group id="grp_teaching_aiam">
+
+        <!-- Various (non Academic) Documents about Artificial Intelligence and Applied Maths  -->
+
+        <label>
+            Teaching Artificial Intelligence and Applied Maths
+        </label>
+        <!-- Educational materials (=documents pédagogiques) -->
+        <!-- Introduction to Artificial Intelligence concepts -->
+
+        <item id="mcts" license="">
+            <label>
+                An Introduction to Monte-Carlo Tree Search
+            </label>
+
+            <desc>
+                An introduction to Monte-Carlo Tree Search (MCTS): an efficient
+                algorithm for decision processes (especially with computer
+                games).
+            </desc>
+
+            <bib label="Presented in:">
+                Taiwan energy-forum, Tainan (Taiwan), May 2012.
+            </bib>
+
+            <!--
+            <open_archive url="http://hal.inria.fr/hal-00997562" label="HAL" />
+            -->
+
+            <pdf filename="mcts_slides.pdf" label="Slides (PDF)" />
+
+            <repository type="github" url="http://github.com/jdhp-docs/mcts" />
+        </item>
+
+        <item id="minimax" license="">
+            <label>
+                An Introduction to Algorithms for Computer Games with MiniMax
+            </label>
+
+            <desc>
+                An introduction to MiniMax: a very simple algorithm for
+                decision making in computer games.
+            </desc>
+
+            <bib label="Reference:">
+                Jérémie Decock, October 2012.
+            </bib>
+
+            <pdf filename="minimax_slides.pdf" label="Slides (PDF)" />
+
+            <repository type="github" url="http://github.com/jdhp-docs/minimax" />
+        </item>
+
+    </group>
 
 </page>
