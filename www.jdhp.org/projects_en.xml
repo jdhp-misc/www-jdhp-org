@@ -524,5 +524,12 @@
             </desc>
             <repository type="github" url="http://github.com/jdhp-misc/www-jdhp-org" />
         </item>
+
+        <item id="unmentioned">
+            <label>Unmentioned projects</label>
+            <desc>
+                Many additional projects are available on my <a href="https://github.com/jeremiedecock?tab=repositories">github account</a>!
+            </desc>
+        </item>
     </group>
 </page>
