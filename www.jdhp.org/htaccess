@@ -28,3 +28,12 @@ Redirect permanent /articles/documents/article_0004/droits_auteurs.pdf          
 Redirect permanent /tutoriels/documents/article_0005/tutoriel_vim_spellfr.pdf     http://download.tuxfamily.org/jdhp/pdf/tutoriel_vim_spellfr.pdf
 Redirect permanent /hevea/tutoriel_rpi_qemu.html                                  http://www.jdhp.org/docs/tutoriel_rpi_qemu/tutoriel_rpi_qemu.html
 Redirect permanent /hevea/tutoriel_rpi_qemu/tutoriel_rpi_qemu.htm                 http://www.jdhp.org/docs/tutoriel_rpi_qemu/tutoriel_rpi_qemu.html
+
+# No cache to always send latest changes
+<filesMatch "\.(html|js|css)$">
+    FileETag None
+    Header unset ETag
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "-1"
+</filesMatch>
