@@ -216,7 +216,7 @@
 
     <group id="grp_master_iad">
         <label>
-            Présentations effectuées en Master IAD (Intelligence Artificielle et Décision)
+            Présentations données en Master IAD (Intelligence Artificielle et Décision)
         </label>
         <!-- Travaux effectuées en Master IAD (Intelligence Artificielle et Décision) -->
 
@@ -414,7 +414,7 @@
 
     <group id="grp_master_miage">
         <label>
-            Présentations effectuées en Master MIAGE
+            Présentations données en Master MIAGE (informatique de gestion)
         </label>
 
         <item id="wiki" license="cc-by-sa">
