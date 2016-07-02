@@ -27,6 +27,58 @@
 
     <!-- ############################################################ -->
 
+    <group id="cours">
+        <label>
+            Missions d'enseignement et monitorat à l'Université
+        </label>
+
+        <item id="prog_sys" license="">
+            <label>
+                La programmation système en C sous Unix
+            </label>
+
+            <desc>
+                <p>
+                    Quelques supports de cours de programmation système en C sous
+                    Unix.
+                    Ces supports ont été écrits pour le cour "système-réseaux" du DUT
+                    d'informatique d'Orsay (Université Paris-Sud).
+                </p>
+                <br />
+
+                Supports:
+                <ul>
+                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/fork_step_by_step.pdf">     Appel système fork (PDF)</a></li>
+                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/fork_step_by_step_var.pdf"> Appel système fork avec une variable (PDF)</a></li>
+                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/printf_scanf.pdf">          Fonctions printf et scanf (PDF)</a></li>
+                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/fibonacci.pdf">             Compilation séparée et édition des liens (PDF)</a></li>
+                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/exec.pdf">                  Appel système exec (PDF)</a></li>
+                    <!-- <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/c_cycle.pdf">               Chaîne de compilation en C avec GCC (PDF)</a></li> -->
+                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/c_cycle_v2.pdf">            Chaîne de compilation en C avec GCC (PDF)</a></li>
+                </ul>
+            </desc>
+
+            <bib label="Référence:">
+                Jérémie Decock, Université Paris-Sud, 2013.
+            </bib>
+
+            <!--
+            <pdf filename="supports_cours_iut_orsay/fork_step_by_step.pdf" label="Appel système fork (PDF)" />
+            <pdf filename="supports_cours_iut_orsay/fork_step_by_step_var.pdf" label="Appel système fork avec une variable (PDF)" />
+            <pdf filename="supports_cours_iut_orsay/printf_scanf.pdf" label="Fonctions printf et scanf (PDF)" />
+            <pdf filename="supports_cours_iut_orsay/fibonacci.pdf" label="Compilation séparée et édition des liens (PDF)" />
+            <pdf filename="supports_cours_iut_orsay/exec.pdf" label="Appel système exec (PDF)" />
+            <pdf filename="supports_cours_iut_orsay/c_cycle.pdf" label="Chaîne de compilation en C avec GCC (PDF)" />
+            <pdf filename="supports_cours_iut_orsay/c_cycle_v2.pdf" label="Chaîne de compilation en C avec GCC (PDF)" />
+            -->
+
+            <repository type="github" url="http://github.com/jdhp-docs/supports_programmation_systeme_c_unix" />
+        </item>
+
+    </group>
+
+    <!-- ############################################################ -->
+
     <group id="rpi">
         <label>Raspberry Pi</label>
 
@@ -156,58 +208,6 @@
             <link url="docs/tutoriel_vim_spellfr/tutoriel_vim_spellfr.html">
                 <label>Lire la suite</label>
             </link>
-        </item>
-
-    </group>
-
-    <!-- ############################################################ -->
-
-    <group id="cours">
-        <label>
-            Missions d'enseignement et monitorat à l'Université
-        </label>
-
-        <item id="prog_sys" license="">
-            <label>
-                La programmation système en C sous Unix
-            </label>
-
-            <desc>
-                <p>
-                    Quelques supports de cours de programmation système en C sous
-                    Unix.
-                    Ces supports ont été écrits pour le cour "système-réseaux" du DUT
-                    d'informatique d'Orsay (Université Paris-Sud).
-                </p>
-                <br />
-
-                Supports:
-                <ul>
-                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/fork_step_by_step.pdf">     Appel système fork (PDF)</a></li>
-                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/fork_step_by_step_var.pdf"> Appel système fork avec une variable (PDF)</a></li>
-                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/printf_scanf.pdf">          Fonctions printf et scanf (PDF)</a></li>
-                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/fibonacci.pdf">             Compilation séparée et édition des liens (PDF)</a></li>
-                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/exec.pdf">                  Appel système exec (PDF)</a></li>
-                    <!-- <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/c_cycle.pdf">               Chaîne de compilation en C avec GCC (PDF)</a></li> -->
-                    <li><a href="http://www.jdhp.org/dl/pdf/supports_cours_iut_orsay/c_cycle_v2.pdf">            Chaîne de compilation en C avec GCC (PDF)</a></li>
-                </ul>
-            </desc>
-
-            <bib label="Référence:">
-                Jérémie Decock, Université Paris-Sud, 2013.
-            </bib>
-
-            <!--
-            <pdf filename="supports_cours_iut_orsay/fork_step_by_step.pdf" label="Appel système fork (PDF)" />
-            <pdf filename="supports_cours_iut_orsay/fork_step_by_step_var.pdf" label="Appel système fork avec une variable (PDF)" />
-            <pdf filename="supports_cours_iut_orsay/printf_scanf.pdf" label="Fonctions printf et scanf (PDF)" />
-            <pdf filename="supports_cours_iut_orsay/fibonacci.pdf" label="Compilation séparée et édition des liens (PDF)" />
-            <pdf filename="supports_cours_iut_orsay/exec.pdf" label="Appel système exec (PDF)" />
-            <pdf filename="supports_cours_iut_orsay/c_cycle.pdf" label="Chaîne de compilation en C avec GCC (PDF)" />
-            <pdf filename="supports_cours_iut_orsay/c_cycle_v2.pdf" label="Chaîne de compilation en C avec GCC (PDF)" />
-            -->
-
-            <repository type="github" url="http://github.com/jdhp-docs/supports_programmation_systeme_c_unix" />
         </item>
 
     </group>
