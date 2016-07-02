@@ -14,6 +14,3 @@ ${JDHP_ROOT_PATH}/www.jdhp.org/build.sh
 
 rsync -a -v -e ssh --exclude="/docs/" --delete ${LOCAL_DIR_PATH}/www/* ${REMOTE_DIR_PATH}/
 scp ${LOCAL_DIR_PATH}/www/.htaccess ${REMOTE_DIR_PATH}/
-
-#${JDHP_ROOT_PATH}/www.jdhp.org/push_docs.sh
-
