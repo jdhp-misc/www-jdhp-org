@@ -61,18 +61,6 @@
                     <li>
                         <xsl:attribute name="class">
                             <xsl:choose>
-                                <xsl:when test="/page/@id = 'projects'">selected</xsl:when>
-                                <xsl:otherwise>normal</xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:attribute>
-                        <a href="{/page/common_lang/menu/projects/@href}">
-                            <xsl:value-of select="/page/common_lang/menu/projects/@label" />
-                        </a>
-                    </li>
-
-                    <li>
-                        <xsl:attribute name="class">
-                            <xsl:choose>
                                 <xsl:when test="/page/@id = 'articles'">selected</xsl:when>
                                 <xsl:otherwise>normal</xsl:otherwise>
                             </xsl:choose>
@@ -93,6 +81,19 @@
                             <xsl:value-of select="/page/common_lang/menu/tutorials/@label" />
                         </a>
                     </li>
+
+                    <li>
+                        <xsl:attribute name="class">
+                            <xsl:choose>
+                                <xsl:when test="/page/@id = 'projects'">selected</xsl:when>
+                                <xsl:otherwise>normal</xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:attribute>
+                        <a href="{/page/common_lang/menu/projects/@href}">
+                            <xsl:value-of select="/page/common_lang/menu/projects/@label" />
+                        </a>
+                    </li>
+
                 </ul>
 
                 <!-- PAGE -->
