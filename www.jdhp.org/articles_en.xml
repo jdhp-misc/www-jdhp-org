@@ -31,7 +31,7 @@
             <a href="http://www.jdhp.org/dl/bib/bibliography_jeremie_decock.bib">BibTex</a>.
         </p>
         <p>
-            My academic papers are also available on <a href="https://hal.inria.fr/search/index/q/*/authFullName_t/J%C3%A9r%C3%A9mie+Decock">HAL - Inria</a> (open archive).
+            My academic papers are also available on <a href="https://hal.inria.fr/search/index/q/*/authIdHal_s/jeremie-decock/">HAL - Inria</a> (open archive).
         </p>
     </note>
 
@@ -89,7 +89,8 @@
             -->
 
             <pdf url="https://hal.inria.fr/tel-01103935/document" label="Manuscript (PDF)" />
-            <pdf url="https://hal.inria.fr/hal-00997562/document" label="Slides (PDF)" />
+            <pdf url="phd_slides.pdf" label="Slides (PDF)" /> -->
+            <!-- <pdf url="https://hal.inria.fr/hal-00997562/document" label="Slides (PDF)" /> -->
         </item>
 
     </group>
