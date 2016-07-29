@@ -11,12 +11,12 @@
     <xi:include href="common.xml"/>
     <xi:include href="common_en.xml"/>
     
-    <name>Articles</name>
+    <name>Publications</name>
 
-    <keywords>jdhp, article</keywords>
+    <keywords>publications, jeremie, decock, phd, manuscript, articles, research, optimization, machine learning, maths</keywords>
 
     <desc>
-        This page contains some of my articles written in English (mostly academic papers).
+        This page contains my academic papers written in English.
     </desc>
 
     <note>
@@ -31,7 +31,7 @@
             <a href="http://www.jdhp.org/dl/bib/bibliography_jeremie_decock.bib">BibTex</a>.
         </p>
         <p>
-            My academic papers are also available on <a href="https://hal.inria.fr/search/index/q/*/authFullName_t/J%C3%A9r%C3%A9mie+Decock">HAL - Inria</a> (open archive).
+            My academic papers are also available on <a href="https://hal.inria.fr/search/index/q/*/authIdHal_s/jeremie-decock/">HAL - Inria</a> (open archive).
         </p>
     </note>
 
@@ -88,8 +88,9 @@
             https://tao.lri.fr/tiki-index.php?page=PhD+Theses
             -->
 
-            <pdf url="https://hal.inria.fr/tel-01103935/document" label="Article (PDF)" />
-            <!-- <pdf url=".../slides.pdf" label="Slides (PDF)" /> -->
+            <pdf url="https://hal.inria.fr/tel-01103935/document" label="Manuscript (PDF)" />
+            <pdf url="phd_slides.pdf" label="Slides (PDF)" /> -->
+            <!-- <pdf url="https://hal.inria.fr/hal-00997562/document" label="Slides (PDF)" /> -->
         </item>
 
     </group>
@@ -276,63 +277,6 @@
             <pdf url="http://www.isir.upmc.fr/files/2011ACTI1945.pdf" label="Article (PDF)" />
 
             <pdf filename="2012_03_hsinchu_xcsf_slides.pdf" label="Slides (PDF)" />
-        </item>
-
-    </group>
-
-    <!-- ############################################################ -->
-
-    <group id="grp_teaching_aiam">
-
-        <!-- Various (non Academic) Documents about Artificial Intelligence and Applied Maths  -->
-
-        <label>
-            Teaching materials
-        </label>
-        <!-- Educational materials (=documents pédagogiques) -->
-        <!-- Introduction to Artificial Intelligence concepts -->
-
-        <item id="mcts" license="">
-            <label>
-                An Introduction to Monte-Carlo Tree Search
-            </label>
-
-            <desc>
-                An introduction to Monte-Carlo Tree Search (MCTS): an efficient
-                algorithm for decision processes (especially with computer
-                games).
-            </desc>
-
-            <bib label="Presented in:">
-                Taiwan energy-forum, Tainan (Taiwan), May 2012.
-            </bib>
-
-            <!--
-            <open_archive url="http://hal.inria.fr/hal-00997562" label="HAL" />
-            -->
-
-            <pdf filename="mcts_slides.pdf" label="Slides (PDF)" />
-
-            <repository type="github" url="http://github.com/jdhp-docs/mcts" />
-        </item>
-
-        <item id="minimax" license="">
-            <label>
-                An Introduction to Algorithms for Computer Games with MiniMax
-            </label>
-
-            <desc>
-                An introduction to MiniMax: a very simple algorithm for
-                decision making in computer games.
-            </desc>
-
-            <bib label="Reference:">
-                Jérémie Decock, October 2012.
-            </bib>
-
-            <pdf filename="minimax_slides.pdf" label="Slides (PDF)" />
-
-            <repository type="github" url="http://github.com/jdhp-docs/minimax" />
         </item>
 
     </group>

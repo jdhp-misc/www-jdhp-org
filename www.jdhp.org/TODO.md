@@ -111,6 +111,7 @@ x gitweb: afficher directement l'arbre plutôt que les commit -> append "?a=tree
 x jdhp sur LRI -> ajouter htaccess permanent redirect vers jdhp.org
 x Git: ajouter automatiquement "Get source code (tarball)" -> génération auto = simplement l'url gitweb + "a=snapshot;h=HEAD;sf=tgz"
 x add a bib file with my publications
+* adopt a more "consensual" presentation of presentation like this one: http://jbobin.cosmostat.org/publications/
 * remplacer "articles" par "academic papers"/"publications académiques" et "tutorials" par "autres documents" (trouver un meilleur titre) ?
 * Reécrire la description du projet "pyarm" -> mentionner les articles, expliquer succintement avec des mots simples le principe (scientifique) et les résultats.
 * Faire une unique vidéo de pyarm en 2 parties : "learning phase : ... (expliquer que les trajectoires sont calculées avec ...)" puis "generalization phase: (expliquer qu'on utilise le controleur appris ...)"

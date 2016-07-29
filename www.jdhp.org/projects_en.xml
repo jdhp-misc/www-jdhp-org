@@ -11,7 +11,7 @@
     <xi:include href="common.xml"/>
     <xi:include href="common_en.xml"/>
 
-    <name>Projects</name>
+    <name>Softwares</name>
 
     <keywords>jdhp, software</keywords>
 
@@ -32,10 +32,13 @@
     
     <!-- ############################################################ -->
 
-    <group id="highlight">
+    <group id="research">
         <label>
-            Main Open Source Projects
+            Open Source Academic Projects
         </label>
+
+        <!-- CTA DATA PIPELINE -->
+
 
         <!-- PYARM -->
 
@@ -120,6 +123,68 @@
             <download_sources url="http://github.com/jeremiedecock/botsim/releases" />
 
             <picture filename="botsim_1.png" thumbnail_filename="botsim_1.png" />
+        </item>
+    </group>
+
+    <!-- ############################################################ -->
+
+    <group id="highlight">
+        <label>
+            Main Personnal Projects
+        </label>
+
+        <!-- PyAI -->
+
+        <item id="ai_framework_for_python" license="MIT">
+            <label>Artificial Intelligence frameworks for Python</label>
+            <desc>
+                A set of open source frameworks for Artificial Intelligence (mostly
+                artificial learning and optimization).
+                It contains (among others) an MDP framework (Markov Decision Processes), an
+                artificial learning framework and a black box non-linear noisy optimization
+                framework.
+            </desc>
+
+            <repository type="github" url="http://github.com/jeremiedecock/pyai" />
+        </item>
+
+        <!-- PyAX-12 -->
+
+        <item id="pyax12" license="MIT">
+            <label>PyAX-12</label>
+            <desc>
+                PyAX-12 is a Python library to control
+                <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel AX-12+</a> actuators.
+                directly from a computer (using a <a href="http://www.robotis.com/xe/controller_en">USB2Dynamixel</a>
+                adapter).
+            </desc>
+            <repository type="github" url="http://github.com/jeremiedecock/pyax12" />
+            <download_sources url="http://github.com/jeremiedecock/pyax12/releases" />
+            <!--
+            <readthedocs url="http://pyax-12.readthedocs.org/" />
+            <label>Online documentation</label>
+            -->
+            <picture filename="dynamixel_1.png" thumbnail_filename="dynamixel_1.png" />
+        </item>
+
+        <!-- VoR-12 -->
+        
+        <item id="vor12" license="MIT">
+            <label>VoR12</label>
+            <desc>
+                The VoR12 project is a mobile video camera. It uses two
+                <a href="http://support.robotis.com/en/product/dynamixel/ax_series/dxl_ax_actuator.htm">Dynamixel
+                AX-12</a> actuators and the <a href="http://opencv.org/">OpenCV</a> computer
+                vision library for object tracking experiments.
+            </desc>
+            <repository type="github" url="http://github.com/jeremiedecock/vor12" />
+            <download_sources url="http://github.com/jeremiedecock/vor12/releases" />
+            <!--
+            <link url="http://vor12.readthedocs.org">
+                <label>Online documentation</label>
+            </link>
+            -->
+            <picture filename="vor12-2.jpeg" thumbnail_filename="vor12-2.png" />
         </item>
 
         <!-- SNIPPETS -->
@@ -244,23 +309,10 @@
     
     <!-- ############################################################ -->
 
-    <group id="aiam">
+    <group id="misc">
         <label>
-            Artificial Intelligence and Mathematics
+            Smaller Personnal Projects
         </label>
-
-        <item id="ai_framework_for_python" license="MIT">
-            <label>Artificial Intelligence frameworks for Python</label>
-            <desc>
-                A set of open source frameworks for Artificial Intelligence (mostly
-                artificial learning and optimization).
-                It contains (among others) an MDP framework (Markov Decision Processes), an
-                artificial learning framework and a black box non-linear noisy optimization
-                framework.
-            </desc>
-
-            <repository type="github" url="http://github.com/jeremiedecock/pyai" />
-        </item>
 
         <item id="jwumpus" license="MIT">
             <label>JWumpus</label>
@@ -301,49 +353,6 @@
                 nothing more than an educational support.
             </desc>
             <download_sources filename="perceptron_simple.zip" />
-        </item>
-    </group>
-
-    <!-- ############################################################ -->
-
-    <group id="robotics">
-        <label>
-            Robotics and Electronics
-        </label>
-
-        <item id="pyax12" license="MIT">
-            <label>PyAX-12</label>
-            <desc>
-                PyAX-12 is a Python library to control
-                <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel AX-12+</a> actuators.
-                directly from a computer (using a <a href="http://www.robotis.com/xe/controller_en">USB2Dynamixel</a>
-                adapter).
-            </desc>
-            <repository type="github" url="http://github.com/jeremiedecock/pyax12" />
-            <download_sources url="http://github.com/jeremiedecock/pyax12/releases" />
-            <!--
-            <readthedocs url="http://pyax-12.readthedocs.org/" />
-            <label>Online documentation</label>
-            -->
-            <picture filename="dynamixel_1.png" thumbnail_filename="dynamixel_1.png" />
-        </item>
-        
-        <item id="vor12" license="MIT">
-            <label>VoR12</label>
-            <desc>
-                The VoR12 project is a mobile video camera. It uses two
-                <a href="http://support.robotis.com/en/product/dynamixel/ax_series/dxl_ax_actuator.htm">Dynamixel
-                AX-12</a> actuators and the <a href="http://opencv.org/">OpenCV</a> computer
-                vision library for object tracking experiments.
-            </desc>
-            <repository type="github" url="http://github.com/jeremiedecock/vor12" />
-            <download_sources url="http://github.com/jeremiedecock/vor12/releases" />
-            <!--
-            <link url="http://vor12.readthedocs.org">
-                <label>Online documentation</label>
-            </link>
-            -->
-            <picture filename="vor12-2.jpeg" thumbnail_filename="vor12-2.png" />
         </item>
         
         <item id="libdynamixel" license="MIT">
@@ -403,14 +412,6 @@
             </video>
             -->
         </item>
-    </group>
-
-    <!-- ############################################################ -->
-
-    <group id="util">
-        <label>
-            Utilities
-        </label>
 
         <item id="pydfm" license="MIT">
             <label>PyDuplicateFileManager</label>
@@ -468,14 +469,6 @@
 
             <picture filename="latex2png_2.png" thumbnail_filename="latex2png_2.png" />
         </item>
-    </group>
-
-    <!-- ############################################################ -->
-
-    <group id="misc">
-        <label>
-            Miscellaneous
-        </label>
 
         <item id="jdhpcad" license="CC BY-SA">
             <label>3D Design Collection</label>
@@ -524,5 +517,14 @@
             </desc>
             <repository type="github" url="http://github.com/jdhp-misc/www-jdhp-org" />
         </item>
+
+        <item id="unmentioned">
+            <label>Unmentioned projects</label>
+            <desc>
+                Many additional projects are available on my <a href="https://github.com/jeremiedecock?tab=repositories">github account</a>!
+            </desc>
+        </item>
+
     </group>
+
 </page>
