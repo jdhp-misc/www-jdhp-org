@@ -89,8 +89,7 @@
             -->
 
             <pdf url="https://hal.inria.fr/tel-01103935/document" label="Manuscript (PDF)" />
-            <pdf url="phd_slides.pdf" label="Slides (PDF)" /> -->
-            <!-- <pdf url="https://hal.inria.fr/hal-00997562/document" label="Slides (PDF)" /> -->
+            <pdf url="https://hal.inria.fr/tel-01103935/file/phd_slides.pdf" label="Slides (PDF)" /> -->
         </item>
 
     </group>
