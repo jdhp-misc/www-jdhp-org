@@ -1,2 +1,7 @@
 docs/
 www/
+
+# Prevent unwanted publication of web server passwords
+
+*.passwd
+*.passwds
