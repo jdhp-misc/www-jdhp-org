@@ -37,3 +37,10 @@ Redirect permanent /hevea/tutoriel_rpi_qemu/tutoriel_rpi_qemu.htm               
     Header set Pragma "no-cache"
     Header set Expires "-1"
 </filesMatch>
+
+# Forbid access to some files (based on extensions)
+<Files ~ "^.*\.(log|aux|bbl)">
+    order allow,deny
+    deny from all
+</Files>
+
