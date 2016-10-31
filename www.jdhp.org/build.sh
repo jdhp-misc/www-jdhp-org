@@ -38,8 +38,8 @@ xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/home_fr.xml | tail -n +2 | se
 xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/articles_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/articles_en.html
 xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/articles_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/articles_fr.html
 
-xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/projects_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/projects_en.html
-xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/projects_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/projects_fr.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/software_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/software_en.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/software_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/software_fr.html
 
 xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/tutorials_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/tutorials_en.html
 xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/tutorials_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/tutorials_fr.html
@@ -72,6 +72,6 @@ cp -a ${JDHP_ROOT_PATH}/www.jdhp.org/docs    ${JDHP_ROOT_PATH}/www.jdhp.org/www/
 ## Documents are processed by invoking the relevant Java class name, which (for
 ## this variant of Saxon) is net.sf.saxon.Transform:
 #
-##java net.sf.saxon.Transform -o:output.xml -s:projects_fr.xml -xsl:style.xsl
-#java net.sf.saxon.Transform -a -o:test.html -s:projects_fr.xml
+##java net.sf.saxon.Transform -o:output.xml -s:software_fr.xml -xsl:style.xsl
+#java net.sf.saxon.Transform -a -o:test.html -s:software_fr.xml
 

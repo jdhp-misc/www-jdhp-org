@@ -6,7 +6,7 @@
     Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 -->
 
-<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="fr" id="projects">
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="fr" id="software">
 
     <xi:include href="common.xml"/>
     <xi:include href="common_fr.xml"/>
@@ -416,7 +416,7 @@
             <label>Bioloid</label>
             <desc>
                 Quelques exemples d'utilisation de la
-                <a href="projects_fr.html#libdynamixel">libdynamixel</a>
+                <a href="software_fr.html#libdynamixel">libdynamixel</a>
                 pour contrôler un
                 <a href="http://www.robotis.com/xe/bioloid_en">bioloid</a>.
             </desc>

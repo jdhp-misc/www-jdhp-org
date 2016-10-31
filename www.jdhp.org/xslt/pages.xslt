@@ -85,12 +85,12 @@
                     <li>
                         <xsl:attribute name="class">
                             <xsl:choose>
-                                <xsl:when test="/page/@id = 'projects'">selected</xsl:when>
+                                <xsl:when test="/page/@id = 'software'">selected</xsl:when>
                                 <xsl:otherwise>normal</xsl:otherwise>
                             </xsl:choose>
                         </xsl:attribute>
-                        <a href="{/page/common_lang/menu/projects/@href}">
-                            <xsl:value-of select="/page/common_lang/menu/projects/@label" />
+                        <a href="{/page/common_lang/menu/software/@href}">
+                            <xsl:value-of select="/page/common_lang/menu/software/@label" />
                         </a>
                     </li>
 
@@ -132,7 +132,7 @@
                     </xsl:choose>
 
                     <!-- CONTENTS -->
-                    <!-- This define the table of content (table des matières) at the top of the "projects", "articles" and "tutorials" pages. -->
+                    <!-- This define the table of content (table des matières) at the top of the "software", "articles" and "tutorials" pages. -->
                     <!-- if number of groups > 0 -->
                     <xsl:if test="/page/group">
                         <div id="page_contents">

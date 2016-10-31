@@ -6,7 +6,7 @@
         <home      href="./home_fr.html"      label="Accueil" />
         <articles  href="./articles_fr.html"  label="Publications" />
         <tutorials href="./tutorials_fr.html" label="Documentation" />
-        <projects  href="./projects_fr.html"  label="Logiciels" />
+        <software  href="./software_fr.html"  label="Logiciels" />
     </menu>
 
     <flag src="./medias/images/flag_en.png" title="English version" alt="English version" suffix="en" />
