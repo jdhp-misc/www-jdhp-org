@@ -6,7 +6,7 @@
     Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 -->
 
-<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="fr" id="articles">
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="fr" id="publications">
 
     <xi:include href="common.xml"/>
     <xi:include href="common_fr.xml"/>
@@ -18,12 +18,12 @@
     <desc>
         Cette page contient mes articles de recherche rédigés en français.
         La plupart de mes travaux de recherche sont rédigés en anglais et sont
-        disponibles <a href="articles_en.html">ici</a>.
+        disponibles <a href="publications_en.html">ici</a>.
     </desc>
 
     <note>
         <p>
-            D'autres articles écrits en anglais sont disponibles <a href="articles_en.html">ici</a>.
+            D'autres articles écrits en anglais sont disponibles <a href="publications_en.html">ici</a>.
         </p>
         <br />
         <p>
@@ -152,7 +152,7 @@
 
             <desc>
                 La plupart de mes travaux de recherche sont rédigés en anglais et sont
-                disponibles <a href="articles_en.html">ici</a>.
+                disponibles <a href="publications_en.html">ici</a>.
             </desc>
         </item>
 

@@ -6,7 +6,7 @@
     Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 -->
 
-<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="en" id="articles">
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="en" id="publications">
 
     <xi:include href="common.xml"/>
     <xi:include href="common_en.xml"/>
@@ -21,7 +21,7 @@
 
     <note>
         <p>
-            Some other articles written in French are available <a href="articles_fr.html">here</a>.
+            Some other articles written in French are available <a href="publications_fr.html">here</a>.
         </p>
         <br />
         <p>

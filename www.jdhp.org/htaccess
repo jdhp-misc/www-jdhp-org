@@ -11,6 +11,9 @@ Redirect permanent /projects_fr.html     http://www.jdhp.org/software_fr.html
 Redirect permanent /tutorials_en.html    http://www.jdhp.org/documentation_en.html
 Redirect permanent /tutorials_fr.html    http://www.jdhp.org/documentation_fr.html
 
+Redirect permanent /articles_en.html     http://www.jdhp.org/publications_en.html
+Redirect permanent /articles_fr.html     http://www.jdhp.org/publications_fr.html
+
 # Errors detected by Google search console
 Redirect permanent /index_en.html                                                 http://www.jdhp.org/home_en.html
 

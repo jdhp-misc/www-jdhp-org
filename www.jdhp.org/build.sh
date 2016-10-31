@@ -35,8 +35,8 @@ fi
 xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/home_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/home_en.html
 xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/home_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/home_fr.html
 
-xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/articles_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/articles_en.html
-xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/articles_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/articles_fr.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/publications_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/publications_en.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/publications_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/publications_fr.html
 
 xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/software_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/software_en.html
 xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/software_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/software_fr.html

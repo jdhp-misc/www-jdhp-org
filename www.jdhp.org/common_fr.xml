@@ -4,7 +4,7 @@
 
     <menu>
         <home          href="./home_fr.html"          label="Accueil" />
-        <articles      href="./articles_fr.html"      label="Publications" />
+        <publications  href="./publications_fr.html"  label="Publications" />
         <documentation href="./documentation_fr.html" label="Documentation" />
         <software      href="./software_fr.html"      label="Logiciels" />
     </menu>
