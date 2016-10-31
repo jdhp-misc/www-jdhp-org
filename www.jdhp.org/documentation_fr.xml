@@ -80,7 +80,9 @@
     <!-- ############################################################ -->
 
     <group id="rpi">
-        <label>Raspberry Pi</label>
+        <label>
+            Raspberry Pi
+        </label>
 
         <item id="tutoriel_rpi_qemu" license="cc-by-sa">
             <label>
@@ -125,7 +127,9 @@
     <!-- ############################################################ -->
 
     <group id="python">
-        <label>Programmation Python</label>
+        <label>
+            Programmation Python
+        </label>
 
         <item id="atelier_initiation_python_part1" license="cc-by-sa">
             <label>
@@ -160,7 +164,9 @@
     <!-- ############################################################ -->
 
     <group id="informatique">
-        <label>Informatique</label>
+        <label>
+            Informatique
+        </label>
 
         <item id="tutoriel_acceder_fs_android_depuis_linux" license="cc-by-sa">
             <label>
@@ -221,7 +227,9 @@
         <!-- Travaux effectuées en Master IAD (Intelligence Artificielle et Décision) -->
 
         <item id="rankboost" license="cc-by-sa">
-            <label>Rankboost</label>
+            <label>
+                Rankboost
+            </label>
 
             <desc>
                 Nous présentons ici une synthèse des travaux de Y. Freund,
@@ -367,7 +375,9 @@
         </item>
 
         <item id="droit_du_logiciel" license="cc-by-sa">
-            <label>Le droit du logiciel</label>
+            <label>
+                Le droit du logiciel
+            </label>
 
             <desc>
                 <p>
@@ -466,7 +476,9 @@
         </item>
 
         <item id="brevets" license="cc-by-sa">
-            <label>Les brevets logiciels</label>
+            <label>
+                Les brevets logiciels
+            </label>
 
             <desc>
                 Quelques slides expliquant ce que sont les brevets et leur
@@ -485,7 +497,9 @@
         </item>
 
         <item id="droit_auteur" license="cc-by-sa">
-            <label>Le droit d'auteur</label>
+            <label>
+                Le droit d'auteur
+            </label>
 
             <desc>
                 <p>
