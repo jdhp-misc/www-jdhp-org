@@ -6,7 +6,7 @@
     Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 -->
 
-<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="en" id="tutorials">
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="en" id="documentation">
 
     <xi:include href="common.xml"/>
     <xi:include href="common_en.xml"/>
@@ -18,7 +18,7 @@
     <desc>
         This page contains some documents I use for teaching (articles,
         tutorials, slides, notebooks, mementos, ...). More documents are
-        available in French <a href="tutorials_fr.html">here</a>.
+        available in French <a href="documentation_fr.html">here</a>.
     </desc>
 
     <!-- ############################################################ -->

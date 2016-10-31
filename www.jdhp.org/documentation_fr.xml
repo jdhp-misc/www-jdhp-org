@@ -6,7 +6,7 @@
     Copyright (c) 2011 Jérémie DECOCK (http://www.jdhp.org)
 -->
 
-<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="fr" id="tutorials">
+<page xmlns:xi="http://www.w3.org/2001/XInclude" lang="fr" id="documentation">
 
     <xi:include href="common.xml"/>
     <xi:include href="common_fr.xml"/>
@@ -22,7 +22,7 @@
         Ces documents sont rédigés en dehors de mes activités de
         recherche et la plupart servent de support pédagogiques.
         D'autres documents sont accessibles uniquement
-        <a href="tutorials_en.html">en anglais</a>.
+        <a href="documentation_en.html">en anglais</a>.
     </desc>
 
     <!-- ############################################################ -->

@@ -41,8 +41,8 @@ xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/articles_fr.xml | tail -n +2 
 xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/software_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/software_en.html
 xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/software_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/software_fr.html
 
-xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/tutorials_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/tutorials_en.html
-xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/tutorials_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/tutorials_fr.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/documentation_en.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/documentation_en.html
+xsltproc --xinclude ${JDHP_ROOT_PATH}/www.jdhp.org/documentation_fr.xml | tail -n +2 | sed "s/xmlns:xi=\"http:\/\/www.w3.org\/2001\/XInclude\" xmlns=\"\"//g" > ${JDHP_ROOT_PATH}/www.jdhp.org/www/documentation_fr.html
 
 # Well... I don't use redirection (http, meta, script, ...) but a simple copy
 # in order to avoid problems with web indexing (Google and so).

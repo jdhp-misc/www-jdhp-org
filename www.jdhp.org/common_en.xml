@@ -3,10 +3,10 @@
 <common_lang>
 
     <menu>
-        <home      href="./home_en.html"      label="Home" />
-        <articles  href="./articles_en.html"  label="Publications" />
-        <tutorials href="./tutorials_en.html" label="Documentation" />
-        <software  href="./software_en.html"  label="Software" />
+        <home          href="./home_en.html"          label="Home" />
+        <articles      href="./articles_en.html"      label="Publications" />
+        <documentation href="./documentation_en.html" label="Documentation" />
+        <software      href="./software_en.html"      label="Software" />
     </menu>
 
     <flag src="./medias/images/flag_grey_en.png" title="English version" alt="English version" suffix="en" />

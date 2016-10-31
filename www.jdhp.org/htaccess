@@ -5,8 +5,11 @@ Redirect permanent /dl/        http://download.tuxfamily.org/jdhp/
 Redirect permanent /hevea/     http://www.jdhp.org/docs/
 
 # Redirect former HTML files
-Redirect permanent /projects_en.html        http://www.jdhp.org/software_en.html
-Redirect permanent /projects_fr.html        http://www.jdhp.org/software_fr.html
+Redirect permanent /projects_en.html     http://www.jdhp.org/software_en.html
+Redirect permanent /projects_fr.html     http://www.jdhp.org/software_fr.html
+
+Redirect permanent /tutorials_en.html    http://www.jdhp.org/documentation_en.html
+Redirect permanent /tutorials_fr.html    http://www.jdhp.org/documentation_fr.html
 
 # Errors detected by Google search console
 Redirect permanent /index_en.html                                                 http://www.jdhp.org/home_en.html
