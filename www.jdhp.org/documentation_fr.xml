@@ -72,7 +72,7 @@
             <pdf filename="supports_cours_iut_orsay/c_cycle_v2.pdf" label="Chaîne de compilation en C avec GCC (PDF)" />
             -->
 
-            <repository type="github" url="http://github.com/jdhp-docs/supports_programmation_systeme_c_unix" />
+            <repository type="github" url="http://github.com/jdhp-docs/supports-programmation-systeme-c-unix" />
         </item>
 
     </group>
@@ -115,7 +115,7 @@
 
             <pdf filename="tutoriel_rpi_qemu.pdf" label="PDF" />
 
-            <repository type="github" url="http://github.com/jdhp-docs/rpi_qemu_part1" />
+            <repository type="github" url="http://github.com/jdhp-docs/rpi-qemu-part1" />
 
             <link url="docs/tutoriel_rpi_qemu/tutoriel_rpi_qemu.html">
                 <label>Lire la suite</label>
@@ -185,7 +185,7 @@
 
             <pdf filename="tutoriel_acceder_fs_android_depuis_linux.pdf" label="PDF" />
 
-            <repository type="github" url="http://github.com/jdhp-docs/mtp_android_debian" />
+            <repository type="github" url="http://github.com/jdhp-docs/mtp-android-debian" />
 
             <link url="docs/tutoriel_acceder_fs_android_depuis_linux/tutoriel_acceder_fs_android_depuis_linux.html">
                 <label>Lire la suite</label>
@@ -255,9 +255,7 @@
 
             <pdf filename="rankboost_slides.pdf" label="Slides (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/rankboost"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/rankboost" />
         </item>
 
         <item id="ae_neurocomp" license="cc-by-sa">
@@ -278,9 +276,7 @@
 
             <pdf filename="ae_neurocomp.pdf" label="Slides (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/ae_neurocomp"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/ae-neurocomp" />
         </item>
 
         <item id="novelty_search" license="">
@@ -310,9 +306,7 @@
 
             <pdf filename="noveltysearch_slides.pdf" label="Slides (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/noveltysearch"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/novelty-search" />
         </item>
 
         <item id="robocup" license="cc-by-sa">
@@ -338,9 +332,7 @@
 
             <pdf filename="robocup.pdf" label="Slides (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/robocup"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/robocup" />
         </item>
 
         <item id="learning_to_tag" license="">
@@ -369,9 +361,7 @@
 
             <pdf filename="learning_to_tag_slides.pdf" label="Slides (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/learning_to_tag"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/learning-to-tag" />
         </item>
 
         <item id="droit_du_logiciel" license="cc-by-sa">
@@ -413,9 +403,7 @@
 
             <pdf filename="droit_du_logiciel.pdf" label="Slides (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhp/articles.git"
-                        weburl="http://git.tuxfamily.org/jdhp/articles.git/tree/droit_du_logiciel"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/droit-du-logiciel" />
         </item>
 
     </group>
@@ -466,9 +454,7 @@
 
             <pdf filename="les_wikis_en_entreprise.pdf" label="Article (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/wikis.git"
-                        weburl="http://git.tuxfamily.org/jdhpdocs/wikis.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/wikis-en-entreprise" />
 
             <link url="docs/les_wikis_en_entreprise/les_wikis_en_entreprise.html">
                 <label>Lire la suite</label>
@@ -491,9 +477,7 @@
 
             <pdf filename="brevets.pdf" label="Slides (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/brevets-logiciels.git"
-                        weburl="http://git.tuxfamily.org/jdhpdocs/brevets-logiciels.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/brevets-logiciels" />
         </item>
 
         <item id="droit_auteur" license="cc-by-sa">
@@ -523,9 +507,7 @@
 
             <pdf filename="droits_auteurs.pdf" label="Article (PDF)" />
 
-            <repository url="git://git.tuxfamily.org/gitroot/jdhpdocs/droit-auteur.git"
-                        weburl="http://git.tuxfamily.org/jdhpdocs/droit-auteur.git/tree/"
-                        type="git" />
+            <repository type="github" url="http://github.com/jdhp-docs/droit-auteur" />
 
             <link url="docs/droits_auteurs/droits_auteurs.html">
                 <label>Lire la suite</label>
