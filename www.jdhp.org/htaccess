@@ -55,3 +55,5 @@ Redirect permanent /docs/initiation_python/                                     
     deny from all
 </Files>
 
+# Avoid duplication of some common directories in www.jdhp.org/docs/ (e.g. git submodules)
+RedirectMatch /docs/.*/figs/logos/(.*) http://www.jdhp.org/docs/common/logos/$1
