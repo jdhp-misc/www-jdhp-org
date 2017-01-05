@@ -16,6 +16,7 @@
 - Ajour de marqueurs de données : https://www.google.com/webmasters/tools/data-highlighter?hl=fr&siteUrl=http://www.jdhp.org/&authuser=0
 - Inspiration pour le nouveau CSS:
     - http://makefly.depotoi.re/ (bar de menu simple mais efficace)
+    - barre de menu et header des "profile settings" de gitlab (https://framagit.org/profile/): l'item courant est simplement souligné (simple et efficace)
 
 ## SEO
 
