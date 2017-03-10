@@ -78,4 +78,105 @@
 
     </group>
 
+    <!-- ############################################################ -->
+
+    <group id="notebooks">
+
+        <!-- Various IPython/Jupyter notebooks  -->
+
+        <label>
+            IPython/Jupyter notebooks
+        </label>
+
+        <item id="numpy" license="">
+            <label>
+                Numpy snippets
+            </label>
+
+            <desc>
+                This notebook contains some Numpy snippets.
+            </desc>
+
+            <link url="docs/notebook/numpy.html">
+                <label>Read this notebook</label>
+            </link>
+
+            <!--
+            <link url="http://nbviewer.jupyter.org/url/download.tuxfamily.org/jdhp/notebook/notebook/numpy.ipynb">
+                <label>Read this notebook on <a href="http://nbviewer.jupyter.org">nbviewer.jupyter.org</a></label>
+            </link>
+            -->
+
+            <repository type="github" url="http://github.com/jdhp-docs/notebooks" />
+        </item>
+
+        <item id="python-strings-format" license="">
+            <label>
+                Python's strings format function
+            </label>
+
+            <desc>
+                This notebook contains Python's strings format function snippets.
+            </desc>
+
+            <link url="docs/notebook/python_format.html">
+                <label>Read this notebook</label>
+            </link>
+
+            <!--
+            <link url="http://nbviewer.jupyter.org/url/download.tuxfamily.org/jdhp/notebook/notebook/python_format.ipynb">
+                <label>Read this notebook on <a href="http://nbviewer.jupyter.org">nbviewer.jupyter.org</a></label>
+            </link>
+            -->
+
+            <repository type="github" url="http://github.com/jdhp-docs/notebooks" />
+        </item>
+
+        <item id="jupyter-notebook-snippets" license="">
+            <label>
+                Jupyter notebook snippets
+            </label>
+
+            <desc>
+                This notebook contains some <i>Jupyter notebook</i> snippets.
+            </desc>
+
+            <link url="docs/notebook/notebook_snippets.html">
+                <label>Read this notebook</label>
+            </link>
+
+            <!--
+            <link url="http://nbviewer.jupyter.org/url/download.tuxfamily.org/jdhp/notebook/notebook/notebook_snippets.ipynb">
+                <label>Read this notebook on <a href="http://nbviewer.jupyter.org">nbviewer.jupyter.org</a></label>
+            </link>
+            -->
+
+            <repository type="github" url="http://github.com/jdhp-docs/notebooks" />
+        </item>
+
+        <item id="mandelbrot" license="">
+            <label>
+                The Mandelbrot set with Python and Matplotlib
+            </label>
+
+            <desc>
+                This notebook contains an example of how to make and display
+                the Mandelbrot set with Python and Matplotlib.
+            </desc>
+
+            <link url="docs/notebook/mandelbrot.html">
+                <label>Read this notebook</label>
+            </link>
+
+            <!--
+            <link url="http://nbviewer.jupyter.org/url/download.tuxfamily.org/jdhp/notebook/notebook/mandelbrot.ipynb">
+                <label>Read this notebook on <a href="http://nbviewer.jupyter.org">nbviewer.jupyter.org</a></label>
+            </link>
+            -->
+
+            <repository type="github" url="http://github.com/jdhp-docs/notebooks" />
+        </item>
+
+    </group>
+
 </page>
