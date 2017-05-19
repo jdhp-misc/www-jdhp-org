@@ -110,6 +110,38 @@
             <repository type="github" url="http://github.com/jdhp-docs/notebooks" />
         </item>
 
+        <item id="matplotlib-snippets" license="">
+            <label>
+                Matplotlib snippets
+            </label>
+
+            <desc>
+                This notebook contains some <i>Matplotlib</i> snippets.
+            </desc>
+
+            <link url="docs/notebook/matplotlib_snippets.html">
+                <label>Read this notebook</label>
+            </link>
+
+            <repository type="github" url="http://github.com/jdhp-docs/notebooks" />
+        </item>
+
+        <item id="pandas-snippets" license="">
+            <label>
+                Pandas snippets
+            </label>
+
+            <desc>
+                This notebook contains some <i>Pandas</i> snippets.
+            </desc>
+
+            <link url="docs/notebook/pandas.html">
+                <label>Read this notebook</label>
+            </link>
+
+            <repository type="github" url="http://github.com/jdhp-docs/notebooks" />
+        </item>
+
         <item id="python-strings-format" license="">
             <label>
                 Python's strings format function
@@ -150,22 +182,6 @@
                 <label>Read this notebook on <a href="http://nbviewer.jupyter.org">nbviewer.jupyter.org</a></label>
             </link>
             -->
-
-            <repository type="github" url="http://github.com/jdhp-docs/notebooks" />
-        </item>
-
-        <item id="matplotlib-snippets" license="">
-            <label>
-                Matplotlib snippets
-            </label>
-
-            <desc>
-                This notebook contains some <i>Matplotlib</i> snippets.
-            </desc>
-
-            <link url="docs/notebook/matplotlib_snippets.html">
-                <label>Read this notebook</label>
-            </link>
 
             <repository type="github" url="http://github.com/jdhp-docs/notebooks" />
         </item>
