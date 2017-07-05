@@ -163,6 +163,35 @@
 
     <!-- ############################################################ -->
 
+    <group id="notebooks">
+
+        <!-- Various IPython/Jupyter notebooks  -->
+
+        <label>
+            Notebooks Jupyter/IPython
+        </label>
+
+        <item id="mandelbrot" license="">
+            <label>
+                L'ensemble de Mandelbrot avec Python et Matplotlib
+            </label>
+
+            <desc>
+                Ce notebook explique comment créer et d'afficher l'ensemble de
+                Mandelbrot avec Python et Matplotlib.
+            </desc>
+
+            <link url="docs/notebook/maths_mandelbrot_set_fr.html">
+                <label>Lire la suite</label>
+            </link>
+
+            <repository type="github" url="http://github.com/jdhp-docs/notebooks" />
+        </item>
+
+    </group>
+
+    <!-- ############################################################ -->
+
     <group id="informatique">
         <label>
             Informatique
