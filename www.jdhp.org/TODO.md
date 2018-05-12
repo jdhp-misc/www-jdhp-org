@@ -104,6 +104,11 @@ x refaire les "notes" en haut de page (elle s'affichent mal sur smartphones et t
 
 ## CONTENT
 
+* heberger le site web des projets de taille moyenne dans des sous domaines de
+  jdhp.org (ex: pyarm.jdhp.org, vor12.jdhp.org, snippets.jdhp.org, ...).
+  Suppose d'avoir un "espace web TuxFamily" par projet. Les projets de grande
+  taille ont leur propre domaine (ex: ailib.org, pywi.org, botsim.org, ...),
+  les autres (petits projets) ne sont pas mentionnés sur jdhp.org.
 x CV: mettre des intervalles d'années plutot que la date d'obtention du diplome + ajouter "since 2012: PhD at Inria..."
 x add mes articles scientifiques (+ poster esann) et mes présentations (dvs?, xcsf, ...)
 x Sous le nom et sous "PhD student at Inria...", ajouter le domaine (computer science, Learning and Optimization) et l'intitulé de mon sujet de thèse
