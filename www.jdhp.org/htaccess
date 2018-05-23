@@ -4,6 +4,31 @@ Redirect permanent /dl/        http://download.tuxfamily.org/jdhp/
 # Redirect www.jdhp.org/hevea/ to www.jdhp.org/docs/
 Redirect permanent /hevea/     http://www.jdhp.org/docs/
 
+# PERMANENT REDIRECTION FOR CONVENIENCE #######################################
+
+# Redirect some files
+Redirect permanent /phd                                                           https://hal.inria.fr/tel-01103935/
+Redirect permanent /phd.pdf                                                       https://hal.inria.fr/tel-01103935/file/phd.pdf
+Redirect permanent /phd-slides.pdf                                                http://www.jdhp.org/dl/pdf/phd_slides.pdf
+
+Redirect permanent /pub                                                           http://www.jdhp.org/publications_en.html
+
+Redirect permanent /bib                                                           http://www.jdhp.org/bib.html
+Redirect permanent /bib.bib                                                       http://www.jdhp.org/dl/bib/bibliography_jeremie_decock.bib
+Redirect permanent /bib.html                                                      http://www.jdhp.org/docs/bibliography_jeremie_decock/bibliography_jeremie_decock.html
+Redirect permanent /bib.pdf                                                       http://www.jdhp.org/dl/pdf/bibliography_jeremie_decock.pdf
+
+Redirect permanent /cta                                                           http://www.jdhp.org/dl/pdf/cta_slides.pdf
+
+# Publications short link
+Redirect permanent /ea15cp                                                        https://hal.inria.fr/hal-01194540
+
+# Avoid duplication of some common directories in www.jdhp.org/docs/ (e.g. git submodules)
+RedirectMatch /docs/.*/figs/logos/(.*) http://www.jdhp.org/docs/common/logos/$1
+RedirectMatch /docs/.*/reveal\.js/(.*) http://www.jdhp.org/docs/common/revealjs/$1
+
+# PERMANENT REDIRECTION FOR BACKWARD COMPATIBILITY ############################
+
 # Redirect former HTML files
 Redirect permanent /projects_en.html     http://www.jdhp.org/software_en.html
 Redirect permanent /projects_fr.html     http://www.jdhp.org/software_fr.html
@@ -40,6 +65,8 @@ Redirect permanent /hevea/tutoriel_rpi_qemu.html                                
 Redirect permanent /hevea/tutoriel_rpi_qemu/tutoriel_rpi_qemu.htm                 http://www.jdhp.org/docs/tutoriel_rpi_qemu/tutoriel_rpi_qemu.html
 Redirect permanent /docs/initiation_python/                                       http://www.jdhp.org/docs/atelier_initiation_python_part1/
 
+# MISC ########################################################################
+
 # No cache to always send latest changes
 <filesMatch "\.(html|js|css)$">
     FileETag None
@@ -54,7 +81,3 @@ Redirect permanent /docs/initiation_python/                                     
     order allow,deny
     deny from all
 </Files>
-
-# Avoid duplication of some common directories in www.jdhp.org/docs/ (e.g. git submodules)
-RedirectMatch /docs/.*/figs/logos/(.*) http://www.jdhp.org/docs/common/logos/$1
-RedirectMatch /docs/.*/reveal\.js/(.*) http://www.jdhp.org/docs/common/revealjs/$1
