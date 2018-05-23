@@ -23,6 +23,7 @@ Redirect permanent /cta                                                         
 
 # Publications short link
 Redirect permanent /ea15cp                                                        https://hal.inria.fr/hal-01194540
+Redirect permanent /gecco11xcsf                                                   https://hal.inria.fr/hal-00703760
 
 # Avoid duplication of some common directories in www.jdhp.org/docs/ (e.g. git submodules)
 RedirectMatch /docs/.*/figs/logos/(.*) http://www.jdhp.org/docs/common/logos/$1
