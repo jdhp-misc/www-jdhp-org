@@ -99,8 +99,45 @@
     <group id="research_aiam">
 
         <label>
-            Academic Papers in Artificial Intelligence and Applied Maths 
+            Refereed International Conference Publications
         </label>
+
+        <item id="pscc18dmpc" license="">
+            <label>
+                Direct Model Predictive Control: A Theoretical and Numerical Analysis
+            </label>
+
+            <desc>
+                This paper focuses on online control policies applied to power
+                systems management. In this study, the power system problem is
+                formulated as a stochastic decision process with large
+                constrained action space, high stochasticity and dozens of
+                state variables. Direct Model Predictive Control has previously
+                been proposed to encompass a large class of stochastic decision
+                making problems. It is a hybrid model which merges the
+                properties of two different dynamic optimization methods, Model
+                Predictive Control and Stochastic Dual Dynamic Programming. In
+                this paper, we prove that Direct Model Predictive Control
+                reaches an optimal policy for a wider class of decision
+                processes than those solved by Model Predictive Control
+                (suboptimal by nature), Stochastic Dynamic Programming (which
+                needs a moderate size of state space) or Stochastic Dual
+                Dynamic Programming (which requires convexity of Bellman values
+                and a moderate complexity of the random value state). The
+                algorithm is tested on a multiple-battery management problem
+                and two hydroelectric problems. Direct Model Predictive Control
+                clearly outperforms Model Predictive Control on the tested
+                problems.
+            </desc>
+
+            <bib label="Presented in:">
+                <em>PSCC 2018 (Power Systems Computation Conference)</em>, Dublin (Ireland), June 2018.
+            </bib>
+
+            <!--<open_archive url="http://hal.inria.fr/" label="HAL" />-->
+
+            <!--<pdf url="http://hal.inria.fr/docs/00/99/75/62/PDF/slides.pdf" label="Slides (PDF)" />-->
+        </item>
 
         <!--
         TODO: add papier EA2015 ???
@@ -123,9 +160,61 @@
         Title of ACM publication:   GECCO'15: 2015 Genetic and Evolutionary Computation Conference Companion Proceedings
          -->
 
-        <item id="dvs" license="">
+        <item id="15" license="">
             <label>
-                An Introduction to Direct Value Search
+                Evolutionary Cutting Planes
+            </label>
+
+            <desc>
+                The Cutting Plane method is a simple and efficient method for
+                optimizing convex functions in which subgradients are
+                available. This paper proposes several methods for
+                parallelizing it, in particular using a typically evolutionary
+                method, and compares them experimentally in a well-conditioned
+                and ill-conditioned settings.
+            </desc>
+
+            <bib label="Presented in:">
+                <em>Artificial Evolution (EA2015)</em>, Lyon (France), 2015.
+            </bib>
+
+            <open_archive url="https://hal.inria.fr/hal-01194540" label="HAL" />
+
+            <pdf url="https://hal.inria.fr/hal-01194540/document" label="Article (PDF)" />
+        </item>
+
+        <item id="15" license="">
+            <label>
+                Variance Reduction in Population-Based Optimization: Application to Unit Commitment
+            </label>
+
+            <desc>
+                We consider noisy optimization and some traditional variance
+                reduction techniques aimed at improving the convergence rate,
+                namely (i) common random numbers (CRN), which is relevant for
+                population-based noisy optimization and (ii) stratified
+                sampling, which is relevant for most noisy optimization
+                problems. We present artificial models of noise for which
+                common random numbers are very efficient, and artificial models
+                of noise for which common random numbers are detrimental. We
+                then experiment on a desperately expensive unit commitment
+                problem. As expected, stratified sampling is never detrimental.
+                Nonetheless, in practice, common random numbers provided, by
+                far, most of the improvement.
+            </desc>
+
+            <bib label="Presented in:">
+                <em>Genetic and evolutionary computation (GECCO)</em>, Madrid (Spain), 2015.
+            </bib>
+
+            <open_archive url="https://hal.inria.fr/hal-01194510" label="HAL" />
+
+            <pdf url="https://hal.inria.fr/hal-01194510/document" label="Article (PDF)" />
+        </item>
+
+        <item id="jfpda14dmpc" license="">
+            <label>
+                 Optimization of Energy Policies Using Direct Value Search
             </label>
 
             <desc>
@@ -149,7 +238,7 @@
             <pdf url="http://hal.inria.fr/docs/00/99/75/62/PDF/slides.pdf" label="Slides (PDF)" />
         </item>
 
-        <item id="dmpc" license="">
+        <item id="esann14dmpc" license="">
             <label>
                 Direct model predictive control
             </label>
@@ -179,7 +268,7 @@
             <pdf url="http://hal.inria.fr/docs/00/95/81/92/PDF/dpsandmpc.pdf" label="Article (PDF)" />
         </item>
 
-        <item id="linear_convergence" license="">
+        <item id="ea14lc" license="">
             <label>
                 Linear Convergence of Evolution Strategies with Derandomized Sampling Beyond Quasi-Convex Functions
             </label>
@@ -211,7 +300,7 @@
             <pdf filename="linear_convergence_slides.pdf" label="Slides (PDF)" />
         </item>
 
-        <item id="noisyopt" license="">
+        <item id="foga13noisyopt" license="">
             <label>
                 Noisy Optimization Complexity Under Locality Assumption
             </label>
@@ -239,7 +328,7 @@
             <pdf filename="noisyopt_slides.pdf" label="Slides (PDF)" />
         </item>
 
-        <item id="XCSF" license="">
+        <item id="gecco11xcsf" license="">
             <label>
                 Learning Cost-Efficient Control Policies with XCSF
             </label>
@@ -276,6 +365,43 @@
             <pdf url="http://www.isir.upmc.fr/files/2011ACTI1945.pdf" label="Article (PDF)" />
 
             <pdf filename="2012_03_hsinchu_xcsf_slides.pdf" label="Slides (PDF)" />
+        </item>
+
+        <item id="jfpda11xcsf" license="">
+            <label>
+                Apprentissage de politiques efficaces avec XCSF et CEPS
+            </label>
+            
+            <desc>
+                Nous proposons dans cette contribution une méthode qui permet
+                d'obtenir une politique efficace dans un cadre où l'état et
+                l'action sont continus. Le système contrôlé est un bras à deux
+                degrés de liberté actionné par six muscles. Nous apprenons par
+                démonstration une politique paramétrique avec le système de
+                classeurs xcsf à partir de trajectoires quasi-optimales et nous
+                étudions la capacité d'xcsf à généraliser ce qu'il a appris le
+                long de ces trajectoires sur l'ensemble de l'espace
+                atteignable. De plus, nous montrons qu'une méthode
+                d'optimisation stochastique appelée Cross-Entropy Policy Search
+                permet d'améliorer encore la performance du contrôleur
+                paramétrique.
+            </desc>
+
+            <bib label="Référence:">
+                <!--
+                Apprentissage de politiques efficaces avec XCSF et CEPS.
+                Sixièmes journées francophones MFI/JFPDA, B. Zanuttini,
+                editors, GREYC Caen, publisher. Pages 298-310.
+                -->
+                Didier Marin, Jérémie Decock, Lionel Rigoux, and Olivier Sigaud.
+                Apprentissage de politiques efficaces avec XCSF et CEPS.
+                In <em>Sixièmes journées francophones MFI/JFPDA</em>, pages
+                298-310, Rouen, France, 2011.
+            </bib>
+    
+            <open_archive url="http://hal.inria.fr/hal-00703774" label="HAL" />
+
+            <pdf url="http://www.isir.upmc.fr/files/2011ACTN1978.pdf" label="Article (PDF)" />
         </item>
 
     </group>
