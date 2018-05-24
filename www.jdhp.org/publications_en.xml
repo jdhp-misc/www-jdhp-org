@@ -160,7 +160,7 @@
         Title of ACM publication:   GECCO'15: 2015 Genetic and Evolutionary Computation Conference Companion Proceedings
          -->
 
-        <item id="15" license="">
+        <item id="ea15ecp" license="">
             <label>
                 Evolutionary Cutting Planes
             </label>
@@ -183,7 +183,7 @@
             <pdf url="https://hal.inria.fr/hal-01194540/document" label="Article (PDF)" />
         </item>
 
-        <item id="15" license="">
+        <item id="gecco15vr" license="">
             <label>
                 Variance Reduction in Population-Based Optimization: Application to Unit Commitment
             </label>
