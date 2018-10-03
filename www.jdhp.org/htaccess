@@ -22,6 +22,7 @@ Redirect permanent /snippets                                                    
 Redirect permanent /cta                                                           http://www.jdhp.org/dl/pdf/cta_slides.pdf
 
 # Publications short link
+Redirect permanent /pcp                                                           https://hal.inria.fr/hal-01194540
 Redirect permanent /ea15cp                                                        https://hal.inria.fr/hal-01194540
 Redirect permanent /gecco11xcsf                                                   https://hal.inria.fr/hal-00703760
 Redirect permanent /gc11                                                          https://hal.inria.fr/hal-00703760
