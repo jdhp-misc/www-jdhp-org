@@ -19,6 +19,7 @@ Redirect permanent /bib.html                                                    
 Redirect permanent /bib.pdf                                                       http://www.jdhp.org/dl/pdf/bibliography_jeremie_decock.pdf
 
 Redirect permanent /snippets                                                      https://github.com/jeremiedecock/snippets#jdhp-snippets
+Redirect permanent /notebooks                                                     http://www.jdhp.org/documentation_en.html#notebooks
 Redirect permanent /cta                                                           http://www.jdhp.org/dl/pdf/cta_slides.pdf
 
 # Publications short link
