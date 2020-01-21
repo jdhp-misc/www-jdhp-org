@@ -88,6 +88,22 @@
             IPython/Jupyter notebooks
         </label>
 
+        <item id="pandas-snippets" license="">
+            <label>
+                Pandas snippets
+            </label>
+
+            <desc>
+                This notebook contains some <i>Pandas</i> snippets.
+            </desc>
+
+            <link url="docs/notebook/python_pandas_en.html">
+                <label>Read this notebook</label>
+            </link>
+
+            <repository type="github" url="http://github.com/jdhp-docs/notebooks" />
+        </item>
+
         <item id="numpy" license="">
             <label>
                 Numpy snippets
@@ -121,22 +137,6 @@
         </item>
 
         <!--
-        <item id="pandas-snippets" license="">
-            <label>
-                Pandas snippets
-            </label>
-
-            <desc>
-                This notebook contains some <i>Pandas</i> snippets.
-            </desc>
-
-            <link url="docs/notebook/python_pandas_en.html">
-                <label>Read this notebook</label>
-            </link>
-
-            <repository type="github" url="http://github.com/jdhp-docs/notebooks" />
-        </item>
-
         <item id="python-strings-format" license="">
             <label>
                 Python's strings format function

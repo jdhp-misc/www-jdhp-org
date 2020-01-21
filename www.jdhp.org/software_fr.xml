@@ -152,6 +152,7 @@
 
         <!-- PyAI -->
 
+        <!--
         <item id="ai_framework_for_python" license="MIT">
             <label>Artificial Intelligence frameworks for Python</label>
             <desc>
@@ -165,6 +166,7 @@
 
             <repository type="github" url="http://github.com/jeremiedecock/pyai" />
         </item>
+        -->
 
         <!-- PyAX-12 -->
 
@@ -336,6 +338,7 @@
             Projets Secondaires
         </label>
 
+        <!--
         <item id="jwumpus" license="MIT">
             <label>JWumpus</label>
             <desc>
@@ -348,7 +351,6 @@
                 quoi il passe en mode exploitation.
             </desc>
             <debian_package filename="jwumpus_1.0-1_all.deb" arch="all" />
-            <!-- http://git.tuxfamily.org/jwumpus/jwumpus.git/snapshot/jwumpus-master.zip -->
             <download_sources url="http://git.tuxfamily.org/jwumpus/jwumpus.git/refs/" />
 
             <repository url="git://git.tuxfamily.org/gitroot/jwumpus/jwumpus.git"
@@ -431,19 +433,8 @@
                     <label>Regarder sur Youtube</label>
                 </link>
             </video>
-            <!--
-            <video filename="bioloid_quadrupedal_dynamic_1.ogv" thumbnail_filename="bioloid_quadrupedal_dynamic_1.png">
-                <link url="http://www.youtube.com/watch?v=48PtL3mXUNU">
-                    <label>Regarder sur Youtube</label>
-                </link>
-            </video>
-            <video filename="bioloid_quadrupedal_dynamic_2.ogv" thumbnail_filename="bioloid_quadrupedal_dynamic_2.png">
-                <link url="http://www.youtube.com/watch?v=S4RQAeOc79E">
-                    <label>Regarder sur Youtube</label>
-                </link>
-            </video>
-            -->
         </item>
+        -->
 
         <item id="pydfm" license="MIT">
             <label>PyDuplicateFileManager</label>
@@ -454,6 +445,7 @@
             <repository type="github" url="http://github.com/jeremiedecock/pydfm" />
         </item>
 
+        <!--
         <item id="dspp" license="MIT">
             <label>DSPP (Dual Screen PDF Presenter)</label>
             <desc>
@@ -477,7 +469,6 @@
             <download_sources url="http://github.com/jeremiedecock/dspp/releases" />
         </item>
 
-        <!--
         <item id="binviewer" license="MIT">
             <label>Binviewer</label>
             <desc>
@@ -495,7 +486,6 @@
                         type="git" />
             <picture filename="binviewer_1.png" thumbnail_filename="binviewer_1.png" />
         </item>
-        -->
 
         <item id="latex2png" license="MIT">
             <label>Latex2png</label>
@@ -510,6 +500,7 @@
 
             <picture filename="latex2png_2.png" thumbnail_filename="latex2png_2.png" />
         </item>
+        -->
 
         <item id="jdhpcad" license="CC BY-SA">
             <label>Objets 3D</label>
@@ -537,6 +528,7 @@
             <picture filename="pcb.png" thumbnail_filename="pcb.png" />
         </item>
 
+        <!--
         <item id="pypong" license="MIT">
             <label>PyPong</label>
             <desc>
@@ -558,6 +550,7 @@
             </desc>
             <repository type="github" url="http://github.com/jdhp-misc/www-jdhp-org" />
         </item>
+        -->
 
         <item id="unmentioned">
             <label>Autres projets non répertoriés</label>
