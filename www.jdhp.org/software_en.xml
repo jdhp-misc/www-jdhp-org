@@ -150,45 +150,6 @@
         </item>
         -->
 
-        <!-- PyAX-12 -->
-
-        <item id="pyax12" license="MIT">
-            <label>PyAX-12</label>
-            <desc>
-                PyAX-12 is a Python library to control
-                <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel AX-12+</a> actuators.
-                directly from a computer (using a <a href="http://www.robotis.com/xe/controller_en">USB2Dynamixel</a>
-                adapter).
-            </desc>
-            <repository type="github" url="http://github.com/jeremiedecock/pyax12" />
-            <download_sources url="http://github.com/jeremiedecock/pyax12/releases" />
-            <!--
-            <readthedocs url="http://pyax-12.readthedocs.org/" />
-            <label>Online documentation</label>
-            -->
-            <picture filename="dynamixel_1.png" thumbnail_filename="dynamixel_1.png" />
-        </item>
-
-        <!-- VoR-12 -->
-        
-        <item id="vor12" license="MIT">
-            <label>VoR12</label>
-            <desc>
-                The VoR12 project is a mobile video camera. It uses two
-                <a href="http://support.robotis.com/en/product/dynamixel/ax_series/dxl_ax_actuator.htm">Dynamixel
-                AX-12</a> actuators and the <a href="http://opencv.org/">OpenCV</a> computer
-                vision library for object tracking experiments.
-            </desc>
-            <repository type="github" url="http://github.com/jeremiedecock/vor12" />
-            <download_sources url="http://github.com/jeremiedecock/vor12/releases" />
-            <!--
-            <link url="http://vor12.readthedocs.org">
-                <label>Online documentation</label>
-            </link>
-            -->
-            <picture filename="vor12-2.jpeg" thumbnail_filename="vor12-2.png" />
-        </item>
-
         <!-- SNIPPETS -->
 
         <item id="snippets" license="MIT">
@@ -306,6 +267,45 @@
             <download_sources url="https://github.com/jeremiedecock/snippets/archive/master.zip" />
 
             <picture filename="demos.png" thumbnail_filename="demos.png" />
+        </item>
+
+        <!-- PyAX-12 -->
+
+        <item id="pyax12" license="MIT">
+            <label>PyAX-12</label>
+            <desc>
+                PyAX-12 is a Python library to control
+                <a href="http://www.robotis.com/xe/dynamixel_en">Dynamixel AX-12+</a> actuators.
+                directly from a computer (using a <a href="http://www.robotis.com/xe/controller_en">USB2Dynamixel</a>
+                adapter).
+            </desc>
+            <repository type="github" url="http://github.com/jeremiedecock/pyax12" />
+            <download_sources url="http://github.com/jeremiedecock/pyax12/releases" />
+            <!--
+            <readthedocs url="http://pyax-12.readthedocs.org/" />
+            <label>Online documentation</label>
+            -->
+            <picture filename="dynamixel_1.png" thumbnail_filename="dynamixel_1.png" />
+        </item>
+
+        <!-- VoR-12 -->
+        
+        <item id="vor12" license="MIT">
+            <label>VoR12</label>
+            <desc>
+                The VoR12 project is a mobile video camera. It uses two
+                <a href="http://support.robotis.com/en/product/dynamixel/ax_series/dxl_ax_actuator.htm">Dynamixel
+                AX-12</a> actuators and the <a href="http://opencv.org/">OpenCV</a> computer
+                vision library for object tracking experiments.
+            </desc>
+            <repository type="github" url="http://github.com/jeremiedecock/vor12" />
+            <download_sources url="http://github.com/jeremiedecock/vor12/releases" />
+            <!--
+            <link url="http://vor12.readthedocs.org">
+                <label>Online documentation</label>
+            </link>
+            -->
+            <picture filename="vor12-2.jpeg" thumbnail_filename="vor12-2.png" />
         </item>
     </group>
     

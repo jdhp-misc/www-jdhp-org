@@ -168,52 +168,6 @@
         </item>
         -->
 
-        <!-- PyAX-12 -->
-
-        <item id="pyax12" license="MIT">
-            <label>PyAX-12</label>
-            <desc>
-                PyAX-12 est une librairie qui permet de contrôler des
-                servomoteurs <a
-                href="http://www.robotis.com/xe/dynamixel_en">Dynamixel
-                AX-12</a> directement depuis un ordinateur (via une brique <a
-                href="http://www.robotis.com/xe/controller_en">USB2Dynamixel</a>).
-                Elle peut être utilisée pour dépasser les limites des
-                contrôleurs types <a
-                href="http://www.robotis.com/xe/controller_en">CM-5</a> ou
-                pour remplacer les logiciels propriétaires fournis par <a
-                href="http://www.robotis.com">Robotis</a>. PyAX-12 est
-                écrite en Python.
-            </desc>
-            <repository type="github" url="http://github.com/jeremiedecock/pyax12" />
-            <download_sources url="http://github.com/jeremiedecock/pyax12/releases" />
-            <!--
-            <readthedocs url="http://pyax-12.readthedocs.org/" />
-            <label>Online documentation</label>
-            -->
-            <picture filename="dynamixel_1.png" thumbnail_filename="dynamixel_1.png" />
-        </item>
-
-        <!-- VoR-12 -->
-
-        <item id="vor12" license="MIT">
-            <label>VoR12</label>
-            <desc>
-                Le projet VoR12 est une caméra mobile qui utilise deux servomoteurs
-                <a href="http://support.robotis.com/en/product/dynamixel/ax_series/dxl_ax_actuator.htm">Dynamixel
-                AX-12</a> et la bibliothèque de traitement d'image <a href="http://opencv.org/">OpenCV</a>
-                pour effectuer des expériences de suivi d'objets.
-            </desc>
-            <repository type="github" url="http://github.com/jeremiedecock/vor12" />
-            <download_sources url="http://github.com/jeremiedecock/vor12/releases" />
-            <!--
-            <link url="http://vor12.readthedocs.org">
-                <label>Online documentation</label>
-            </link>
-            -->
-            <picture filename="vor12-2.jpeg" thumbnail_filename="vor12-2.png" />
-        </item>
-
         <!-- SNIPPETS -->
 
         <item id="snippets" license="MIT">
@@ -329,6 +283,52 @@
 
             <picture filename="demos.png" thumbnail_filename="demos.png" />
         </item>
+
+        <!-- PyAX-12 -->
+
+        <item id="pyax12" license="MIT">
+            <label>PyAX-12</label>
+            <desc>
+                PyAX-12 est une librairie qui permet de contrôler des
+                servomoteurs <a
+                href="http://www.robotis.com/xe/dynamixel_en">Dynamixel
+                AX-12</a> directement depuis un ordinateur (via une brique <a
+                href="http://www.robotis.com/xe/controller_en">USB2Dynamixel</a>).
+                Elle peut être utilisée pour dépasser les limites des
+                contrôleurs types <a
+                href="http://www.robotis.com/xe/controller_en">CM-5</a> ou
+                pour remplacer les logiciels propriétaires fournis par <a
+                href="http://www.robotis.com">Robotis</a>. PyAX-12 est
+                écrite en Python.
+            </desc>
+            <repository type="github" url="http://github.com/jeremiedecock/pyax12" />
+            <download_sources url="http://github.com/jeremiedecock/pyax12/releases" />
+            <!--
+            <readthedocs url="http://pyax-12.readthedocs.org/" />
+            <label>Online documentation</label>
+            -->
+            <picture filename="dynamixel_1.png" thumbnail_filename="dynamixel_1.png" />
+        </item>
+
+        <!-- VoR-12 -->
+
+        <item id="vor12" license="MIT">
+            <label>VoR12</label>
+            <desc>
+                Le projet VoR12 est une caméra mobile qui utilise deux servomoteurs
+                <a href="http://support.robotis.com/en/product/dynamixel/ax_series/dxl_ax_actuator.htm">Dynamixel
+                AX-12</a> et la bibliothèque de traitement d'image <a href="http://opencv.org/">OpenCV</a>
+                pour effectuer des expériences de suivi d'objets.
+            </desc>
+            <repository type="github" url="http://github.com/jeremiedecock/vor12" />
+            <download_sources url="http://github.com/jeremiedecock/vor12/releases" />
+            <!--
+            <link url="http://vor12.readthedocs.org">
+                <label>Online documentation</label>
+            </link>
+            -->
+            <picture filename="vor12-2.jpeg" thumbnail_filename="vor12-2.png" />
+        </item>
     </group>
     
     <!-- ############################################################ -->
@@ -414,6 +414,7 @@
             <repository type="github" url="http://github.com/jeremiedecock/dtools" />
             <download_sources url="http://github.com/jeremiedecock/dtools/releases" />
         </item>
+        -->
 
         <item id="bioloid" license="MIT">
             <label>Bioloid</label>
@@ -434,7 +435,6 @@
                 </link>
             </video>
         </item>
-        -->
 
         <item id="pydfm" license="MIT">
             <label>PyDuplicateFileManager</label>
